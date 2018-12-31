@@ -1,4 +1,3 @@
-var host = "yizack.com"
-if (window.location.host == host && window.location.protocol != "https:") {
-  window.location.protocol = "https:"
-}
+if(window.location.protocol != 'https:') {
+    location.href =   location.href.replace("http://", "https://");
+  }
