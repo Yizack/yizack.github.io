@@ -41,7 +41,6 @@ a:focus {
   text-decoration: none;
 }
 a:hover {
-  color: #296dc1;
   text-decoration: none;
 }
 
@@ -182,4 +181,36 @@ a:hover {
 
 .link{
   font-size: 10px;
+}
+
+.fa-spotify:hover {
+  color: #1db954;
+}
+
+.fa-soundcloud:hover { 
+  color: #F26E23;
+}
+
+.fa-youtube-play:hover {
+  color: #ff0000;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover { 
+  color: #833ab4;
+}
+
+.fa-tumblr-square:hover {
+  color: #35465c;
+}
+
+.fa-github:hover{
+  color: #333;
 }
