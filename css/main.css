@@ -9,19 +9,11 @@
             font-family: 'Quattrocento', 'Times New Roman', serif;
         }
         
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: 'Istok Web', Helvetica, Arial, sans-serif;
         }
         
-        p,
-        ul,
-        label,
-        input,
-        textarea,
-        button {
+        p, ul, label, input, textarea, button {
             font-size: 1.2em;
         }
         
@@ -162,7 +154,7 @@
         .card {
             border-radius: 15px;
             background-color: #f5f5f5;
-            margin: 40px 40px 10px 130px;
+            margin: 10px;
             box-shadow: 0 1px 2px #888;
         }
         
@@ -384,9 +376,7 @@
             h4 {
                 font-size: 1em;
             }
-            /*==============
-  NAVBAR
-  ===============*/
+            /*============== NAVBAR ===============*/
             .nav-bar {
                 height: 80px;
                 width: 100%;
@@ -425,9 +415,6 @@
                 border-radius: 0;
             }
             /*============== SECTION - ABOUT ===============*/
-            #about {
-                margin-top: 80px;
-            }
             #about .column {
                 margin: 10px 5% 15px;
             }
