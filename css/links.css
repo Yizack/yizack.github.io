@@ -3,14 +3,15 @@ html {
 }
 
 .bg-image {
-  /* Add the blur effect */
+  position: fixed;
+  left: 0;
+  right: 0;
+
   filter: blur(8px);
   -webkit-filter: blur(8px);
   
-  /* Full height */
   height: 100%; 
   
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
