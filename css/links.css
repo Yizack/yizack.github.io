@@ -16,3 +16,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.bg-dark {
+  background-color: #292929!important;
+}
