@@ -28,3 +28,9 @@ html {
 .links:hover {
   background-color: #313131!important;
 }
+
+.links {
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #404040;
+}
