@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+.card {
+  border: none;
+}
+
 .bg-image {
   position: fixed;
   left: 0;
