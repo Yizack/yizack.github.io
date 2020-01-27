@@ -20,3 +20,7 @@ html {
 .bg-dark {
   background-color: #292929!important;
 }
+
+.links:hover {
+  background-color: #313131!important;
+}
