@@ -35,33 +35,8 @@ html {
   border-top-color: #404040;
 }
 
-.socials .spotify a:hover {
-  color: #1db954;
-  text-decoration: none;
-}
-
-.socials .soundcloud a:hover {
-  color: #F26E23;
-  text-decoration: none;
-}
-
-.socials .youtube a:hover {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-.socials .twitter a:hover {
-  color: #1da1f2;
-  text-decoration: none;
-}
-
-.socials .facebook a:hover {
-  color: #3b5998;
-  text-decoration: none;
-}
-
-.socials .instagram a:hover {
-  color: #833ab4;
+.socials li a:hover {
+  color: #f8f9fc;
   text-decoration: none;
 }
 
@@ -72,8 +47,4 @@ html {
 ul.icons li {
   display: inline-block;
   padding: 0 1em 0 0;
-}
-
-.hover-white:hover {
-  background-color: #fff!important;
 }
