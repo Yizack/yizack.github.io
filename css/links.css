@@ -35,37 +35,37 @@ html {
   border-top-color: #404040;
 }
 
-#footer .spotify a:hover {
+.socials .spotify a:hover {
   color: #1db954;
   text-decoration: none;
 }
 
-#footer .soundcloud a:hover {
+.socials .soundcloud a:hover {
   color: #F26E23;
   text-decoration: none;
 }
 
-#footer .youtube a:hover {
+.socials .youtube a:hover {
   color: #ff0000;
   text-decoration: none;
 }
 
-#footer .twitter a:hover {
+.socials .twitter a:hover {
   color: #1da1f2;
   text-decoration: none;
 }
 
-#footer .facebook a:hover {
+.socials .facebook a:hover {
   color: #3b5998;
   text-decoration: none;
 }
 
-#footer .instagram a:hover {
+.socials .instagram a:hover {
   color: #833ab4;
   text-decoration: none;
 }
 
-#footer .icons a {
+.socials .icons a {
   color: #fff;
 }
 
