@@ -11,8 +11,8 @@ html {
   left: 0;
   right: 0;
 
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
   
   height: 100%; 
   
