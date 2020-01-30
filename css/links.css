@@ -25,6 +25,10 @@ html {
   background-color: #292929!important;
 }
 
+.text-dark{
+  color: #292929!important;
+}
+
 .links:hover {
   background-color: #313131!important;
 }
