@@ -1,6 +1,6 @@
 {% assign sorted = site.pages | sort: 'date' | reverse %}
 {% for item in sorted %}
-{% if item.link %}
+{% if item.artists %}
 <div>
     <a href="/{{ item.link }}" target="_blank">{{ item.artists }} - {{ item.title }}</a>
 </div>
