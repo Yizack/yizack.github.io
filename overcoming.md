@@ -4,7 +4,7 @@ layout: fanlink
 title: Overcoming
 artists: Dimatis
 link: overcoming
-date: 2020-01-24T00:00:03Z
+date: 2020-01-24 00:00:03
 
 image: http://dimatis.yizack.com/images/experiences.jpg
 image_secure: https://dimatis.yizack.com/images/experiences.jpg
