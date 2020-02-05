@@ -1,7 +1,7 @@
 ---
 layout: fanlink
 title: Sign Of Time
-artist: Dimatis
+artists: Dimatis
 link: sot-test
 image: http://dimatis.yizack.com/images/sign-of-time.jpg
 image_secure: https://dimatis.yizack.com/images/sign-of-time.jpg
