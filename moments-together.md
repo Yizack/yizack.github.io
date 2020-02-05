@@ -4,7 +4,7 @@ layout: fanlink
 title: Moments Together
 artists: Dimatis
 link: moments-together
-date: 2020-01-24 00:00:05
+date: 2020-01-24T00:00:05Z
 
 image: http://dimatis.yizack.com/images/experiences.jpg
 image_secure: https://dimatis.yizack.com/images/experiences.jpg

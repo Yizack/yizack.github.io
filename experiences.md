@@ -4,7 +4,7 @@ layout: fanlink
 title: Experiences
 artists: Dimatis
 link: experiences
-date: 2020-01-24 00:00:07
+date: 2020-01-24T00:00:07Z
 
 image: http://dimatis.yizack.com/images/experiences.jpg
 image_secure: https://dimatis.yizack.com/images/experiences.jpg
