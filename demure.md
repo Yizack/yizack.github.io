@@ -5,8 +5,8 @@ title: Demure
 artists: Dimatis
 link: demure
 
-image: http://dimatis.yizack.com/images/celeste.jpg
-image_secure: https://dimatis.yizack.com/images/celeste.jpg
+image: http://dimatis.yizack.com/images/demure.jpg
+image_secure: https://dimatis.yizack.com/images/demure.jpg
 
 spotify: https://open.spotify.com/album/4oMdwavOy3Eh80i3DZKuLP
 soundcloud: https://soundcloud.com/dimatis/demure
