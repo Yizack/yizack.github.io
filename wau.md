@@ -4,7 +4,7 @@ layout: fanlink
 title: What Awaits Us
 artists: Dimatis
 link: wau
-date: 2019-01-28 00:00:01
+date: 2019-01-28 00:01:00
 
 image: http://dimatis.yizack.com/images/what-awaits-us.jpg
 image_secure: https://dimatis.yizack.com/images/what-awaits-us.jpg

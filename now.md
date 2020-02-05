@@ -4,7 +4,7 @@ layout: fanlink
 title: Now
 artists: Dimatis
 link: now
-date: 2020-01-24 00:00:04
+date: 2020-01-24 00:04:00
 
 image: http://dimatis.yizack.com/images/experiences.jpg
 image_secure: https://dimatis.yizack.com/images/experiences.jpg
