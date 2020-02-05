@@ -4,7 +4,7 @@ layout: fanlink
 title: Floating EP
 artists: Dimatis
 link: floating-ep
-date: 2019-01-28
+date: 2019-01-28 00:00:05
 
 image: http://dimatis.yizack.com/images/floating-ep.jpg
 image_secure: https://dimatis.yizack.com/images/floating-ep.jpg
