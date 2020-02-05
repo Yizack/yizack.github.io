@@ -4,6 +4,7 @@ layout: fanlink
 title: Sign Of Time
 artists: Dimatis
 link: sot
+date: 2019-10-15
 
 image: http://dimatis.yizack.com/images/sign-of-time.jpg
 image_secure: https://dimatis.yizack.com/images/sign-of-time.jpg

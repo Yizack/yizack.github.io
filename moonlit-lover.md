@@ -4,6 +4,7 @@ layout: fanlink
 title: Moonlit Lover
 artists: Dimatis
 link: moonlit-lover
+date: 2018-08-01
 
 image: http://dimatis.yizack.com/images/moonlit-lover.jpg
 image_secure: https://dimatis.yizack.com/images/moonlit-lover.jpg

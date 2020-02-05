@@ -1,3 +1,6 @@
-{% for page in site.pages %}
-{{ page.link }}
+
+{% assign sorted = site.pages | reverse %}
+
+{% for item in sorted %}
+{{ item.link }}
 {% endfor %}

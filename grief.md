@@ -4,6 +4,7 @@ layout: fanlink
 title: Grief
 artists: Dimatis
 link: grief
+date: 2020-01-24
 
 image: http://dimatis.yizack.com/images/experiences.jpg
 image_secure: https://dimatis.yizack.com/images/experiences.jpg

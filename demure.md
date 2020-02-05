@@ -4,6 +4,7 @@ layout: fanlink
 title: Demure
 artists: Dimatis
 link: demure
+date: 2018-12-01
 
 image: http://dimatis.yizack.com/images/demure.jpg
 image_secure: https://dimatis.yizack.com/images/demure.jpg

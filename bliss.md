@@ -4,6 +4,7 @@ layout: fanlink
 title: Bliss
 artists: Dimatis
 link: bliss
+date: 2018-07-10
 
 image: http://dimatis.yizack.com/images/bliss.jpg
 image_secure: https://dimatis.yizack.com/images/bliss.jpg
