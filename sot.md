@@ -1,5 +1,6 @@
 ---
 layout: fanlink
+
 title: Sign Of Time
 artists: Dimatis
 link: sot

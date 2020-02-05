@@ -51,6 +51,33 @@
                   </div>
                 </div>
               </div>
+              {% if page.album %}<!-- full album -->
+              <a class="row links text-white" href="/{{ page.album }}" target="_blank" title="Full Album">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/img/{{ page.album }}.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">View</span>
+                </div>
+              </a>{% endif %}
+              {% if page.ep %}<!-- full ep -->
+              <a class="row links text-white" href="/{{ page.ep }}" target="_blank" title="Full EP">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/img/{{ page.ep }}.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">View</span>
+                </div>
+              </a>{% endif %}
+              {% if page.piano %}<!-- piano version -->
+              <a class="row links text-white" href="/{{ page.piano }}" target="_blank" title="Piano Version">
+                <div class="col-6 pl-5 py-4">
+                  <img class="mx-auto d-block" src="/img/{{ page.piano }}.png" width="100%"/>
+                </div>
+                <div class="col-6 pr-5 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light">View</span>
+                </div>
+              </a>{% endif %}
               {% if page.spotify %}<!-- spotify -->
               <a class="row links text-white" href="{{ page.spotify }}" target="_blank" title="Stream on Spotify">
                 <div class="col-6 pl-5 py-4">

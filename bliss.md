@@ -1,5 +1,6 @@
 ---
 layout: fanlink
+
 title: Bliss
 artists: Dimatis
 link: bliss

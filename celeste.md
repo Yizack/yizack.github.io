@@ -1,5 +1,6 @@
 ---
 layout: fanlink
+
 title: Celeste
 artists: Dimatis
 link: celeste
