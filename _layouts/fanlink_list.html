@@ -1,8 +1,62 @@
-{% assign sorted = site.pages | sort: 'date' | reverse %}
-{% for item in sorted %}
-{% if item.artists %}
-<div>
-    <a href="/{{ item.link }}" target="_blank">{{ item.artists }} - {{ item.title }}</a>
-</div>
-{% endif %}
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="robots" content="index,follow"/>
+    <meta name="keywords" content="dimatis,fanlinks,music,melodic,dubstep"/>
+    <meta name="description" content="{{ page.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="http://yizack.com/{{ page.link }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ page.image }}"/>
+    <meta property="og:image:secure_url" content="{{ page.image_secure }}"/>
+    <meta property="og:image:alt" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ page.image_secure }}"/>
+    <meta name="twitter:title" content="{{ page.title }}"/>
+    <meta name="twitter:description" content="{{ page.description }}"/>
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+    <link rel="icon" type="image/png" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
+    <link rel="stylesheet" type="text/css" href="https://dimatis.yizack.com/css/dimatis-icon.css"/>
+    <link rel="stylesheet" href="/css/links.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="container text-white">
+      <div class="row">{% assign sorted = site.pages | sort: 'date' | reverse %}{% for item in sorted %}{% if item.artists %}
+        <div class="mx-auto col-lg-4">
+          <div class="card o-hidden my-3 p-0 border-dark bg-dark">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- cover -->
+                <img class="img-fluid mx-auto d-block" src="{{ item.image_secure }}" width="100%">
+                <!-- titulo -->
+                <div class="p-4">
+                  <div class="text-center">
+                    <h5><b>{{ item.title }}</b></h5>
+                    <h6 class="mb-0">{{ item.artists }}</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <a href="/{{ item.link }}" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0" target="_blank" title="View Fanlink">View</a>
+              </div>
+            </div>
+          </div>
+        </div>{% endif %}{% endfor %}
+      </div>
+  </body>
+</html>
+
