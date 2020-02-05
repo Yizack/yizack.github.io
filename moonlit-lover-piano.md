@@ -4,7 +4,7 @@ layout: fanlink
 title: Moonlit Lover (Piano Version)
 artists: Dimatis
 link: moonlit-lover-piano
-date: 2018-08-01
+date: 2018-08-01 00:00:00
 
 image: http://dimatis.yizack.com/images/moonlit-lover-pianor.jpg
 image_secure: https://dimatis.yizack.com/images/moonlit-lover-piano.jpg

@@ -4,7 +4,7 @@ layout: fanlink
 title: Heartbeat
 artists: Dimatis
 link: heartbeat
-date: 2018-09-14
+date: 2018-09-14 00:00:00
 
 image: http://dimatis.yizack.com/images/heartbeat.jpg
 image_secure: https://dimatis.yizack.com/images/heartbeat.jpg

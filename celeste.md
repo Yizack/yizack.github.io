@@ -4,7 +4,7 @@ layout: fanlink
 title: Celeste
 artists: Dimatis
 link: celeste
-date: 2019-08-15
+date: 2019-08-15 00:00:00
 
 image: http://dimatis.yizack.com/images/celeste.jpg
 image_secure: https://dimatis.yizack.com/images/celeste.jpg

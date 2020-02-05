@@ -4,7 +4,7 @@ layout: fanlink
 title: Qüity
 artists: Dimatis
 link: quity
-date: 2019-03-22
+date: 2019-03-22 00:00:00
 
 image: http://dimatis.yizack.com/images/quity.jpg
 image_secure: https://dimatis.yizack.com/images/quity.jpg
