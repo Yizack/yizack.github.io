@@ -1,3 +1,3 @@
 ---
-layout: fanlinks
+layout: fanlink_list
 ---
