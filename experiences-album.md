@@ -17,6 +17,7 @@ apple: https://music.apple.com/us/album/experiences/1495650794?app=music
 bandcamp: https://dimatis.bandcamp.com/album/experiences
 deezer: https://www.deezer.com/en/album/128070352
 tidal: https://tidal.com/browse/album/128864931
+amazon: https://www.amazon.com/Experiences-Dimatis/dp/B0845QPK2R
 download: https://www.toneden.io/dimatis/post/experiences-album
 
 dark: false
