@@ -6,8 +6,8 @@ artists: Dimatis
 link: overcoming
 date: 2020-01-24 00:00:03
 
-image: http://dimatis.yizack.com/images/experiences.jpg
-image_secure: https://dimatis.yizack.com/images/experiences.jpg
+image: http://dimatis.yizack.com/images/experiences-album.jpg
+image_secure: https://dimatis.yizack.com/images/experiences-album.jpg
 
 album: experiences-album
 spotify: https://open.spotify.com/track/0M1PLpcLqZ2OpR9ZjVm3Dh
