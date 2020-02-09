@@ -3,7 +3,7 @@ layout: fanlink
 
 title: Sign Of Time
 artists: Dimatis
-link: sot
+link: sign-of-time
 date: 2019-10-15 00:00:00
 
 image: http://dimatis.yizack.com/images/sign-of-time.jpg
