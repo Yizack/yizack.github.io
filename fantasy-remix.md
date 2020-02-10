@@ -1,7 +1,7 @@
 ---
 layout: fanlink
 
-title: Exhilaration (feat. Lotis.) (Dimatis Remix)
+title: Fantasy (Dimatis Remix)
 artists: Cloudier
 link: fantasy-remix
 date: 2019-08-20 00:00:00
