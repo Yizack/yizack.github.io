@@ -6,8 +6,7 @@ artists: Sound Surfer & Verso
 link: turns-to-dust-remix
 date: 2019-07-17 00:00:00
 
-image: http://dimatis.yizack.com/images/turns-to-dust-remix.jpg
-image_secure: https://dimatis.yizack.com/images/turns-to-dust-remix.jpg
+image: https://dimatis.yizack.com/images/turns-to-dust-remix.jpg
 
 soundcloud: https://soundcloud.com/dimatis/sound-surfer-verso-turns-to-dust-feat-nilka-dimatis-remix
 youtube: https://youtu.be/ofqOVF9wmts

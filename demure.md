@@ -6,8 +6,7 @@ artists: Dimatis
 link: demure
 date: 2018-12-01 00:00:00
 
-image: http://dimatis.yizack.com/images/demure.jpg
-image_secure: https://dimatis.yizack.com/images/demure.jpg
+image: https://dimatis.yizack.com/images/demure.jpg
 
 spotify: https://open.spotify.com/album/4oMdwavOy3Eh80i3DZKuLP
 soundcloud: https://soundcloud.com/dimatis/demure

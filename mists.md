@@ -6,8 +6,7 @@ artists: Dimatis
 link: mists
 date: 2019-01-28 00:00:04
 
-image: http://dimatis.yizack.com/images/mists.jpg
-image_secure: https://dimatis.yizack.com/images/mists.jpg
+image: https://dimatis.yizack.com/images/mists.jpg
 
 ep: floating-ep
 spotify: https://open.spotify.com/track/3RkykP9sf64dPyOJQ6WNEC

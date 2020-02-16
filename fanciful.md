@@ -6,8 +6,7 @@ artists: Dimatis
 link: fanciful
 date: 2017-03-22 00:00:00
 
-image: http://dimatis.yizack.com/images/fanciful.jpg
-image_secure: https://dimatis.yizack.com/images/fanciful.jpg
+image: https://dimatis.yizack.com/images/fanciful.jpg
 
 spotify: https://open.spotify.com/album/59d1PDGIfY4BsZTXRiPuzK
 soundcloud: https://soundcloud.com/dimatis/fanciful

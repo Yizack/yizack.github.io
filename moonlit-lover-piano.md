@@ -6,8 +6,7 @@ artists: Dimatis
 link: moonlit-lover-piano
 date: 2018-08-01 00:00:00
 
-image: http://dimatis.yizack.com/images/moonlit-lover-piano.jpg
-image_secure: https://dimatis.yizack.com/images/moonlit-lover-piano.jpg
+image: https://dimatis.yizack.com/images/moonlit-lover-piano.jpg
 
 spotify: https://open.spotify.com/track/63GFEMzDbE81y1ZJ9gLfCl
 soundcloud: https://soundcloud.com/dimatis/moonlit-lover-piano-version

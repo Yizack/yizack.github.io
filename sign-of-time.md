@@ -6,8 +6,7 @@ artists: Dimatis
 link: sign-of-time
 date: 2019-10-15 00:00:00
 
-image: http://dimatis.yizack.com/images/sign-of-time.jpg
-image_secure: https://dimatis.yizack.com/images/sign-of-time.jpg
+image: https://dimatis.yizack.com/images/sign-of-time.jpg
 
 spotify: https://open.spotify.com/album/6j6qw9KXnX8SHsU60pXXmj
 soundcloud: https://soundcloud.com/dimatis/sign-of-time

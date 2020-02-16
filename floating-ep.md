@@ -6,8 +6,7 @@ artists: Dimatis
 link: floating-ep
 date: 2019-01-28 00:00:05
 
-image: http://dimatis.yizack.com/images/floating-ep.jpg
-image_secure: https://dimatis.yizack.com/images/floating-ep.jpg
+image: https://dimatis.yizack.com/images/floating-ep.jpg
 
 spotify: https://open.spotify.com/album/0o0UjObCp5ZizH3tDblWZ3
 soundcloud: https://soundcloud.com/dimatis/sets/floating-ep

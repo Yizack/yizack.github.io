@@ -6,8 +6,7 @@ artists: Dimatis
 link: shades
 date: 2019-01-28 00:00:02
 
-image: http://dimatis.yizack.com/images/shades.jpg
-image_secure: https://dimatis.yizack.com/images/shades.jpg
+image: https://dimatis.yizack.com/images/shades.jpg
 
 ep: floating-ep
 spotify: https://open.spotify.com/track/269SEkVwWMrcqU28W0A3Nb

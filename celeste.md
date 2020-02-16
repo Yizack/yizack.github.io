@@ -6,8 +6,7 @@ artists: Dimatis
 link: celeste
 date: 2019-08-15 00:00:00
 
-image: http://dimatis.yizack.com/images/celeste.jpg
-image_secure: https://dimatis.yizack.com/images/celeste.jpg
+image: https://dimatis.yizack.com/images/celeste.jpg
 
 spotify: https://open.spotify.com/album/1GfETiv5AU4FgkQcdr0Una
 soundcloud: https://soundcloud.com/dimatis/celeste

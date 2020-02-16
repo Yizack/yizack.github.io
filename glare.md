@@ -6,8 +6,7 @@ artists: Dimatis
 link: glare
 date: 2018-10-24 00:00:00
 
-image: http://dimatis.yizack.com/images/glare.jpg
-image_secure: https://dimatis.yizack.com/images/glare.jpg
+image: https://dimatis.yizack.com/images/glare.jpg
 
 spotify: https://open.spotify.com/album/6j6qw9KXnX8SHsU60pXXmj
 soundcloud: https://soundcloud.com/certified/dimatis-glare

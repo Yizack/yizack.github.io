@@ -6,8 +6,7 @@ artists: Dimatis
 link: what-awaits-us
 date: 2019-01-28 00:00:01
 
-image: http://dimatis.yizack.com/images/what-awaits-us.jpg
-image_secure: https://dimatis.yizack.com/images/what-awaits-us.jpg
+image: https://dimatis.yizack.com/images/what-awaits-us.jpg
 
 ep: floating-ep
 spotify: https://open.spotify.com/track/2G2akqCV0SZJfyFkqPB0wU

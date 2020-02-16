@@ -6,8 +6,7 @@ artists: Dimatis
 link: bliss
 date: 2018-07-10 00:00:00
 
-image: http://dimatis.yizack.com/images/bliss.jpg
-image_secure: https://dimatis.yizack.com/images/bliss.jpg
+image: https://dimatis.yizack.com/images/bliss.jpg
 
 spotify: https://open.spotify.com/album/14LRUD8JBgrv882oPmxOuY
 soundcloud: https://soundcloud.com/dimatis/bliss

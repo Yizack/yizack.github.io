@@ -6,8 +6,7 @@ artists: Bayza & Dimatis
 link: serenity
 date: 2020-01-24 00:00:02
 
-image: http://dimatis.yizack.com/images/experiences-album.jpg
-image_secure: https://dimatis.yizack.com/images/experiences-album.jpg
+image: https://dimatis.yizack.com/images/experiences-album.jpg
 
 album: experiences-album
 spotify: https://open.spotify.com/track/5cf4dAIZtC5FEH1pRIc0Fg

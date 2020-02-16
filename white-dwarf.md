@@ -6,8 +6,7 @@ artists: Dimatis
 link: white-dwarf
 date: 2016-12-04 00:00:00
 
-image: http://dimatis.yizack.com/images/white-dwarf.jpg
-image_secure: https://dimatis.yizack.com/images/white-dwarf.jpg
+image: https://dimatis.yizack.com/images/white-dwarf.jpg
 
 spotify: https://open.spotify.com/album/2KNrdUiqwoetdqO4Wv9b4I
 soundcloud: https://soundcloud.com/dimatis/white-dwarf

@@ -6,8 +6,7 @@ artists: Dimatis
 link: breathe
 date: 2017-10-16 00:00:00
 
-image: http://dimatis.yizack.com/images/breathe.jpg
-image_secure: https://dimatis.yizack.com/images/breathe.jpg
+image: https://dimatis.yizack.com/images/breathe.jpg
 
 spotify: https://open.spotify.com/album/7leXtgsgL7wUS64PC072b2
 soundcloud: https://soundcloud.com/dimatis/breathe

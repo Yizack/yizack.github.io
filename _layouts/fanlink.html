@@ -9,17 +9,17 @@
     <meta name="keywords" content="{{ page.title }},{{ page.artists }}"/>
     <meta name="description" content="{{ page.artists }}"/>
     <!-- Protocolo Open Graph -->
-    <meta property="og:url" content="http://yizack.com/{{ page.link }}"/>
+    <meta property="og:url" content="{{ site.url }}/{{ page.link }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:site_name" content="{{ page.artists }}"/>
-    <meta property="og:image" content="{{ page.image }}"/>
-    <meta property="og:image:secure_url" content="{{ page.image_secure }}"/>
+    <meta property="og:image" content="{{ page.image | replace: 'https', 'http' }}"/>
+    <meta property="og:image:secure_url" content="{{ page.image }}"/>
     <meta property="og:image:alt" content="{{ page.title }}"/>
     <meta property="og:description" content="{{ page.artists }}"/>
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="{{ page.image_secure }}"/>
+    <meta name="twitter:image" content="{{ page.image }}"/>
     <meta name="twitter:title" content="{{ page.title }}"/>
     <meta name="twitter:description" content="{{ page.artists }}"/>
     <meta name="twitter:site" content="@dimatismusic"/>
@@ -32,10 +32,10 @@
     <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
     <link rel="stylesheet" href="/css/links.css" />
     <link rel="stylesheet" type="text/css" href="https://dimatis.yizack.com/css/dimatis-icon.css"/>
-    <link rel="canonical" href="https://yizack.com/{{ page.link }}"/>
+    <link rel="canonical" href="{{ site.url }}/{{ page.link }}"/>
   </head>
   <body id="page-top" class="bg-dark">
-    <div class="bg-image" style="background-image: url('{{ page.image_secure }}')"></div>
+    <div class="bg-image" style="background-image: url('{{ page.image }}')"></div>
     <div class="container text-white">
       <div class="row">
         <div class="mx-auto col-lg-4">
@@ -43,7 +43,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <!-- cover -->
-                <img class="img-fluid mx-auto d-block" src="{{ page.image_secure }}" width="100%">
+                <img class="img-fluid mx-auto d-block" src="{{ page.image }}" width="100%">
                 <!-- titulo -->
                 <div class="p-4">
                   <div class="text-center">
@@ -55,7 +55,7 @@
               <!-- full album -->
               <a class="row links text-white" href="/{{ page.album }}" target="_blank" title="Full Album">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/{{ page.album }}.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/{{ page.album }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">View</span>
@@ -64,7 +64,7 @@
               <!-- full ep -->
               <a class="row links text-white" href="/{{ page.ep }}" target="_blank" title="Full EP">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/{{ page.ep }}.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/{{ page.ep }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">View</span>
@@ -73,7 +73,7 @@
               <!-- piano version -->
               <a class="row links text-white" href="/{{ page.piano }}" target="_blank" title="Piano Version">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/{{ page.piano }}.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/{{ page.piano }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">View</span>
@@ -82,7 +82,7 @@
               <!-- spotify -->
               <a class="row links text-white" href="{{ page.spotify }}" target="_blank" title="Stream on Spotify">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/spotify.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/spotify.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -91,7 +91,7 @@
               <!-- soundcloud -->
               <a class="row links text-white" href="{{ page.soundcloud }}" target="_blank" title="Stream on Soundcloud">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/soundcloud.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/soundcloud.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -100,7 +100,7 @@
               <!-- youtube -->
               <a class="row links text-white" href="{{ page.youtube }}" target="_blank" title="Stream on Youtube">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/youtube.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/youtube.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -109,7 +109,7 @@
               <!-- itunes -->
               <a class="row links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/itunes.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/itunes.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
@@ -118,7 +118,7 @@
               <!-- apple music -->
               <a class="row links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/apple-music.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/apple-music.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -127,7 +127,7 @@
               <!-- bandcamp-->
               <a class="row links text-white" href="{{ page.bandcamp }}" target="_blank" title="Buy on Bandcamp">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/bandcamp.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/bandcamp.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
@@ -136,7 +136,7 @@
               <!-- deezer -->
               <a class="row links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/deezer.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/deezer.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -145,7 +145,7 @@
               <!-- tidal -->
               <a class="row links text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/tidal.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/tidal.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Stream</span>
@@ -154,7 +154,7 @@
               <!-- amazon -->
               <a class="row links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
                 <div class="col-6 pl-5 py-4">
-                  <img class="mx-auto d-block" src="/img/amazon.png" width="100%"/>
+                  <img class="mx-auto d-block" src="/images/amazon.png" width="100%"/>
                 </div>
                 <div class="col-6 pr-5 py-4 text-center my-auto">
                   <span class="btn btn-outline-light">Buy</span>
@@ -190,7 +190,7 @@
           </ul>
         </div>
         <div class="mx-auto col-lg-12 text-center h5 website{% if page.dark == true %} text-dark{% endif %}">
-          <a href="https://yizack.com/fanlinks" title="fanlinks">yizack.com/fanlinks</a>
+          <a href="{{ site.url }}/fanlinks" title="fanlinks">yizack.com/fanlinks</a>
         </div>
       </div>
     </div>

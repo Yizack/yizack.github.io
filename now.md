@@ -6,8 +6,7 @@ artists: Dimatis
 link: now
 date: 2020-01-24 00:00:04
 
-image: http://dimatis.yizack.com/images/experiences-album.jpg
-image_secure: https://dimatis.yizack.com/images/experiences-album.jpg
+image: https://dimatis.yizack.com/images/experiences-album.jpg
 
 album: experiences-album
 spotify: https://open.spotify.com/track/32fJdNagkXDvTuDFwbLdp7

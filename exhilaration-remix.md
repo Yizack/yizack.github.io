@@ -6,8 +6,7 @@ artists: Sappheiros
 link: exhilaration-remix
 date: 2019-11-04 00:00:00
 
-image: http://dimatis.yizack.com/images/exhilaration-remix.jpg
-image_secure: https://dimatis.yizack.com/images/exhilaration-remix.jpg
+image: https://dimatis.yizack.com/images/exhilaration-remix.jpg
 
 soundcloud: https://soundcloud.com/dimatis/sappheiros-exhilaration-feat-lotis-dimatis-remix
 youtube: https://youtu.be/zOAthK5Li30
