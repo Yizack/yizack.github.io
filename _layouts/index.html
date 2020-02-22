@@ -20,7 +20,7 @@
         <div class="row">{% for item in sorted %}
           <div class="border-bottom mb-3">
             <h4>{{ item.project }}</h5>{% if item.url %}
-            <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
+            <p><a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
             <p><u>Descripción</u>: {{ item.description }}</p>
             <p><i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i> Año: {{ item.year }}</p>
             <p><i class="fas fa-pen-alt fa-fw" aria-hidden="true"></i> Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
