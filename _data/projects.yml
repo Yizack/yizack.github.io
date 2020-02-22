@@ -59,7 +59,7 @@
 - project: Pesp (Discord Bot)
   url: https://discord.gg/mHD8VaK
   github: Yizack/pesp
-  description: "A inicios de 2019 entré a formar parte del staff PESP (Panamá eSports), recientemente ellos estaban ampliando su comunidad de Discord así que me ofrecí a crear un bot en mi período de prueba como staff que les facilite muchas cosas lo que hace este bot es algo simple, añade un rol inicial de Comunidad a cada persona nueva que entre al servidor, además hace uso de la API de Twitch para crear avisos en un canal de anuncios del servidor de Discord cada vez que el canal de Twitch de PESP inicia un directo."
+  description: "A inicios de 2019 entré a formar parte del staff PESP (Panamá eSports), recientemente ellos estaban ampliando su comunidad de Discord así que me ofrecí a crear un bot en mi período de prueba como staff que les facilite muchas cosas. Lo que hace este bot es algo simple, añade un rol inicial de Comunidad a cada persona nueva que entre al servidor, además hace uso de la API de Twitch para crear avisos en un canal de anuncios del servidor de Discord cada vez que el canal de Twitch de PESP inicia un directo."
   year: 2019
   update: 2019-04-28 14:56:00
   main_tag: programación
