@@ -13,10 +13,10 @@
       <ul>{% for item in sorted %}
         <li>
           <h5>{{ item.project }}</h5>{% if item.url %}
-          <a href="{{ item.url}}">Website: {{ item.url}}</a>{% endif %}
+          <p>Website: <a href="{{ item.url}}">{{ item.url}}</a></p>{% endif %}
           <p>Description: {{ item.description }}</p>
           <p>Year: {{ item.year}}</p>{% if item.github %}
-          <a href="{{ item.github }}">GitHub: {{ item.github }}</a>{% endif %}
+          <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
         </li>{% endfor %}
       </ul>
     </div>
