@@ -11,7 +11,7 @@
     <section id="acerca" class="py-5 text-white bg-dark">
       <div class="container text-justify">
         <h1 class="text-center">Acerca de mi</h1>
-        <p>Mi nombre es Yizack Rangel, nací en La Chorrera, Panamá. Actualmente tengo {{ site.time | date: '%Y' | minus: 1998 }} años de edad y esutdio Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Panamá. Además de mis estudios soy productor musical de música electrónica melódica bajo el nombre de artista 'Dimatis'. Me gusta programar, hacer música y jugar videojuegos online.</p>
+        <p>Mi nombre es Yizack Rangel, nací en La Chorrera, Panamá. Actualmente tengo <span id="edad"></span> años de edad y esutdio Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Panamá. Además de mis estudios soy productor musical de música electrónica melódica bajo el nombre de artista 'Dimatis'. Me gusta programar, hacer música y jugar videojuegos online.</p>
       </div>
     </section>
     <section id="proyectos" class="py-5 text-dark bg-light">
@@ -33,5 +33,18 @@
         </div>
       </div>
     </section>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+    <script>
+      function edad(dob) { 
+        var diff_ms = Date.now() - dob.getTime();
+        var age_dt = new Date(diff_ms);
+        return Math.abs(age_dt.getUTCFullYear() - 1970);
+    }
+    $(document).ready(function(){
+        $("#edad").html(edad(new Date(1998, 6, 15)));
+    });
+    </script>
   </body>
 </html>
