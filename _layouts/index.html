@@ -21,11 +21,8 @@
               <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
               <p>
-                <span class="badge badge-success">{{ item.main_tag }}</span>
-                {%- assign project = item.tags -%}
-                {% for tags in project %}
-                <span class="badge badge-primary">{{ tags.tag }}</span>
-                {% endfor %}
+                <span class="badge badge-success">{{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
+                <span class="badge badge-primary">{{ tags.tag }}</span>{% endfor %}
               </p>
             </li>{% endfor %}
           </ul>
