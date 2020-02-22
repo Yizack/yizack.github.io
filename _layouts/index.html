@@ -18,7 +18,7 @@
               <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
               <p>Description: {{ item.description }}</p>
               <p>Año: {{ item.year }}</p>
-              <p>Última actualización: {{ item.update }}</p>{% if item.github %}
+              <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
               <p>
                 <span class="badge badge-success">{{ item.main_tag }}</span>
