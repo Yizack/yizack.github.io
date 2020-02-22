@@ -122,7 +122,7 @@
 - project: Socialear
   url: https://socialear.yizack.com
   github: Yizack/socialear
-  description: "Muchas veces me dan ganas de programar cosas por diversión o sin sentido alguno y considero que esta es una de esas veces, comencé en septiembre del 2019 a crear un sitio web que extrae videos de redes sociales como Twitter, Facebook, Twitter y Youtube mediante links, lo hice utilizando la plataforma de Heroku con PHP y Composer para instalar librerías de las API, el sitio web está disponible pero no está terminado aún, no está optimizado, no tiene un logo pero funciona, está traducido en inglés y español."
+  description: "Muchas veces me dan ganas de programar cosas por diversión o sin sentido alguno y considero que esta es una de esas veces, comencé en septiembre del 2019 a crear un sitio web que extrae videos de redes sociales como Twitter, Facebook, Instagram y Youtube mediante links, lo hice utilizando la plataforma de Heroku con PHP y Composer para instalar librerías de las API, el sitio web está disponible pero no está terminado aún, no está optimizado, no tiene un logo pero funciona, está traducido en inglés y español."
   year: 2019
   update: 2020-02-13 15:08:00
   main_tag: programación
