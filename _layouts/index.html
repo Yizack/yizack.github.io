@@ -16,7 +16,7 @@
             <li class="border-bottom mb-3">
               <h5>{{ item.project }}</h5>{% if item.url %}
               <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
-              <p>Description: {{ item.description }}</p>
+              <p>Descripción: {{ item.description }}</p>
               <p>Año: {{ item.year }}</p>
               <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
