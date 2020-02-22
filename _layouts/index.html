@@ -15,7 +15,7 @@
           <ul>{% for item in sorted %}
             <li class="border-bottom mb-3">
               <h5>{{ item.project }}</h5>{% if item.url %}
-              <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
+              <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
               <p>Description: {{ item.description }}</p>
               <p>Año: {{ item.year }}</p>
               <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
