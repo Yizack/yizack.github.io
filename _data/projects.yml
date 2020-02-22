@@ -1,7 +1,7 @@
 - project: Dimatis
   url: https://dimatis.yizack.com
   github: Yizack/dimatis
-  description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó a la edad de 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mni música visita mi sitio web. En 2020 empecé a crear mi sitio web de artista con Bootstrap 4, GitHub Pages y Jekyll, cree un sistema de fanlinks para cada canción y un script hecho en PHP en un hosting de Namecheap para ofrecer descargas gratis de mis canciones a cambio de un follow en mi Soundcloud."
+  description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó a la edad de 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mi música visita mi sitio web. En 2020 empecé a crear mi sitio web de artista con Bootstrap 4, GitHub Pages y Jekyll, cree un sistema de fanlinks para cada canción y un script hecho en PHP en un hosting de Namecheap para ofrecer descargas gratis de mis canciones a cambio de un follow en mi Soundcloud."
   year: 2013
   update: 2020-02-21 23:44:00
   main_tag: producción musical
@@ -118,3 +118,20 @@
     - tag: google play store
     - tag: php
     - tag: heroku
+
+- project: Socialear
+  url: https://socialear.yizack.com
+  github: Yizack/socialear
+  description: "Muchas veces me dan ganas de programar cosas por diversión o sin sentido alguno y considero que esta es una de esas veces, comencé en septiembre del 2019 a crear un sitio web que extreae videos de redes sociales como Twitter, Facebook, Twitter y Youtube meidante links, lo hice utilizando la plataforma de Heroku con PHP y Composer para instalar librerías de las API, el sitio web está disponible pero no está terminado aún, no está optimizado, no tiene un logo pero funciona, está traducido en inglés y español."
+  year: 2019
+  update: 2020-02-13 15:08:00
+  main_tag: programación
+  tags:
+    - tag: heroku
+    - tag: php
+    - tag: composer
+    - tag: bootstrap 4
+    - tag: youtube
+    - tag: facebook
+    - tag: twitter
+    - tag: instagram
