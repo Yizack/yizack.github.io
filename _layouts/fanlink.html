@@ -162,7 +162,7 @@
               </a>{% endif %}{% if page.download %}
               <!-- free download -->
               <div class="col-lg-12 mt-3">
-                <a href="https://download.yizack.com/?{% if page.album or page.ep %}album{% else %}track{% endif %}={{ page.link }}" onclick="window.open('https://download.yizack.com/?{% if page.album or page.ep %}album{% else %}track{% endif %}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" title="Free Download"><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
+                <a href="https://download.yizack.com/?{% if page.link contains 'album' or page.link contains 'ep' %}album{% else %}track{% endif %}={{ page.link }}" onclick="window.open('https://download.yizack.com/?{% if page.album or page.ep %}album{% else %}track{% endif %}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" title="Free Download"><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
               </div>{% endif %}
             </div>
           </div>
