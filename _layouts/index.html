@@ -19,6 +19,12 @@
               <p>Description: {{ item.description }}</p>
               <p>Year: {{ item.year}}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
+              <p>
+                {%- assign project = site.data.projects[item.project].tag -%}
+                {% for tag in project %}
+                <span class="badge badge-primary">{{ tag }}</span>
+                {% endfor %}
+              </p>
             </li>{% endfor %}
           </ul>
         </div>
