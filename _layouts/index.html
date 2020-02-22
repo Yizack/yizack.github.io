@@ -1,11 +1,12 @@
-{%- assign sorted = site.data.projects | sort: 'n' -%}
+{%- assign sorted = site.data.projects | sort: 'n' | reverse -%}
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Yizack</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yizack</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   </head>
   <body>		
     <h1>My projects</h1>
