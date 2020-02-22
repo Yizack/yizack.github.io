@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   </head>
-  <body class="text-dark" >
-    <section>
+  <body>
+    <section id="acerca" class="pt-5 text-white bg-dark">
       <div class="container text-justify">
         <h1 class="text-center">Acerca de mi</h1>
         <p>Mi nombre es Yizack Rangel, nací en La Chorrera, Panamá. Actualmente tengo {{ site.time | date: '%Y' | minus: 1998 }} años de edad y esutdio Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Panamá. Además de mis estudios soy productor musical de música electrónica melódica bajo el nombre de artista 'Dimatis'. Me gusta programar, hacer música y jugar videojuegos online.</p>
       </div>
     </section>
-    <section id="proyectos">
+    <section id="proyectos" class="pt-5 text-dark bg-light">
       <div class="container text-justify">
-        <h2 class="text-center">Mis proyectos</h2>
+        <h1 class="text-center">Mis proyectos</h1>
         <div class="row">{% for item in sorted %}
           <div class="border-bottom mb-3">
             <h4>{{ item.project }}</h5>{% if item.url %}
