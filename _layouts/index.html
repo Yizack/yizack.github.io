@@ -1,4 +1,4 @@
-{%- assign sorted = site.data.projects | reverse -%}
+{%- assign sorted = site.data.projects | sort: 'update' | reverse -%}
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -17,7 +17,8 @@
               <h5>{{ item.project }}</h5>{% if item.url %}
               <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
               <p>Description: {{ item.description }}</p>
-              <p>Year: {{ item.year}}</p>{% if item.github %}
+              <p>Año: {{ item.year }}</p>
+              <p>Última actualización: {{ item.update }}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
               <p>
                 {%- assign project = item.tags -%}
