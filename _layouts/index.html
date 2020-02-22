@@ -9,11 +9,11 @@
   </head>
   <body>		
     <section class="text-dark">
-      <div class="container">
+      <div class="container text-justify">
         <h1>Mis proyectos</h1>
         <div id="projects">
           <ul>{% for item in sorted %}
-            <li>
+            <li class="border-bottom">
               <h5>{{ item.project }}</h5>{% if item.url %}
               <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
               <p>Description: {{ item.description }}</p>
