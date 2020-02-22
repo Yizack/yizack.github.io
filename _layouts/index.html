@@ -26,8 +26,8 @@
             <p><i class="fas fa-pen-alt fa-fw" aria-hidden="true"></i> Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
             <p><i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
             <p>
-              <span class="badge badge-primary">{{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
-              <span class="badge badge-dark">{{ tags.tag }}</span>{% endfor %}
+              <span class="badge badge-primary"><i class="fas fa-tag"></i> {{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
+              <span class="badge badge-dark"><i class="fas fa-tag"></i> {{ tags.tag }}</span>{% endfor %}
             </p>
           </div>{% endfor %}
         </div>
