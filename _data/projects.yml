@@ -1,7 +1,7 @@
 - project: Dimatis
   url: https://dimatis.yizack.com
   github: Yizack/dimatis
-  description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó a la edad de 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mni música visita mi sitio web. En 2020 empecé a crear mi sitio web de artista con Bootstrap 4, GitHub Pages y Jekyll, cree un sistema de fanlinks para cada canción y un script hecho en PHP en un hosting de Namecheap para descargar mis canciones a cambio de un follow en mi Soundcloud."
+  description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó a la edad de 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mni música visita mi sitio web. En 2020 empecé a crear mi sitio web de artista con Bootstrap 4, GitHub Pages y Jekyll, cree un sistema de fanlinks para cada canción y un script hecho en PHP en un hosting de Namecheap para ofrecer descargas gratis de mis canciones a cambio de un follow en mi Soundcloud."
   year: 2013
   update: 2020-02-21 23:44:00
   main_tag: producción musical
@@ -104,3 +104,17 @@
     - tag: bot
     - tag: nodejs
     - tag: javacript
+
+- project: Saldo Metrobús Panamá
+  url: https://saldometrobus.yizack.com
+  descripcion: "Saldo Metrobús Panamá es una aplicación de android programada y diseñada por mi en Android Studio, es un sitio de consultas de saldo y movimientos para las tarjetas de metro y metrobús de Panamá a cualquier hora del día. Se me ocurrió crear esta aplicación porque en el 2019 me trasladaron de universidad desde La Chorrera hasta la sede de la Universidad Tecnológica en la ciudad de Panamá y tenía que viajar mucho en los metrobuses, descargaba varias aplicaciones disponibles en Google Play Store para consultar el saldo de mi tarjeta pero no me convencían o tenían mucha publicidad, me reté a mi mismo a crear una app mucho mejor y más completa que las que existían, comencé el 25 de Octubre y termine el 25 de Noviembre, compré una cuenta de desarrollador de Google Play y publiqué mi app en la tienda completamente gratis y libre de anuncios con más de 500 descargas (Febrero 2020), además de crear la versión web con PHP y Heroku. Visita el sitio web o la app en Google Play Store para conocer más sobre este proyecto."
+  year: 2019
+  update: 2019-11-25 17:00:00
+  main_tag: programación
+  tags:
+    - tag: android
+    - tag: android studio
+    - tag: java
+    - tag: google play store
+    - tag: php
+    - tag: heroku
