@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   </head>
   <body>		
-    <h1>My projects</h1>
-    <div id="projects">
-      <ul>{% for item in sorted %}
-        <li>
-          <h5>{{ item.project }}</h5>{% if item.url %}
-          <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
-          <p>Description: {{ item.description }}</p>
-          <p>Year: {{ item.year}}</p>{% if item.github %}
-          <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
-        </li>{% endfor %}
-      </ul>
-    </div>
+    <section class="text-dark">
+      <div class="container">
+        <h1>My projects</h1>
+        <div id="projects">
+          <ul>{% for item in sorted %}
+            <li>
+              <h5>{{ item.project }}</h5>{% if item.url %}
+              <p>Website: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
+              <p>Description: {{ item.description }}</p>
+              <p>Year: {{ item.year}}</p>{% if item.github %}
+              <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
+            </li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
