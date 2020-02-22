@@ -7,25 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   </head>
-  <body>		
-    <section class="text-dark">
+  <body class="text-dark" >
+    <section>
       <div class="container text-justify">
-        <h1>Mis proyectos</h1>
-        <div id="projects">
-          <div class="row">{% for item in sorted %}
-            <div class="border-bottom mb-3">
-              <h4>{{ item.project }}</h5>{% if item.url %}
-              <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
-              <p>Descripción: {{ item.description }}</p>
-              <p>Año: {{ item.year }}</p>
-              <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
-              <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
-              <p>
-                <span class="badge badge-primary">{{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
-                <span class="badge badge-dark">{{ tags.tag }}</span>{% endfor %}
-              </p>
-            </div>{% endfor %}
-          </div>
+        <h1 class="text-center">Acerca de mi</h1>
+        <p>Mi nombre es Yizack Rangel, nací en La Chorrera, Panamá. Actualmente tengo {{ site.time | date: '%y' | minus: 1998 }}</p>
+      </div>
+    </section>
+    <section id="proyectos">
+      <div class="container text-justify">
+        <h1 class="text-center">Mis proyectos</h1>
+        <div class="row">{% for item in sorted %}
+          <div class="border-bottom mb-3">
+            <h4>{{ item.project }}</h5>{% if item.url %}
+            <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
+            <p>Descripción: {{ item.description }}</p>
+            <p>Año: {{ item.year }}</p>
+            <p>Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
+            <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
+            <p>
+              <span class="badge badge-primary">{{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
+              <span class="badge badge-dark">{{ tags.tag }}</span>{% endfor %}
+            </p>
+          </div>{% endfor %}
         </div>
       </div>
     </section>
