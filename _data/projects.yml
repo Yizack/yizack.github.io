@@ -3,63 +3,54 @@
   github: Yizack/esmifrase
   description: "Esmifrase fue mi primer proyecto personal, es un blog de frases recolectadas en redes sociales, comenzó en 2012 cuando tenía 14 años, me cree una cuenta de twitter para buscar y publicar frases y citas que me gustaban, me di cuenta que ese tipo de contenido tenía un buen alcance, durante los años fuí recolectando frases en un bloc de notas y fue allí cuando desperto mi interés por automatizar las redes sociales para que las frases sean publicadas de manera automática, pero para ese entonces no sabía programar y tenía que recurrir páginas que casi siempre eran de pago pero con versiones gratuitas que después de un tiempo dejaban de funcionar."
   year: 2012
-  n: 1
 
 - project: Dimatis
   url: https://dimatis.yizack.com
   github: Yizack/dimatis
   description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó cuando tenía 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mni música visita mi sitio web."
   year: 2013
-  n: 2
 
 - project: Duchita
   url: https://duchita.esmifrase.com
   github: Yizack/duchita
   description: "Duchita fue un proyecto de Android Studio de un cronómetro/alarma para ahorrar agua en la ducha, este proyecto fue creado en 2017 para la materia 'Formación y Evaluación de Proyectos Informáticos' de mi segundo año de carrera en la universidad, debíamos crear un proyecto para android sin tener idea de cómo programar en Android Studio pero tenía mucho interés en el tema así que pasé muchos días investigando, viendo videos y aprendiendo a utilizar el software, cuenta con un manual de usuario y el archivo apk para descargar. Más tardar a inicios del 2019 me dediqué a mejorar el proyecto sólamente por dedicación sin ningún tipo de nota para la universidad."
   year: 2017
-  n: 3
 
 - project: iautp
   url: https://iautp.yizack.com
   github: Yizack/iautp
   description: "iautp fue un proyecto para la materia 'Inteligencia Artificial' en 2018 en el tercer año de mi carrera de universidad, debíamos elegir un proyecto y decidí en crear un chatbot, este sería un agente inteligente para el sitio de matrículas de la Universidad Tecnológica de Panamá, personalmente fue de mis proyectos preferidos que realicé en la universidad, experimente con creación de sitios web con python y lenguaje de marcado para inteligencias artificiales AIML. Cuando realicé la exposición final de este proyecto al final del semestre, hubo mucho apoyo por parte de la profesora y compañeros hacia mi proyecto, tanto así que la profesora me dijo que ese podría ser un buen tema para tesis de graduación. En 2019 quise seguir con este proyecto pero lastimosamente el profesor al que se lo presenté no tuvo interés en el y deje olvidado el proyecto."
   year: 2018
-  n: 4
 
 - project: Yeezac
   url: https://yeezac.yizack.com
   github: Yizack/yeezac
   description: "En las vaciones de fin de año del 2018 me dediqué a crear mi primer bot para Discord, para estos tiempos utilizaba mucho esta herramienta y me dio curiosidad saber cómo estaban programados los bots que veía en diferentes servidores asi que me puse manos a la obra, investigué cómo crear un bot de Discord que reproduzca música pedida por los usuarios, para variar de lenguajes, me atreví a crearlo utilizando por primera vez Node.js, leí bastante la documentación de la librería discordjs y elaboré una guía en español en GitHub para crear tu propio bot de forma local o en Heroku. Este bot de discord reproduce música, realiza búsquedas de canciones en Youtube y también se pueden pedir canciones con links de Youtube o Soundcloud."
   year: 2018
-  n: 5
 
 - project: Pesp (Discord Bot)
   url: https://discord.gg/mHD8VaK
   github: Yizack/pesp
   description: "A inicios de 2019 entré a formar parte del staff PESP (Panamá eSports), recientemente ellos estaban ampliando su comunidad de Discord asi que me ofrecí a crear un bot en mi período de prueba como staff que les facilite muchas cosas lo que hace este bot es algo simple, añade un rol inicial de Comunidad a cada persona nueva que entre al servidor, ademas hace uso de la API de twitch para crear avisos en un canal de anuncios del servidor de discord cada vez que el canal de twitch de PESP inicia un directo."
   year: 2019
-  n: 6
 
 - project: PNT (Play N Trade) Ranking
   description: "Después de haber finalizado mi período de prueba en PESP comencé a formar parte oficialmente del staff como programador para sus proyectos más grandes, este fue uno de esos proyectos en donde debía realizar sistema de retos con ranking para una empresa de videojuegos llamada Play N Trade, este sistema de ranking lo realize en el lenguaje Visual Basic en Visual Studio para que sea una APP de escritorio que muestre las tablas de rankings en una pantalla aparte en la arena de Play N Trade, estas tablas de ranking eran 3 tablas para juegos diferentes, Fortnite, Fifa 2019 y Mortal Kombat II, registraba usuarios en una base de datos con una ventana de administrador, según los retos que iba a realizar el participante, se añadían en su respectiva tabla. Este proyecto tuvo una duración de 1 mes con un total de 59 participantes."
   year: 2019
-  n: 7
 
 - project: FavPanama
   url: https://twitter.com/favpanama
   github: Yizack/favpanama
   description: "Sin duda Node.js fue uno de los entornos que más me han gustado, ademas con mis gustos por la automatización de redes sociales decidí crear un bot para twitter para que mi cuenta favpanama realice retweets a tweets recientes relacionados con Panamá que contengan el hashtag #Panama. Hubo un tiempo donde algunos usuarios abusaban de este bot, generaban spam en el perfil así que decidi en hacer que el bot ignore cuentas frecuentes que yo iba viendo que no aportaban un contenido significativo para que así este bot funcione como informador de temas recientes en el país."
   year: 2019
-  n: 8
 
 - project: Esmifrase (Twitter Bot)
   url: https://esmifrase.com
   github: Yizack/esmifrase
   description: "En 2019 note un crecimiento de esmifrase en Tumblr con casi 200 mil seguidores, decidí revivir mi proyecto pero esta vez aplicando mis conocimientos en Node.js decidí crear una app para twitter para que solamente mi cuenta la utilice y se publiquen frases una vez al día al medio día (12:00) de una lista de texto que contiene 1891 frases. Además utilizando la pataforma IFTTT por cada frase publicada en mi twitter se publica automáticamente en tumblr y facebook."
   year: 2019
-  n: 9
-  tag: twitter
-  tag: bot
-  tag: programación
-  tag: nodejs
-  tag: javacript
+  tags:
+    - tag: bot
+    - tag: programación
+    - tag: nodejs
+    - tag: javacript
