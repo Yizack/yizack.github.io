@@ -45,7 +45,7 @@
   year: 2019
 
 - project: Esmifrase (Twitter Bot)
-  url: https://esmifrase.com
+  url: https://twitter.com/esmifrase
   github: Yizack/esmifrase
   description: "En 2019 note un crecimiento de esmifrase en Tumblr con casi 200 mil seguidores, decidí revivir mi proyecto pero esta vez aplicando mis conocimientos en Node.js decidí crear una app para twitter para que solamente mi cuenta la utilice y se publiquen frases una vez al día al medio día (12:00) de una lista de texto que contiene 1891 frases. Además utilizando la pataforma IFTTT por cada frase publicada en mi twitter se publica automáticamente en tumblr y facebook."
   year: 2019
