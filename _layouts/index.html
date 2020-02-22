@@ -14,7 +14,7 @@
         <div id="projects">
           <div class="row">{% for item in sorted %}
             <div class="border-bottom mb-3">
-              <h5>{{ item.project }}</h5>{% if item.url %}
+              <h4>{{ item.project }}</h5>{% if item.url %}
               <p>Url: <a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }}</a></p>{% endif %}
               <p>Descripción: {{ item.description }}</p>
               <p>Año: {{ item.year }}</p>
