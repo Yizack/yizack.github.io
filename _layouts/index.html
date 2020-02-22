@@ -20,7 +20,7 @@
               <p>Year: {{ item.year}}</p>{% if item.github %}
               <p>GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }}</a></p>{% endif %}
               <p>
-                {%- assign project = site.data.projects[item.project].tags -%}
+                {%- assign project = site.data.projects.project[item.project].tags -%}
                 {% for tags in project %}
                 <span class="badge badge-primary">{{ tags.tag }}</span>
                 {% endfor %}
