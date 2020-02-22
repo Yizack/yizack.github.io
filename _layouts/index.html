@@ -20,11 +20,11 @@
         <div class="row">{% for item in sorted %}
           <div class="border-bottom mb-3">
             <h4>{{ item.project }}</h5>{% if item.url %}
-            <p><a href="{{ item.url }}">{{ item.url | replace: 'https://', '' }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
-            <p><u>Descripción</u>: {{ item.description }}</p>
+            <p><a href="{{ item.url }}" target="_blank">{{ item.url | replace: 'https://', '' }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
+            <p><b>Descripción</b>: {{ item.description }}</p>
             <p><i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i> Año: {{ item.year }}</p>
             <p><i class="fas fa-pen-alt fa-fw" aria-hidden="true"></i> Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
-            <p><i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub: <a href="https://github.com/{{ item.github }}">{{ item.github }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
+            <p><i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub: <a href="https://github.com/{{ item.github }}" target="_blank">{{ item.github }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
             <p>
               <span class="badge badge-primary"><i class="fas fa-tag"></i> {{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
               <span class="badge badge-dark"><i class="fas fa-tag"></i> {{ tags.tag }}</span>{% endfor %}
