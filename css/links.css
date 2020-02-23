@@ -70,3 +70,11 @@ ul.icons li {
   background-color: #f77300;
   border-color: #f77300;
 }
+
+.info p a {
+  color: #6a8ff9;
+}
+
+.info p a:hover {
+  color: #507fff;
+}
