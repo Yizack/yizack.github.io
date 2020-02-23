@@ -5,6 +5,11 @@ title: Turns To Dust (feat. Nilka) (Dimatis Remix)
 artists: Sound Surfer & Verso
 link: turns-to-dust-remix
 date: 2019-07-17 00:00:00
+sc:
+    - soundsurfermusic
+    - verso_music
+    - nilkamusic
+    - newdawncollective
 
 image: https://dimatis.yizack.com/images/turns-to-dust-remix.jpg
 

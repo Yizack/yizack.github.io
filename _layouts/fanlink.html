@@ -167,8 +167,20 @@
               </a>{% endif %}{% if page.download %}
               <!-- free download -->
               <div class="col-lg-12 mt-3">
-                <a href="https://download.yizack.com/?{{ download }}={{ page.link }}" onclick="window.open('https://download.yizack.com/?{{ download }}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" title="Free Download"><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
+                <a href="https://download.yizack.com/?{{ download }}={{ page.link }}" onclick="window.open('https://download.yizack.com/?{{ download }}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" data-toggle="tooltip" title="Click to follow dimatis on SoundCloud."><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
               </div>{% endif %}
+            </div>
+          </div>
+          <div class="card o-hidden mt-1 mb-3 p-0 border-dark bg-dark text-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="m-2">
+                  Click to follow <a href="https://soundcloud.com/dimatis" target="_blank">dimatis</a> on SoundCloud.<br>
+                  <small class="text-justify">
+                    This connection is secure and will only be used to follow the necessary soundcloud accounts in exchange for a free download.
+                  </small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -204,5 +216,10 @@
     <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="/js/tema.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
   </body>
 </html>

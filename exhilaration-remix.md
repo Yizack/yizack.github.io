@@ -5,6 +5,9 @@ title: Exhilaration (feat. Lotis.) (Dimatis Remix)
 artists: Sappheiros
 link: exhilaration-remix
 date: 2019-11-04 00:00:00
+sc:
+    - sappheirosmusic
+    - xxlotis
 
 image: https://dimatis.yizack.com/images/exhilaration-remix.jpg
 

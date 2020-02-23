@@ -5,6 +5,9 @@ title: Maybe (feat. Chymes) (Dimatis Remix)
 artists: Tim Schaufert
 link: maybe-remix
 date: 2019-05-04 00:00:00
+sc:
+    - timschaufert
+    - goodchymes
 
 image: https://dimatis.yizack.com/images/maybe-remix.jpg
 
