@@ -167,7 +167,7 @@
               </a>{% endif %}{% if page.download %}
               <!-- free download -->
               <div class="col-lg-12 mt-3">
-                <a href="https://download.yizack.com/?{{ download }}={{ page.link }}" onclick="window.open('https://download.yizack.com/?{{ download }}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" data-toggle="tooltip" title="Click to follow dimatis on SoundCloud."><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
+                <a href="https://download.yizack.com/?{{ download }}={{ page.link }}{% for item in page.sc %}~{{ item }}{% endfor %}" onclick="window.open('https://download.yizack.com/?{{ download }}={{ page.link }}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" data-toggle="tooltip" title="Click to follow dimatis on SoundCloud."><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
               </div>{% endif %}
             </div>
           </div>
@@ -175,7 +175,7 @@
             <div class="row">
               <div class="col-lg-12 follow">
                 <p class="m-2">
-                  Click to follow <a href="https://soundcloud.com/dimatis" target="_blank">dimatis</a>{% for item in page.sc %}, <a href="https://soundcloud.com/{{ item }}" target="_blank">{{ item }}</a>{% endfor %}on SoundCloud.<br>
+                  Click to follow <a href="https://soundcloud.com/dimatis" target="_blank">dimatis</a>{% for item in page.sc %}, <a href="https://soundcloud.com/{{ item }}" target="_blank">{{ item }}</a>{% endfor %} on SoundCloud.<br>
                   <small>
                     This connection is secure and will only be used to follow the necessary soundcloud accounts in exchange for a free download.
                   </small>
