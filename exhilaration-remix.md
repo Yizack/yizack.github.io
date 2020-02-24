@@ -14,7 +14,7 @@ image: https://dimatis.yizack.com/images/exhilaration-remix.jpg
 soundcloud: https://soundcloud.com/dimatis/sappheiros-exhilaration-feat-lotis-dimatis-remix
 youtube: https://youtu.be/zOAthK5Li30
 bandcamp: https://dimatis.bandcamp.com/track/exhilaration-feat-lotis-dimatis-remix
-download: https://www.toneden.io/dimatis/post/exhilaration-feat-lotis-dimatis-remix
+download: true
 
 dark: false
 ---

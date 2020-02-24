@@ -13,7 +13,7 @@ image: https://dimatis.yizack.com/images/maybe-remix.jpg
 
 soundcloud: https://soundcloud.com/dimatis/tim-schaufert-maybe-feat-chymes-dimatis-remix
 youtube: https://youtu.be/Par0zNE9bYM
-download: https://www.toneden.io/dimatis/post/maybe-feat-chymes-dimatis-remix
+download: true
 
 dark: false
 ---

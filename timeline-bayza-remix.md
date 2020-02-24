@@ -17,6 +17,7 @@ itunes: https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?
 apple: https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?app=music
 deezer: https://www.deezer.com/en/album/65694812
 tidal: https://tidal.com/browse/album/90324719
+download: true
 
 dark: false
 ---

@@ -15,7 +15,7 @@ itunes: https://music.apple.com/us/album/magical-forest-single/1219239274?app=it
 apple: https://music.apple.com/us/album/magical-forest-single/1219239274?app=music
 deezer: https://www.deezer.com/en/album/15777454
 tidal: https://tidal.com/browse/album/72198675
-download: https://www.toneden.io/dimatis/post/magical-forest
+download: true
 
 dark: false
 ---

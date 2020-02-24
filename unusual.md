@@ -17,7 +17,7 @@ apple: https://music.apple.com/us/album/unusual/1495650794?i=1495650802&app=musi
 bandcamp: https://dimatis.bandcamp.com/album/experiences
 deezer: https://www.deezer.com/en/album/128070352
 tidal: https://tidal.com/browse/track/128864938
-download: https://www.toneden.io/dimatis/post/unusual
+download: true
 
 dark: false
 ---

@@ -12,7 +12,7 @@ image: https://dimatis.yizack.com/images/fantasy-remix.jpg
 
 soundcloud: https://soundcloud.com/dimatis/fantasy-dimatis-remix
 youtube: https://youtu.be/afP4aEV66Nw
-download: https://www.toneden.io/dimatis/post/cloudier-fantasy-dimatis-remix
+download: true
 
 dark: true
 ---

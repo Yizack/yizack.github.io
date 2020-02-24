@@ -15,7 +15,7 @@ itunes: https://music.apple.com/us/album/fanciful-single/1217879752?app=itunes
 apple: https://music.apple.com/us/album/fanciful-single/1217879752?app=music
 deezer: https://www.deezer.com/en/album/15777810
 tidal: https://tidal.com/album/72194446
-download: https://www.toneden.io/dimatis/post/fanciful
+download: true
 
 dark: false
 ---

@@ -17,7 +17,7 @@ apple: https://dimatis.bandcamp.com/album/experiences
 bandcamp: https://dimatis.bandcamp.com/album/experiences
 deezer: https://www.deezer.com/en/album/128070352
 tidal: https://tidal.com/browse/track/128864934
-download: https://www.toneden.io/dimatis/post/moments-together
+download: true
 
 dark: false
 ---

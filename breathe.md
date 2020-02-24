@@ -14,7 +14,7 @@ youtube: https://youtu.be/DeciHtH9BDE
 itunes: https://music.apple.com/us/album/breathe-single/1297213023?app=itunes
 apple: https://music.apple.com/us/album/breathe-single/1297213023?app=music
 tidal: https://tidal.com/browse/album/80288586
-download: https://www.toneden.io/dimatis/post/breathe
+download: true
 
 dark: false
 ---

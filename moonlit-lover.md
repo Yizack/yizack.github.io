@@ -17,7 +17,7 @@ apple: https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=musi
 bandcamp: https://dimatis.bandcamp.com/album/moonlit-lover
 deezer: https://www.deezer.com/en/album/69678032
 tidal: https://tidal.com/browse/album/92951077
-download: https://www.toneden.io/dimatis/post/moonlit-lover
+download: true
 
 dark: false
 ---
