@@ -5,6 +5,8 @@ title: Timeline (Bayza Remix)
 artists: Dimatis
 link: timeline-bayza-remix
 date: 2018-06-11 00:00:00
+sc:
+    - bayza
 
 image: https://dimatis.yizack.com/images/timeline-bayza-remix.jpg
 
