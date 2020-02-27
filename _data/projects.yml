@@ -3,7 +3,7 @@
   github: Yizack/dimatis
   description: "Dimatis es mi nombre artístico como productor de música electrónica melódica, este proyecto comenzó a la edad de 15 años cuando mi hermano me enseñó por primera vez a usar el software de FL Studio, despertó mi gusto por la producción musical y comencé a subir mis pistas originales a soundcloud en 2014. En 2016 conocí una distribuidora que me ayudaría a publicar mi música en tiendas importantes como Spotify, iTunes, Amazon, etc. Tan pronto mi música empezó a generar ganancias, compré de forma legal la versión completa de FL Studio y plugins como Sylenth1, Serum, Pianissimo, etc. Si quieres conocer más sobre mi música visita mi sitio web. En 2020 empecé a crear mi sitio web de artista con Bootstrap 4, GitHub Pages y Jekyll, cree un sistema de fanlinks para cada canción y un script hecho en PHP en un hosting de Namecheap para ofrecer descargas gratis de mis canciones a cambio de un follow en mi Soundcloud."
   year: 2013
-  update: 2020-02-23 15:50:00
+  update: 2020-02-25 13:30:00
   main_tag: producción musical
   tags:
     - tag: música
@@ -136,3 +136,16 @@
     - tag: facebook
     - tag: twitter
     - tag: instagram
+
+- project: instagram-feed
+  url: https://instagram-feed.yizack.com/demo/
+  github: Yizack/instagram-feed
+  description: "En febrero del 2020 creé instagram-feed para poder visualizar los post de instagram de mi cuenta de artista @dimatismusic en mi sitio web, utilizando PHP en uno de mis sitios alojados en Namecheap Shared Hosting y Instagram Basic Display API, además elaboré una guía completa en GitHub para que cualquiera pueda incrustar su feed de instagram en su propia página web. Anteriormente ya había investigado páginas que ofrecen servicios de instagram para tu página web pero la mayoría eran de pago o con marcas de agua molestas, por eso decidí crearlo por mi mismo y no fue tan dificil."
+  year: 2020
+  update: 2020-02-27 16:08:00
+  main_tag: programación
+  tags:
+    - tag: php
+    - tag: instagram
+    - tag: namecheap
+    - tag: api
