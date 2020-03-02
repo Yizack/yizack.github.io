@@ -142,7 +142,7 @@
   github: Yizack/instagram-feed
   description: "En febrero del 2020 creé instagram-feed para poder visualizar los posts de Instagram de mi cuenta de artista <a href='https://instagram.com/dimatismusic' target='_blank'>@dimatismusic</a> en mi sitio web, utilizando PHP en uno de mis sitios alojados en Namecheap Shared Hosting y Instagram Basic Display API, además elaboré una guía completa en GitHub para que cualquiera pueda incrustar su feed de Instagram en su propia página web. Anteriormente ya había investigado páginas que ofrecen servicios de Instagram para tu página web, pero la mayoría eran de pago o con marcas de agua molestas, por eso decidí crearlo por mi mismo y no fue tan difícil."
   year: 2020
-  update: 2020-02-27 13:44:00
+  update: 2020-03-01 05:00:00
   main_tag: programación
   tags:
     - tag: php
