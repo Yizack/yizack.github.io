@@ -149,3 +149,15 @@
     - tag: instagram
     - tag: namecheap
     - tag: api
+
+- project: panamaps.tools
+  url: https://panamaps.tools
+  description: "En marzo 9 de 2020 se dió el primer caso de coronavirus COVID-19 en Panamá, al día siguiente ya eran 8 personas infectadas y 1 fallecido, la gente estaba muy alarmada y todo esto me hizo querer crear un mapa para contabilizar los casos de COVID-19 solamente para Panamá por provincias y corregimientos, junto a mi hermano creamos este sitio en tan solo 1 día para mantener a la población panameña informada sobre los casos. Toda la información la recopilamos de las conferencias de prensa diarias dadas por el MINSA en los medios de comunicación y redes sociales para actualizar nuestro sitio día tras día."
+  year: 2020
+  update: 2020-03-15 04:09:00
+  main_tag: programación
+  tags:
+    - tag: php
+    - tag: maps
+    - tag: tracking
+    - tag: analytics
