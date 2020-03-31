@@ -4,6 +4,6 @@ title: Dimatis's Fanlinks
 description: Dimatis fanlinks for stream or download music.
 link: fanlinks
 image: https://dimatis.yizack.com/images/dimatis-logo-2.png
-background: https://dimatis.yizack.com/images/cover.jpg
+background: https://dimatis.yizack.com/images/banner.jpg
 dark: false
 ---
