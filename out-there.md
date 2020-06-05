@@ -13,8 +13,8 @@ soundcloud: https://soundcloud.com/dimatis/out-there
 youtube: https://youtu.be/Vs-1BLxquHo
 itunes: 
 apple: 
-bandcamp: https://dimatis.bandcamp.com/track/out-there
-deezer: 
+bandcamp: https://dimatis.bandcamp.com/track/out-there-feat-elvya
+deezer: https://www.deezer.com/us/album/152263542
 tidal: 
 download: true
 
