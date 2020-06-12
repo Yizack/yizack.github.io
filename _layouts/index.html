@@ -1,52 +1,12 @@
-{%- assign sorted = site.data.projects | sort: 'update' | reverse -%}
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <title>Yizack</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   </head>
   <body>
-    <section id="acerca" class="py-5 text-white bg-dark">
-      <div class="container text-justify">
-        <h1 class="text-center">Acerca de mi</h1>
-        <p>Mi nombre es Yizack Rangel, nací en La Chorrera, Panamá. Actualmente tengo <span id="edad"></span> años y estudio Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Panamá. Además de mis estudios soy productor musical de música electrónica melódica bajo el nombre de artista 'Dimatis'. Me gusta programar, hacer música y jugar videojuegos online.</p>
-      </div>
-    </section>
-    <section id="proyectos" class="py-5 text-dark bg-light">
-      <div class="container text-justify">
-        <h1 class="text-center mb-5">Mis proyectos</h1>
-        <div class="row">{% for item in sorted %}
-          <div class="border-bottom mb-3">
-            <h4>{{ item.project }}</h5>{% if item.url %}
-            <p><a href="{{ item.url }}" target="_blank">{{ item.url | replace: 'https://', '' }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
-            <p><b>Descripción</b>: {{ item.description }}</p>
-            <p><i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i> Año: {{ item.year }}</p>
-            <p><i class="fas fa-pen-alt fa-fw" aria-hidden="true"></i> Última actualización: {{ item.update | date_to_string }}</p>{% if item.github %}
-            <p><i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub: <a href="https://github.com/{{ item.github }}" target="_blank">{{ item.github }} <i class="fas fa-external-link-alt"></i></a></p>{% endif %}
-            <p>
-              <span class="badge badge-primary"><i class="fas fa-tag"></i> {{ item.main_tag }}</span>{% assign project = item.tags %}{% for tags in project %}
-              <span class="badge badge-dark"><i class="fas fa-tag"></i> {{ tags.tag }}</span>{% endfor %}
-            </p>
-          </div>{% endfor %}
-        </div>
-      </div>
-    </section>
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
-    <script>
-      function edad(dob) { 
-        var diff_ms = Date.now() - dob.getTime();
-        var age_dt = new Date(diff_ms);
-        return Math.abs(age_dt.getUTCFullYear() - 1970);
-    }
-    $(document).ready(function(){
-        $("#edad").html(edad(new Date("1998-06-15")));
-    });
-    </script>
-    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
-    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    <script type="text/javascript">
+      window.location.replace("https://dimatis.yizack.com");
+  </script>
   </body>
 </html>
