@@ -11,7 +11,7 @@ sc:
 image: https://dimatis.yizack.com/images/otherworld-remix.jpg
 
 spotify: https://open.spotify.com/track/6TeIFOimKiK9qLSgrWkrNa
-soundcloud: https://soundcloud.com/dimatis/otherworld-dimatis-remix
+soundcloud: https://soundcloud.com/dimatis/killigrew-otherworld-dimatis-remix
 youtube: https://youtu.be/cqjYqMi87_E
 itunes: https://music.apple.com/us/album/otherworld-dimatis-remix/1517724651?i=1517724656&app=itunes
 apple: https://music.apple.com/us/album/otherworld-dimatis-remix/1517724651?i=1517724656&app=music
