@@ -33,72 +33,23 @@
     <link rel="stylesheet" href="/css/links.css" />
     <link rel="canonical" href="{{ site.url }}/{{ page.link }}"/>
     <style>
+
+    a.link div {
+      opacity: 0.5;
+    }
+
     a.link.spotify {
       color: #1db954;
       background-image: url('/images/links/spotify.svg');
-      background-position: center;
+      background-position: top;
       background-size: cover;
     }
+
     a.link.youtube {
       color: #ff0000;
       background-image: url('/images/links/youtube.svg');
-      background-position: center;
+      background-position: top;
       background-size: cover;
-    }
-    #c2 {
-      fill: none;
-      opacity: 0.15;
-      stroke: #1db954;
-      stroke-width: 12;
-      stroke-miterlimit: 10;
-      animation: show 4s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-    }
-
-    #c3 {
-      fill: none;
-      opacity: 0.15;
-      stroke: #1db954;
-      stroke-width: 12;
-      stroke-miterlimit: 10;
-      animation: show 4s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-    }
-
-    #c1 {
-      fill: none;
-      opacity: 0.15;
-      stroke: #191414;
-      stroke-width: 6;
-      stroke-miterlimit: 10;
-      stroke-dasharray: 200;
-      stroke-dashoffset: 800;
-      animation: draw 4s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-    }
-
-    @keyframes draw {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-
-    @keyframes show {
-      0% {
-        opacity: 0.15;
-      }
-      50% {
-        opacity: 0.2;
-      }
-      100% {
-        opacity: 0.15;
-      }
     }
     </style>
   </head>
@@ -113,12 +64,12 @@
           <h3 style="z-index: 1;">Dimatis</h3>
         </div>
         <!-- Spotify -->
-        <a href="{{ page.spotify }}" target="_blank" class="link spotify col-lg-8 col-12 p-2 mb-3 bg-dark rounded mx-auto">
-          <div class="bg-white p-1 border rounded"><b>Spotify</b></div>
+        <a href="{{ page.spotify }}" target="_blank" class="link spotify col-lg-8 col-12 p-1 mb-3 bg-white rounded mx-auto">
+          <div class="bg-white p-1 rounded"><b>Spotify</b></div>
         </a>
         <!-- Youtube -->
-        <a href="{{ page.youtube }}" target="_blank" class="link youtube col-lg-8 col-12 p-2 mb-3 bg-dark rounded mx-auto">
-          <div class="bg-white p-1 border rounded"><b>YouTube</b></div>
+        <a href="{{ page.youtube }}" target="_blank" class="link youtube col-lg-8 col-12 p-1 mb-3 bg-white rounded mx-auto">
+          <div class="bg-white p-1 rounded"><b>YouTube</b></div>
         </a>
         <div class="mx-auto col-lg-12 socials text-center h4">
           <ul class="icons my-2">
