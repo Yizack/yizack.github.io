@@ -82,15 +82,33 @@
 
     a.link.release {
       color: #fff;
-      background-position-y: 35%;
-      background-size: cover;
+      position: relative;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    a.link.release:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.6;
+      background-image: url('http://placekitten.com/1500/1000');
       background-repeat: no-repeat;
-      background-blend-mode: luminosity;
+      background-position: center 35%;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
     }
 
     a.link.release:hover {
       border-color: #fff!important;
-      background-blend-mode: normal;
     }
 
     a.link.release b {
