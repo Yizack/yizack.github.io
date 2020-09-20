@@ -79,6 +79,17 @@
     a.link.facebook:hover {
       border-color: #3b5998!important;
     }
+
+    a.link.release {
+      color: #292929;
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    a.link.release:hover {
+      border-color: #292929!important;
+    }
     </style>
   </head>
   <body class="bg-dark">
@@ -92,7 +103,7 @@
           <h3 style="z-index: 1;">Dimatis</h3>
         </div>
         <!-- Latest release -->
-        <a href="{{ page.release }}" target="_blank" class="link spotify col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto"><b><i class="icon-dimatis"></i> | Who Am I Without You</b></a>
+        <a href="{{ page.release }}" target="_blank" class="link release col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto" style="background-image: url(https://dimatis.yizack.com/images/who-am-i-without-you.jpg);"><b><i class="icon-dimatis"></i> | Who Am I Without You</b></a>
         <!-- Playlist -->
         <a href="{{ page.playlist }}" target="_blank" class="link spotify col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto"><b><i class="fab fa-spotify fa-fw"></i> | Melodic Dubstep Playlist</b></a>
         <!-- Spotify -->
