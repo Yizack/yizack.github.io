@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow"/>
+    <meta name="keywords" content="dimatis,fanlinks,music,melodic,dubstep"/>
+    <meta name="description" content="{{ page.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}/{{ page.link }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ page.image | replace: 'https', 'http' }}"/>
+    <meta property="og:image:secure_url" content="{{ page.image }}"/>
+    <meta property="og:image:alt" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ page.image }}"/>
+    <meta name="twitter:title" content="{{ page.title }}"/>
+    <meta name="twitter:description" content="{{ page.description }}"/>
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+    <link rel="icon" type="image/png" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
+    <link rel="stylesheet" type="text/css" href="https://dimatis.yizack.com/css/dimatis-icon.css"/>
+    <link rel="stylesheet" href="/css/links.css" />
+    <link rel="canonical" href="{{ site.url }}/{{ page.link }}"/>
+  </head>
+  <body class="bg-dark">
+    <div class="bg-image" style="background-image: url('{{ page.background }}')"></div>
+    <div class="container text-white">
+      test
+      <div class="mx-auto col-lg-12 text-center h5 website{% if page.dark == true %} text-dark{% endif %}">
+        <a href="https://dimatis.yizack.com" target="_blank" title="Website">dimatis.yizack.com</a>
+      </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/js/tema.js"></script>
+  </body>
+</html>
+
