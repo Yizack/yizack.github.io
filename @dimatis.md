@@ -16,5 +16,6 @@ website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
 release: https://bayzamusic.com/hold-on-to-me
+release_title: Hold On To Me
 release_img: https://dimatis.yizack.com/images/hold-on-to-me.jpg
 ---
