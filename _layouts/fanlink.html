@@ -179,7 +179,10 @@
               </a>{% endif %}{% if page.download == true %}
               <!-- free download -->
               <div class="col-lg-12 mt-3">
+                <!--
                 <a href="https://dev.yizack.com/soundcloud/?{{ download }}={{ page.link }}{% for item in page.sc %}~{{ item }}{% endfor %}" onclick="window.open('https://dev.yizack.com/soundcloud/?{{ download }}={{ page.link }}{% for item in page.sc %}~{{ item }}{% endfor %}','popup','width=600,height=600'); return false;" type="button" class="btn btn-secondary btn-lg btn-block text-white rounded-0" target="_blank" title="Follow on Soundcloud" data-toggle="tooltip" data-placement="right"><i class="fab fa-soundcloud"></i> Follow to Free Download</a>
+                -->
+                <a class="btn btn-primary btn-lg btn-block text-white rounded-0" href="https://www.dropbox.com/s/{{ page.dropbox }}/?dl=1" title="Free Download" data-toggle="tooltip" data-placement="right">Free Download</a>
               </div>{% endif %}
             </div>
           </div>{% if page.download == true %}
