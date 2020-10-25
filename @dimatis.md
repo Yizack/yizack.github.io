@@ -15,7 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
-release: https://bayzamusic.com/hold-on-to-me
-release_title: Hold On To Me
-release_img: https://dimatis.yizack.com/images/hold-on-to-me.jpg
+release: https://yizack.com/euphoria-remix
+release_title: Chymes - Euphoria (Dimatis Remix)
+release_img: https://dimatis.yizack.com/images/euphoria-remix.jpg
 ---
