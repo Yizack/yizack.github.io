@@ -3,7 +3,7 @@ layout: fanlink
 
 title: Reborn
 artists: Bayza & Dimatis
-link: who-am-i-without-you
+link: reborn
 date: 2020-10-22 00:00:00
 
 image: https://dimatis.yizack.com/images/reborn.jpg
