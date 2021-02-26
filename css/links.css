@@ -10,6 +10,10 @@ html {
   position: fixed;
   left: 0;
   right: 0;
+
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  
   height: 100%; 
   z-index: -1;
   background-position: center;
