@@ -6,7 +6,7 @@ artists: Eunoia
 link: stay-remix
 date: 2021-02-25 00:00:00
 
-image: https://dimatis.yizack.com/images/out-there.jpg
+image: https://dimatis.yizack.com/images/stay-remix.jpg
 
 spotify: https://open.spotify.com/track/4sDmfr50vWkV7kIQQXGIHc
 soundcloud: https://soundcloud.com/dimatis/eunoia-stay-dimatis-remix
