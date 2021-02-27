@@ -14,7 +14,6 @@ youtube: https://youtu.be/EwsgCjFd9BM
 apple: https://music.apple.com/us/album/stay-dimatis-remix-feat-dimatis-single/1555749037
 bandcamp: https://dimatis.bandcamp.com/track/stay-dimatis-remix
 deezer: https://www.deezer.com/us/album/210792062
-tidal:
 amazon: https://www.amazon.com/dp/B08XMYS1HC
 
 dropbox: pc3zpxjc0gtue6n
