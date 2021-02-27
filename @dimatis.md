@@ -15,7 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
-release: https://yizack.com/worthy-of-life
-release_title: Dimatis - Worthy of Life
-release_img: https://dimatis.yizack.com/images/worthy-of-life.jpg
+release: https://yizack.com/stay-remix
+release_title: Eunoia - Stay (Dimatis Remix)
+release_img: https://dimatis.yizack.com/images/stay-remix.jpg
 ---
