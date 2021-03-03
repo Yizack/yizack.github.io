@@ -13,9 +13,9 @@ soundcloud: https://soundcloud.com/dimatis/eunoia-stay-dimatis-remix
 youtube: https://youtu.be/EwsgCjFd9BM
 apple: https://music.apple.com/us/album/stay-dimatis-remix-feat-dimatis-single/1555749037
 bandcamp: https://dimatis.bandcamp.com/track/stay-dimatis-remix
-deezer: https://www.deezer.com/us/album/210792062
+deezer: https://www.deezer.com/en/album/211784152
 tidal: 
-amazon: https://www.amazon.com/dp/B08XMYS1HC
+amazon: https://www.amazon.com/dp/B08XWSSDWS
 
 dropbox: pc3zpxjc0gtue6n
 
