@@ -8,10 +8,10 @@ date: 2021-02-25 00:00:00
 
 image: https://dimatis.yizack.com/images/stay-remix.jpg
 
-spotify: https://open.spotify.com/track/4sDmfr50vWkV7kIQQXGIHc
+spotify: https://open.spotify.com/track/61dwvjWlkisQbZNFUaawkY
 soundcloud: https://soundcloud.com/dimatis/eunoia-stay-dimatis-remix
 youtube: https://youtu.be/EwsgCjFd9BM
-apple: https://music.apple.com/us/album/stay-dimatis-remix-feat-dimatis-single/1555749037
+apple: 
 bandcamp: https://dimatis.bandcamp.com/track/stay-dimatis-remix
 deezer: https://www.deezer.com/en/album/211784152
 tidal: 
