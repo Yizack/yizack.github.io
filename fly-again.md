@@ -20,7 +20,7 @@ tiktok:
 
 dropbox: 
 
-download: true
+download: false
 
 dark: false
 ---
