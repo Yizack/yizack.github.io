@@ -11,7 +11,8 @@ image: https://dimatis.yizack.com/images/fly-again.jpg
 spotify: https://open.spotify.com/album/4Yh0VRUWmI5jO7CNUjnPJO
 soundcloud: https://soundcloud.com/dimatis/fly-again
 youtube: https://youtu.be/4KxEsbV1il8
-apple: https://music.apple.com/us/album/fly-again-single/1557629524
+apple: https://music.apple.com/us/album/fly-again-single/1557629524?app=music&ls=1
+itunes: https://music.apple.com/us/album/fly-again-single/1557629524?app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/fly-again
 deezer: https://www.deezer.com/album/213797662
 tidal: 
