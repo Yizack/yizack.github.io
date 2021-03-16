@@ -10,8 +10,8 @@ image: https://dimatis.yizack.com/images/vicious-mind.jpg
 
 spotify: https://open.spotify.com/album/1i74mF4gmeAx45bGKb2X75
 youtube: https://youtu.be/tSUYZHhpSIw
-itunes: https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=itunes
-apple: https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=music
+itunes: https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=itunes&ls=1
+apple: https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=music&ls=1
 deezer: https://www.deezer.com/en/album/59660982
 tidal: https://tidal.com/browse/album/86362384
 

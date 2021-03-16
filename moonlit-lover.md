@@ -12,8 +12,8 @@ piano: moonlit-lover-piano
 spotify: https://open.spotify.com/album/4TwwRWl2V2ikOClr3OTVPM
 soundcloud: https://soundcloud.com/dimatis/sets/moonlit-lover
 youtube: https://youtu.be/BFq5JiH7_IY
-itunes: https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=itunes
-apple: https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=music
+itunes: https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=itunes&ls=1
+apple: https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/album/moonlit-lover
 deezer: https://www.deezer.com/en/album/69678032
 tidal: https://tidal.com/browse/album/92951077

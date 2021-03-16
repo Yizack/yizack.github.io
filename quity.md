@@ -11,8 +11,8 @@ image: https://dimatis.yizack.com/images/quity.jpg
 spotify: https://open.spotify.com/album/4oqrjHma1EHXmblZj7vmGg
 soundcloud: https://soundcloud.com/dimatis/quity
 youtube: https://youtu.be/kEgy6N-J5Jg
-itunes: https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=itunes
-apple: https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=music
+itunes: https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=itunes&ls=1
+apple: https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/q-ity
 deezer: https://www.deezer.com/album/91192552
 tidal: https://tidal.com/album/106304906

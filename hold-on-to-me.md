@@ -11,7 +11,8 @@ image: https://dimatis.yizack.com/images/hold-on-to-me.jpg
 spotify: https://open.spotify.com/track/0U9BPZn0nvkUYFfuPteBmE
 soundcloud: https://soundcloud.com/bayza/hold-on-to-me
 youtube: https://youtu.be/N2sZKeX_xGI
-apple: https://music.apple.com/us/album/hold-on-to-me-single/1526294383
+apple: https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=music&ls=1
+itunes: https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=itunes&ls=1
 deezer: https://www.deezer.com/en/album/165690312
 tidal: http://tidal.com/browse/album/151393778
 amazon: https://www.amazon.com/dp/B08FFMF4L3

@@ -12,8 +12,8 @@ ep: floating-ep
 spotify: https://open.spotify.com/track/269SEkVwWMrcqU28W0A3Nb
 soundcloud: https://soundcloud.com/dimatis/shades
 youtube: https://youtu.be/t3ai3d3H2sU
-itunes: https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=itunes
-apple: https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=music
+itunes: https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=itunes&ls=1
+apple: https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/album/floating-ep
 deezer: https://www.deezer.com/en/track/629753672
 tidal: https://tidal.com/browse/track/103796100

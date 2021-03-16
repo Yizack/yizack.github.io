@@ -11,8 +11,8 @@ image: https://dimatis.yizack.com/images/breathe.jpg
 spotify: https://open.spotify.com/album/7leXtgsgL7wUS64PC072b2
 soundcloud: https://soundcloud.com/dimatis/breathe
 youtube: https://youtu.be/DeciHtH9BDE
-itunes: https://music.apple.com/us/album/breathe-single/1297213023?app=itunes
-apple: https://music.apple.com/us/album/breathe-single/1297213023?app=music
+itunes: https://music.apple.com/us/album/breathe-single/1297213023?app=itunes&ls=1
+apple: https://music.apple.com/us/album/breathe-single/1297213023?app=music&ls=1
 tidal: https://tidal.com/browse/album/80288586
 
 dropbox: mpgrk418kftusr2

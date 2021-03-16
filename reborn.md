@@ -11,7 +11,8 @@ image: https://dimatis.yizack.com/images/reborn.jpg
 spotify: https://open.spotify.com/track/3POCFD2UIKRvmySfhQvRgU
 soundcloud: https://soundcloud.com/bayza/reborn
 youtube: https://youtu.be/Uqm00tl0nKQ
-apple: https://music.apple.com/album/reborn-single/1535187248
+apple: https://music.apple.com/album/reborn-single/1535187248?app=music&ls=1
+itunes: https://music.apple.com/album/reborn-single/1535187248?app=itunes&ls=1
 deezer: https://www.deezer.com/en/album/178782202
 tidal: https://tidal.com/browse/album/158112844
 amazon: https://music.amazon.com/albums/B08KY8ZJV7

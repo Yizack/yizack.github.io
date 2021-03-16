@@ -12,8 +12,8 @@ ep: floating-ep
 spotify: https://open.spotify.com/track/5OpwtT7O91pZZ8EkAozoAL
 soundcloud: https://soundcloud.com/dimatis/floating
 youtube: https://youtu.be/69kR6HvBYlA
-itunes: https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=itunes
-apple: https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=music
+itunes: https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=itunes&ls=1
+apple: https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/album/floating-ep
 deezer: https://www.deezer.com/en/track/629753662
 tidal: https://tidal.com/browse/track/103796099

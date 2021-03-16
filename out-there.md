@@ -11,8 +11,8 @@ image: https://dimatis.yizack.com/images/out-there.jpg
 spotify: https://open.spotify.com/album/0hpmcD7Pz7i25ik2qVt7Fs
 soundcloud: https://soundcloud.com/dimatis/out-there
 youtube: https://youtu.be/Vs-1BLxquHo
-itunes: https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=itunes
-apple: https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=music
+itunes: https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=itunes&ls=1
+apple: https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/out-there-feat-elvya
 deezer: https://www.deezer.com/us/album/152263542
 tidal: 
