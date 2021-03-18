@@ -15,7 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
-release: https://yizack.com/stay-remix
-release_title: Eunoia - Stay (Dimatis Remix)
-release_img: https://dimatis.yizack.com/images/stay-remix.jpg
+release: https://yizack.com/fly-again
+release_title: Dimatis - Fly Again (feat. Miss Lina)
+release_img: https://dimatis.yizack.com/images/fly-again.jpg
 ---
