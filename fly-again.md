@@ -15,9 +15,9 @@ apple: https://music.apple.com/us/album/fly-again-single/1557629524?app=music&ls
 itunes: https://music.apple.com/us/album/fly-again-single/1557629524?app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/fly-again
 deezer: https://www.deezer.com/album/213797662
-tidal: 
+tidal: https://tidal.com/browse/album/176659884
 amazon: https://www.amazon.com/dp/B08YHKR73R
-tiktok: 
+tiktok: https://vm.tiktok.com/ZMeSVSnQs/
 
 dropbox: wynhiqidykmgon3
 
