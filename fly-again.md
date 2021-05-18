@@ -13,7 +13,7 @@ soundcloud: https://soundcloud.com/dimatis/fly-again
 youtube: https://youtu.be/4KxEsbV1il8
 apple: https://music.apple.com/us/album/fly-again-single/1557629524?app=music&ls=1
 itunes: https://music.apple.com/us/album/fly-again-single/1557629524?app=itunes&ls=1
-bandcamp: https://dimatis.bandcamp.com/track/fly-again
+bandcamp: https://dimatis.bandcamp.com/track/fly-again-feat-miss-lina
 deezer: https://www.deezer.com/album/213797662
 tidal: https://tidal.com/browse/album/176659884
 amazon: https://www.amazon.com/dp/B08YHKR73R
