@@ -15,7 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
-release: https://yizack.com/fly-again
-release_title: Dimatis - Fly Again (feat. Miss Lina)
-release_img: https://dimatis.yizack.com/images/fly-again.jpg
+release: https://yizack.com/paying-for-it
+release_title: Dimatis - Paying For It (feat. Salvo)
+release_img: https://dimatis.yizack.com/images/paying-for-it.jpg
 ---
