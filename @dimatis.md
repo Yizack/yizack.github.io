@@ -16,6 +16,6 @@ website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
 release: https://yizack.com/paying-for-it
-release_title: Dimatis - Paying For It (feat. Salvo)
-release_img: https://dimatis.yizack.com/images/paying-for-it.jpg
+release_title: Dimatis - I Will Someday
+release_img: https://dimatis.yizack.com/images/i-will-someday.jpg
 ---
