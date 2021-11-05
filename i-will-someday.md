@@ -23,5 +23,5 @@ dropbox: hhlhjlhshcsqixw
 
 download: true
 
-dark: false
+dark: true
 ---
