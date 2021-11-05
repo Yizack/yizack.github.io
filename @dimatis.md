@@ -15,7 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 twitter: https://twitter.com/dimatismusic
 
-release: https://yizack.com/paying-for-it
+release: https://yizack.com/i-will-someday
 release_title: Dimatis - I Will Someday
 release_img: https://dimatis.yizack.com/images/i-will-someday.jpg
 ---
