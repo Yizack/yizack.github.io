@@ -13,6 +13,7 @@ facebook: https://facebook.com/dimatismusic
 instagram: https://instagram.com/dimatismusic
 submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
+merch: https://merch.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
 
 release: https://yizack.com/i-will-someday
