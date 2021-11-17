@@ -1,6 +1,6 @@
 ---
 layout: fanlink_list
-title: Dimatis's Fanlinks
+title: Dimatis Fanlinks
 description: Dimatis fanlinks for stream or download music.
 link: fanlinks
 image: https://dimatis.yizack.com/images/dimatis-logo-2.png
