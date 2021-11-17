@@ -43,7 +43,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <!-- cover -->
-                <img class="img-fluid mx-auto d-block" src="{{ item.image }}" width="100%">
+                <img class="img-fluid mx-auto d-block rounded-top" src="{{ item.image }}" width="100%">
                 <!-- titulo -->
                 <div class="p-3">
                   <div class="text-center">
@@ -53,7 +53,9 @@
                 </div>
               </div>
               <div class="col-lg-12">
-                <a href="/{{ item.link }}" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0" title="View Fanlink">View</a>
+                <div class="d-grid"></div>
+                  <a href="/{{ item.link }}" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</a>
+                </div>
               </div>
             </div>
           </div>
