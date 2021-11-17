@@ -25,7 +25,7 @@
     <!-- Recursos -->
     <link rel="icon" type="image/png" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
     <link rel="shortcut icon" type="image/x-icon" href="https://dimatis.yizack.com/images/dimatis-logo-1.png"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"/>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
@@ -172,7 +172,7 @@
         <!-- Submit -->
         <a href="{{ page.submit }}" target="_blank" class="link normal col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fas fa-paper-plane fa-fw"></i> | Submit to my playlist</b></a>
         <!-- Merch -->
-        <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-toggle="popover" data-html="true" title="Merch" data-content="<div><img src='/images/dimatis-merch.jpg'</di>"><b><i class="fas fa-tshirt fa-fw"></i> | Buy my merch</b></a>
+        <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-bs-toggle="popover" data-bs-html="true" title="Merch" data-bs-placement="bottom" data-bs-content="<div><img src='/images/dimatis-merch.jpg'</di>"><b><i class="fas fa-tshirt fa-fw"></i> | Buy my merch</b></a>
         <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
         <!-- Spotify -->
         <a href="{{ page.spotify }}" target="_blank" class="link spotify col-lg-8 col-12 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fab fa-spotify fa-fw"></i> | Spotify</b></a>
@@ -191,14 +191,14 @@
       </div>
     </div>
     <script src="/js/jquery-3.4.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="/js/tema.js"></script>
     <script>
-      $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();   
-      });
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
       </script>
   </body>
 </html>
