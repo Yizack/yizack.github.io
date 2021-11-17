@@ -155,7 +155,6 @@
 
     .popover {
       max-width: 1000px;
-      margin: 1rem!important;
       background-color: #f7f7f7;
       border-radius: 2rem;
     }
@@ -164,7 +163,27 @@
       border-radius: 2rem!important;
     }
 
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
 
+    ::-webkit-scrollbar-track {
+        background: #292929;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #f7f7f7; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #f7f7f7; 
+    }
+
+    :root {
+        overflow-y: scroll;
+        scrollbar-color: #f7f7f7 #292929;
+        scrollbar-width: thin !important;
+    }
     </style>
   </head>
   <body class="bg-dark">
