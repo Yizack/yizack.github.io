@@ -177,26 +177,7 @@
         <!-- Submit -->
         <a href="{{ page.submit }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fas fa-paper-plane fa-fw"></i> | Submit to my playlist</b></a>
         <!-- Merch -->
-        <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" id="merchpop" data-bs-toggle="popover" data-bs-html="true" title="Merch" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="
-        <div id='merch-carousel' class='carousel slide' data-bs-ride='carousel' data-bs-interval='true'>
-          <div class='carousel-inner'>
-            <div class='carousel-item active'>
-              <img src='{{ page.merch_1 }}' class='d-block img-fluid' style='width:100%'>
-            </div>
-            <div class='carousel-item'>
-              <img src='{{ page.merch_2 }}' class='d-block img-fluid' style='width:100%'>
-            </div>
-            <div class='carousel-item'>
-              <img src='{{ page.merch_3 }}' class='d-block img-fluid' style='width:100%'>
-            </div>
-            <div class='carousel-item'>
-              <img src='{{ page.merch_4 }}' class='d-block img-fluid' style='width:100%'>
-            </div>
-            <div class='carousel-item'>
-              <img src='{{ page.merch_5 }}' class='d-block img-fluid' style='width:100%'>
-            </div>
-          </div>
-        </div>"><b><i class="fas fa-tshirt fa-fw"></i> | Buy my merch</b></a>
+        <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" id="merchpop" data-bs-toggle="popover" title="Merch"><b><i class="fas fa-tshirt fa-fw"></i> | Buy my merch</b></a>
         <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
         <!-- Spotify -->
         <a href="{{ page.spotify }}" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fab fa-spotify fa-fw"></i> | Spotify</b></a>
@@ -219,18 +200,34 @@
     <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
     <script src="/js/tema.js"></script>
     <script>
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
+      var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+        container: 'body',
+        content: 
+        "<div id='merch-carousel' class='carousel slide' data-bs-ride='carousel' data-bs-interval='true'>"+
+          "<div class='carousel-inner'>"+
+            "<div class='carousel-item active'>"+
+              "<img src='{{ page.merch_1 }}' class='d-block img-fluid' style='width:100%'>"+
+            "</div>"+
+            "<div class='carousel-item'>"+
+              "<img src='{{ page.merch_2 }}' class='d-block img-fluid' style='width:100%'>"+
+            "</div>"+
+           " div class='carousel-item'>"+
+              "<img src='{{ page.merch_3 }}' class='d-block img-fluid' style='width:100%'>"+
+            "</div>"+
+            "<div class='carousel-item'>"+
+              "<img src='{{ page.merch_4 }}' class='d-block img-fluid' style='width:100%'>"+
+            "</div>"+
+            "<div class='carousel-item'>"+
+              "<img src='{{ page.merch_5 }}' class='d-block img-fluid' style='width:100%'>"+
+            "</div>"+
+          "</div>"+
+        "</div>",
+        html: true,
+        placement: 'bottom',
+        trigger: 'hover',
+
       })
 
-      $(document).on('click', function(e) {
-        $('input').each(function() {
-          if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-            $(this).popover('hide');
-          }
-        });
-      });
 
       $('#merchpop').on('shown.bs.popover', function() {
         $('#merch-carousel').carousel({
