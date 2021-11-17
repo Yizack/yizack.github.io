@@ -61,7 +61,7 @@
               </div>{% if page.album %}
               <!-- full album -->
               <a class="row m-auto links text-white" href="/{{ page.album }}" target="_blank" title="Full Album">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/{{ page.album }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -70,7 +70,7 @@
               </a>{% endif %}{% if page.ep %}
               <!-- full ep -->
               <a class="row m-auto links text-white" href="/{{ page.ep }}" target="_blank" title="Full EP">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/{{ page.ep }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -79,7 +79,7 @@
               </a>{% endif %}{% if page.piano %}
               <!-- piano version -->
               <a class="row m-auto links text-white" href="/{{ page.piano }}" target="_blank" title="Piano Version">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/{{ page.piano }}.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -88,7 +88,7 @@
               </a>{% endif %}{% if page.spotify %}
               <!-- spotify -->
               <a class="row m-auto links text-white" href="{{ page.spotify }}" target="_blank" title="Stream on Spotify">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/spotify.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -97,7 +97,7 @@
               </a>{% endif %}{% if page.soundcloud %}
               <!-- soundcloud -->
               <a class="row m-auto links text-white" href="{{ page.soundcloud }}" target="_blank" title="Stream on Soundcloud">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/soundcloud.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -106,7 +106,7 @@
               </a>{% endif %}{% if page.youtube %}
               <!-- youtube -->
               <a class="row m-auto links text-white" href="{{ page.youtube }}" target="_blank" title="Stream on Youtube">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/youtube.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -115,7 +115,7 @@
               </a>{% endif %}{% if page.apple %}
               <!-- apple music -->
               <a class="row m-auto links text-white" href="{{ page.apple }}" target="_blank" title="Stream on Apple Music">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/apple-music.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -124,7 +124,7 @@
               </a>{% endif %}{% if page.itunes %}
               <!-- itunes music -->
               <a class="row m-auto links text-white" href="{{ page.itunes }}" target="_blank" title="Buy on iTunes">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/itunes.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -133,7 +133,7 @@
               </a>{% endif %}{% if page.bandcamp %}
               <!-- bandcamp-->
               <a class="row m-auto links text-white" href="{{ page.bandcamp }}" target="_blank" title="Buy on Bandcamp">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/bandcamp.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -142,7 +142,7 @@
               </a>{% endif %}{% if page.deezer %}
               <!-- deezer -->
               <a class="row m-auto links text-white" href="{{ page.deezer }}" target="_blank" title="Stream on Deezer">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/deezer.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -151,7 +151,7 @@
               </a>{% endif %}{% if page.tidal %}
               <!-- tidal -->
               <a class="row m-auto links text-white" href="{{ page.tidal }}" target="_blank" title="Stream on Tidal">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/tidal.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -160,7 +160,7 @@
               </a>{% endif %}{% if page.amazon %}
               <!-- amazon -->
               <a class="row m-auto links text-white" href="{{ page.amazon }}" target="_blank" title="Buy on Amazon">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/amazon.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
@@ -170,7 +170,7 @@
               {% if page.tiktok %}
               <!-- tiktok -->
               <a class="row m-auto links text-white" href="{{ page.tiktok }}" target="_blank" title="Use on Tiktok">
-                <div class="col-6 ps-4 py-4">
+                <div class="col-6 ps-4 py-4 d-flex flex-wrap align-content-center">
                   <img class="mx-auto d-block" src="/images/tiktok.png" width="100%"/>
                 </div>
                 <div class="col-6 pe-4 py-4 text-center my-auto">
