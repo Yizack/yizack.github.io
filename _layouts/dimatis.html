@@ -179,9 +179,9 @@
         <a href="{{ page.submit }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fas fa-paper-plane fa-fw"></i> | Submit to my playlist</b></a>
         <!-- Merch -->
         <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-bs-toggle="popover" data-bs-html="true" title="Merch" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="<div class='merch-slick'>
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
         </div>"><b><i class="fas fa-tshirt fa-fw"></i> | Buy my merch</b></a>
         <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
         <!-- Spotify -->
@@ -214,6 +214,7 @@
       $('.merch-slick').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
       });
