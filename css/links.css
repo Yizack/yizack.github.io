@@ -78,3 +78,25 @@ ul.icons li {
 .info p a:hover {
   color: #507fff;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #292929;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f7f7; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f7f7f7; 
+}
+
+:root {
+  overflow-y: scroll;
+  scrollbar-color: #f7f7f7 #292929;
+  scrollbar-width: thin !important;
+}
