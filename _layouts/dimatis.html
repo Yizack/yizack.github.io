@@ -178,6 +178,11 @@
         <!-- Submit -->
         <a href="{{ page.submit }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fas fa-paper-plane fa-fw"></i> | Submit to my playlist</b></a>
         <!-- Merch -->
+        <div class='merch-slick'>
+          <div>your content</div>
+          <div>your content</div>
+          <div>your content</div>
+        </div>
         <a href="{{ page.merch }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-bs-toggle="popover" data-bs-html="true" title="Merch" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="<div class='merch-slick'>
           <div>your content</div>
           <div>your content</div>
@@ -210,7 +215,7 @@
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
       })
-      
+
       $('.merch-slick').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
