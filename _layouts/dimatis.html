@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/emoji.css"/> <!-- https://afeld.github.io/emoji-css/ -->
     <link rel="stylesheet" type="text/css" href="https://dimatis.yizack.com/css/dimatis-icon.css"/>
-    <link rel="stylesheet" href="/css/links.css?v2" />
+    <link rel="stylesheet" href="/css/links.css?v3" />
     <link rel="stylesheet" type="text/css" href="https://dimatis.yizack.com/css/dimatis-icon.css"/>
     <link rel="canonical" href="{{ site.url }}/{{ page.link }}"/>
     <style>
@@ -162,28 +162,6 @@
     .rounded {
       border-radius: 2rem!important;
     }
-
-    ::-webkit-scrollbar {
-    width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #292929;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #f7f7f7; 
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #f7f7f7; 
-    }
-
-    :root {
-        overflow-y: scroll;
-        scrollbar-color: #f7f7f7 #292929;
-        scrollbar-width: thin !important;
-    }
     </style>
   </head>
   <body class="bg-dark">
@@ -223,32 +201,35 @@
         <a href="{{ page.website }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="icon-dimatis"></i> | Website</b></a>
       </div>
     </div>
+
+    <!-- Merch Content -->
+    <div id='merch-carousel' class='hidden carousel slide carousel-fade' data-bs-ride='carousel' data-bs-interval='true'>
+      <div class='carousel-inner'>
+        <div class='carousel-item active'>
+          <img src='{{ page.merch_1 }}' class='d-block img-fluid' style='width:100%'>
+        </div>
+        <div class='carousel-item'>
+          <img src='{{ page.merch_2 }}' class='d-block img-fluid' style='width:100%'>
+        </div>
+       <div class='carousel-item'>
+          <img src='{{ page.merch_3 }}' class='d-block img-fluid' style='width:100%'>
+        </div>
+        <div class='carousel-item'>
+          <img src='{{ page.merch_4 }}' class='d-block img-fluid' style='width:100%'>
+        </div>
+        <div class='carousel-item'>
+          <img src='{{ page.merch_5 }}' class='d-block img-fluid' style='width:100%'>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
     <script>
       var popover = new bootstrap.Popover(document.querySelector('#merchpop'), {
         container: 'body',
-        content: 
-        "<div id='merch-carousel' class='carousel slide carousel-fade' data-bs-ride='carousel' data-bs-interval='true'>"+
-          "<div class='carousel-inner'>"+
-            "<div class='carousel-item active'>"+
-              "<img src='{{ page.merch_1 }}' class='d-block img-fluid' style='width:100%'>"+
-            "</div>"+
-            "<div class='carousel-item'>"+
-              "<img src='{{ page.merch_2 }}' class='d-block img-fluid' style='width:100%'>"+
-            "</div>"+
-           "<div class='carousel-item'>"+
-              "<img src='{{ page.merch_3 }}' class='d-block img-fluid' style='width:100%'>"+
-            "</div>"+
-            "<div class='carousel-item'>"+
-              "<img src='{{ page.merch_4 }}' class='d-block img-fluid' style='width:100%'>"+
-            "</div>"+
-            "<div class='carousel-item'>"+
-              "<img src='{{ page.merch_5 }}' class='d-block img-fluid' style='width:100%'>"+
-            "</div>"+
-          "</div>"+
-        "</div>",
+        content: '',
         html: true,
         placement: 'bottom',
         trigger: 'hover',
