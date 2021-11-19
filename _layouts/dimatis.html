@@ -229,22 +229,22 @@
 
     <!-- Merch Content -->
     <div class="d-none" id="merchpop_content">
-      <div id='merch-carousel' class='carousel slide carousel-fade' data-bs-ride='carousel' data-bs-interval='true'>
+      <div id='merch-carousel' class='carousel slide carousel-fade'>
         <div class='carousel-inner'>
           <div class='carousel-item active'>
-            <img src='{{ page.merch_1 }}' class='d-block img-fluid' style='width:100%'>
+            <img src='{{ page.merch_1 }}' class='d-block img-fluid'>
           </div>
           <div class='carousel-item'>
-            <img src='{{ page.merch_2 }}' class='d-block img-fluid' style='width:100%'>
+            <img src='{{ page.merch_2 }}' class='d-block img-fluid'>
           </div>
         <div class='carousel-item'>
-            <img src='{{ page.merch_3 }}' class='d-block img-fluid' style='width:100%'>
+            <img src='{{ page.merch_3 }}' class='d-block img-fluid'>
           </div>
           <div class='carousel-item'>
-            <img src='{{ page.merch_4 }}' class='d-block img-fluid' style='width:100%'>
+            <img src='{{ page.merch_4 }}' class='d-block img-fluid'>
           </div>
           <div class='carousel-item'>
-            <img src='{{ page.merch_5 }}' class='d-block img-fluid' style='width:100%'>
+            <img src='{{ page.merch_5 }}' class='d-block img-fluid'>
           </div>
         </div>
       </div>
@@ -271,7 +271,7 @@
       });
 
       $('#merchpop').on('shown.bs.popover', function() {
-        $('#merch-carousel').carousel({
+        $('.popover #merch-carousel').carousel({
           interval: 2000,
           ride: true
         });
