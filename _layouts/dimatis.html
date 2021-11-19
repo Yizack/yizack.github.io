@@ -155,8 +155,20 @@
 
     .popover {
       max-width: 1000px;
-      background-color: #f7f7f7;
+      background-color: transparent;
+      border-radius: unset;
+      border: unset;
+    }
+
+    .popover-body {
+      padding: unset;
+    }
+
+    #merch-carousel{
+      padding: 1rem 1rem;
       border-radius: 2rem;
+      background-color: #f7f7f7;
+      border: 1px solid #292929;
     }
 
     .rounded {
@@ -204,8 +216,8 @@
 
     <!-- Release Content -->
     <div class="d-none" id="releasepop_content">
-      <div class="bg-dark">
-        <img class="d-block img-fluid" src="{{ page.release_img }}" alt="{{ page.release_artists }} - {{ page.release_title }}" width="200">
+      <div id="release_popped" class="bg-dark text-white">
+        <img class="d-block img-fluid" src="{{ page.release_img }}" alt="{{ page.release_artists }} - {{ page.release_title }}" width="300">
         <div class="p-4">
           <div class="text-center">
             <h5><b>{{ page.release_title }}</b></h5>
@@ -257,7 +269,6 @@
         placement: 'bottom',
         trigger: 'hover',
       });
-
 
       $('#merchpop').on('shown.bs.popover', function() {
         $('#merch-carousel').carousel({
