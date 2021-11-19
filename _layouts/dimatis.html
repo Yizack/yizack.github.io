@@ -176,7 +176,7 @@
         </div>
         <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
         <!-- Latest release -->
-        <a href="{{ page.release }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="icon-dimatis"></i> {{ page.release_title }}</b></a>
+        <a href="{{ page.release }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" id="releasepop" data-bs-toggle="popover"><b><i class="icon-dimatis"></i> {{ page.release_artists }} - {{ page.release_title }}</b></a>
         <div class="col-12 text-uppercase mx-auto"><span>Useful Links</span></div>
         <!-- Playlist -->
         <a href="{{ page.playlist }}" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="fab fa-spotify fa-fw"></i> Melodic Dubstep Playlist</b></a>
@@ -202,8 +202,21 @@
       </div>
     </div>
 
+    <!-- Release Content -->
+    <div class="d-none" id="releasepop_content">
+      <div class="bg-dark">
+        <img class="d-block img-fluid" src="{{ page.release_img }}" alt="{{ page.release_artists }} - {{ page.release_title }}" style='width:200px'>
+        <div class="p-4">
+          <div class="text-center">
+            <h5><b>{{ page.release_title }}</b></h5>
+            <h6 class="mb-0">{{ page.release_artists }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Merch Content -->
-    <div class="d-none" id="popover_content">
+    <div class="d-none" id="merchpop_content">
       <div id='merch-carousel' class='carousel slide carousel-fade' data-bs-ride='carousel' data-bs-interval='true'>
         <div class='carousel-inner'>
           <div class='carousel-item active'>
@@ -229,9 +242,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
     <script>
-      var popover = new bootstrap.Popover(document.querySelector('#merchpop'), {
+      var release_popover = new bootstrap.Popover(document.querySelector('#releasepop'), {
         container: 'body',
-        content: $('#merch-carousel').html(),
+        content: $('#releasepop_content').html(),
+        html: true,
+        placement: 'bottom',
+        trigger: 'hover',
+      });
+
+      var merch_popover = new bootstrap.Popover(document.querySelector('#merchpop'), {
+        container: 'body',
+        content: $('#merchpop_content').html(),
         html: true,
         placement: 'bottom',
         trigger: 'hover',
@@ -239,7 +260,6 @@
 
 
       $('#merchpop').on('shown.bs.popover', function() {
-        console.log("pop");
         $('#merch-carousel').carousel({
           interval: 2000,
           ride: true

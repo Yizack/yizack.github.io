@@ -17,8 +17,9 @@ merch: https://merch.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
 
 release: /i-will-someday
-release_title: Dimatis - I Will Someday
-release_img: /images/i-will-someday.jpg
+release_artists: Dimatis
+release_title: I Will Someday
+release_img: https://dimatis.yizack.com/images/i-will-someday.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
