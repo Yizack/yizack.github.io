@@ -16,10 +16,10 @@ website: https://dimatis.yizack.com
 merch: https://merch.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
 
-release: /i-will-someday
+release: just-stay
 release_artists: Dimatis
-release_title: I Will Someday
-release_img: https://dimatis.yizack.com/images/i-will-someday.jpg
+release_title: Just Stay
+release_img: https://dimatis.yizack.com/images/just-stay.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
