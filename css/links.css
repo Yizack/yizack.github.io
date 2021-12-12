@@ -100,7 +100,6 @@ ul.icons li {
 }
 
 :root {
-  overflow-y: scroll;
   scrollbar-color: #f7f7f7 #151515;
   scrollbar-width: thin !important;
 }
