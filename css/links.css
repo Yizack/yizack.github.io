@@ -30,11 +30,11 @@ html, body {
 }
 
 .text-dark {
-  color: #292929!important;
+  color: #151515!important;
 }
 
 .text-dark a {
-  color: #292929!important;
+  color: #151515!important;
 }
 
 .links:hover {
@@ -88,7 +88,7 @@ ul.icons li {
 }
 
 ::-webkit-scrollbar-track {
-  background: #292929;
+  background: #151515;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -101,6 +101,6 @@ ul.icons li {
 
 :root {
   overflow-y: scroll;
-  scrollbar-color: #f7f7f7 #292929;
+  scrollbar-color: #f7f7f7 #151515;
   scrollbar-width: thin !important;
 }
