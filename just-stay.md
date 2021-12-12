@@ -16,7 +16,8 @@ itunes: https://music.apple.com/us/album/just-stay-single/1599748910?app=itunes&
 bandcamp: https://dimatis.bandcamp.com/track/just-stay
 deezer: https://www.deezer.com/album/279563342
 tidal: https://tidal.com/browse/album/208682873
-amazon: 
+yandex: https://music.yandex.com/album/19866706
+amazon: https://www.amazon.com/dp/B09NF1W6PF
 tiktok: https://vm.tiktok.com/ZM8v1eX5T/
 
 dropbox: 734d4cm0j0wlrid
