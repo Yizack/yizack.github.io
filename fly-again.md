@@ -16,6 +16,7 @@ itunes: https://music.apple.com/us/album/fly-again-single/1557629524?app=itunes&
 bandcamp: https://dimatis.bandcamp.com/track/fly-again-feat-miss-lina
 deezer: https://www.deezer.com/album/213797662
 tidal: https://tidal.com/browse/album/176659884
+yandex: https://music.yandex.com/album/14412358
 amazon: https://www.amazon.com/dp/B08YHKR73R
 tiktok: https://vm.tiktok.com/ZMeSVSnQs/
 

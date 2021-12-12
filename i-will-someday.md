@@ -16,6 +16,7 @@ itunes: https://music.apple.com/us/album/i-will-someday-single/1592078845?app=it
 bandcamp: https://dimatis.bandcamp.com/track/i-will-someday
 deezer: https://www.deezer.com/en/album/267965902
 tidal: https://tidal.com/browse/album/202439308
+yandex: https://music.yandex.com/album/19858837
 amazon: https://www.amazon.com/dp/B09K7Q4ZR1
 tiktok: https://vm.tiktok.com/ZM8x1wTAQ/
 

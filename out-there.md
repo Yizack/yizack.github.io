@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&
 bandcamp: https://dimatis.bandcamp.com/track/out-there-feat-elvya
 deezer: https://www.deezer.com/us/album/152263542
 tidal: 
+yandex: https://music.yandex.com/album/19862325
 amazon: https://www.amazon.com/dp/B089QQMXNR
 
 dropbox: 1yqavnfk4r8is9y

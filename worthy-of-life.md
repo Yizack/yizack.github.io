@@ -16,6 +16,7 @@ itunes: https://music.apple.com/us/album/worthy-of-life-single/1549696728?app=it
 bandcamp: https://dimatis.bandcamp.com/track/worthy-of-life
 deezer: https://www.deezer.com/en/album/201770522
 tidal: https://tidal.com/browse/album/170355537
+yandex: https://music.yandex.com/album/14512634
 amazon: https://www.amazon.com/dp/B08TM9HKYV
 tiktok: https://vm.tiktok.com/ZMJKjkm2W/
 
