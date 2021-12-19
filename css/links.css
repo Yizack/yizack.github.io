@@ -103,3 +103,8 @@ ul.icons li {
   scrollbar-color: #f7f7f7 #151515;
   scrollbar-width: thin !important;
 }
+
+::selection {
+  background: #292929!important;
+  color: white!important;
+}
