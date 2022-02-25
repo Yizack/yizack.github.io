@@ -7,7 +7,6 @@ link: call-out
 date: 2022-02-25 00:00:00
 
 image: https://dimatis.yizack.com/images/call-out.jpg
-
 spotify: https://open.spotify.com/album/1fE5GUpjwz6mS27MfPwqtF
 soundcloud: https://soundcloud.com/dimatis/call-out
 youtube: https://youtu.be/uuhW3aJEplg

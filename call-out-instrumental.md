@@ -13,7 +13,7 @@ youtube: https://youtu.be/uOW-OoqZ9n0
 apple: https://music.apple.com/us/album/call-out-instrumental/1608543909?i=1608543911&app=music&ls=1
 itunes: https://music.apple.com/us/album/call-out-instrumental/1608543909?i=1608543911&app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/album/call-out
-deezer: https://www.deezer.com/en/album/293077852
+deezer: https://www.deezer.com/us/track/1645084072
 tidal: https://tidal.com/browse/album/215313561
 yandex: https://music.yandex.com/album/20983998
 amazon: https://www.amazon.com/dp/B09SF6MJTW
