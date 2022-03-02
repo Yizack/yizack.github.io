@@ -4,10 +4,11 @@ layout: fanlink
 title: Afterglow
 artists: Dimatis
 link: afterglow
-date: 2022-03-4 00:00:00
+date: 2022-03-4 00:00:01
 
 image: https://dimatis.yizack.com/images/afterglow.jpg
 
+remix: afterglow-remix
 spotify: https://open.spotify.com/album/65YQ2AcZcHvJTYL2zOyhgP
 soundcloud: https://soundcloud.com/dimatis/afterglow
 youtube: 

@@ -83,6 +83,33 @@
                 <div class="col-5 px-0 py-4 text-center my-auto">
                   <span class="btn btn-outline-light rounded-pill px-3">View</span>
                 </div>
+              </a>{% endif %}{% if page.remix %}
+              <!-- remix version -->
+              <a class="row m-auto links text-white" href="/{{ page.remix }}" target="_blank" title="Remix Version">
+                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
+                  <img class="d-block" src="/images/stores/{{ page.remix }}.png" width="100%"/>
+                </div>
+                <div class="col-5 px-0 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
+                </div>
+              </a>{% endif %}{% if page.remixes %}
+              <!-- remix version -->
+              <a class="row m-auto links text-white" href="/{{ page.remixes }}" target="_blank" title="Remixes Release">
+                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
+                  <img class="d-block" src="/images/stores/{{ page.remixes }}.png" width="100%"/>
+                </div>
+                <div class="col-5 px-0 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
+                </div>
+              </a>{% endif %}{% if page.instrumental %}
+              <!-- instrumental version -->
+              <a class="row m-auto links text-white" href="/{{ page.instrumental }}" target="_blank" title="Instrumental Version">
+                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
+                  <img class="d-block" src="/images/stores/{{ page.instrumental }}.png" width="100%"/>
+                </div>
+                <div class="col-5 px-0 py-4 text-center my-auto">
+                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
+                </div>
               </a>{% endif %}{% if page.spotify %}
               <!-- spotify -->
               <a class="row m-auto links text-white" href="{{ page.spotify }}?si" target="_blank" title="Stream on Spotify">
