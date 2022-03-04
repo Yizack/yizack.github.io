@@ -15,10 +15,10 @@ youtube:
 apple: https://music.apple.com/us/album/afterglow-single/1610856217?app=music&ls=1
 itunes: https://music.apple.com/us/album/afterglow-single/1610856217?app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/afterglow
-deezer: 
-tidal: 
-yandex: 
-amazon: 
+deezer: https://www.deezer.com/us/album/297076472
+tidal: https://tidal.com/browse/album/217454675
+yandex: https://music.yandex.com/album/21468415
+amazon: https://www.amazon.com/dp/B09SWM4QSK
 tiktok: 
 
 dropbox: rplt2k5x7bbnexj
