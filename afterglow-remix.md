@@ -11,7 +11,7 @@ image: https://dimatis.yizack.com/images/afterglow-remix.jpg
 instrumental: afterglow
 spotify: 
 soundcloud: https://soundcloud.com/dimatis/beatcore-livingston-crain-afterglow-dimatis-remix
-youtube: https://youtu.be/6aVaaJWCBJ4
+youtube: https://youtu.be/O6qYglKG3_4
 apple: 
 itunes: 
 bandcamp: 
