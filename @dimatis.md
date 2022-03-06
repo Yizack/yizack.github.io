@@ -16,10 +16,10 @@ website: https://dimatis.yizack.com
 merch: https://store.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
 
-release: call-out
-release_artists: Dimatis & Bayza
-release_title: Call Out
-release_img: https://dimatis.yizack.com/images/call-out.jpg
+release: afterglow
+release_artists: Dimatis
+release_title: Afterglow
+release_img: https://dimatis.yizack.com/images/afterglow.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
