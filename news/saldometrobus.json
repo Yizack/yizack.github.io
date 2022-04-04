@@ -1,5 +1,11 @@
 [
     {
+        "date": "Lunes, 4 de abril de 2022",
+        "nuevo": true,
+        "descripcion": "La versión web ha sido mejorada visualmente y se ha añadió la sección de gráficas.",
+        "url": "#"
+    },
+    {
         "date": "Jueves, 31 de marzo de 2022",
         "nuevo": true,
         "descripcion": "Actualización: Versión 1.2.8 de la app de Android ya está disponible en Google Play Store. Se implementaron correciones y mejoras de rendimiento en el servidor.",
