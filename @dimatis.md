@@ -15,6 +15,8 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 merch: https://store.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
+contest:
+contest_name:
 
 release: afterglow
 release_artists: Dimatis
