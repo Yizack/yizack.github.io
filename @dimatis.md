@@ -18,10 +18,10 @@ twitter: https://twitter.com/dimatismusic
 contest:
 contest_name:
 
-release: afterglow
-release_artists: Dimatis
-release_title: Afterglow
-release_img: https://dimatis.yizack.com/images/afterglow.jpg
+release: snowflake-remix
+release_artists: NAWN
+release_title: Snowflake (Dimatis Remix)
+release_img: https://dimatis.yizack.com/images/snowflake-remix.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
