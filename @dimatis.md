@@ -15,6 +15,7 @@ submit: https://www.submithub.com/blog/dimatis
 website: https://dimatis.yizack.com
 merch: https://store.streamelements.com/dimatis
 twitter: https://twitter.com/dimatismusic
+bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
