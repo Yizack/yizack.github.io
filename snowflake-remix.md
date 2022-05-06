@@ -15,7 +15,7 @@ apple: https://music.apple.com/us/album/snowflake-dimatis-remix/1618964231?i=161
 itunes: https://music.apple.com/us/album/snowflake-dimatis-remix/1618964231?i=1618964233&app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/snowflake-dimatis-remix
 deezer:
-tidal: 
+tidal: https://tidal.com/browse/track/224779670
 yandex: 
 amazon: https://www.amazon.com/dp/B09XR4YG7X
 tiktok: 
