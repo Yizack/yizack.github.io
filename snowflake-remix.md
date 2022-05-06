@@ -8,7 +8,6 @@ date: 2022-05-06 00:00:00
 
 image: https://dimatis.yizack.com/images/snowflake-remix.jpg
 
-remix: snowflake-remix
 spotify: https://open.spotify.com/track/0R9TI1CcYhY9uquGU8ilZA
 soundcloud: https://soundcloud.com/dimatis/snowflake-remix
 youtube: https://youtu.be/Zujo8SwGsuI
