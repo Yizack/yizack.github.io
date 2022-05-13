@@ -8,11 +8,11 @@ date: 2022-05-06 00:00:00
 
 image: https://dimatis.yizack.com/images/snowflake-remix.jpg
 
-spotify: https://open.spotify.com/track/0R9TI1CcYhY9uquGU8ilZA
+spotify: https://open.spotify.com/track/48VBSIq0REA7E5dRhUeI4W
 soundcloud: https://soundcloud.com/dimatis/snowflake-remix
 youtube: https://youtu.be/Zujo8SwGsuI
-apple: https://music.apple.com/us/album/snowflake-dimatis-remix/1618964231?i=1618964233&app=music&ls=1
-itunes: https://music.apple.com/us/album/snowflake-dimatis-remix/1618964231?i=1618964233&app=itunes&ls=1
+apple: https://music.apple.com/us/album/snowflake-dimatis-remix/1623607701?i=1623607703&app=music&ls=1
+itunes: https://music.apple.com/us/album/snowflake-dimatis-remix/1623607701?i=1623607703&app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/snowflake-dimatis-remix
 deezer:
 tidal: https://tidal.com/browse/track/224779670
