@@ -11,7 +11,7 @@ image: https://dimatis.yizack.com/images/afterglow.jpg
 remix: afterglow-remix
 spotify: https://open.spotify.com/album/65YQ2AcZcHvJTYL2zOyhgP
 soundcloud: https://soundcloud.com/dimatis/afterglow
-youtube: 
+youtube: https://youtu.be/tP2tqvvnKok
 apple: https://music.apple.com/us/album/afterglow-single/1610856217?app=music&ls=1
 itunes: https://music.apple.com/us/album/afterglow-single/1610856217?app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/afterglow
