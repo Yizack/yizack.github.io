@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: fade-away
-release_artists: Dimatis
-release_title: Fade Away
-release_img: https://dimatis.yizack.com/images/fade-away.jpg
+release: let-me-go
+release_artists: Dimatis & Elvya
+release_title: Let Me Go
+release_img: https://dimatis.yizack.com/images/let-me-go.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
