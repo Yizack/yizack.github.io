@@ -2,21 +2,19 @@
 layout: fanlink
 
 title: Otherworld (Dimatis Remix)
-artists: Killigrew
+artists: Krisu
 link: otherworld-remix
 date: 2020-06-08 00:00:00
-sc:
-    - killigrewchillstep
 
 image: https://dimatis.yizack.com/images/otherworld-remix.jpg
 
-spotify: https://open.spotify.com/track/6TeIFOimKiK9qLSgrWkrNa
+spotify: 
 soundcloud: https://soundcloud.com/dimatis/killigrew-otherworld-dimatis-remix
 youtube: https://youtu.be/cqjYqMi87_E
-itunes: https://music.apple.com/us/album/otherworld-dimatis-remix/1517724651?i=1517724656&app=itunes&ls=1
-apple: https://music.apple.com/us/album/otherworld-dimatis-remix/1517724651?i=1517724656&app=music&ls=1
+itunes: 
+apple: 
 bandcamp: 
-deezer: https://www.deezer.com/us/track/989123192
+deezer: 
 tidal: https://tidal.com/browse/track/144558495
 
 dropbox: kpnsz9108mumxdt
