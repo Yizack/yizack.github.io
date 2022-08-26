@@ -14,15 +14,15 @@ youtube: https://youtu.be/kwk3PQnLOCA
 apple: https://music.apple.com/us/album/let-me-goy-single/1632805901?app=music&ls=1
 itunes: https://music.apple.com/us/album/let-me-go-single/1632805901?app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/let-me-go
-deezer: 
-tidal: 
+deezer: https://www.deezer.com/en/album/332667717
+tidal: https://tidal.com/browse/album/236342315
 yandex: 
-amazon: 
+amazon: https://www.amazon.com/dp/B0B5PBKZVZ
 tiktok: 
 
 dropbox: coshvekgb0azza3
 
-download: false
+download: true
 
 dark: false
 ---
