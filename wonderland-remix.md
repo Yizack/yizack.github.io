@@ -8,8 +8,8 @@ date: 2022-07-16 00:00:00
 
 image: https://dimatis.yizack.com/images/wonderland-remix.jpg
 
-spotify: 
-soundcloud: 
+spotify: https://open.spotify.com/album/6KPy4TDnw5KHOSnmDbqwTO
+soundcloud: https://soundcloud.com/dimatis/wonderland-remix
 youtube: https://youtu.be/SXUg8LEoKdg
 apple: 
 itunes: 
@@ -18,11 +18,12 @@ deezer:
 tidal: 
 yandex: 
 amazon: 
-tiktok: 
+tiktok:
+beatport: https://www.beatport.com/release/wonderland-dimatis-remix/3836982
 
 dropbox: coshvekgb0azza3
 
-download: false
+download: true
 
 dark: false
 ---
