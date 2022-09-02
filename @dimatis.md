@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: let-me-go
-release_artists: Dimatis & Elvya
-release_title: Let Me Go
-release_img: https://dimatis.yizack.com/images/let-me-go.jpg
+release: wonderland-remix
+release_artists: Christoph Sebastian Pabst & Valeska Rautenberg
+release_title: Wonderland (Dimatis Remix)
+release_img: https://dimatis.yizack.com/images/wonderland-remix.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
