@@ -274,20 +274,20 @@
         content: document.getElementById("releasepop_content").innerHTML,
         html: true,
         placement: 'bottom',
-        trigger: 'hover',
+        trigger: 'hover'
       });
 
-      const merch_popover = new bootstrap.Popover(document.getElementById('merchpop'), {
+      const merch_popover = new bootstrap.Popover(document.getElementById("merchpop"), {
         container: 'body',
         content: document.getElementById("merchpop_content").innerHTML,
         html: true,
         placement: 'bottom',
-        trigger: 'hover',
+        trigger: 'hover'
       });
 
-      const myPopoverTrigger = document.getElementById('merchpop');
-      myPopoverTrigger.addEventListener('shown.bs.popover', () => {
-        const myCarouselElement = document.getElementById('merch-carousel')
+      const myPopoverTrigger = document.getElementById("merchpop");
+      myPopoverTrigger.addEventListener("shown.bs.popover", () => {
+        const myCarouselElement = document.getElementById("merch-carousel")
         const carousel = new bootstrap.Carousel(myCarouselElement, {
           interval: 2000,
           ride: true
