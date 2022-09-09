@@ -14,6 +14,7 @@ youtube: https://youtu.be/cmmMTc2Usyk
 bandcamp: https://dimatis.bandcamp.com/track/among-us
 deezer: https://www.deezer.com/en/album/55105402
 tidal: https://tidal.com/browse/album/83439793
+netease: https://music.163.com/#/song?id=534540264
 
 dropbox: awpas9yhhtqtjt1
 

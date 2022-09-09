@@ -18,6 +18,7 @@ deezer: https://www.deezer.com/us/album/152263542
 tidal: 
 yandex: https://music.yandex.com/album/19862325
 amazon: https://www.amazon.com/dp/B089QQMXNR
+netease: https://music.163.com/#/song?id=1453157534
 
 dropbox: 1yqavnfk4r8is9y
 

@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/sign-of-time-single/1484462681?app=music
 bandcamp: https://dimatis.bandcamp.com/track/sign-of-time
 deezer: https://www.deezer.com/en/album/115872542
 tidal: https://tidal.com/browse/album/121238375
+netease: https://music.163.com/#/song?id=1397506565
 
 dropbox: 5yt03e1s8uov77q
 

@@ -18,6 +18,7 @@ deezer: https://www.deezer.com/en/album/230153882
 tidal: 
 amazon: https://www.amazon.com/dp/B094X6BFNX/
 tiktok:
+netease: https://music.163.com/#/song?id=1844624035
 
 dropbox: p9kknusuc2qz6jx
 

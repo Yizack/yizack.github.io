@@ -15,6 +15,7 @@ itunes: https://music.apple.com/us/album/fanciful-single/1217879752?app=itunes&l
 apple: https://music.apple.com/us/album/fanciful-single/1217879752?app=music&ls=1
 deezer: https://www.deezer.com/en/album/15777810
 tidal: https://tidal.com/album/72194446
+netease: https://music.163.com/#/album?id=35292811
 
 dropbox: ohbabojqeewc19m
 

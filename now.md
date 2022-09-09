@@ -17,6 +17,7 @@ apple: https://music.apple.com/us/album/now/1495650794?i=1495650799&app=music&ls
 bandcamp: https://dimatis.bandcamp.com/album/experiences
 deezer: https://www.deezer.com/en/album/128070352
 tidal: https://tidal.com/browse/track/128864935
+netease: https://music.163.com/#/song?id=1418289984
 
 dropbox: 0l0ajzxw08g1dz6
 

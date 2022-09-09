@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/two-ways-single/1509469256?app=music&ls=
 bandcamp: https://dimatis.bandcamp.com/track/two-ways
 deezer: https://www.deezer.com/en/album/143740662
 tidal: https://tidal.com/browse/album/139245821
+netease: https://music.163.com/#/song?id=1442987422
 
 dropbox: vjthq3anusg5gur
 

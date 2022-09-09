@@ -10,6 +10,7 @@ image: https://dimatis.yizack.com/images/gris-remix.jpg
 
 soundcloud: https://soundcloud.com/dimatis/berlinist-gris-pt-1-dimatis-remix
 youtube: https://youtu.be/YBrP4JM7d_s
+netease: https://music.163.com/#/song?id=1336864279
 
 dropbox: lvsufm23rp29yut
 

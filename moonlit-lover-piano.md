@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/moonlit-lover-piano-version/1420477130?i
 bandcamp: https://dimatis.bandcamp.com/album/moonlit-lover
 deezer: https://www.deezer.com/en/album/69678032
 tidal: https://tidal.com/browse/track/92951079
+netease: https://music.163.com/#/song?id=1299557164
 
 dropbox: 96125slijetbbg1
 

@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/demure-single/1445957031?app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/demure
 deezer: https://www.deezer.com/track/601170812
 tidal: https://tidal.com/browse/album/100462941
+netease: https://music.163.com/#/song?id=1336864278
 
 dropbox: pxhj59odw9oz6f3
 

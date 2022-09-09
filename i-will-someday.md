@@ -19,6 +19,7 @@ tidal: https://tidal.com/browse/album/202439308
 yandex: https://music.yandex.com/album/19858837
 amazon: https://www.amazon.com/dp/B09K7Q4ZR1
 tiktok: https://vm.tiktok.com/ZM8x1wTAQ/
+netease: https://music.163.com/#/song?id=1889755420
 
 dropbox: hhlhjlhshcsqixw
 

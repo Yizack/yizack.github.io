@@ -15,6 +15,7 @@ itunes: https://music.apple.com/us/album/white-dwarf-single/1185495179?app=itune
 apple: https://music.apple.com/us/album/white-dwarf-single/1185495179?app=music&ls=1
 deezer: https://www.deezer.com/album/15169833
 tidal: https://tidal.com/browse/album/68610029
+netease: https://music.163.com/#/song?id=1400110246
 
 dropbox: d3ci2sqoel30g9h
 

@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/the-dream-single/1365144867?app=music&ls
 bandcamp: https://dimatis.bandcamp.com/track/the-dream
 deezer: https://www.deezer.com/en/album/60645482
 tidal: https://tidal.com/browse/album/86598183
+netease: https://music.163.com/#/song?id=557584251
 
 dropbox: qlgoxibcqk6gjlx
 

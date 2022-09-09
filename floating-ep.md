@@ -16,6 +16,7 @@ apple: https://music.apple.com/us/album/floating-ep/1451828741?app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/album/floating-ep
 deezer: https://www.deezer.com/en/album/86746842
 tidal: https://tidal.com/browse/album/103796097
+netease: https://music.163.com/#/album?id=78762872
 
 dropbox: sngt6ihi0dzlw20
 

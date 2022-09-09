@@ -15,6 +15,7 @@ itunes: https://music.apple.com/us/album/bliss-single/1411351875?app=itunes&ls=1
 apple: https://music.apple.com/us/album/bliss-single/1411351875?app=music&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/bliss
 tidal: https://tidal.com/browse/album/110267114
+netease: https://music.163.com/#/album?id=71614399
 
 dropbox: riy9h0kcu5xuvfm
 
