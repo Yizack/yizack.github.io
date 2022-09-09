@@ -246,7 +246,7 @@
 
     <!-- Merch Content -->
     <div class="d-none" id="merchpop_content">
-      <div id='merch-carousel' class='carousel slide carousel-fade' data-bs-ride="true">
+      <div id='merch-carousel' class='carousel slide carousel-fade'>
         <div class='carousel-inner'>
           <div class='carousel-item active'>
             <img src='{{ page.merch_1 }}' class='d-block img-fluid'>
@@ -287,7 +287,7 @@
 
       const myPopoverTrigger = document.getElementById("merchpop");
       myPopoverTrigger.addEventListener("shown.bs.popover", () => {
-        const myCarouselElement = document.getElementById("merch-carousel");
+        const myCarouselElement = document.querySelector(".popover #merch-carousel");
         const carousel = new bootstrap.Carousel(myCarouselElement, {
           interval: 2000,
           ride: true
