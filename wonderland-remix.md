@@ -16,9 +16,9 @@ itunes: https://music.apple.com/us/album/wonderland-dimatis-remix/1639259678?app
 bandcamp: https://dimatis.bandcamp.com/track/wonderland-dimatis-remix
 deezer: https://www.deezer.com/en/album/344728217
 tidal: https://tidal.com/browse/album/242282198
-yandex: 
+yandex: https://music.yandex.com/album/23203526
 amazon: https://www.amazon.com/dp/B0B957L5X6
-tiktok:
+tiktok: https://vm.tiktok.com/ZMNKEA6Tk/
 beatport: https://www.beatport.com/release/wonderland-dimatis-remix/3836982
 
 dropbox: y2c4mchpm0y2h6r
