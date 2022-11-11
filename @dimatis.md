@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: wonderland-remix
-release_artists: Christoph Sebastian Pabst & Valeska Rautenberg
-release_title: Wonderland (Dimatis Remix)
-release_img: https://dimatis.yizack.com/images/wonderland-remix.jpg
+release: autumn-leaves-fall-remix
+release_artists: Mox Jade & Sydney Grimm
+release_title: Autumn Leaves Fall (Dimatis Remix)
+release_img: https://dimatis.yizack.com/images/autumn-leaves-fall-remix.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
