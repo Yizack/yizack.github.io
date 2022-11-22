@@ -14,13 +14,13 @@ youtube: https://youtu.be/9H_mo9ng6bU
 apple: https://music.apple.com/us/album/autumn-leaves-fall-dimatis-remix/1653644192?i=1653644195&app=music&ls=1
 itunes: https://music.apple.com/us/album/autumn-leaves-fall-dimatis-remix/1653644192?i=1653644195&app=itunes&ls=1
 bandcamp: https://dimatis.bandcamp.com/track/autumn-leaves-fall-dimatis-remix
-deezer: 
-tidal: 
+deezer: https://www.deezer.com/us/track/2023931547
+tidal: https://tidal.com/browse/track/261564005
 yandex: 
 amazon: https://www.amazon.com/dp/B0BLT58NLN
-tiktok: 
+tiktok: https://vm.tiktok.com/ZMFHAKouX/
 beatport: 
-netease: https://music.163.com/#/song?id=1996745788
+netease: https://music.163.com/#/song?id=1999841143
 
 dropbox: 2ey18ka1iuwen4m
 
