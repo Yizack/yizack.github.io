@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: autumn-leaves-fall-remix
-release_artists: Mox Jade & Sydney Grimm
-release_title: Autumn Leaves Fall (Dimatis Remix)
-release_img: https://dimatis.yizack.com/images/autumn-leaves-fall-remix.jpg
+release: traveler-in-time
+release_artists: Dimatis & Elvya
+release_title: Traveler In Time
+release_img: https://dimatis.yizack.com/images/traveler-in-time.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
