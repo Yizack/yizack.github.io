@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: traveler-in-time
-release_artists: Dimatis & Elvya
-release_title: Traveler In Time
-release_img: https://dimatis.yizack.com/images/traveler-in-time.jpg
+release: 5-months-ago
+release_artists: Dimatis
+release_title: 5 Months Ago
+release_img: https://dimatis.yizack.com/images/5-months-ago.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
