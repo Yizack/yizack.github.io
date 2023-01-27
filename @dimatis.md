@@ -19,10 +19,10 @@ bandcamp: https://dimatis.bandcamp.com/
 contest:
 contest_name:
 
-release: 5-months-ago
+release: Aura
 release_artists: Dimatis
-release_title: 5 Months Ago
-release_img: https://dimatis.yizack.com/images/5-months-ago.jpg
+release_title: Aura
+release_img: https://dimatis.yizack.com/images/aura.jpg
 
 merch_1: /images/dimatis-merch-1.jpg
 merch_2: /images/dimatis-merch-2.jpg
