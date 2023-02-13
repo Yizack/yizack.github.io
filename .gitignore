@@ -3,3 +3,11 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
