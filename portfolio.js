@@ -2,6 +2,20 @@ export default {
   location: "La Chorrera, Panama",
   flag: "https://gist.githubusercontent.com/Yizack/260f39ecd845648c7e749fde1a18687b/raw/01875b5b95131280bd82e4d9ae170552694e2b73/Flag_of_Panama.svg",
   email: "yizackr@gmail.com",
+  education: [
+    {
+      institution: "Universidad Tecnológica de Panamá",
+      city: "Panama City, Panama",
+      diploma: "Computer and Systems Engineering",
+      period: "Jan 2016 — May 2022"
+    },
+    {
+      institution: "Escuela Secundaria Pedro Pablo Sánchez",
+      city: "La Chorrera, Panama",
+      diploma: "High School Diploma, Science",
+      period: "Feb 2010 — Dec 2015",
+    }
+  ],
   works: [
     {
       company: "GRUPO K & H, S.A",

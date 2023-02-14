@@ -2,7 +2,7 @@
 import portfolio from "~/portfolio.js";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faAngleRight, faSuitcase, faBolt, faRocket, faLaptopCode, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faSuitcase, faBolt, faRocket, faLaptopCode, faArrowUpRightFromSquare, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 </script>
 
@@ -24,17 +24,27 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
     </div>
   </nav>
   <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 container" tabindex="0">
-    <div id="about">
+    <div class="mb-4" id="about">
       <div class="row">
-        <div class="col-md-9">
-          <h1><FontAwesomeIcon class="me-2 text-body" :icon="faAddressCard"/>About Me</h1>
-          <p>I love Programming, passionate about computers and new technologies since I was 14 years old, it all started when I created my first blogs and bravely tried to understand and make use of HTML editors. Later I started watching videos about Java, and JavaScript to develop automated posting bots for social medias.
-          <br/><br/>
-          I like to learn and focus on new technologies related to developing web and mobile apps, databases, system automation, server implementations, and GitHub for personal projects.
-          <br/><br/>
-          I studied Computer and Systems Engineering at the Technological University of Panama. Since the first year of my career I always told myself "There is no programming problem or challenge that can beat me, I can do them all" I went with that mindset until the end of my career and there was never a programming problem that I have given up on.</p>
+        <div class="col-md-9 mb-3">
+          <div class="mb-4">
+            <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faAddressCard"/>About Me</h2>
+            <p>I love Programming, passionate about computers and new technologies since I was 14 years old, it all started when I created my first blogs and bravely tried to understand and make use of HTML editors. Later I started watching videos about Java, and JavaScript to develop automated posting bots for social medias.
+            <br/><br/>
+            I like to learn and focus on new technologies related to developing web and mobile apps, databases, system automation, server implementations, and GitHub for personal projects.
+            <br/><br/>
+            I studied Computer and Systems Engineering at the Technological University of Panama. Since the first year of my career I always told myself "There is no programming problem or challenge that can beat me, I can do them all" I went with that mindset until the end of my career and there was never a programming problem that I have given up on.</p>
+          </div>
+          <div class="mb-3">
+            <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faGraduationCap"/>Education</h2>
+            <div v-for="(edu, index) in portfolio.education" :key="index">
+              <h5 class="m-0"><b class="text-primary-emphasis">{{ edu.diploma }}</b> at <b class="text-primary-emphasis">{{ edu.institution }}</b></h5>
+              <p class="m-0">{{ edu.city }}</p>
+              <p class="text-dark-emphasis">{{ edu.period }}</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mb-4">
           <div>
             <div>
               <h5>Location</h5>
@@ -59,14 +69,14 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
             </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <h1><FontAwesomeIcon class="me-2 text-body" :icon="faRocket"/>Quality Practices</h1>
+        <div class="col-md-5 mb-4">
+          <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faRocket"/>Quality Practices</h2>
           <ul class="list-group list-group-flush">
             <li class="list-group-item px-0 border-0" v-for="(quality, index) in portfolio.qualities" :key="index"><FontAwesomeIcon class="me-2 text-primary-emphasis" :icon="faAngleRight"/>{{ quality }}</li>
           </ul>
         </div>
         <div class="col-md-7">
-          <h1><FontAwesomeIcon class="me-2 text-body" :icon="faBolt"/>Main Skills</h1>
+          <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faBolt"/>Main Skills</h2>
           <div class="mb-2" v-for="(skill, key) in portfolio.skills" :key="key">
             <table class="table table-borderless m-0 align-middle">
               <tbody>
@@ -85,18 +95,19 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
       </div>
     </div>
     <hr/>
-    <div id="work">
-      <h1><FontAwesomeIcon class="me-2 text-body" :icon="faSuitcase"/>Work Experience</h1>
+    <div class="my-4" id="work">
+      <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faSuitcase"/>Work Experience</h2>
       <div v-for="(work, index) in portfolio.works" :key="index">
         <h5 class="m-0"><b class="text-primary-emphasis">{{ work.position }}</b> at <b class="text-primary-emphasis">{{ work.company }}</b>, {{ work.city }}</h5>
         <p class="text-white">{{ work.period }}</p>
-        <ul>
+        <ul v-if="work.bullets">
           <li v-for="(task, index) in work.bullets" :key="index">{{ task }}</li>
         </ul>
       </div>
     </div>
-    <div id="projects">
-      <h1 id="projects"><FontAwesomeIcon class="me-2  text-body" :icon="faLaptopCode"/>Projects</h1>
+    <hr/>
+    <div class="mt-4" id="projects">
+      <h2 class="mb-3"><FontAwesomeIcon class="me-2  text-body" :icon="faLaptopCode"/>Projects</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4" :data-masonry="JSON.stringify({percentPosition: true, itemSelector: '.col' })">
       <div class="col" v-for="(project, index) in portfolio.projects" :key="index">
         <div class="card">
@@ -131,6 +142,7 @@ export default {
   props: ["site"],
   created() {
     useHead({
+      title: "Yizack Rangel's Portfolio",
       bodyAttrs: { "data-bs-spy": "scroll" },
       script: [
         {
