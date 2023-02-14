@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: 'v18.13.0'
+        node-version: v18.13.0
 
     steps:
     - name: Checkout 🛎️
