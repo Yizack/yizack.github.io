@@ -123,43 +123,6 @@ import data from "~/assets/data/all.json";
 .facebook:hover {
   background-color: #5879c0!important;
 }
-.release {
-  color: #fff;
-  position: relative;
-  background: #fff;
-  overflow: hidden;
-}
-.release:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.9;
-  background-image: url('{{ page.release_img }}');
-  background-repeat: no-repeat;
-  background-position: center 44%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.release:hover:before {
-  opacity: 1;
-}
-.release:hover {
-  border-color: #fff!important;
-}
-.release b {
-  opacity: 1;
-  z-index: 2;
-  position: relative;
-  color: #fff;
-}
 .normal {
   color: #151515;
 }
