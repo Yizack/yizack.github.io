@@ -42,6 +42,7 @@ export default {
   },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
+    "~/assets/css/global.css"
   ],
   nitro: {
     crawlLinks: true,

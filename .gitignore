@@ -11,4 +11,4 @@ node_modules
 .output
 .env
 dist
-public/data/all.json
+assets/data/all.json

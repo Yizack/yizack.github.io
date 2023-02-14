@@ -1,13 +1,5 @@
-html {
-    height: 100%;
-}
-
-html, body {
-  font-family: 'Roboto', sans-serif;
-}
-
 .card {
-  border: none;
+  border: none
 }
 
 .bg-image {
@@ -22,89 +14,41 @@ html, body {
   z-index: -1;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-dark {
-  background-color: #151515!important;
-}
-
-.text-dark {
-  color: #151515!important;
-}
-
-.text-dark a {
-  color: #151515!important;
-}
-
-.links:hover {
-  background-color: #313131!important;
-}
-
-.links {
-  border-top: solid;
-  border-top-width: 1px;
-  border-top-color: #404040;
+  background-size: cover
 }
 
 .socials li a:hover {
   color: #f8f9fc;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .socials .icons a {
-  color: #fff;
+  color: #fff
 }
 
 .website a {
-  color: #fff;
+  color: #fff
 }
 
 ul.icons li {
   display: inline-block;
-  padding: 0 1rem 0 0;
+  padding: 0 1rem 0 0
 }
 
 .btn-secondary {
   background-color: #ff7700;
-  border-color: #ff7700;
+  border-color: #ff7700
 }
 
 .btn-secondary:hover {
   background-color: #f77300;
-  border-color: #f77300;
+  border-color: #f77300
 }
 
 .info p a {
-  color: #6a8ff9;
+  color: #6a8ff9
 }
 
 .info p a:hover {
-  color: #507fff;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #151515;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f7f7f7; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #f7f7f7; 
-}
-
-:root {
-  scrollbar-color: #f7f7f7 #151515;
-  scrollbar-width: thin !important;
-}
-
-::selection {
-  background: #292929!important;
-  color: white!important;
+  color: #507fff
 }
