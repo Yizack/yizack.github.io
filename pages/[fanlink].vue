@@ -34,50 +34,6 @@ import data from "~/assets/data/all.json";
                 </div>
               </a>
             </template>
-            <!-- piano version -->
-            <template v-if="'piano' in page.fanlink.links">
-              <a class="row m-auto links text-white" href="/{{ page.piano }}" target="_blank" title="Piano Version">
-                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" src="/images/stores/{{ page.piano }}.png" width="100%"/>
-                </div>
-                <div class="col-5 px-0 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
-                </div>
-              </a>
-            </template>
-            <!-- remix version -->
-            <template v-if="'remix' in page.fanlink.links">
-              <a class="row m-auto links text-white" href="/{{ page.remix }}" target="_blank" title="Remix Version">
-                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" src="/images/stores/{{ page.remix }}.png" width="100%"/>
-                </div>
-                <div class="col-5 px-0 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
-                </div>
-              </a>
-            </template>
-            <!-- remix version -->
-            <template v-if="'remixes' in page.fanlink.links">
-              <a class="row m-auto links text-white" href="/{{ page.remixes }}" target="_blank" title="Remixes Release">
-                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" src="/images/stores/{{ page.remixes }}.png" width="100%"/>
-                </div>
-                <div class="col-5 px-0 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
-                </div>
-              </a>
-            </template>
-            <!-- instrumental version -->
-            <template v-if="'instrumental' in page.fanlink.links">
-              <a class="row m-auto links text-white" href="/{{ page.instrumental }}" target="_blank" title="Instrumental Version">
-                <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" src="/images/stores/{{ page.instrumental }}.png" width="100%"/>
-                </div>
-                <div class="col-5 px-0 py-4 text-center my-auto">
-                  <span class="btn btn-outline-light rounded-pill px-3">View</span>
-                </div>
-              </a>
-            </template>
             <!-- spotify -->
             <template v-for="(link, key) in page.fanlink.links" :key="key">
               <template v-if="key in page.fanlink.links">
@@ -145,6 +101,30 @@ export default {
   },
   created() {
     useHead({
+      title: `${this.page.artists} - ${this.page.title}`,
+      meta: [
+        { name: "keywords", content: `release, ${this.page.title}, ${this.page.genre}, play, stream, download, fanlink` },
+        { name: "description", content: this.page.description },
+        // Protocolo Open Graph
+        { property: "og:url", content: `${SITE.url}/music/${this.param}/` },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: `${this.page.artists} - ${this.page.title}` },
+        { property: "og:site_name", content: SITE.name },
+        { property: "og:image", content: `${SITE.src_url}/images/${this.page.cover || this.param}.jpg` },
+        { property: "og:image:width", content: "500" },
+        { property: "og:image:height", content: "500" },
+        { property: "og:image:alt", content: `${this.page.artists} - ${this.page.title}` },
+        { property: "og:description", content: this.page.description },
+        // Twitter Card
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: `${SITE.src_url}/images/${this.page.cover || this.param}.jpg` },
+        { name: "twitter:title", content: `${this.page.artists} - ${this.page.title}` },
+        { name: "twitter:description", content: this.page.description },
+        { name: "twitter:site", content: "@dimatismusic" }
+      ],
+      link: [
+        { rel: "canonical", href: `${SITE.url}/${this.param}/` }
+      ],
       bodyAttrs: { id: "page-top" },
     });
   }
