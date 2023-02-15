@@ -85,7 +85,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
                     <p class="m-0 text-white">{{ key }}</p>
                   </td>
                   <td>
-                    <span class="border px-3 py-1 rounded-pill skill align-middle mx-1" v-for="(technology, index) in skill" :key="index">{{ technology }}</span>
+                    <span class="border px-3 py-1 rounded-pill skill align-middle mx-1 my-1" v-for="(technology, index) in skill" :key="index">{{ technology }}</span>
                   </td>
                 </tr>
               </tbody>
@@ -98,8 +98,9 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
     <div class="my-4" id="work">
       <h2 class="mb-3"><FontAwesomeIcon class="me-2 text-body" :icon="faSuitcase"/>Work Experience</h2>
       <div v-for="(work, index) in portfolio.works" :key="index">
-        <h5 class="m-0"><b class="text-primary-emphasis">{{ work.position }}</b> at <b class="text-primary-emphasis">{{ work.company }}</b>, {{ work.city }}</h5>
-        <p class="text-white">{{ work.period }}</p>
+        <h5 class="m-0"><b class="text-primary-emphasis">{{ work.position }}</b> at <b class="text-primary-emphasis">{{ work.company }}</b></h5>
+        <p class="m-0">{{ work.city }}</p>
+        <p class="text-dark-emphasis">{{ work.period }}</p>
         <ul v-if="work.bullets">
           <li v-for="(task, index) in work.bullets" :key="index">{{ task }}</li>
         </ul>
