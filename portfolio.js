@@ -1,7 +1,32 @@
+import { faGithub, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 export default {
+  name: "Yizack Rangel",
   location: "La Chorrera, Panama",
   flag: "https://gist.githubusercontent.com/Yizack/260f39ecd845648c7e749fde1a18687b/raw/01875b5b95131280bd82e4d9ae170552694e2b73/Flag_of_Panama.svg",
   email: "yizackr@gmail.com",
+  socials: [
+    {
+      name: "GitHub",
+      url: "https://github.com/yizack",
+      icon: faGithub
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/yizack/",
+      icon: faLinkedin
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/yizackr/",
+      icon: faInstagram
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/yizackr",
+      icon: faTwitter
+    }
+  ],
   education: [
     {
       institution: "Universidad Tecnológica de Panamá",
