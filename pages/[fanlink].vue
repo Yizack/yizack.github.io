@@ -34,9 +34,9 @@ import data from "~/assets/data/all.json";
                 </div>
               </a>
             </template>
-            <!-- spotify -->
+            <!-- Stores -->
             <template v-for="(link, key) in page.fanlink.links" :key="key">
-              <template v-if="key in page.fanlink.links">
+              <template v-if="link">
                 <a class="row m-auto links text-white" :href="key === 'spotify' ? link + '?si' : link" target="_blank" :title="SITE.stores[key].name">
                   <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
                     <img class="d-block" :src="SITE.stores[key].image" width="100%"/>
