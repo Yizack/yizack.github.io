@@ -1,0 +1,1 @@
+import{_ as o,o as s,c as t,a as e,b as r}from"./entry.74330da1.js";const a={name:"NotFound"},n={class:"cover"},c=e("h1",null,[r("Page Not Found "),e("small",null,"Error 404")],-1),_=e("p",{class:"lead"},"Sorry, an error has occured, Requested page not found.",-1),d=[c,_];function l(u,p,i,f,h,m){return s(),t("div",n,d)}const v=o(a,[["render",l]]);export{v as default};
