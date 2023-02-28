@@ -104,12 +104,12 @@ export default {
         "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
         "Automatically downloaded all the images of the countries' flags and shapes using Node.js.",
         "Designed and implemented a game to test the visitor's knowledge of the countries, using Vue.js and Nuxt.js.",
-        "Created a REST API using Cloudflare Workers."
+        "Created an internal API class."
       ],
       url: "https://howmanytimeslarger.com/",
       image: "/images/howmanytimeslarger.jpg",
       github: "https://github.com/Yizack/HowManyTimesLarger",
-      technologies: ["Vue.js", "Nuxt.js", "Cloudflare Workers", "Node.js", "GitHub Pages", "Bootstrap 5"]
+      technologies: ["Vue.js", "Nuxt.js", "Node.js", "GitHub Pages", "Bootstrap 5"]
     },
     {
       name: "Devago",

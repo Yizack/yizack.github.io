@@ -10,10 +10,10 @@
     "getdata": "node getData.js"
   },
   "devDependencies": {
-    "eslint": "^8.34.0",
+    "eslint": "^8.35.0",
     "eslint-plugin-vue": "^9.9.0",
-    "nuxt": "^3.2.0",
-    "stylelint": "^15.1.0"
+    "nuxt": "^3.2.2",
+    "stylelint": "^15.2.0"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
