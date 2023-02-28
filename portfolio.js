@@ -107,7 +107,7 @@ export default {
         "Created a REST API using Cloudflare Workers."
       ],
       url: "https://howmanytimeslarger.com/",
-      image: "/images/howmanytimeslarger.png",
+      image: "/images/howmanytimeslarger.jpg",
       github: "https://github.com/Yizack/HowManyTimesLarger",
       technologies: ["Vue.js", "Nuxt.js", "Cloudflare Workers", "Node.js", "GitHub Pages", "Bootstrap 5"]
     },
