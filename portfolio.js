@@ -97,6 +97,21 @@ export default {
   },
   projects: [
     {
+      name: "How Many Times Larger",
+      description: "Website and Game for easy country size comparisons.",
+      period: "February 2023 — Present",
+      bullets: [
+        "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
+        "Automatically downloaded all the images of the countries' flags and shapes using Node.js.",
+        "Designed and implemented a game to test the visitor's knowledge of the countries, using Vue.js and Nuxt.js.",
+        "Created a REST API using Cloudflare Workers."
+      ],
+      url: "https://howmanytimeslarger.com/",
+      image: "/images/howmanytimeslarger.png",
+      github: "https://github.com/Yizack/HowManyTimesLarger",
+      technologies: ["Vue.js", "Nuxt.js", "Cloudflare Workers", "Node.js", "GitHub Pages", "Bootstrap 5"]
+    },
+    {
       name: "Devago",
       description: "A web application to manage the inventory of products, suppliers, sellers, invoices, and customers of the company.",
       period: "May 2022 — Present",
