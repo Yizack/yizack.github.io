@@ -102,14 +102,15 @@ export default {
       period: "February 2023 — Present",
       bullets: [
         "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
-        "Automatically downloaded all the images of the countries' flags and shapes using Node.js.",
+        "Automatically downloaded most of the images of the countries' flags and shapes using Node.js.",
         "Designed and implemented a game to test the visitor's knowledge of the countries, using Vue.js and Nuxt.js.",
-        "Created an internal API class."
+        "Created an internal API class.",
+        "Bundled an Android app using Capacitor.js and published it on Google Play."
       ],
       url: "https://howmanytimeslarger.com/",
       image: "/images/howmanytimeslarger.jpg",
       github: "https://github.com/Yizack/HowManyTimesLarger",
-      technologies: ["Vue.js", "Nuxt.js", "Node.js", "GitHub Pages", "Bootstrap 5"]
+      technologies: ["Vue.js", "Nuxt.js", "Node.js", "Capacitor.js", "GitHub Pages", "Bootstrap 5"]
     },
     {
       name: "Devago",
