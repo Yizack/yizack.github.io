@@ -105,7 +105,7 @@ export default {
         "Automatically downloaded most of the images of the countries' flags and shapes using Node.js.",
         "Designed and implemented a game to test the visitor's knowledge of the countries, using Vue.js and Nuxt.js.",
         "Created an internal API class.",
-        "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play."
+        "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play Store."
       ],
       url: "https://howmanytimeslarger.com/",
       image: "/images/howmanytimeslarger.jpg",
