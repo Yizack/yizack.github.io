@@ -87,7 +87,7 @@ export default {
     "Time management"
   ],
   skills: {
-    "JavaScript": ["ES6+", "Node.js", "Vue.js", "Nuxt.js"],
+    "JavaScript": ["ES6+", "Node.js", "Vue.js", "Nuxt.js", "Capacitor"],
     "SQL": ["PostgreSQL", "MySQL", "SQLite"],
     "PHP": ["Native", "WordPress", "Composer"],
     "Cloud": ["AWS", "Heroku", "Google Cloud"],
