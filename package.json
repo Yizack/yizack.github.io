@@ -10,17 +10,17 @@
     "getdata": "node getData.js"
   },
   "devDependencies": {
-    "eslint": "^8.35.0",
-    "eslint-plugin-vue": "^9.9.0",
-    "nuxt": "^3.2.2",
-    "stylelint": "^15.2.0"
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "nuxt": "^3.4.2",
+    "stylelint": "^15.6.0"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.3.0",
-    "@fortawesome/free-regular-svg-icons": "^6.3.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "bootstrap": "^5.3.0-alpha1",
+    "bootstrap": "^5.3.0-alpha3",
     "masonry-layout": "^4.2.2"
   }
 }
