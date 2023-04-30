@@ -17,7 +17,7 @@ import data from "~/assets/data/all.json";
               <img class="img-fluid mx-auto d-block rounded-top" :src="`${SITE.src_url}/images/${page.cover || param}.jpg`" width="100%">
               <!-- titulo -->
               <div class="p-4">
-                <div class="text-center">
+                <div class="text-center text-white">
                   <h5><b>{{ page.title }}</b></h5>
                   <h6 class="mb-0">{{ page.artists }}</h6>
                 </div>
