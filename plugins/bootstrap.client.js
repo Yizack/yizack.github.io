@@ -1,3 +1,4 @@
+import "bootstrap/js/dist/offcanvas";
 import Popover from "bootstrap/js/dist/popover";
 import Carousel from "bootstrap/js/dist/carousel";
 

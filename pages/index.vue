@@ -5,7 +5,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 </script>
 
 <template>
-  <nav id="navbar" class="navbar navbar-expand-lg px-3 mb-3 sticky-top fixed bg-body">
+  <nav id="navbar" class="navbar navbar-expand-lg px-3 mb-3 sticky-top bg-body">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">{{ portfolio.name }}</a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -18,14 +18,14 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav nav-pills ms-auto">
-            <li class="nav-item">
-              <a class="nav-link rounded-pill px-lg-3 text-center" href="#about">About</a>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <NuxtLink class="nav-link rounded-pill px-lg-3 text-center" href="#about">About</NuxtLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link rounded-pill px-lg-3 text-center" href="#work">Work Experience</a>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <NuxtLink class="nav-link rounded-pill px-lg-3 text-center" href="#work">Work Experience</NuxtLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link rounded-pill px-lg-3 text-center" href="#projects">Projects</a>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <NuxtLink class="nav-link rounded-pill px-lg-3 text-center" href="#projects">Projects</NuxtLink>
             </li>
             <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-emphasis" />
@@ -132,7 +132,12 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
           <div class="card">
             <img :src="project.image" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title text-primary-emphasis m-0"><b>{{ project.name }}</b></h5>
+              <h5 class="card-title text-primary-emphasis m-0">
+                <a v-if="project.url || project.github" class="text-decoration-none" :href="project.url || project.github" target="_blank">
+                  <strong>{{ project.name }}</strong>
+                </a>
+                <strong v-else>{{ project.name }}</strong>
+              </h5>
               <p class="text-dark-emphasis">{{ project.period }}</p>
               <p class="card-text">{{ project.description }}</p>
               <ul v-if="project.bullets">

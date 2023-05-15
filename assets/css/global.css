@@ -37,15 +37,15 @@ body {
   --bs-link-color-rgb: 154, 171, 255;
   --bs-link-hover-color: #8585ff;
   --bs-link-hover-color-rgb: 133, 133, 255;
-  --bs-primary-text: #9aabff;
+  --bs-primary-text-emphasis: #9aabff;
 }
 
 :root, [data-bs-theme=light] {
-  --bs-link-color: #8585ff;
-  --bs-link-color-rgb: 133, 133, 255;
-  --bs-link-hover-color: #66f;
-  --bs-link-hover-color-rgb: 102, 102, 255;
-  --bs-primary-text: #66f;
+  --bs-link-color: rgb(88, 88, 235);
+  --bs-link-color-rgb: 88, 88, 235;
+  --bs-link-hover-color: rgb(74, 74, 223);
+  --bs-link-hover-color-rgb: 74, 74, 223;
+  --bs-primary-text-emphasis: #5858eb;
 }
 
 :root {
