@@ -1,6 +1,6 @@
 import { faGithub, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-export default {
+export const portfolio = {
   name: "Yizack Rangel",
   location: "La Chorrera, Panama",
   flag: "https://gist.githubusercontent.com/Yizack/260f39ecd845648c7e749fde1a18687b/raw/01875b5b95131280bd82e4d9ae170552694e2b73/Flag_of_Panama.svg",
@@ -38,7 +38,7 @@ export default {
       institution: "Escuela Secundaria Pedro Pablo Sánchez",
       city: "La Chorrera, Panama",
       diploma: "High School Diploma, Science",
-      period: "Feb 2010 — Dec 2015",
+      period: "Feb 2010 — Dec 2015"
     }
   ],
   works: [
@@ -73,7 +73,7 @@ export default {
   languages: [
     { name: "Spanish", level: "Native", p: 100 },
     { name: "English", level: "Advanced", p: 90 },
-    { name: "French", level: "Elementary", p: 20 },
+    { name: "French", level: "Elementary", p: 20 }
   ],
   qualities: [
     "Clean and readable code",
@@ -87,13 +87,13 @@ export default {
     "Time management"
   ],
   skills: {
-    "JavaScript": ["ES6+", "Node.js", "Vue.js", "Nuxt.js", "Capacitor"],
-    "SQL": ["PostgreSQL", "MySQL", "SQLite"],
-    "PHP": ["Native", "WordPress", "Composer"],
-    "Cloud": ["AWS", "Heroku", "Google Cloud"],
-    "Serverless": [ "Cloudflare Workers", "Vercel"],
+    JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt.js", "Capacitor"],
+    SQL: ["PostgreSQL", "MySQL", "SQLite"],
+    PHP: ["Native", "WordPress", "Composer"],
+    Cloud: ["AWS", "Heroku", "Google Cloud"],
+    Serverless: ["Cloudflare Workers", "Vercel"],
     "Continuous Integration": ["GitHub Actions", "Circle CI", "Jest", "Codecov"],
-    "Mobile": ["Android Studio"],
+    Mobile: ["Android Studio"]
   },
   projects: [
     {
@@ -195,5 +195,5 @@ export default {
       github: "",
       technologies: ["PHP", "Spotify API", "Bootstrap 5"]
     }
-  ],
+  ]
 };

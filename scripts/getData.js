@@ -1,4 +1,3 @@
-
 import { writeFileSync, existsSync, mkdirSync } from "fs";
 
 const dir = "./assets/data";

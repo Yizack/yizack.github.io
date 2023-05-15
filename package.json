@@ -7,11 +7,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "getdata": "node getData.js"
+    "getdata": "node scripts/getData.js"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config": "^12.0.0",
     "eslint": "^8.39.0",
-    "eslint-plugin-vue": "^9.11.0",
     "nuxt": "^3.4.3",
     "stylelint": "^15.6.0"
   },

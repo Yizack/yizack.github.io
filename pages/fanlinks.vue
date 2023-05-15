@@ -1,15 +1,12 @@
 <script setup>
-import { SITE } from "~/dimatis-info.js";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import data from "~/assets/data/all.json";
 </script>
 
 <template>
-  <div class="bg-image" :style="`background-image: url('${ SITE.background }')`"></div>
+  <div class="bg-image" :style="`background-image: url('${ SITE.background }')`" />
   <div class="container text-white">
     <div class="row">
-      <div class="mx-auto col-lg-4" v-for="(fanlink, key) in data" :key="key">
+      <div v-for="(fanlink, key) in data" :key="key" class="mx-auto col-lg-4">
         <div class="card o-hidden my-3 p-0 border-dark bg-dark">
           <div class="row">
             <div class="col-lg-12">
@@ -17,7 +14,7 @@ import data from "~/assets/data/all.json";
               <img class="img-fluid mx-auto d-block rounded-top" :src="`${SITE.src_url}/images/${ fanlink.cover || key }.jpg`" width="100%">
               <!-- titulo -->
               <div class="p-3">
-                <div class="text-center">
+                <div class="text-center text-white">
                   <h5><b>{{ fanlink.title }}</b></h5>
                   <h6 class="mb-0">{{ fanlink.artists }}</h6>
                 </div>
@@ -34,22 +31,22 @@ import data from "~/assets/data/all.json";
       <div class="mx-auto col-lg-12 socials text-center h4">
         <ul class="icons my-2 p-0">
           <li>
-            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank"><FontAwesomeIcon :icon="faSpotify"/></a>
+            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank"><FontAwesome :icon="faSpotify" /></a>
           </li>
           <li>
-            <a href="https://soundcloud.com/dimatis" target="_blank"><FontAwesomeIcon :icon="faSoundcloud"/></a>
+            <a href="https://soundcloud.com/dimatis" target="_blank"><FontAwesome :icon="faSoundcloud" /></a>
           </li>
           <li>
-            <a href="https://youtube.com/dimatis" target="_blank"><FontAwesomeIcon :icon="faYoutube"/></a>
+            <a href="https://youtube.com/dimatis" target="_blank"><FontAwesome :icon="faYoutube" /></a>
           </li>
           <li>
-            <a href="https://twitter.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faTwitter"/></a>
+            <a href="https://twitter.com/dimatismusic" target="_blank"><FontAwesome :icon="faTwitter" /></a>
           </li>
           <li>
-            <a href="https://facebook.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faFacebook"/></a>
+            <a href="https://facebook.com/dimatismusic" target="_blank"><FontAwesome :icon="faFacebook" /></a>
           </li>
           <li class="p-0">
-            <a href="https://instagram.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faInstagram"/></a>
+            <a href="https://instagram.com/dimatismusic" target="_blank"><FontAwesome :icon="faInstagram" /></a>
           </li>
         </ul>
       </div>
@@ -60,19 +57,12 @@ import data from "~/assets/data/all.json";
   </div>
 </template>
 
-<style scoped>
-  @import "~/assets/css/links.css";
-</style>
-
 <script>
 export default {
   name: "FanLinks"
 };
 </script>
 
-<!--
-<script>
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-</script>
--->
+<style scoped>
+  @import "~/assets/css/links.css";
+</style>

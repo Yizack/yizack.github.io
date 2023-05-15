@@ -1,12 +1,9 @@
 <script setup>
-import { SITE } from "~/dimatis-info.js";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import data from "~/assets/data/all.json";
 </script>
 
 <template>
-  <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${ page.cover || param }.jpg)`"></div>
+  <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${ page.cover || param }.jpg)`" />
   <div class="container text-white">
     <div class="row">
       <div class="mx-auto col-lg-4">
@@ -27,7 +24,7 @@ import data from "~/assets/data/all.json";
             <template v-if="album">
               <a class="row m-auto links text-white" :href="`/${ page.cover || param }/`" target="_blank" :title="`Full ${data[page.cover || param].type}`">
                 <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" :src="`/images/stores/${ page.cover || param }.png`" width="100%"/>
+                  <img class="d-block" :src="`/images/stores/${ page.cover || param }.png`" width="100%">
                 </div>
                 <div class="col-5 px-0 py-4 text-center my-auto">
                   <span class="btn btn-outline-light rounded-pill px-3">View</span>
@@ -39,7 +36,7 @@ import data from "~/assets/data/all.json";
               <template v-if="link">
                 <a class="row m-auto links text-white" :href="key === 'spotify' ? link + '?si' : link" target="_blank" :title="SITE.stores[key].name">
                   <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                    <img class="d-block" :src="SITE.stores[key].image" width="100%"/>
+                    <img class="d-block" :src="SITE.stores[key].image" width="100%">
                   </div>
                   <div class="col-5 px-0 py-4 text-center my-auto">
                     <span class="btn btn-outline-light rounded-pill px-3">{{ SITE.stores[key].text }}</span>
@@ -59,22 +56,22 @@ import data from "~/assets/data/all.json";
       <div class="mx-auto col-lg-12 socials text-center h4">
         <ul class="icons my-2 p-0">
           <li>
-            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank"><FontAwesomeIcon :icon="faSpotify" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank"><FontAwesome :icon="faSpotify" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
           <li>
-            <a href="https://soundcloud.com/dimatis" target="_blank"><FontAwesomeIcon :icon="faSoundcloud" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://soundcloud.com/dimatis" target="_blank"><FontAwesome :icon="faSoundcloud" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
           <li>
-            <a href="https://youtube.com/dimatis" target="_blank"><FontAwesomeIcon :icon="faYoutube" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://youtube.com/dimatis" target="_blank"><FontAwesome :icon="faYoutube" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
           <li>
-            <a href="https://twitter.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faTwitter" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://twitter.com/dimatismusic" target="_blank"><FontAwesome :icon="faTwitter" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
           <li>
-            <a href="https://facebook.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faFacebook" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://facebook.com/dimatismusic" target="_blank"><FontAwesome :icon="faFacebook" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
           <li class="p-0">
-            <a href="https://instagram.com/dimatismusic" target="_blank"><FontAwesomeIcon :icon="faInstagram" :class="{'text-dark' : page.fanlink.dark}"/></a>
+            <a href="https://instagram.com/dimatismusic" target="_blank"><FontAwesome :icon="faInstagram" :class="{'text-dark' : page.fanlink.dark}" /></a>
           </li>
         </ul>
       </div>
@@ -85,21 +82,17 @@ import data from "~/assets/data/all.json";
   </div>
 </template>
 
-<style scoped>
-  @import "~/assets/css/links.css";
-</style>
-
 <script>
 export default {
   name: "MusicFanlink",
-  data() {
+  data () {
     return {
       param: this.$route.params.fanlink,
       page: data[this.$route.params.fanlink],
-      album: Object.keys(data).includes(this.$route.params.fanlink) ? "album" in data[this.$route.params.fanlink] : false,
+      album: Object.keys(data).includes(this.$route.params.fanlink) ? "album" in data[this.$route.params.fanlink] : false
     };
   },
-  created() {
+  created () {
     useHead({
       title: `${this.page.artists} - ${this.page.title}`,
       meta: [
@@ -125,8 +118,12 @@ export default {
       link: [
         { rel: "canonical", href: `${SITE.url}/${this.param}/` }
       ],
-      bodyAttrs: { id: "page-top" },
+      bodyAttrs: { id: "page-top" }
     });
   }
 };
 </script>
+
+<style scoped>
+  @import "~/assets/css/links.css";
+</style>

@@ -1,4 +1,4 @@
-import { SITE } from "./dimatis-info.js";
+import { SITE } from "./utils/dimatis-info.js";
 
 export default {
   app: {
@@ -12,19 +12,19 @@ export default {
         "data-bs-theme": "dark"
       },
       meta: [
-        { charset: "utf-8"},
+        { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },
         { name: "msapplication-TileColor", content: "#da532c" },
-        { name: "msapplication-TileImage", content: `${SITE.src_url}/icons/mstile-144x144.png` },
+        { name: "msapplication-TileImage", content: `${SITE.src_url}/icons/mstile-144x144.png` }
       ],
       link: [
         { rel: "preload", as: "style", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
         { rel: "stylesheet", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
-        { rel: "icon", type:"image/png", sizes:"16x16", href: `${SITE.src_url}/favicon-16x16.png` },
-        { rel: "icon", type:"image/png", sizes:"32x32", href: `${SITE.src_url}/favicon-32x32.png` },
-        { rel: "icon", type:"image/png", sizes:"192x192", href: `${SITE.src_url}/android-chrome-192x192.png` },
+        { rel: "icon", type: "image/png", sizes: "16x16", href: `${SITE.src_url}/favicon-16x16.png` },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: `${SITE.src_url}/favicon-32x32.png` },
+        { rel: "icon", type: "image/png", sizes: "192x192", href: `${SITE.src_url}/android-chrome-192x192.png` },
         { rel: "shortcut icon", href: `${SITE.src_url}/images/dimatis-logo-1.png` },
         { rel: "apple-touch-icon", sizes: "57x57", href: `${SITE.src_url}/apple-touch-icon-57x57.png` },
         { rel: "apple-touch-icon", sizes: "60x60", href: `${SITE.src_url}/apple-touch-icon-60x60.png` },
