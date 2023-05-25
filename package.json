@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^12.0.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "nuxt": "^3.5.0",
-    "stylelint": "^15.6.1"
+    "stylelint": "^15.6.2"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
