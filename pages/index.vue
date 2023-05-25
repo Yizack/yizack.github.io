@@ -136,8 +136,8 @@
         <Icon class="me-2  text-body" name="solar:programming-linear" size="2rem" />
         <span>Projects</span>
       </h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4" :data-masonry="JSON.stringify({percentPosition: true, itemSelector: '.col' })">
-        <div v-for="(project, project_index) in portfolio.projects" :key="project_index" class="col">
+      <div class="row g-4" :data-masonry="JSON.stringify({ percentPosition: true })">
+        <div v-for="(project, project_index) in portfolio.projects" :key="project_index" class="col-12 col-md-6">
           <div class="card">
             <img :src="project.image" class="card-img-top">
             <div class="card-body">
