@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-lg-12">
               <!-- cover -->
-              <img class="img-fluid mx-auto d-block rounded-top" :src="`${SITE.src_url}/images/${ fanlink.cover || key }.jpg`" width="100%">
+              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${ fanlink.cover || key }.jpg`">
               <!-- titulo -->
               <div class="p-3">
                 <div class="text-center text-white">

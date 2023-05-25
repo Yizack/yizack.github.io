@@ -7,7 +7,7 @@
           <div class="row m-auto">
             <div class="col-lg-12 p-0">
               <!-- cover -->
-              <img class="img-fluid mx-auto d-block rounded-top" :src="`${SITE.src_url}/images/${page.cover || param}.jpg`" width="100%">
+              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${page.cover || param}.jpg`">
               <!-- titulo -->
               <div class="p-4">
                 <div class="text-center text-white">
@@ -20,7 +20,7 @@
             <template v-if="album">
               <a class="row m-auto links text-white" :href="`/${ page.cover || param }/`" target="_blank" :title="`Full ${data[page.cover || param].type}`">
                 <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block" :src="`/images/stores/${ page.cover || param }.png`" width="100%">
+                  <img class="d-block w-100" :src="`/images/stores/${ page.cover || param }.png`">
                 </div>
                 <div class="col-5 px-0 py-4 text-center my-auto">
                   <span class="btn btn-outline-light rounded-pill px-3">View</span>
@@ -32,7 +32,7 @@
               <template v-if="link">
                 <a class="row m-auto links text-white" :href="key === 'spotify' ? link + '?si' : link" target="_blank" :title="SITE.stores[key].name">
                   <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                    <img class="d-block" :src="SITE.stores[key].image" width="100%">
+                    <img class="d-block w-100" :src="SITE.stores[key].image">
                   </div>
                   <div class="col-5 px-0 py-4 text-center my-auto">
                     <span class="btn btn-outline-light rounded-pill px-3">{{ SITE.stores[key].text }}</span>
