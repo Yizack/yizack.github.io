@@ -1,9 +1,3 @@
-<script setup>
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faAngleRight, faSuitcase, faBolt, faRocket, faLaptopCode, faArrowUpRightFromSquare, faGraduationCap, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
-</script>
-
 <template>
   <nav id="navbar" class="navbar navbar-expand-lg px-3 mb-3 sticky-top bg-body">
     <div class="container-fluid">
@@ -32,7 +26,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
               <hr class="d-lg-none my-2 text-dark-emphasis">
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-3 text-center" role="button" @click="toggleTheme()"><FontAwesome :icon="dark ? faMoon : faSun" width="16" height="16" /><span class="d-lg-none d-inline"> Toogle Theme</span></a>
+              <a class="nav-link px-lg-3 text-center" role="button" @click="toggleTheme()"><Icon :name="dark ? 'solar:moon-stars-bold' : 'solar:sun-2-bold'" size="1rem" /><span class="d-lg-none d-inline"> Toogle Theme</span></a>
             </li>
           </ul>
         </div>
@@ -44,7 +38,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
       <div class="row">
         <div class="col-md-9">
           <div>
-            <h2 class="mb-3"><FontAwesome class="me-2 text-body" :icon="faAddressCard" width="32" height="32" />About Me</h2>
+            <h2 class="mb-3"><Icon class="me-2 text-body" name="solar:user-id-outline" size="2rem" />About Me</h2>
             <p>
               I love Programming, passionate about computers and new technologies since I was 14 years old, it all started when I created my first blogs and bravely tried to understand and make use of HTML editors. Later I started watching videos about Java, and JavaScript to develop automated posting bots for social medias.
               <br><br>
@@ -54,7 +48,10 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
             </p>
           </div>
           <div class="mb-3">
-            <h2 class="mb-3"><FontAwesome class="me-2 text-body" :icon="faGraduationCap" width="32" height="32" />Education</h2>
+            <h2 class="mb-3 d-flex align-items-center">
+              <Icon class="me-2 text-body" name="solar:square-academic-cap-2-linear" size="2rem" />
+              <span>Education</span>
+            </h2>
             <div v-for="(edu, index) in portfolio.education" :key="index">
               <h5 class="m-0"><b class="text-primary-emphasis">{{ edu.diploma }}</b> at <b class="text-primary-emphasis">{{ edu.institution }}</b></h5>
               <p class="m-0">{{ edu.city }}</p>
@@ -81,20 +78,26 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
             </ul>
             <hr>
             <h5>Socials</h5>
-            <a v-for="(social, index) in portfolio.socials" :key="index" :href="social.url" target="_blank" class="text-dark-emphasis" :title="social.name">
-              <FontAwesome :icon="social.icon" width="24" height="24" />
+            <a v-for="(social, index) in portfolio.socials" :key="index" :href="social.url" target="_blank" class="text-dark-emphasis me-2" :title="social.name">
+              <Icon :name="social.icon" size="2rem" />
             </a>
           </div>
         </div>
         <hr class="my-4">
         <div class="col-md-5">
-          <h2 class="mb-3"><FontAwesome class="me-2 text-body" :icon="faRocket" width="32" height="32" />Quality Practices</h2>
+          <h2 class="mb-3 d-flex align-items-center">
+            <Icon class="me-2 text-body" name="solar:rocket-2-linear" size="2rem" />
+            <span>Quality Practices</span>
+          </h2>
           <ul class="list-group list-group-flush mb-3">
-            <li v-for="(quality, index) in portfolio.qualities" :key="index" class="list-group-item px-0 border-0"><FontAwesome class="me-2 text-primary-emphasis" :icon="faAngleRight" />{{ quality }}</li>
+            <li v-for="(quality, index) in portfolio.qualities" :key="index" class="list-group-item px-0 border-0"><Icon class="me-2 text-primary-emphasis" name="solar:alt-arrow-right-line-duotone" size="1.5rem" />{{ quality }}</li>
           </ul>
         </div>
         <div class="col-md-7">
-          <h2 class="mb-3"><FontAwesome class="me-2 text-body" :icon="faBolt" width="32" height="32" />Main Skills</h2>
+          <h2 class="mb-3 d-flex align-items-center">
+            <Icon class="me-2 text-body" name="solar:bolt-linear" size="2rem" />
+            <span>Main Skills</span>
+          </h2>
           <div v-for="(skill, key) in portfolio.skills" :key="key" class="mb-2">
             <table class="table table-borderless m-0 align-middle">
               <tbody>
@@ -114,7 +117,10 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
     </div>
     <hr class="my-4">
     <div id="work">
-      <h2 class="mb-3"><FontAwesome class="me-2 text-body" :icon="faSuitcase" width="32" height="32" />Work Experience</h2>
+      <h2 class="mb-3 d-flex align-items-center">
+        <Icon class="me-2 text-body" name="solar:suitcase-linear" size="2rem" />
+        <span>Work Experience</span>
+      </h2>
       <div v-for="(work, work_index) in portfolio.works" :key="work_index">
         <h5 class="m-0"><b class="text-primary-emphasis">{{ work.position }}</b> at <b class="text-primary-emphasis">{{ work.company }}</b></h5>
         <p class="m-0">{{ work.city }}</p>
@@ -126,7 +132,10 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
     </div>
     <hr class="my-4">
     <div id="projects">
-      <h2 class="mb-3"><FontAwesome class="me-2  text-body" :icon="faLaptopCode" width="32" height="32" />Projects</h2>
+      <h2 class="mb-3 d-flex align-items-center">
+        <Icon class="me-2  text-body" name="solar:programming-linear" size="2rem" />
+        <span>Projects</span>
+      </h2>
       <div class="row row-cols-1 row-cols-md-2 g-4" :data-masonry="JSON.stringify({percentPosition: true, itemSelector: '.col' })">
         <div v-for="(project, project_index) in portfolio.projects" :key="project_index" class="col">
           <div class="card">
@@ -145,8 +154,14 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
               </ul>
               <span v-for="(technology, tech_index) in project.technologies" :key="tech_index" class="border px-3 py-1 rounded-pill skill align-middle mx-1 small mb-1">{{ technology }}</span>
               <div class="d-flex justify-content-end mt-2">
-                <a v-if="project.github" :href="project.github" class="me-3 text-decoration-none" target="_blank"><FontAwesome :icon="faGithub" width="24" height="24" /> Repository</a>
-                <a v-if="project.url" :href="project.url" class="text-decoration-none" target="_blank"><FontAwesome :icon="faArrowUpRightFromSquare" width="24" height="24" /> View</a>
+                <a v-if="project.github" :href="project.github" class="me-3 text-decoration-none d-flex align-items-center" target="_blank">
+                  <Icon name="bi:github" size="1rem" />
+                  <span class="ms-1">Repository</span>
+                </a>
+                <a v-if="project.url" :href="project.url" class="text-decoration-none d-flex align-items-center" target="_blank">
+                  <Icon name="solar:square-bottom-up-linear" size="1rem" />
+                  <span class="ms-1">View</span>
+                </a>
               </div>
             </div>
           </div>

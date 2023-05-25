@@ -1,5 +1,3 @@
-import { faGithub, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-
 export const portfolio = {
   name: "Yizack Rangel",
   location: "La Chorrera, Panama",
@@ -9,22 +7,22 @@ export const portfolio = {
     {
       name: "GitHub",
       url: "https://github.com/yizack",
-      icon: faGithub
+      icon: "bi:github"
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/yizack/",
-      icon: faLinkedin
+      icon: "bi:linkedin"
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/yizackr/",
-      icon: faInstagram
+      icon: "bi:instagram"
     },
     {
       name: "Twitter",
       url: "https://twitter.com/yizackr",
-      icon: faTwitter
+      icon: "bi:twitter"
     }
   ],
   education: [

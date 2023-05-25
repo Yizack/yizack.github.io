@@ -1,7 +1,3 @@
-<script setup>
-import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-</script>
-
 <template>
   <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${ page.cover || param }.jpg)`" />
   <div class="container text-white">
@@ -56,22 +52,34 @@ import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram 
       <div class="mx-auto col-lg-12 socials text-center h4">
         <ul class="icons my-2 p-0">
           <li>
-            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank"><FontAwesome :icon="faSpotify" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank">
+              <Icon name="bi:spotify" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+            </a>
           </li>
           <li>
-            <a href="https://soundcloud.com/dimatis" target="_blank"><FontAwesome :icon="faSoundcloud" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://soundcloud.com/dimatis" target="_blank">
+              <Icon name="fa6-brands:soundcloud" :class="{'text-dark' : page.fanlink.dark}" height="2rem" width="2rem" />
+            </a>
           </li>
           <li>
-            <a href="https://youtube.com/dimatis" target="_blank"><FontAwesome :icon="faYoutube" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://youtube.com/dimatis" target="_blank">
+              <Icon name="bi:youtube" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/dimatismusic" target="_blank"><FontAwesome :icon="faTwitter" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://twitter.com/dimatismusic" target="_blank">
+              <Icon name="bi:twitter" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+            </a>
           </li>
           <li>
-            <a href="https://facebook.com/dimatismusic" target="_blank"><FontAwesome :icon="faFacebook" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://facebook.com/dimatismusic" target="_blank">
+              <Icon name="bi:facebook" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+            </a>
           </li>
           <li class="p-0">
-            <a href="https://instagram.com/dimatismusic" target="_blank"><FontAwesome :icon="faInstagram" :class="{'text-dark' : page.fanlink.dark}" /></a>
+            <a href="https://instagram.com/dimatismusic" target="_blank">
+              <Icon name="bi:instagram" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+            </a>
           </li>
         </ul>
       </div>

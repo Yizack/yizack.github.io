@@ -1,8 +1,3 @@
-<script setup>
-import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram, faBandcamp } from "@fortawesome/free-brands-svg-icons";
-import { faTShirt, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-</script>
-
 <template>
   <div class="bg-links" :style="`background-image: url('${SITE.background}'); opacity: 0.5;`" />
   <div class="container text-white">
@@ -15,35 +10,67 @@ import { faTShirt, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
       </div>
       <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
       <!-- Latest release -->
-      <a ref="releasepop" :href="`/${ page.cover || param }`" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-bs-toggle="popover"><b><DimatisIcon width="24" height="24" /> {{ page.artists }} - {{ page.title }}</b></a>
-      <!--
-      <div class="col-12 text-uppercase mx-auto"><span>Remix Contest</span></div>
-      <a href="{{ page.contest }}" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><i class="icon-dimatis"></i> {{ page.contest_name }}</b></a>
-      -->
+      <NuxtLink ref="releasepop" :to="`/${ page.cover || param }`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
+        <DimatisIcon width="24" height="24" />
+        <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
+      </NuxtLink>
       <div class="col-12 text-uppercase mx-auto"><span>Useful Links</span></div>
       <!-- Playlist -->
-      <a :href="SITE.useful.playlist" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faSpotify" /> Melodic Dubstep Playlist</b></a>
+      <a :href="SITE.useful.playlist" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:spotify" />
+        <strong class="ms-1">Melodic Dubstep Playlist</strong>
+      </a>
       <!-- Submit -->
-      <a :href="SITE.useful.submit" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faPaperPlane" /> Submit to my playlist</b></a>
+      <a :href="SITE.useful.submit" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="solar:plain-bold" />
+        <strong class="ms-1">Submit to my playlist</strong>
+      </a>
       <!-- Merch -->
-      <a ref="merchpop" :href="SITE.useful.merch" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none" data-bs-toggle="popover"><b><FontAwesome :icon="faTShirt" /> Buy my merch</b></a>
+      <a ref="merchpop" :href="SITE.useful.merch" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
+        <Icon name="solar:t-shirt-bold" />
+        <strong class="ms-1">Buy my merch</strong>
+      </a>
       <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
       <!-- Spotify -->
-      <a :href="SITE.socials.spotify" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faSpotify" /> Spotify</b></a>
+      <a :href="SITE.socials.spotify" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:spotify" />
+        <strong class="ms-1">Spotify</strong>
+      </a>
       <!-- Youtube -->
-      <a :href="SITE.socials.youtube" target="_blank" class="link youtube col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faYoutube" /> YouTube</b></a>
+      <a :href="SITE.socials.youtube" target="_blank" class="link youtube col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:youtube" />
+        <strong class="ms-1">YouTube</strong>
+      </a>
       <!-- Soundcloud -->
-      <a :href="SITE.socials.soundcloud" target="_blank" class="link soundcloud col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faSoundcloud" /> Soundcloud</b></a>
+      <a :href="SITE.socials.soundcloud" target="_blank" class="link soundcloud col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="fa6-brands:soundcloud" />
+        <strong class="ms-1">Soundcloud</strong>
+      </a>
       <!-- Instagram -->
-      <a :href="SITE.socials.instagram" target="_blank" class="link instagram col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faInstagram" /> Instagram</b></a>
+      <a :href="SITE.socials.instagram" target="_blank" class="link instagram col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:instagram" />
+        <strong class="ms-1">Instagram</strong>
+      </a>
       <!-- Facebook -->
-      <a :href="SITE.socials.facebook" target="_blank" class="link facebook col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faFacebook" /> Facebook</b></a>
+      <a :href="SITE.socials.facebook" target="_blank" class="link facebook col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:facebook" />
+        <strong class="ms-1">Facebook</strong>
+      </a>
       <!-- Twitter -->
-      <a :href="SITE.socials.twitter" target="_blank" class="link twitter col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faTwitter" /> Twitter</b></a>
+      <a :href="SITE.socials.twitter" target="_blank" class="link twitter col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="bi:twitter" />
+        <strong class="ms-1">Twitter</strong>
+      </a>
       <!-- Bandcamp -->
-      <a :href="SITE.socials.bandcamp" target="_blank" class="link bandcamp col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><FontAwesome :icon="faBandcamp" /> Bandcamp</b></a>
+      <a :href="SITE.socials.bandcamp" target="_blank" class="link bandcamp col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <Icon name="fa-brands:bandcamp" />
+        <strong class="ms-1">Bandcamp</strong>
+      </a>
       <!-- Website -->
-      <a :href="SITE.src_url" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none"><b><DimatisIcon width="24" height="24" /> Website</b></a>
+      <a :href="SITE.src_url" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <DimatisIcon width="24" height="24" />
+        <strong class="ms-1">Website</strong>
+      </a>
     </div>
   </div>
 

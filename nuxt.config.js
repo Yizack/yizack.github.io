@@ -47,5 +47,8 @@ export default {
   nitro: {
     crawlLinks: true,
     routes: ["/"]
-  }
+  },
+  modules: [
+    "nuxt-icon"
+  ]
 };

@@ -20,7 +20,7 @@ const SITE = {
     facebook: "https://facebook.com/dimatismusic",
     instagram: "https://instagram.com/dimatismusic",
     musicbrainz: "https://musicbrainz.org/artist/507c89e0-5a06-4466-bef0-0ae22dd90945",
-    bandcamp: "https://dimatis.bandcamp.com",
+    bandcamp: "https://dimatis.bandcamp.com"
   },
   fanlinks: "https://yizack.com/fanlinks",
   merch: [
