@@ -95,9 +95,22 @@ export const portfolio = {
   },
   projects: [
     {
+      name: "nuxt-twemoji",
+      description: "Twemoji module for Nuxt. Rendering emojis as SVG elements or PNG images.",
+      period: "May 2023 — Present",
+      bullets: [
+        "Developed a Nuxt.js module to render twitter emojis as SVG elements or PNG images.",
+        "Published the module on NPM"
+      ],
+      url: "https://github.com/Yizack/nuxt-twemoji",
+      github: "https://github.com/Yizack/nuxt-twemoji",
+      image: "/images/nuxt-twemoji.png",
+      technologies: ["Nuxt.js", "Node.js", "Typescript", "Javascript", "GitHub Actions", "Vue.js", "Twemoji", "NPM"]
+    },
+    {
       name: "How Many Times Larger",
       description: "Website and Game for easy country size comparisons.",
-      period: "February 2023 — Present",
+      period: "Feb 2023 — Present",
       bullets: [
         "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
         "Automatically downloaded most of the images of the countries' flags and shapes using Node.js.",
@@ -140,6 +153,18 @@ export const portfolio = {
       image: "/images/gist-readme.jpg",
       github: "https://github.com/Yizack/gists-readme",
       technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
+    },
+    {
+      name: "embeddable-music-player",
+      period: "Dec 2021 — Present",
+      description: "Embed a simple and beautiful HTML Spotify-like music player from local audio on your website using MediaElement.js and Color Thief.",
+      bullets: [
+        "Created a Spotify-like music player for websites using HTML, CSS, and Javascript."
+      ],
+      url: "https://embeddable-music-player.yizack.com/",
+      image: "/images/embeddable-music-player/full-screen.jpg",
+      github: "https://github.com/Yizack/embeddable-music-player",
+      technologies: ["HTML", "CSS", "Javascript"]
     },
     {
       name: "PESP.GG Website",
