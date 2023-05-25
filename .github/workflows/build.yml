@@ -46,6 +46,7 @@ jobs:
     
     - name: Build 🏗️
       run: |
+        pnpm getdata
         pnpm generate
 
     - name: Deploy 🚀
