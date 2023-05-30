@@ -86,9 +86,9 @@ export const portfolio = {
   ],
   skills: {
     JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt.js", "Capacitor"],
-    SQL: ["PostgreSQL", "MySQL", "SQLite"],
+    SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1"],
     PHP: ["Native", "WordPress", "Composer"],
-    Cloud: ["AWS", "Heroku", "Google Cloud"],
+    Cloud: ["AWS", "Heroku", "Google Cloud", "Cloudflare R2"],
     Serverless: ["Cloudflare Workers", "Vercel"],
     "Continuous Integration": ["GitHub Actions", "Circle CI", "Jest", "Codecov"],
     Mobile: ["Android Studio"]
@@ -173,7 +173,7 @@ export const portfolio = {
       url: "https://pesp.gg/",
       image: "/images/pespgg.jpg",
       github: "",
-      technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery"]
+      technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery", "Cloudflare D1", "Cloudflare R2", "Nuxt.js", "Vue.js"]
     },
     {
       name: "Panama Metrobus Balance",
