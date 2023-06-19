@@ -85,15 +85,29 @@ export const portfolio = {
     "Time management"
   ],
   skills: {
-    JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt.js", "Capacitor"],
-    SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1"],
+    JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt.js"],
+    SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1", "Drizzle-ORM"],
     PHP: ["Native", "WordPress", "Composer"],
-    Cloud: ["AWS", "Heroku", "Google Cloud", "Cloudflare R2"],
-    Serverless: ["Cloudflare Workers", "Vercel"],
-    "Continuous Integration": ["GitHub Actions", "Circle CI", "Jest", "Codecov"],
-    Mobile: ["Android Studio"]
+    Cloud: ["Cloudflare", "AWS", "Heroku", "Google Cloud"],
+    Serverless: ["Cloudflare Workers/Pages", "Vercel"],
+    "Continuous Integration": ["GitHub Actions", "Circle CI", "Jest", "Vitest", "Codecov"],
+    Mobile: ["Android Studio", "Capacitor.js"]
   },
   projects: [
+    {
+      name: "my-npm-list",
+      description: "Web app that fetches and displays all npm packages used in your GitHub projects. Login with your GitHub account, update your package list, and explore the lists of other registered users.",
+      period: "Jun 2023 — Present",
+      bullets: [
+        "Developed a Serverless web app project on Cloudflare Pages.",
+        "Implemented a login system using GitHub OAuth App.",
+        "Designed a Database using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries."
+      ],
+      url: "https://mynpmlist.yizack.com/",
+      github: "https://github.com/Yizack/my-npm-list",
+      image: "/images/my-npm-list.jpg",
+      technologies: ["Nuxt.js", "Node.js", "Vue.js", "Javascript", "Cloudflare Pages", "Cloudflare D1", "Github API", "Bootstrap 5", "Drizzle-ORM", "SQLite"]
+    },
     {
       name: "nuxt-twemoji",
       description: "Twemoji module for Nuxt. Rendering emojis as SVG elements or PNG images.",
@@ -170,9 +184,16 @@ export const portfolio = {
       name: "PESP.GG Website",
       period: "Sep 2021 — Present",
       description: "The PESP.GG website is a collaborative project between programmers, graphic designers and the company Panama Esports Productions for the creation of the company's official website",
+      bullets: [
+        "The project was initially developed using PHP hosted on AWS EC2, then migrated to Nuxt.js hosted on Cloudflare Pages.",
+        "Developed an Esports website project using Nuxt.js hosted on Cloudflare Pages.",
+        "Implemented an admin dashboard to manage the website's posts and see statistics.",
+        "Designed a Database for the website's posts using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
+        "Implemented an images and posts html content storage system using Cloudflare R2."
+      ],
       url: "https://pesp.gg/",
       image: "/images/pespgg.jpg",
-      github: "",
+      github: "https://github.com/Yizack/pesp.gg",
       technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery", "Cloudflare D1", "Cloudflare R2", "Nuxt.js", "Vue.js"]
     },
     {
