@@ -96,7 +96,7 @@ export const portfolio = {
   projects: [
     {
       name: "my-npm-list",
-      description: "Web app that fetches and displays all npm packages used in your GitHub projects. Login with your GitHub account, update your package list, and explore the lists of other registered users.",
+      description: "Web app that fetches and displays all npm packages used among all your GitHub projects. Login with your GitHub account, update your package list, and explore the lists of other registered users.",
       period: "Jun 2023 — Present",
       bullets: [
         "Developed a Serverless web app project on Cloudflare Pages.",
