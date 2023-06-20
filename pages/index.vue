@@ -40,11 +40,11 @@
           <div>
             <h2 class="mb-3"><Icon class="me-2 text-body" name="solar:user-id-outline" size="2rem" />About Me</h2>
             <p>
-              I love Programming, passionate about computers and new technologies since I was 14 years old, it all started when I created my first blogs and bravely tried to understand and make use of HTML editors. Later I started watching videos about Java, and JavaScript to develop automated posting bots for social medias.
+              Currently, I consider myself an enthusiast in the development of Progressive Web Applications (PWAs), mainly using Nuxt, the Vue framework, and the power of Serverless services to take advantage of their high performance at a low cost.
               <br><br>
-              I like to learn and focus on new technologies related to developing web and mobile apps, databases, system automation, server implementations, and GitHub for personal projects.
+              I have been passionate about computers and new technologies since I was 14 years old. It all began when I created my first blogs and bravely tried to understand and use HTML editors. Later, I started watching videos to learn Java and JavaScript, which allowed me to develop automated posting bots for social media.
               <br><br>
-              I studied Computer and Systems Engineering at the Technological University of Panama. Since the first year of my career I always told myself "There is no programming problem or challenge that can beat me, I can do them all" I went with that mindset until the end of my career and there was never a programming problem that I have given up on.
+              I studied Computer Systems Engineering at the Technological University of Panama. I am deeply passionate about computers and emerging technologies. I have experience in web and mobile app development, system automation, and database management. With my determination, I am confident in my ability to overcome any programming challenge that comes my way.
             </p>
           </div>
           <div class="mb-3">
