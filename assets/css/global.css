@@ -50,7 +50,7 @@ body {
 }
 
 :root {
-  scrollbar-color: var(--bs-dark-text-emphasis) var(--bs-body-bg);
+  scrollbar-color: var(--bs-dark-text-emphasis) var(--bs-tertiary-bg);
   scrollbar-width: auto;
   scroll-behavior: unset;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  border-radius: 8px;
+  background-color: var(--bs-tertiary-bg);
 }
 
 *::-webkit-scrollbar-thumb {
