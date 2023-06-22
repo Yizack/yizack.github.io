@@ -43,7 +43,7 @@
             <!-- free download -->
             <div class="col-lg-12 mt-3 p-0">
               <div class="d-grid">
-                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`https://dev.yizack.com/music/?file=${ param }&code=${ page.dropbox }`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
+                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`https://dev.yizack.com/api/dimatis/download?file=${ param }`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
               </div>
             </div>
           </div>
