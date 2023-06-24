@@ -6,11 +6,9 @@ Promise.all([
   fetch("https://dimatis.yizack.com/data/tracks.json"),
   fetch("https://dimatis.yizack.com/data/albums.json")
 ]).then(responses => Promise.all(responses.map(response => response.json()))).then(([tracks, albums]) => {
-
   if (!existsSync(dir)) {
     mkdirSync(dir);
   }
-  
 
   const data = tracks;
 
@@ -24,7 +22,7 @@ Promise.all([
 
   Object.assign(data, albumsData);
 
-  const sorted = Object.entries(data).sort(([,a], [,b]) => new Date(b.date) - new Date(a.date)).reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+  const sorted = Object.entries(data).sort(([, a], [, b]) => new Date(b.date) - new Date(a.date)).reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
   writeFileSync("./assets/data/all.json", JSON.stringify(sorted));
 });

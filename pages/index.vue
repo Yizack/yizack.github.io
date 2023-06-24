@@ -1,3 +1,20 @@
+<script setup>
+import "~/assets/css/portfolio.css";
+
+useHead({
+  title: "Yizack Rangel's Portfolio",
+  bodyAttrs: { "data-bs-spy": "scroll" },
+  script: [
+    {
+      src: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js",
+      body: true,
+      crossorigin: "anonymous",
+      async: true
+    }
+  ]
+});
+</script>
+
 <template>
   <nav id="navbar" class="navbar navbar-expand-lg px-3 mb-3 sticky-top bg-body">
     <div class="container-fluid">
@@ -173,25 +190,10 @@
 
 <script>
 export default {
-  name: "IndexPage",
   data () {
     return {
       dark: true
     };
-  },
-  created () {
-    useHead({
-      title: "Yizack Rangel's Portfolio",
-      bodyAttrs: { "data-bs-spy": "scroll" },
-      script: [
-        {
-          src: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js",
-          body: true,
-          crossorigin: "anonymous",
-          async: true
-        }
-      ]
-    });
   },
   methods: {
     toggleTheme () {
@@ -203,7 +205,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-  @import "~/assets/css/portfolio.css";
-</style>

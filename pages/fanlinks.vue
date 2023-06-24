@@ -1,3 +1,7 @@
+<script setup>
+import "~/assets/css/links.css";
+</script>
+
 <template>
   <div class="bg-image" :style="`background-image: url('${ SITE.background }')`" />
   <div class="container text-white">
@@ -64,13 +68,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "FanLinks"
-};
-</script>
-
-<style scoped>
-  @import "~/assets/css/links.css";
-</style>

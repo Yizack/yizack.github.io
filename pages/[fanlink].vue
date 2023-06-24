@@ -1,3 +1,48 @@
+<script setup>
+import "~/assets/css/links.css";
+const { params } = useRoute();
+const param = params.fanlink;
+
+const page = data[param];
+
+if (!page) {
+  throw createError({
+    statusCode: 404,
+    message: "Page not found"
+  });
+}
+
+const album = Object.keys(data).includes(param) ? "album" in data[param] : false;
+
+useHead({
+  title: `${page.artists} - ${page.title}`,
+  meta: [
+    { name: "keywords", content: `release, ${page.title}, ${page.genre}, play, stream, download, fanlink` },
+    { name: "description", content: page.description },
+    // Protocolo Open Graph
+    { property: "og:url", content: `${SITE.url}/music/${param}/` },
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: `${page.artists} - ${page.title}` },
+    { property: "og:site_name", content: SITE.name },
+    { property: "og:image", content: `${SITE.src_url}/images/${page.cover || param}.jpg` },
+    { property: "og:image:width", content: "500" },
+    { property: "og:image:height", content: "500" },
+    { property: "og:image:alt", content: `${page.artists} - ${page.title}` },
+    { property: "og:description", content: page.description },
+    // Twitter Card
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:image", content: `${SITE.src_url}/images/${page.cover || param}.jpg` },
+    { name: "twitter:title", content: `${page.artists} - ${page.title}` },
+    { name: "twitter:description", content: page.description },
+    { name: "twitter:site", content: "@dimatismusic" }
+  ],
+  link: [
+    { rel: "canonical", href: `${SITE.url}/${param}/` }
+  ],
+  bodyAttrs: { id: "page-top" }
+});
+</script>
+
 <template>
   <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${ page.cover || param }.jpg)`" />
   <div class="container text-white">
@@ -89,49 +134,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "MusicFanlink",
-  data () {
-    return {
-      param: this.$route.params.fanlink,
-      page: data[this.$route.params.fanlink],
-      album: Object.keys(data).includes(this.$route.params.fanlink) ? "album" in data[this.$route.params.fanlink] : false
-    };
-  },
-  created () {
-    useHead({
-      title: `${this.page.artists} - ${this.page.title}`,
-      meta: [
-        { name: "keywords", content: `release, ${this.page.title}, ${this.page.genre}, play, stream, download, fanlink` },
-        { name: "description", content: this.page.description },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/music/${this.param}/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `${this.page.artists} - ${this.page.title}` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:image", content: `${SITE.src_url}/images/${this.page.cover || this.param}.jpg` },
-        { property: "og:image:width", content: "500" },
-        { property: "og:image:height", content: "500" },
-        { property: "og:image:alt", content: `${this.page.artists} - ${this.page.title}` },
-        { property: "og:description", content: this.page.description },
-        // Twitter Card
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:image", content: `${SITE.src_url}/images/${this.page.cover || this.param}.jpg` },
-        { name: "twitter:title", content: `${this.page.artists} - ${this.page.title}` },
-        { name: "twitter:description", content: this.page.description },
-        { name: "twitter:site", content: "@dimatismusic" }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/${this.param}/` }
-      ],
-      bodyAttrs: { id: "page-top" }
-    });
-  }
-};
-</script>
-
-<style scoped>
-  @import "~/assets/css/links.css";
-</style>

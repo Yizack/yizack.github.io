@@ -15,7 +15,6 @@ nuxtApp.$router.options.scrollBehavior = (to) => {
 </script>
 
 <template>
-  <LoadingPage v-if="loading" />
   <NuxtLoadingIndicator :throttle="0" />
   <NuxtPage />
 </template>
