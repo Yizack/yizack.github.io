@@ -101,7 +101,6 @@
 
 <script>
 export default {
-  name: "DimatisTree",
   data () {
     return {
       page: Object.values(data)[0],
@@ -109,7 +108,7 @@ export default {
     };
   },
   mounted () {
-    this.$nuxt.$bootstrap.Popover(this.$refs.releasepop, {
+    this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, {
       container: "body",
       content: this.$refs.releasepop_content.innerHTML,
       html: true,
