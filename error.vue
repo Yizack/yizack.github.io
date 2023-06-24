@@ -1,7 +1,3 @@
-<script setup>
-import "~/assets/css/not-found.css";
-</script>
-
 <template>
   <div class="cover">
     {{ useError() }}

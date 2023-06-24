@@ -38,6 +38,9 @@ useHead({
             <li class="nav-item" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link rounded-pill px-lg-3 text-center" href="#projects">Projects</NuxtLink>
             </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link rounded-pill px-lg-3 text-center" href="/Eliezer_Rangel_Resume_EN.pdf" target="_blank">Download Resume</a>
+            </li>
             <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-emphasis" />
               <hr class="d-lg-none my-2 text-dark-emphasis">
