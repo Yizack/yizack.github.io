@@ -45,8 +45,10 @@ export default {
     "~/assets/css/global.css"
   ],
   nitro: {
-    crawlLinks: true,
-    routes: ["/"]
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"]
+    }
   },
   modules: [
     "nuxt-icon"
