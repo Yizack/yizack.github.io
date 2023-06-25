@@ -1,3 +1,7 @@
+<script setup>
+import "~/assets/css/not-found.css";
+</script>
+
 <template>
   <div class="cover">
     <h1>Page Not Found <small>Error 404</small></h1>
