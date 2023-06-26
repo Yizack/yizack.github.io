@@ -42,7 +42,9 @@ export default {
   },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
-    "~/assets/css/global.css"
+    "~/assets/css/global.css",
+    "~/assets/css/theme-dark.css",
+    "~/assets/css/theme-light.css"
   ],
   nitro: {
     prerender: {
