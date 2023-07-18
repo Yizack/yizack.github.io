@@ -10,7 +10,7 @@
     "getdata": "node scripts/getData.js"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxt/eslint-config": "^0.1.1",
     "eslint": "^8.45.0",
     "nuxt": "^3.6.3",
     "stylelint": "^15.10.1"
