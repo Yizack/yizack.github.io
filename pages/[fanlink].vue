@@ -8,7 +8,7 @@ const page = data[param];
 if (!page) {
   throw createError({
     statusCode: 404,
-    message: "Page not found",
+    message: `Page not found: '${param}'`,
     fatal: true
   });
 }
