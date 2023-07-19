@@ -1,10 +1,12 @@
 <script setup>
-import "~/assets/css/not-found.css";
+const { statusCode, message } = useError().value;
 </script>
 
 <template>
-  <div class="cover">
-    <h1>Page Not Found <small>Error 404</small></h1>
-    <p class="lead">Sorry, an error has occured, Requested page not found.</p>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div>
+      <h1>Error {{ statusCode }}</h1>
+      <h5 class="text-body">Sorry, an error has occured. {{ message }}</h5>
+    </div>
   </div>
 </template>
