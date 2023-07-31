@@ -87,7 +87,7 @@ export const portfolio = {
   skills: {
     JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt"],
     SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1", "Drizzle-ORM"],
-    PHP: ["Native", "WordPress", "Composer"],
+    PHP: ["Laravel", "Native", "WordPress", "Composer"],
     Cloud: ["Cloudflare", "AWS", "Heroku", "Google Cloud"],
     Serverless: ["Cloudflare Workers/Pages", "Vercel"],
     "Continuous Integration": ["GitHub Actions", "Circle CI", "Jest", "Vitest", "Codecov"],
