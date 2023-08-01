@@ -41,6 +41,12 @@ export const portfolio = {
   ],
   works: [
     {
+      company: "Millicom (Tigo)",
+      city: "Panama City, Panama",
+      position: "Programmer Specialist",
+      period: "Aug 2023 — Present"
+    },
+    {
       company: "GRUPO K & H, S.A",
       city: "Pacora, Panama",
       position: "Web App Developer",
