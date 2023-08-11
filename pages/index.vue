@@ -156,8 +156,8 @@ useHead({
         <Icon class="me-2  text-body" name="solar:programming-linear" size="2rem" />
         <span>Projects</span>
       </h2>
-      <div class="row g-4" :data-masonry="JSON.stringify({ percentPosition: true })">
-        <div v-for="(project, project_index) in portfolio.projects" :key="project_index" class="col-12 col-md-6">
+      <MasonryWall :items="portfolio.projects" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400">
+        <template #default="{ item: project }">
           <div class="card">
             <img :src="project.image" class="card-img-top">
             <div class="card-body">
@@ -185,8 +185,8 @@ useHead({
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </template>
+      </MasonryWall>
     </div>
   </div>
 </template>
