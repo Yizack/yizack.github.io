@@ -1,6 +1,6 @@
 import { SITE } from "./utils/dimatis-info.js";
 
-export default {
+export default defineNuxtConfig({
   app: {
     rootId: "app",
     buildAssetsDir: "/_app/",
@@ -55,5 +55,8 @@ export default {
   modules: [
     "nuxt-icon"
   ],
-  spaLoadingTemplate: false
-};
+  spaLoadingTemplate: false,
+  experimental: {
+    inlineSSRStyles: false
+  }
+});
