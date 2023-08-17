@@ -43,7 +43,7 @@ export const portfolio = {
     {
       company: "Millicom (Tigo)",
       city: "Panama City, Panama",
-      position: "Programmer Specialist",
+      position: "Programming Specialist",
       period: "Aug 2023 — Present"
     },
     {
