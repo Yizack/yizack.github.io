@@ -85,6 +85,7 @@ export const portfolio = {
     "Performance optimization",
     "Troubleshooting",
     "Continuous Integration",
+    "Conventional Commits",
     "Optimistic",
     "Ability to adapt and learn",
     "Analytical and logical skills",
