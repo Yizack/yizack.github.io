@@ -3,15 +3,7 @@ import "~/assets/css/portfolio.css";
 
 useHead({
   title: "Yizack Rangel's Portfolio",
-  bodyAttrs: { "data-bs-spy": "scroll" },
-  script: [
-    {
-      src: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js",
-      body: true,
-      crossorigin: "anonymous",
-      async: true
-    }
-  ]
+  bodyAttrs: { "data-bs-spy": "scroll" }
 });
 </script>
 
