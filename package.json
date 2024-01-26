@@ -11,13 +11,13 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
-    "@yeger/vue-masonry-wall": "^5.0.2",
-    "eslint": "^8.51.0",
-    "nuxt": "^3.7.4",
-    "stylelint": "^15.10.3"
+    "@yeger/vue-masonry-wall": "^5.0.6",
+    "eslint": "^8.56.0",
+    "nuxt": "^3.9.3",
+    "stylelint": "^16.2.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "nuxt-icon": "^0.5.0"
+    "nuxt-icon": "^0.6.8"
   }
 }

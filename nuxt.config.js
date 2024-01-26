@@ -56,7 +56,7 @@ export default defineNuxtConfig({
     "nuxt-icon"
   ],
   spaLoadingTemplate: false,
-  experimental: {
-    inlineSSRStyles: false
+  features: {
+    inlineStyles: false
   }
 });
