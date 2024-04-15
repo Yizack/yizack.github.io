@@ -3,7 +3,7 @@
   <div class="container text-white">
     <div class="text-center row py-4">
       <div class="col-lg-12 mb-2" style="z-index: 1;">
-        <img class="mx-auto rounded-circle" src="https://dimatis.yizack.com/images/dimatis-logo-2.png" height="150" width="150" style="z-index: 1;">
+        <img class="mx-auto rounded-circle" src="https://dimatis.yizack.com/images/sq-logo-dimatis.jpg" height="150" width="150" style="z-index: 1;">
       </div>
       <div class="col-lg-12 mb-4" style="z-index: 1;">
         <h3 style="z-index: 1;">Dimatis</h3>

@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/png", sizes: "16x16", href: `${SITE.src_url}/favicon-16x16.png` },
         { rel: "icon", type: "image/png", sizes: "32x32", href: `${SITE.src_url}/favicon-32x32.png` },
         { rel: "icon", type: "image/png", sizes: "192x192", href: `${SITE.src_url}/android-chrome-192x192.png` },
-        { rel: "shortcut icon", href: `${SITE.src_url}/images/dimatis-logo-1.png` },
+        { rel: "shortcut icon", href: `${SITE.src_url}/images/dimatis-logo.png` },
         { rel: "apple-touch-icon", sizes: "57x57", href: `${SITE.src_url}/apple-touch-icon-57x57.png` },
         { rel: "apple-touch-icon", sizes: "60x60", href: `${SITE.src_url}/apple-touch-icon-60x60.png` },
         { rel: "apple-touch-icon", sizes: "72x72", href: `${SITE.src_url}/apple-touch-icon-72x72.png` },
