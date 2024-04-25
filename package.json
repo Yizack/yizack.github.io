@@ -10,11 +10,11 @@
     "getdata": "node scripts/getData.js"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.1",
-    "@yeger/vue-masonry-wall": "^5.0.9",
+    "@nuxt/eslint-config": "^0.3.9",
+    "@yeger/vue-masonry-wall": "^5.0.10",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
-    "stylelint": "^16.3.1"
+    "stylelint": "^16.4.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
