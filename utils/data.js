@@ -1,3 +1,3 @@
-import data from "~/assets/data/all.json";
+import tracksData from "~/assets/data/all.json";
 
-export { data };
+export { tracksData };

@@ -7,6 +7,13 @@ class Bootstrap {
     return new Popover(el, options);
   }
 
+  hidePopover (el) {
+    const popover = Popover.getInstance(el);
+    if (popover) {
+      popover.hide();
+    }
+  }
+
   Carousel (el, options) {
     return new Carousel(el, options);
   }

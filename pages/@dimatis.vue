@@ -103,12 +103,12 @@
 export default {
   data () {
     return {
-      page: Object.values(data)[0],
-      param: Object.keys(data)[0]
+      page: Object.values(tracksData)[0],
+      param: Object.keys(tracksData)[0]
     };
   },
-  onBeforeUnmount () {
-    this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, "dispose");
+  beforeUnmount () {
+    this.$nuxt.$bootstrap.hidePopover(this.$refs.releasepop.$el);
   },
   mounted () {
     this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, {

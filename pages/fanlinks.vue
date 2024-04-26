@@ -6,7 +6,7 @@ import "~/assets/css/links.css";
   <div class="bg-image" :style="`background-image: url('${ SITE.background }')`" />
   <div class="container text-white">
     <div class="row">
-      <div v-for="(fanlink, key) in data" :key="key" class="mx-auto col-lg-4">
+      <div v-for="(fanlink, key) in tracksData" :key="key" class="mx-auto col-lg-4">
         <div class="card o-hidden my-3 p-0 border-dark bg-dark">
           <div class="row">
             <div class="col-lg-12">

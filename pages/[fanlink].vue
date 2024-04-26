@@ -3,7 +3,7 @@ import "~/assets/css/links.css";
 const { params } = useRoute();
 const param = params.fanlink;
 
-const page = data[param];
+const page = tracksData[param];
 
 if (!page) {
   throw createError({
@@ -13,7 +13,7 @@ if (!page) {
   });
 }
 
-const album = Object.keys(data).includes(param) ? "album" in data[param] : false;
+const album = Object.keys(tracksData).includes(param) ? "album" in tracksData[param] : false;
 
 useHead({
   title: `${page.artists} - ${page.title}`,
