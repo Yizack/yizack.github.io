@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    "@nuxt/eslint",
     "nuxt-icon"
   ],
   spaLoadingTemplate: false,

@@ -7,12 +7,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "getdata": "node scripts/getData.js"
+    "getdata": "node scripts/getData.js",
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint --fix",
+    "lint:stylelint": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.9",
+    "@nuxt/eslint": "^0.3.10",
     "@yeger/vue-masonry-wall": "^5.0.10",
-    "eslint": "^8.57.0",
+    "eslint": "^9.1.1",
     "nuxt": "^3.11.2",
     "stylelint": "^16.4.0"
   },
