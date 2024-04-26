@@ -107,6 +107,9 @@ export default {
       param: Object.keys(data)[0]
     };
   },
+  onBeforeUnmount () {
+    this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, "dispose");
+  },
   mounted () {
     this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, {
       container: "body",
