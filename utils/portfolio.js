@@ -44,7 +44,14 @@ export const portfolio = {
       company: "Millicom (Tigo)",
       city: "Panama City, Panama",
       position: "Programming Specialist",
-      period: "Aug 2023 — Present"
+      period: "Aug 2023 — Mar 2024",
+      bullets: [
+        "Worked with teams to develop and maintain internal web applications and services.",
+        "Created and maintanied API integrations using Laravel",
+        "Developed and optimized ETL processes to extract, transform, and load data efficiently between different databases.",
+        "Participated in Solution Design with the team for new or improvement of existing systems.",
+        "Managed the regional IT page as a Community Member of the company's Microsoft SharePoint Enterprise Portal."
+      ]
     },
     {
       company: "GRUPO K & H, S.A",
@@ -93,7 +100,7 @@ export const portfolio = {
   ],
   skills: {
     JavaScript: ["ES6+", "Node.js", "Vue.js", "Nuxt"],
-    SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1", "Drizzle-ORM"],
+    SQL: ["PostgreSQL", "MySQL", "SQLite", "Cloudflare D1", "Drizzle-ORM", "Oracle"],
     PHP: ["Laravel", "Native", "WordPress", "Composer"],
     Cloud: ["Cloudflare", "AWS", "Heroku", "Google Cloud"],
     Serverless: ["Cloudflare Workers/Pages", "Vercel"],
@@ -101,6 +108,20 @@ export const portfolio = {
     Mobile: ["Android Studio", "Capacitor.js"]
   },
   projects: [
+    {
+      name: "MappedLove",
+      description: "Web app made for couples. Mark the places you have visited together upload images and preserve your special moments forever.",
+      period: "Jun 2023 — Present",
+      bullets: [
+        "Developed a Serverless web app project on Cloudflare Pages.",
+        "Implemented an email-based login system.",
+        "Designed a Database using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries."
+      ],
+      url: "https://mappedlove.com/",
+      github: "https://github.com/Yizack/mappedlove",
+      image: "/images/mappedlove.jpg",
+      technologies: ["Nuxt", "Node.js", "Vue.js", "Javascript", "Cloudflare Pages", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "SQLite"]
+    },
     {
       name: "my-npm-list",
       description: "Web app that fetches and displays all npm packages used among all your GitHub projects. Login with your GitHub account, update your package list, and explore the lists of other registered users.",
