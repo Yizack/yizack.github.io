@@ -1,6 +1,15 @@
 <script setup>
 import "~/assets/css/portfolio.css";
 
+const dark = ref(true);
+
+const toggleTheme = () => {
+  dark.value = !dark.value;
+  useHead({
+    bodyAttrs: { "data-bs-theme": dark.value ? "dark" : "light" }
+  });
+};
+
 useHead({
   title: "Yizack Rangel's Portfolio",
   bodyAttrs: { "data-bs-spy": "scroll" }
@@ -182,21 +191,3 @@ useHead({
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      dark: true
-    };
-  },
-  methods: {
-    toggleTheme () {
-      this.dark = !this.dark;
-      useHead({
-        bodyAttrs: { "data-bs-theme": this.dark ? "dark" : "light" }
-      });
-    }
-  }
-};
-</script>
