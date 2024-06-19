@@ -114,8 +114,10 @@ export const portfolio = {
       period: "Jun 2023 — Present",
       bullets: [
         "Developed a Serverless web app project on Cloudflare Pages.",
-        "Implemented an email-based login system.",
-        "Designed a Database using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries."
+        "Integrated Leaflet and OpenStreetMap for the map and markers.",
+        "Implemented an email-based and Google login system.",
+        "Designed a Database using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
+        "Integrated Paddle payment processor for offering premium subscriptions.",
       ],
       url: "https://mappedlove.com/",
       github: "https://github.com/Yizack/mappedlove",
