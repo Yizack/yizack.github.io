@@ -157,7 +157,7 @@ useHead({
         <Icon class="me-2  text-body" name="solar:programming-linear" size="2rem" />
         <span>Projects</span>
       </h2>
-      <MasonryWall :items="portfolio.projects" :ssr-columns="1" :gap="16" :max-columns="2" :column-width="400">
+      <MasonryWall :items="portfolio.projects" :ssr-columns="2" :gap="16" :max-columns="2" :column-width="400">
         <template #default="{ item: project }">
           <div class="card">
             <img :src="project.image" class="card-img-top">
