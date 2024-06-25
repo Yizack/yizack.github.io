@@ -3,18 +3,18 @@ import Popover from "bootstrap/js/dist/popover";
 import Carousel from "bootstrap/js/dist/carousel";
 
 class Bootstrap {
-  Popover (el, options) {
+  Popover (el: HTMLElement, options: Record<string, unknown>) {
     return new Popover(el, options);
   }
 
-  hidePopover (el) {
+  hidePopover (el: HTMLElement) {
     const popover = Popover.getInstance(el);
     if (popover) {
       popover.hide();
     }
   }
 
-  Carousel (el, options) {
+  Carousel (el: HTMLElement, options: Record<string, unknown>) {
     return new Carousel(el, options);
   }
 }

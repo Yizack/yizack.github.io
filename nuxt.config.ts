@@ -3,7 +3,6 @@ import { SITE } from "./utils/dimatis-info.js";
 export default defineNuxtConfig({
   app: {
     rootId: "app",
-    buildAssetsDir: "/_app/",
     head: {
       htmlAttrs: {
         lang: "en"
@@ -56,6 +55,12 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "nuxt-icon"
   ],
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
   spaLoadingTemplate: false,
   features: {
     inlineStyles: false

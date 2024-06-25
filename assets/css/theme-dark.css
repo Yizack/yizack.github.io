@@ -1,4 +1,4 @@
-:root [data-bs-theme=dark] {
+:root [data-bs-theme="dark"] {
   --bs-body-bg: #151515;
   --bs-body-bg-rgb: 21, 21, 21;
   --bs-link-color: #9aabff;
@@ -7,4 +7,12 @@
   --bs-link-hover-color-rgb: 133, 133, 255;
   --bs-primary-text-emphasis: #9aabff;
   --bs-heading-color: #f9f9f9;
+}
+
+[data-bs-theme="dark"] .bg-primary {
+  background-color: #9aabff!important;
+}
+
+[data-bs-theme="dark"] .bg-primary > * {
+  color: var(--bs-body-bg)
 }

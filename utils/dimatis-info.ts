@@ -1,6 +1,8 @@
 const SITE = {
   name: "Dimatis",
+  url: "https://yizack.com",
   src_domain: "dimatis.yizack.com",
+  src_url: "https://dimatis.yizack.com",
   domain: "yizack.com",
   protocol: "https",
   meta_description: "Dimatis is a Panamanian musician and producer.",
@@ -98,8 +100,5 @@ const SITE = {
     }
   }
 };
-
-SITE.url = `${SITE.protocol}://${SITE.domain}`;
-SITE.src_url = `${SITE.protocol}://${SITE.src_domain}`;
 
 export { SITE };

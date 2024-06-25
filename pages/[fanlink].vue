@@ -1,7 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import "~/assets/css/links.css";
+
 const { params } = useRoute();
-const param = params.fanlink;
+const param = params.fanlink.toString();
 
 const page = tracksData[param];
 
@@ -45,7 +46,7 @@ useHead({
 </script>
 
 <template>
-  <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${ page.cover || param }.jpg)`" />
+  <div class="bg-image" :style="`background-image: url(${SITE.src_url}/images/${page.cover || param}.jpg)`" />
   <div class="container text-white">
     <div class="row">
       <div class="mx-auto col-lg-4">
@@ -64,9 +65,9 @@ useHead({
             </div>
             <!-- full album -->
             <template v-if="album">
-              <a class="row m-auto links text-white" :href="`/${ page.cover || param }/`" target="_blank" :title="`Full ${data[page.cover || param].type}`">
+              <a class="row m-auto links text-white" :href="`/${page.cover || param}/`" target="_blank" :title="`Full ${tracksData['cover' in page ? page.cover : param].type}`">
                 <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
-                  <img class="d-block w-100" :src="`/images/stores/${ page.cover || param }.png`">
+                  <img class="d-block w-100" :src="`/images/stores/${page.cover || param}.png`">
                 </div>
                 <div class="col-5 px-0 py-4 text-center my-auto">
                   <span class="btn btn-outline-light rounded-pill px-3">View</span>
@@ -89,7 +90,7 @@ useHead({
             <!-- free download -->
             <div class="col-lg-12 mt-3 p-0">
               <div class="d-grid">
-                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`https://dev.yizack.com/api/dimatis/download?file=${ param }`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
+                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`https://dev.yizack.com/api/dimatis/download?file=${param}`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
               </div>
             </div>
           </div>
@@ -99,37 +100,37 @@ useHead({
         <ul class="icons my-2 p-0">
           <li>
             <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank">
-              <Icon name="bi:spotify" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+              <Icon name="bi:spotify" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
           <li>
             <a href="https://soundcloud.com/dimatis" target="_blank">
-              <Icon name="fa6-brands:soundcloud" :class="{'text-dark' : page.fanlink.dark}" height="2rem" width="2rem" />
+              <Icon name="fa6-brands:soundcloud" :class="{ 'text-dark': page.fanlink.dark }" height="2rem" width="2rem" />
             </a>
           </li>
           <li>
             <a href="https://youtube.com/dimatis" target="_blank">
-              <Icon name="bi:youtube" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+              <Icon name="bi:youtube" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/dimatismusic" target="_blank">
-              <Icon name="bi:twitter" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+              <Icon name="bi:twitter" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
           <li>
             <a href="https://facebook.com/dimatismusic" target="_blank">
-              <Icon name="bi:facebook" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+              <Icon name="bi:facebook" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
           <li class="p-0">
             <a href="https://instagram.com/dimatismusic" target="_blank">
-              <Icon name="bi:instagram" :class="{'text-dark' : page.fanlink.dark}" size="1.5rem" />
+              <Icon name="bi:instagram" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
         </ul>
       </div>
-      <div class="mx-auto col-lg-12 text-center h5 website" :class="{'text-dark' : page.fanlink.dark}">
+      <div class="mx-auto col-lg-12 text-center h5 website" :class="{ 'text-dark': page.fanlink.dark }">
         <a class="text-decoration-none" href="https://dimatis.yizack.com" target="_blank" title="Website">dimatis.yizack.com</a>
       </div>
     </div>

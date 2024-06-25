@@ -1,3 +1,40 @@
+<script setup lang="ts">
+const { $bootstrap } = useNuxtApp();
+
+const releasepop = ref<{ $el: HTMLElement }>();
+const releasepop_content = ref<HTMLElement>();
+const merchpop = ref<HTMLElement>();
+
+const page = ref(Object.values(tracksData)[0]);
+const param = ref(Object.keys(tracksData)[0]);
+
+onBeforeUnmount(() => {
+  if (!releasepop.value) return;
+  $bootstrap.hidePopover(releasepop.value.$el);
+});
+
+onMounted(() => {
+  if (!releasepop.value || !releasepop_content.value || !merchpop.value) return;
+
+  $bootstrap.Popover(releasepop.value.$el, {
+    container: "body",
+    content: releasepop_content.value.innerHTML,
+    html: true,
+    placement: "bottom",
+    trigger: "hover"
+  });
+  const myPopoverTrigger = merchpop.value;
+  myPopoverTrigger.addEventListener("shown.bs.popover", () => {
+    const myCarouselElement = document.querySelector(".popover #merch-carousel");
+    if (!myCarouselElement) return;
+    $bootstrap.Carousel(myCarouselElement as HTMLElement, {
+      interval: 2000,
+      ride: "carousel"
+    });
+  });
+});
+</script>
+
 <template>
   <div class="bg-links" :style="`background-image: url('${SITE.background}'); opacity: 0.5;`" />
   <div class="container text-white">
@@ -10,7 +47,7 @@
       </div>
       <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
       <!-- Latest release -->
-      <NuxtLink ref="releasepop" :to="`/${ page.cover || param }`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
+      <NuxtLink ref="releasepop" :to="`/${'cover' in page ? page.cover : param}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
         <DimatisIcon width="24" height="24" />
         <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
       </NuxtLink>
@@ -77,7 +114,7 @@
   <!-- Release Content -->
   <div ref="releasepop_content" class="d-none">
     <div id="release_popped" class="bg-dark text-white rounded-3">
-      <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${param}.jpg`" :alt="`${ page.artists } - ${ page.title }`" width="300">
+      <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${param}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
       <div class="p-4">
         <div class="text-center">
           <h5><b>{{ page.title }}</b></h5>
@@ -91,53 +128,13 @@
   <div ref="merchpop_content" class="d-none">
     <div id="merch-carousel" class="carousel slide carousel-fade">
       <div class="carousel-inner">
-        <div v-for="(merch, index) in SITE.merch" :key="index" class="carousel-item" :class="{'active' : index === 0}">
+        <div v-for="(merch, index) in SITE.merch" :key="index" class="carousel-item" :class="{ active: index === 0 }">
           <img :src="merch" class="d-block img-fluid">
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      page: Object.values(tracksData)[0],
-      param: Object.keys(tracksData)[0]
-    };
-  },
-  beforeUnmount () {
-    this.$nuxt.$bootstrap.hidePopover(this.$refs.releasepop.$el);
-  },
-  mounted () {
-    this.$nuxt.$bootstrap.Popover(this.$refs.releasepop.$el, {
-      container: "body",
-      content: this.$refs.releasepop_content.innerHTML,
-      html: true,
-      placement: "bottom",
-      trigger: "hover"
-    });
-
-    this.$nuxt.$bootstrap.Popover(this.$refs.merchpop, {
-      container: "body",
-      content: this.$refs.merchpop_content.innerHTML,
-      html: true,
-      placement: "bottom",
-      trigger: "hover"
-    });
-
-    const myPopoverTrigger = this.$refs.merchpop;
-    myPopoverTrigger.addEventListener("shown.bs.popover", () => {
-      const myCarouselElement = document.querySelector(".popover #merch-carousel");
-      this.$nuxt.$bootstrap.Carousel(myCarouselElement, {
-        interval: 2000,
-        ride: "carousel"
-      });
-    });
-  }
-};
-</script>
 
 <style>
 .border {

@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import "~/assets/css/links.css";
 </script>
 
 <template>
-  <div class="bg-image" :style="`background-image: url('${ SITE.background }')`" />
+  <div class="bg-image" :style="`background-image: url('${SITE.background}')`" />
   <div class="container text-white">
     <div class="row">
       <div v-for="(fanlink, key) in tracksData" :key="key" class="mx-auto col-lg-4">
@@ -11,7 +11,7 @@ import "~/assets/css/links.css";
           <div class="row">
             <div class="col-lg-12">
               <!-- cover -->
-              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${ fanlink.cover || key }.jpg`">
+              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${'cover' in fanlink ? fanlink.cover : key}.jpg`">
               <!-- titulo -->
               <div class="p-3">
                 <div class="text-center text-white">
@@ -22,7 +22,7 @@ import "~/assets/css/links.css";
             </div>
             <div class="col-lg-12">
               <div class="d-grid">
-                <NuxtLink :to="`/${ key }/`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
+                <NuxtLink :to="`/${key}/`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
               </div>
             </div>
           </div>

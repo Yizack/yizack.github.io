@@ -10,5 +10,12 @@
 
 .nav-pills, .nav-link.active {
   --bs-nav-pills-link-active-bg: #66f;
+
   color: #fff;
+}
+
+@media (width >= 768px) {
+  .card-body .skills {
+    max-width: 280px;
+  }
 }

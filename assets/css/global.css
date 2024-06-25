@@ -29,10 +29,9 @@
   background-color: var(--bs-dark-text-emphasis);
 }
 
-
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .bg-dark {
@@ -47,12 +46,12 @@ body {
   color: #151515!important;
 }
 
-.links:hover {
-  background-color: #313131!important;
-}
-
 .links {
   border-top: solid;
   border-top-width: 1px;
   border-top-color: #404040;
+}
+
+.links:hover {
+  background-color: #313131!important;
 }
