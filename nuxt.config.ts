@@ -4,15 +4,13 @@ export default defineNuxtConfig({
   app: {
     rootId: "app",
     head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
       htmlAttrs: {
         lang: "en"
       },
-      bodyAttrs: {
-        "data-bs-theme": "dark"
-      },
       meta: [
         { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },
         { name: "msapplication-TileColor", content: "#da532c" },
@@ -53,6 +51,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxt/eslint",
+    "@nuxtjs/color-mode",
     "nuxt-icon"
   ],
   eslint: {
@@ -60,6 +59,12 @@ export default defineNuxtConfig({
       autoInit: false,
       stylistic: true
     }
+  },
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    dataValue: "bs-theme",
+    storageKey: "nuxt-color-mode"
   },
   spaLoadingTemplate: false,
   features: {

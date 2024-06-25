@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { $bootstrap } = useNuxtApp();
+const { $bootstrap, $colorMode } = useNuxtApp();
 
 const releasepop = ref<{ $el: HTMLElement }>();
 const releasepop_content = ref<HTMLElement>();
@@ -14,6 +14,7 @@ onBeforeUnmount(() => {
 });
 
 onMounted(() => {
+  $colorMode.preference = "dark";
   if (!releasepop.value || !releasepop_content.value || !merchpop.value) return;
 
   $bootstrap.Popover(releasepop.value.$el, {

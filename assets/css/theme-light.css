@@ -1,4 +1,4 @@
-:root [data-bs-theme="light"] {
+[data-bs-theme="light"] {
   --bs-link-color: rgb(88 88 235);
   --bs-link-color-rgb: 88, 88, 235;
   --bs-link-hover-color: rgb(74 74 223);

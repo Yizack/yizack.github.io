@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import "~/assets/css/portfolio.css";
 
-const dark = ref(true);
+const { $colorMode } = useNuxtApp();
 
 const toggleTheme = () => {
-  dark.value = !dark.value;
-  useHead({
-    bodyAttrs: { "data-bs-theme": dark.value ? "dark" : "light" }
-  });
+  $colorMode.preference = $colorMode.preference === "light" ? "dark" : "light";
 };
 
 useHead({
@@ -48,7 +45,7 @@ useHead({
                 <hr class="d-lg-none my-2 text-dark-emphasis">
               </li>
               <li class="nav-item">
-                <a class="nav-link px-lg-3 text-center" role="button" @click="toggleTheme()"><Icon :name="dark ? 'solar:moon-stars-bold' : 'solar:sun-2-bold'" size="1rem" /><span class="d-lg-none d-inline"> Toogle Theme</span></a>
+                <a class="nav-link px-lg-3 text-center" role="button" @click="toggleTheme()"><Icon :name="$colorMode.preference === 'dark' ? 'solar:moon-stars-bold' : 'solar:sun-2-bold'" size="1rem" /><span class="d-lg-none d-inline"> Toogle Theme</span></a>
               </li>
             </ul>
           </div>

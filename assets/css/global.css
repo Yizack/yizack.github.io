@@ -1,5 +1,5 @@
 :root {
-  scrollbar-color: var(--bs-tertiary-bg) var(--bs-dark-text-emphasis);
+  scrollbar-color: var(--bs-dark-text-emphasis) var(--bs-tertiary-bg);
   scrollbar-width: thin;
   scroll-behavior: unset;
 }

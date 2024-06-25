@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import "~/assets/css/links.css";
 
+onMounted(() => {
+  const { $colorMode } = useNuxtApp();
+  $colorMode.preference = "dark";
+});
+
 const { params } = useRoute();
 const param = params.fanlink.toString();
 

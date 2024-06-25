@@ -1,4 +1,4 @@
-:root [data-bs-theme="dark"] {
+[data-bs-theme="dark"] {
   --bs-body-bg: #151515;
   --bs-body-bg-rgb: 21, 21, 21;
   --bs-link-color: #9aabff;
