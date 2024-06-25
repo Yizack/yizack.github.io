@@ -23,7 +23,7 @@ export default [
       "Developed a Serverless web app project on Cloudflare Pages.",
       "Implemented a login system using Twitch OAuth App.",
       "Designed a Database using SQLite in development and Cloudflare D1 in production using Drizzle-ORM for SQL queries.",
-      "Integrated Twitch API and Webhook events listeners for channel points rewards.",
+      "Integrated Twitch API and created Webhook event listeners for channel points rewards.",
       "Integrated Spotify API for song requests and playing songs on the streamer's Spotify account."
     ],
     url: "https://plebrewards.yizack.com/",
