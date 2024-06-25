@@ -127,7 +127,7 @@ export default [
       { name: "Paddle", icon: "simple-icons:paddle" },
       { name: "Cloudflare", icon: "logos:cloudflare-icon" },
       { name: "Soundcloud", icon: "logos:soundcloud" },
-      { name: "X (Twitter)", icon: "logos:twitter" },
+      { name: "X (Twitter)", icon: "bi:twitter-x" },
       { name: "Riot Games", icon: "simple-icons:riotgames" }
     ]
   }
