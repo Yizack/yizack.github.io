@@ -131,7 +131,7 @@ export default [
     ],
     url: "https://pesp.gg/",
     image: "/images/pespgg.jpg",
-    github: "https://github.com/Yizack/pesp.gg",
+    github: "https://github.com/pespgg/pesp.gg",
     technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js"]
   },
   {
