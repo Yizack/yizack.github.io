@@ -149,7 +149,7 @@ useHead({
                 </div>
                 <div class="card-body">
                   <div class="d-flex flex-wrap gap-2 skills">
-                    <div v-for="(stack, i) in skill.stack" :key="i" class="d-flex align-items-center gap-1 border py-1 px-2 skill small rounded-pill">
+                    <div v-for="(stack, i) in skill.stack" :key="i" class="d-flex align-items-center gap-1 border py-1 px-2 skill small rounded-pill bg-body-tertiary">
                       <Icon :name="stack.icon" size="1.3rem" />
                       <span>{{ stack.name }}</span>
                     </div>
@@ -192,7 +192,7 @@ useHead({
                 <ul v-if="project.bullets">
                   <li v-for="(task, task_index) in project.bullets" :key="task_index">{{ task }}</li>
                 </ul>
-                <span v-for="(technology, tech_index) in project.technologies" :key="tech_index" class="border px-3 py-1 rounded-pill skill align-middle mx-1 small mb-1">{{ technology }}</span>
+                <span v-for="(technology, tech_index) in project.technologies" :key="tech_index" class="border px-3 py-1 rounded-pill skill align-middle mx-1 small mb-1 bg-body-tertiary">{{ technology }}</span>
                 <div class="d-flex justify-content-end mt-2">
                   <a v-if="project.github" :href="project.github" class="me-3 text-decoration-none d-flex align-items-center" target="_blank">
                     <Icon name="bi:github" size="1rem" />

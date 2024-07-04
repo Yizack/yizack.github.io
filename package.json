@@ -17,11 +17,11 @@
     "@nuxtjs/color-mode": "^3.4.2",
     "@types/bootstrap": "^5.2.10",
     "@yeger/vue-masonry-wall": "^5.0.12",
-    "eslint": "^9.5.0",
-    "nuxt": "^3.12.2",
+    "eslint": "^9.6.0",
+    "nuxt": "^3.12.3",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
-    "tsx": "^4.15.7"
+    "tsx": "^4.16.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
