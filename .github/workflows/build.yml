@@ -27,10 +27,7 @@ jobs:
         run: pnpm install
       
       - name: Build 🏗️
-        run: |
-          pnpm getdata
-          pnpm prepare
-          pnpm generate
+        run: pnpm generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

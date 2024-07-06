@@ -6,7 +6,7 @@
     "dev": "nuxt dev --port=5173",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "prepare": "nuxt prepare",
+    "postinstall": "npm run getdata && nuxt prepare",
     "getdata": "tsx scripts/getData.js",
     "lint": "npm run lint:eslint && npm run lint:stylelint",
     "lint:eslint": "eslint --fix",
