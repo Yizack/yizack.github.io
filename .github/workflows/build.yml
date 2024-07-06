@@ -29,6 +29,7 @@ jobs:
       - name: Build 🏗️
         run: |
           pnpm getdata
+          pnpm prepare
           pnpm generate
 
       - name: Deploy 🚀
