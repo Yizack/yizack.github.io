@@ -7,13 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      bootstrap:
-        specifier: ^5.3.3
-        version: 5.3.3(@popperjs/core@2.11.8)
-      nuxt-icon:
-        specifier: ^0.6.10
-        version: 0.6.10(nuxt@3.12.3(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.12.7)(encoding@0.1.13)(eslint@9.6.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(stylelint@16.6.1(typescript@5.4.5))(terser@5.30.4)(typescript@5.4.5)(vite@5.3.3(@types/node@20.12.7)(terser@5.30.4)))(rollup@4.18.0)(vite@5.3.3(@types/node@20.12.7)(terser@5.30.4))(vue@3.4.31(typescript@5.4.5))
     devDependencies:
       '@nuxt/eslint':
         specifier: ^0.3.13
@@ -27,18 +20,24 @@ importers:
       '@yeger/vue-masonry-wall':
         specifier: ^5.0.12
         version: 5.0.12(vue@3.4.31(typescript@5.4.5))
+      bootstrap:
+        specifier: ^5.3.3
+        version: 5.3.3(@popperjs/core@2.11.8)
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
       nuxt:
         specifier: ^3.12.3
         version: 3.12.3(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.12.7)(encoding@0.1.13)(eslint@9.6.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(stylelint@16.6.1(typescript@5.4.5))(terser@5.30.4)(typescript@5.4.5)(vite@5.3.3(@types/node@20.12.7)(terser@5.30.4))
+      nuxt-icon:
+        specifier: ^0.6.10
+        version: 0.6.10(nuxt@3.12.3(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.12.7)(encoding@0.1.13)(eslint@9.6.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(stylelint@16.6.1(typescript@5.4.5))(terser@5.30.4)(typescript@5.4.5)(vite@5.3.3(@types/node@20.12.7)(terser@5.30.4)))(rollup@4.18.0)(vite@5.3.3(@types/node@20.12.7)(terser@5.30.4))(vue@3.4.31(typescript@5.4.5))
       stylelint:
         specifier: ^16.6.1
         version: 16.6.1(typescript@5.4.5)
       stylelint-config-standard-scss:
         specifier: ^13.1.0
-        version: 13.1.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.4.5))
+        version: 13.1.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.4.5))
       tsx:
         specifier: ^4.16.2
         version: 4.16.2
@@ -8911,9 +8910,9 @@ snapshots:
     dependencies:
       postcss: 8.4.38
 
-  postcss-scss@4.0.9(postcss@8.4.38):
+  postcss-scss@4.0.9(postcss@8.4.39):
     dependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   postcss-selector-parser@6.0.16:
     dependencies:
@@ -9359,26 +9358,26 @@ snapshots:
       postcss: 8.4.39
       postcss-selector-parser: 6.1.0
 
-  stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.4.5)):
+  stylelint-config-recommended-scss@14.0.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.4.5)):
     dependencies:
-      postcss-scss: 4.0.9(postcss@8.4.38)
+      postcss-scss: 4.0.9(postcss@8.4.39)
       stylelint: 16.6.1(typescript@5.4.5)
       stylelint-config-recommended: 14.0.1(stylelint@16.6.1(typescript@5.4.5))
       stylelint-scss: 6.3.2(stylelint@16.6.1(typescript@5.4.5))
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   stylelint-config-recommended@14.0.1(stylelint@16.6.1(typescript@5.4.5)):
     dependencies:
       stylelint: 16.6.1(typescript@5.4.5)
 
-  stylelint-config-standard-scss@13.1.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.4.5)):
+  stylelint-config-standard-scss@13.1.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.4.5)):
     dependencies:
       stylelint: 16.6.1(typescript@5.4.5)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.6.1(typescript@5.4.5))
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.39)(stylelint@16.6.1(typescript@5.4.5))
       stylelint-config-standard: 36.0.1(stylelint@16.6.1(typescript@5.4.5))
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.39
 
   stylelint-config-standard@36.0.1(stylelint@16.6.1(typescript@5.4.5)):
     dependencies:

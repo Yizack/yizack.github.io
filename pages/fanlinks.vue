@@ -27,7 +27,7 @@ onMounted(() => {
             </div>
             <div class="col-lg-12">
               <div class="d-grid">
-                <NuxtLink :to="`/${key}/`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
+                <NuxtLink :to="`/${key}`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ onMounted(() => {
           </li>
           <li>
             <a href="https://twitter.com/dimatismusic" target="_blank">
-              <Icon name="bi:twitter" size="1.5rem" />
+              <Icon name="bi:twitter-x" size="1.5rem" />
             </a>
           </li>
           <li>

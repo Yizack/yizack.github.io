@@ -17,15 +17,13 @@
     "@nuxtjs/color-mode": "^3.4.2",
     "@types/bootstrap": "^5.2.10",
     "@yeger/vue-masonry-wall": "^5.0.12",
+    "bootstrap": "^5.3.3",
     "eslint": "^9.6.0",
     "nuxt": "^3.12.3",
+    "nuxt-icon": "^0.6.10",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "tsx": "^4.16.2"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "nuxt-icon": "^0.6.10"
   },
   "packageManager": "pnpm@9.4.0"
 }

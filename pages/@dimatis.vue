@@ -96,7 +96,7 @@ onMounted(() => {
       </a>
       <!-- Twitter -->
       <a :href="SITE.socials.twitter" target="_blank" class="link twitter col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:twitter" />
+        <Icon name="bi:twitter-x" />
         <strong class="ms-1">Twitter</strong>
       </a>
       <!-- Bandcamp -->
@@ -192,10 +192,10 @@ onMounted(() => {
   background-color: #151515!important;
 }
 .twitter {
-  color: #1da1f2;
+  color: #000;
 }
 .twitter:hover {
-  background-color: #39b4ff!important;
+  background-color: #151515!important;
 }
 .bandcamp {
   color: #1da0c3;

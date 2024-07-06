@@ -1,4 +1,7 @@
-import { SITE } from "./utils/dimatis-info.js";
+import { SITE } from "./utils/dimatis-info";
+import allData from "./assets/data/all.json";
+
+const fanlinks = Object.entries(allData).map(([key, fanlink]) => "/" + ("cover" in fanlink ? fanlink.cover : key));
 
 export default defineNuxtConfig({
   app: {
@@ -45,8 +48,10 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      crawlLinks: true,
-      routes: ["/"]
+      autoSubfolderIndex: false,
+      crawlLinks: false,
+      failOnError: false,
+      routes: ["/", "/@dimatis", "/fanlinks", ...fanlinks]
     }
   },
   modules: [
@@ -69,5 +74,8 @@ export default defineNuxtConfig({
   spaLoadingTemplate: false,
   features: {
     inlineStyles: false
+  },
+  experimental: {
+    payloadExtraction: false
   }
 });

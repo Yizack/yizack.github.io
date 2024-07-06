@@ -27,7 +27,7 @@ useHead({
     { name: "keywords", content: `release, ${page.title}, ${page.genre}, play, stream, download, fanlink` },
     { name: "description", content: page.description },
     // Protocolo Open Graph
-    { property: "og:url", content: `${SITE.url}/music/${param}/` },
+    { property: "og:url", content: `${SITE.url}/music/${param}` },
     { property: "og:type", content: "website" },
     { property: "og:title", content: `${page.artists} - ${page.title}` },
     { property: "og:site_name", content: SITE.name },
@@ -44,7 +44,7 @@ useHead({
     { name: "twitter:site", content: "@dimatismusic" }
   ],
   link: [
-    { rel: "canonical", href: `${SITE.url}/${param}/` }
+    { rel: "canonical", href: `${SITE.url}/${param}` }
   ],
   bodyAttrs: { id: "page-top" }
 });
@@ -120,7 +120,7 @@ useHead({
           </li>
           <li>
             <a href="https://twitter.com/dimatismusic" target="_blank">
-              <Icon name="bi:twitter" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
+              <Icon name="bi:twitter-x" :class="{ 'text-dark': page.fanlink.dark }" size="1.5rem" />
             </a>
           </li>
           <li>
