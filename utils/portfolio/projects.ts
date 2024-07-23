@@ -139,7 +139,7 @@ export default [
     period: "Oct 2019 — Present",
     description: "Panama Metrobus Balance is an app for balance and movements inquires for all Metro and Metrobus cards in Panama City.",
     bullets: [
-      "Developed a 10,000+ total downloads Android app project, currently helps 3,000+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
+      "Developed a 50,000+ total downloads Android app project, currently helps 18,000+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
       "Designed a friendly, easy-to-use interface.",
       "Implemented time graphical displays of people's card spends and balance changes.",
       "Translated manually from Spanish to English everything in the app. Making it available in two languages.",
