@@ -13,17 +13,17 @@
     "lint:stylelint": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.4.0",
-    "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxt/eslint": "^0.5.3",
+    "@nuxtjs/color-mode": "^3.4.4",
     "@types/bootstrap": "^5.2.10",
-    "@yeger/vue-masonry-wall": "^5.0.12",
+    "@yeger/vue-masonry-wall": "^5.0.14",
     "bootstrap": "^5.3.3",
-    "eslint": "^9.8.0",
-    "nuxt": "^3.12.4",
+    "eslint": "^9.9.1",
+    "nuxt": "^3.13.0",
     "nuxt-icon": "^0.6.10",
-    "stylelint": "^16.8.1",
+    "stylelint": "^16.8.2",
     "stylelint-config-standard-scss": "^13.1.0",
-    "tsx": "^4.16.5"
+    "tsx": "^4.19.0"
   },
-  "packageManager": "pnpm@9.5.0"
+  "packageManager": "pnpm@9.9.0"
 }
