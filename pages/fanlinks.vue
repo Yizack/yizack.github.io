@@ -16,7 +16,7 @@ onMounted(() => {
           <div class="row">
             <div class="col-lg-12">
               <!-- cover -->
-              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${'cover' in fanlink ? fanlink.cover : key}.jpg`">
+              <img class="img-fluid mx-auto d-block rounded-top w-100" :src="`${SITE.src_url}/images/${fanlink.cover ? fanlink.cover : fanlink.id}.jpg`">
               <!-- titulo -->
               <div class="p-3">
                 <div class="text-center text-white">
@@ -27,7 +27,7 @@ onMounted(() => {
             </div>
             <div class="col-lg-12">
               <div class="d-grid">
-                <NuxtLink :to="`/${key}`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
+                <NuxtLink :to="`/${fanlink.id}`" type="button" class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" title="View Fanlink">View</NuxtLink>
               </div>
             </div>
           </div>

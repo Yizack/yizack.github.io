@@ -5,8 +5,7 @@ const releasepop = ref<{ $el: HTMLElement }>();
 const releasepop_content = ref<HTMLElement>();
 const merchpop = ref<HTMLElement>();
 
-const page = ref(Object.values(tracksData)[0]);
-const param = ref(Object.keys(tracksData)[0]);
+const page = ref(tracksData[0]);
 
 onBeforeUnmount(() => {
   if (!releasepop.value) return;
@@ -48,7 +47,7 @@ onMounted(() => {
       </div>
       <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
       <!-- Latest release -->
-      <NuxtLink ref="releasepop" :to="`/${'cover' in page ? page.cover : param}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
+      <NuxtLink ref="releasepop" :to="`/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
         <DimatisIcon width="24" height="24" />
         <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
       </NuxtLink>
@@ -115,7 +114,7 @@ onMounted(() => {
   <!-- Release Content -->
   <div ref="releasepop_content" class="d-none">
     <div id="release_popped" class="bg-dark text-white rounded-3">
-      <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${param}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
+      <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
       <div class="p-4">
         <div class="text-center">
           <h5><b>{{ page.title }}</b></h5>

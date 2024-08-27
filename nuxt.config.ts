@@ -1,7 +1,7 @@
 import { SITE } from "./utils/dimatis-info";
 import allData from "./assets/data/all.json";
 
-const fanlinks = Object.entries(allData).map(([key, fanlink]) => "/" + ("cover" in fanlink ? fanlink.cover : key));
+const fanlinks = allData.map(data => "/" + ("cover" in data.fanlink ? data.fanlink.cover : data.id));
 
 export default defineNuxtConfig({
   app: {
