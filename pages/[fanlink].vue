@@ -19,12 +19,6 @@ if (!data) {
   });
 }
 
-const album = Boolean(data.album)
-
-const getType = (cover?: string) => {
-  return data.cover ? tracksData.find((track) => track.id === cover)?.type : data.type;
-};
-
 useHead({
   title: `${data.artists} - ${data.title}`,
   meta: [
@@ -73,8 +67,8 @@ useHead({
               </div>
             </div>
             <!-- full album -->
-            <template v-if="album">
-              <a class="row m-auto links text-white" :href="`/${data.cover || param}/`" target="_blank" :title="`Full ${getType(data.cover)}`">
+            <template v-if="data.album">
+              <a class="row m-auto links text-white" :href="`/${data.cover || param}`" target="_blank" :title="`Full ${data.type}`">
                 <div class="col-7 px-3 py-4 d-flex flex-wrap align-content-center">
                   <img class="d-block w-100" :src="`/images/stores/${data.cover || param}.png`">
                 </div>

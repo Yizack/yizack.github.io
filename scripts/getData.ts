@@ -16,6 +16,7 @@ Promise.all([
     if (value.type === "Album" || value.type === "EP") {
       acc.push({
         ...value,
+        id: value.cover,
         title: `${value.title} (${value.type})`
       });
     }
