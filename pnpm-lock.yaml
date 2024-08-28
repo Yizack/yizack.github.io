@@ -28,16 +28,16 @@ importers:
         version: 9.9.1(jiti@1.21.6)
       nuxt:
         specifier: ^3.13.0
-        version: 3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.8.2(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
+        version: 3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.9.0(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
       nuxt-icon:
         specifier: ^0.6.10
         version: 0.6.10(magicast@0.3.5)(rollup@4.21.1)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       stylelint:
-        specifier: ^16.8.2
-        version: 16.8.2(typescript@5.5.4)
+        specifier: ^16.9.0
+        version: 16.9.0(typescript@5.5.4)
       stylelint-config-standard-scss:
         specifier: ^13.1.0
-        version: 13.1.0(postcss@8.4.41)(stylelint@16.8.2(typescript@5.5.4))
+        version: 13.1.0(postcss@8.4.41)(stylelint@16.9.0(typescript@5.5.4))
       tsx:
         specifier: ^4.19.0
         version: 4.19.0
@@ -3635,8 +3635,8 @@ packages:
     peerDependencies:
       stylelint: ^16.0.2
 
-  stylelint@16.8.2:
-    resolution: {integrity: sha512-fInKATippQhcSm7AB+T32GpI+626yohrg33GkFT/5jzliUw5qhlwZq2UQQwgl3HsHrf09oeARi0ZwgY/UWEv9A==}
+  stylelint@16.9.0:
+    resolution: {integrity: sha512-31Nm3WjxGOBGpQqF43o3wO9L5AC36TPIe6030Lnm13H3vDMTcS21DrLh69bMX+DBilKqMMVLian4iG6ybBoNRQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -4983,7 +4983,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/vite-builder@3.13.0(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.8.2(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))':
+  '@nuxt/vite-builder@3.13.0(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.9.0(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.1)
       '@rollup/plugin-replace': 5.0.7(rollup@4.21.1)
@@ -5016,7 +5016,7 @@ snapshots:
       unplugin: 1.12.2
       vite: 5.4.2(@types/node@22.5.0)(terser@5.31.6)
       vite-node: 2.0.5(@types/node@22.5.0)(terser@5.31.6)
-      vite-plugin-checker: 0.7.2(eslint@9.9.1(jiti@1.21.6))(optionator@0.9.4)(stylelint@16.8.2(typescript@5.5.4))(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
+      vite-plugin-checker: 0.7.2(eslint@9.9.1(jiti@1.21.6))(optionator@0.9.4)(stylelint@16.9.0(typescript@5.5.4))(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
       vue: 3.4.38(typescript@5.5.4)
       vue-bundle-renderer: 2.1.0
     transitivePeerDependencies:
@@ -7267,14 +7267,14 @@ snapshots:
       - vite
       - vue
 
-  nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.8.2(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6)):
+  nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.9.0(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6)):
     dependencies:
       '@nuxt/devalue': 2.0.2
       '@nuxt/devtools': 1.4.1(rollup@4.21.1)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
       '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.1)
       '@nuxt/schema': 3.13.0(rollup@4.21.1)
       '@nuxt/telemetry': 2.5.4(magicast@0.3.5)(rollup@4.21.1)
-      '@nuxt/vite-builder': 3.13.0(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.8.2(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+      '@nuxt/vite-builder': 3.13.0(@types/node@22.5.0)(eslint@9.9.1(jiti@1.21.6))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.1)(stylelint@16.9.0(typescript@5.5.4))(terser@5.31.6)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       '@unhead/dom': 1.10.0
       '@unhead/ssr': 1.10.0
       '@unhead/vue': 1.10.0(vue@3.4.38(typescript@5.5.4))
@@ -8066,33 +8066,33 @@ snapshots:
       postcss: 8.4.41
       postcss-selector-parser: 6.1.2
 
-  stylelint-config-recommended-scss@14.1.0(postcss@8.4.41)(stylelint@16.8.2(typescript@5.5.4)):
+  stylelint-config-recommended-scss@14.1.0(postcss@8.4.41)(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.4.41)
-      stylelint: 16.8.2(typescript@5.5.4)
-      stylelint-config-recommended: 14.0.1(stylelint@16.8.2(typescript@5.5.4))
-      stylelint-scss: 6.5.1(stylelint@16.8.2(typescript@5.5.4))
+      stylelint: 16.9.0(typescript@5.5.4)
+      stylelint-config-recommended: 14.0.1(stylelint@16.9.0(typescript@5.5.4))
+      stylelint-scss: 6.5.1(stylelint@16.9.0(typescript@5.5.4))
     optionalDependencies:
       postcss: 8.4.41
 
-  stylelint-config-recommended@14.0.1(stylelint@16.8.2(typescript@5.5.4)):
+  stylelint-config-recommended@14.0.1(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.8.2(typescript@5.5.4)
+      stylelint: 16.9.0(typescript@5.5.4)
 
-  stylelint-config-standard-scss@13.1.0(postcss@8.4.41)(stylelint@16.8.2(typescript@5.5.4)):
+  stylelint-config-standard-scss@13.1.0(postcss@8.4.41)(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.8.2(typescript@5.5.4)
-      stylelint-config-recommended-scss: 14.1.0(postcss@8.4.41)(stylelint@16.8.2(typescript@5.5.4))
-      stylelint-config-standard: 36.0.1(stylelint@16.8.2(typescript@5.5.4))
+      stylelint: 16.9.0(typescript@5.5.4)
+      stylelint-config-recommended-scss: 14.1.0(postcss@8.4.41)(stylelint@16.9.0(typescript@5.5.4))
+      stylelint-config-standard: 36.0.1(stylelint@16.9.0(typescript@5.5.4))
     optionalDependencies:
       postcss: 8.4.41
 
-  stylelint-config-standard@36.0.1(stylelint@16.8.2(typescript@5.5.4)):
+  stylelint-config-standard@36.0.1(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.8.2(typescript@5.5.4)
-      stylelint-config-recommended: 14.0.1(stylelint@16.8.2(typescript@5.5.4))
+      stylelint: 16.9.0(typescript@5.5.4)
+      stylelint-config-recommended: 14.0.1(stylelint@16.9.0(typescript@5.5.4))
 
-  stylelint-scss@6.5.1(stylelint@16.8.2(typescript@5.5.4)):
+  stylelint-scss@6.5.1(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
       css-tree: 2.3.1
       is-plain-object: 5.0.0
@@ -8101,9 +8101,9 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
-      stylelint: 16.8.2(typescript@5.5.4)
+      stylelint: 16.9.0(typescript@5.5.4)
 
-  stylelint@16.8.2(typescript@5.5.4):
+  stylelint@16.9.0(typescript@5.5.4):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.1(@csstools/css-tokenizer@3.0.1)
       '@csstools/css-tokenizer': 3.0.1
@@ -8448,7 +8448,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-checker@0.7.2(eslint@9.9.1(jiti@1.21.6))(optionator@0.9.4)(stylelint@16.8.2(typescript@5.5.4))(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6)):
+  vite-plugin-checker@0.7.2(eslint@9.9.1(jiti@1.21.6))(optionator@0.9.4)(stylelint@16.9.0(typescript@5.5.4))(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6)):
     dependencies:
       '@babel/code-frame': 7.24.7
       ansi-escapes: 4.3.2
@@ -8468,7 +8468,7 @@ snapshots:
     optionalDependencies:
       eslint: 9.9.1(jiti@1.21.6)
       optionator: 0.9.4
-      stylelint: 16.8.2(typescript@5.5.4)
+      stylelint: 16.9.0(typescript@5.5.4)
       typescript: 5.5.4
 
   vite-plugin-inspect@0.8.7(@nuxt/kit@3.13.0(magicast@0.3.5)(rollup@4.21.1))(rollup@4.21.1)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6)):
