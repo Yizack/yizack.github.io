@@ -9,7 +9,7 @@ onMounted(() => {
 const { params } = useRoute();
 const param = params.fanlink.toString();
 
-const data = tracksData.find((track) => track.id === param)!
+const data = tracksData.find(track => track.id === param)!;
 
 if (!data) {
   throw createError({
