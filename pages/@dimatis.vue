@@ -48,24 +48,19 @@ onMounted(() => {
       <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
       <!-- Latest release -->
       <NuxtLink ref="releasepop" :to="`/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
-        <DimatisIcon width="24" height="24" />
+        <DimatisIcon width="18" height="18" />
         <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
       </NuxtLink>
       <div class="col-12 text-uppercase mx-auto"><span>Useful Links</span></div>
+      <!-- Sample Pack -->
+      <a :href="SITE.useful.samplepack" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
+        <DimatisIcon width="18" height="18" />
+        <strong class="ms-1">Legado: A decade of Dimatis Sample Pack</strong>
+      </a>
       <!-- Playlist -->
       <a :href="SITE.useful.playlist" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
         <Icon name="bi:spotify" />
         <strong class="ms-1">Melodic Dubstep Playlist</strong>
-      </a>
-      <!-- Submit -->
-      <a :href="SITE.useful.submit" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="solar:plain-bold" />
-        <strong class="ms-1">Submit to my playlist</strong>
-      </a>
-      <!-- Merch -->
-      <a ref="merchpop" :href="SITE.useful.merch" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
-        <Icon name="solar:t-shirt-bold" />
-        <strong class="ms-1">Buy my merch</strong>
       </a>
       <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
       <!-- Spotify -->
@@ -105,7 +100,7 @@ onMounted(() => {
       </a>
       <!-- Website -->
       <a :href="SITE.src_url" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <DimatisIcon width="24" height="24" />
+        <DimatisIcon width="18" height="18" />
         <strong class="ms-1">Website</strong>
       </a>
     </div>

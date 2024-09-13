@@ -10,6 +10,7 @@ const SITE = {
   keywords: "dimatis, website, producer, dj, artist, panama, yizack, musician",
   background: "https://dimatis.yizack.com/images/banner_bg.jpg",
   useful: {
+    samplepack: "https://dimatis.yizack.com/shop/legado",
     playlist: "https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD",
     submit: "https://www.submithub.com/blog/dimatis",
     merch: "https://store.streamelements.com/dimatis"
