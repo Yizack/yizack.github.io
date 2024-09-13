@@ -3,7 +3,6 @@ const { $bootstrap, $colorMode } = useNuxtApp();
 
 const releasepop = ref<{ $el: HTMLElement }>();
 const releasepop_content = ref<HTMLElement>();
-const merchpop = ref<HTMLElement>();
 
 const page = ref(tracksData[0]);
 
@@ -14,7 +13,7 @@ onBeforeUnmount(() => {
 
 onMounted(() => {
   $colorMode.preference = "dark";
-  if (!releasepop.value || !releasepop_content.value || !merchpop.value) return;
+  if (!releasepop.value || !releasepop_content.value) return;
 
   $bootstrap.Popover(releasepop.value.$el, {
     container: "body",
@@ -22,15 +21,6 @@ onMounted(() => {
     html: true,
     placement: "bottom",
     trigger: "hover"
-  });
-  const myPopoverTrigger = merchpop.value;
-  myPopoverTrigger.addEventListener("shown.bs.popover", () => {
-    const myCarouselElement = document.querySelector(".popover #merch-carousel");
-    if (!myCarouselElement) return;
-    $bootstrap.Carousel(myCarouselElement as HTMLElement, {
-      interval: 2000,
-      ride: "carousel"
-    });
   });
 });
 </script>
