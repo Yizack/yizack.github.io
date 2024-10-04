@@ -39,8 +39,8 @@ onMounted(() => {
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
           <div class="position-relative neon scale-on-hover normal">
-            <NuxtLink ref="releasepop" :href="`${SITE.src_url}/${page.cover ? page.cover : page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
-              <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
+            <NuxtLink ref="releasepop" :to="`/${page.cover ? page.cover : page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
+              <img class="img-fluid" :src="`${SITE.src_url}/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
               <div class="px-3 w-100">
                 <h5 class="m-0">{{ page.title }}</h5>
                 <p class="m-0 text-muted">{{ page.artists }}</p>
@@ -52,9 +52,9 @@ onMounted(() => {
             <h4>{{ tree.title }}</h4>
             <div v-for="(link, j) of tree.content" :key="j" class="position-relative neon scale-on-hover" :class="link.code ? link.code : 'normal'">
               <a :href="link.url" class="bg-body d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
-                <div class="d-flex align-items-center justify-content-center" :style="{ minWidth: '100px' }">
+                <div class="d-flex align-items-center justify-content-center text-white" :style="{ minWidth: '100px' }">
                   <Icon v-if="link.code" :name="`fa6-brands:${link.code}`" size="1.5rem" />
-                  <IconLogo v-else size="1.5rem" />
+                  <DimatisIcon v-else size="1.5rem" />
                 </div>
                 <div class="bg-body-tertiary px-3 py-4 w-100">
                   <h5 class="m-0">{{ link.title }}</h5>

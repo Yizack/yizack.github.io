@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps({
+  size: { type: String, default: "1rem" }
+});
+</script>
+
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" width="278" height="356" viewBox="0 0 278 356" fill="currentColor">
     <circle r="35.714" cy="198.864" cx="206.297" />
