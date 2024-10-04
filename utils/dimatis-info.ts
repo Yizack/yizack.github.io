@@ -3,6 +3,8 @@ const SITE = {
   url: "https://yizack.com",
   src_domain: "dimatis.yizack.com",
   src_url: "https://dimatis.yizack.com",
+  email: "dimatis@yizack.com",
+  image: "https://dimatis.yizack.com/images/avatars/bio.jpg",
   domain: "yizack.com",
   protocol: "https",
   meta_description: "Dimatis is a Panamanian musician and producer.",

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const { $bootstrap, $colorMode } = useNuxtApp();
+const { $bootstrap } = useNuxtApp();
 
 const releasepop = ref<{ $el: HTMLElement }>();
 const releasepop_content = ref<HTMLElement>();
 
-const page = ref(tracksData[0]);
+const page = ref(tracksData[0]!);
 
 onBeforeUnmount(() => {
   if (!releasepop.value) return;
@@ -12,7 +12,6 @@ onBeforeUnmount(() => {
 });
 
 onMounted(() => {
-  $colorMode.preference = "dark";
   if (!releasepop.value || !releasepop_content.value) return;
 
   $bootstrap.Popover(releasepop.value.$el, {
@@ -26,97 +25,69 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-links" :style="`background-image: url('${SITE.background}'); opacity: 0.5;`" />
-  <div class="container text-white">
-    <div class="text-center row py-4">
-      <div class="col-lg-12 mb-2" style="z-index: 1;">
-        <img class="mx-auto rounded-circle" src="https://dimatis.yizack.com/images/backgrounds/fanlinks.jpg" height="150" width="150" style="z-index: 1;">
-      </div>
-      <div class="col-lg-12 mb-4" style="z-index: 1;">
-        <h3 style="z-index: 1;">Dimatis</h3>
-      </div>
-      <div class="col-12 text-uppercase mx-auto"><span>Latest Release</span></div>
-      <!-- Latest release -->
-      <NuxtLink ref="releasepop" :to="`/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
-        <DimatisIcon width="18" height="18" />
-        <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
-      </NuxtLink>
-      <div class="col-12 text-uppercase mx-auto"><span>Useful Links</span></div>
-      <!-- Sample Pack -->
-      <a :href="SITE.useful.samplepack" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <DimatisIcon width="18" height="18" />
-        <strong class="ms-1">Legado: A decade of Dimatis Sample Pack</strong>
-      </a>
-      <!-- Playlist -->
-      <a :href="SITE.useful.playlist" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:spotify" />
-        <strong class="ms-1">Melodic Dubstep Playlist</strong>
-      </a>
-      <div class="col-12 text-uppercase mx-auto"><span>Social Links</span></div>
-      <!-- Spotify -->
-      <a :href="SITE.socials.spotify" target="_blank" class="link spotify col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:spotify" />
-        <strong class="ms-1">Spotify</strong>
-      </a>
-      <!-- Youtube -->
-      <a :href="SITE.socials.youtube" target="_blank" class="link youtube col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:youtube" />
-        <strong class="ms-1">YouTube</strong>
-      </a>
-      <!-- Soundcloud -->
-      <a :href="SITE.socials.soundcloud" target="_blank" class="link soundcloud col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="fa6-brands:soundcloud" />
-        <strong class="ms-1">Soundcloud</strong>
-      </a>
-      <!-- Instagram -->
-      <a :href="SITE.socials.instagram" target="_blank" class="link instagram col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:instagram" />
-        <strong class="ms-1">Instagram</strong>
-      </a>
-      <!-- Facebook -->
-      <a :href="SITE.socials.facebook" target="_blank" class="link facebook col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:facebook" />
-        <strong class="ms-1">Facebook</strong>
-      </a>
-      <!-- Twitter -->
-      <a :href="SITE.socials.twitter" target="_blank" class="link twitter col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="bi:twitter-x" />
-        <strong class="ms-1">Twitter</strong>
-      </a>
-      <!-- Bandcamp -->
-      <a :href="SITE.socials.bandcamp" target="_blank" class="link bandcamp col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <Icon name="fa-brands:bandcamp" />
-        <strong class="ms-1">Bandcamp</strong>
-      </a>
-      <!-- Website -->
-      <a :href="SITE.src_url" target="_blank" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center">
-        <DimatisIcon width="18" height="18" />
-        <strong class="ms-1">Website</strong>
-      </a>
-    </div>
-  </div>
-
-  <!-- Release Content -->
-  <div ref="releasepop_content" class="d-none">
-    <div id="release_popped" class="bg-dark text-white rounded-3">
-      <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
-      <div class="p-4">
-        <div class="text-center">
-          <h5><b>{{ page.title }}</b></h5>
-          <h6 class="mb-0">{{ page.artists }}</h6>
+  <main id="links">
+    <div class="bg-links" :style="{ backgroundImage: `url(${LINKS.background})`, filter: 'blur(10px)', opacity: .9 }" />
+    <div class="container py-5">
+      <div class="card rounded-4 col-lg-7 mx-auto overflow-hidden">
+        <div class="card-header text-center py-5">
+          <img class="rounded-4 scale-on-hover" :src="SITE.image" height="350" width="350">
+          <h1 class="text-center mb-0 mt-3">{{ SITE.name }}</h1>
+          <p class="text-center text-muted m-0">{{ portfolio.name }}</p>
+          <p class="text-center text-muted m-0">{{ SITE.description }}</p>
+          <a :href="`mailto:${SITE.email}`">{{ SITE.email }}</a>
+        </div>
+        <div class="card-body px-lg-5 bg-body-secondary">
+          <h4>Latest Release</h4>
+          <div class="position-relative neon scale-on-hover normal">
+            <NuxtLink ref="releasepop" :href="`${SITE.src_url}/${page.cover ? page.cover : page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
+              <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
+              <div class="px-3 w-100">
+                <h5 class="m-0">{{ page.title }}</h5>
+                <p class="m-0 text-muted">{{ page.artists }}</p>
+              </div>
+            </NuxtLink>
+          </div>
+          <hr>
+          <template v-for="(tree, i) of LINKS.tree" :key="tree.id">
+            <h4>{{ tree.title }}</h4>
+            <div v-for="(link, j) of tree.content" :key="j" class="position-relative neon scale-on-hover" :class="link.code ? link.code : 'normal'">
+              <a :href="link.url" class="bg-body d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
+                <div class="d-flex align-items-center justify-content-center" :style="{ minWidth: '100px' }">
+                  <Icon v-if="link.code" :name="`fa6-brands:${link.code}`" size="1.5rem" />
+                  <IconLogo v-else size="1.5rem" />
+                </div>
+                <div class="bg-body-tertiary px-3 py-4 w-100">
+                  <h5 class="m-0">{{ link.title }}</h5>
+                </div>
+              </a>
+            </div>
+            <hr v-if="i !== LINKS.tree.length - 1">
+          </template>
         </div>
       </div>
     </div>
-  </div>
+    <!-- Release Content -->
+    <div ref="releasepop_content" class="d-none">
+      <div id="release_popped" class="bg-dark text-white rounded-3">
+        <img class="d-block img-fluid p-2" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
+        <div class="p-4">
+          <div class="text-center">
+            <h5><b>{{ page.title }}</b></h5>
+            <h6 class="mb-0">{{ page.artists }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
-<style>
-.border {
-    border: 2px solid #151515!important;
+<style scoped>
+.scale-on-hover {
+  transition: transform .2s ease-in-out;
 }
-.spotify:hover, .youtube:hover, .soundcloud:hover, .instagram:hover, .facebook:hover, .normal:hover, .twitter:hover, .bandcamp:hover {
-  border-color: #fff!important;
-  color: #fff!important;
+.scale-on-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 10px rgb(0 0 0 / 15%)!important;
 }
 .bg-links {
   position: fixed;
@@ -127,54 +98,6 @@ onMounted(() => {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-}
-.spotify {
-  color: #1db954;
-}
-.spotify:hover {
-  background-color: #48ad6c!important;
-}
-.youtube {
-  color: #ff0000;
-}
-.youtube:hover {
-  background-color: #e44747!important;
-}
-.soundcloud {
-  color: #ff8800;
-}
-.soundcloud:hover {
-  background-color: #ff953c!important;
-}
-.instagram {
-  color: #833ab4;
-}
-.instagram:hover {
-  background-color: #8f58b3!important;
-}
-.facebook {
-  color: #3b5998;
-}
-.facebook:hover {
-  background-color: #5879c0!important;
-}
-.normal {
-  color: #151515;
-}
-.normal:hover {
-  background-color: #151515!important;
-}
-.twitter {
-  color: #000;
-}
-.twitter:hover {
-  background-color: #151515!important;
-}
-.bandcamp {
-  color: #1da0c3;
-}
-.bandcamp:hover {
-  background-color: #1da0c3!important;
 }
 .popover {
   max-width: 1000px;
@@ -189,13 +112,42 @@ onMounted(() => {
 #release_popped {
   width:300px;
 }
-#merch-carousel{
-  padding: 1rem 1rem;
-  border-radius: 2rem;
-  background-color: #f7f7f7;
-  border: 1px solid #151515;
+.neon:hover::after {
+  opacity: 1;
+  transform: translateZ(0) scale(.97,.75);
+  transition: opacity .3s;
 }
-.rounded {
-  border-radius: 2rem!important;
+.neon::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  filter: blur(20px);
+}
+.spotify:hover::after {
+  background-color: #1db954;
+}
+.youtube:hover::after {
+  background-color: #ff0000;
+}
+.soundcloud:hover::after {
+  background-color: #ff8800;
+}
+.instagram:hover::after {
+  background-color: #833ab4;
+}
+.facebook:hover::after {
+  background-color: #3b5998;
+}
+.normal:hover::after {
+  background-color: #f7f7f7;
+}
+.x-twitter:hover::after {
+  background-color: #f7f7f7;
+}
+.bandcamp:hover::after {
+  background-color: #1da0c3;
 }
 </style>
