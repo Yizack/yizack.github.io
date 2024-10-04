@@ -10,7 +10,8 @@ const SITE = {
   meta_description: "Dimatis is a Panamanian musician and producer.",
   description: "Panamanian musician and producer",
   keywords: "dimatis, website, producer, dj, artist, panama, yizack, musician",
-  background: "https://dimatis.yizack.com/images/banner_bg.jpg",
+  background: "https://dimatis.yizack.com/images/backgrounds/fanlinks.jpg",
+  twitter: "dimatismusic",
   useful: {
     samplepack: "https://dimatis.yizack.com/shop/legado",
     playlist: "https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD",

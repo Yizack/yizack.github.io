@@ -69,7 +69,7 @@ onMounted(() => {
       </div>
     </div>
     <div class="mx-auto col-lg-12 text-center h5 website">
-      <a class="text-decoration-none" href="https://dimatis.yizack.com" target="_blank" title="Website">dimatis.yizack.com</a>
+      <a class="text-decoration-none" :href="SITE.src_url" target="_blank" title="Website">{{ SITE.src_domain }}</a>
     </div>
   </div>
 </template>

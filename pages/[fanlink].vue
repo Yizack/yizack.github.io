@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import "~/assets/css/links.css";
-
 onMounted(() => {
   const { $colorMode } = useNuxtApp();
   $colorMode.preference = "dark";
 });
 
-const { params } = useRoute();
+const { params } = useRoute("fanlink");
 const param = params.fanlink.toString();
 
 const data = tracksData.find(track => track.id === param)!;
@@ -20,26 +18,25 @@ if (!data) {
 }
 
 useHead({
-  title: `${data.artists} - ${data.title}`,
+  title: `${data.title} by ${data.artists} | Fanlinks`,
   meta: [
-    { name: "keywords", content: `release, ${data.title}, ${data.genre}, play, stream, download, fanlink` },
     { name: "description", content: data.description },
     // Protocolo Open Graph
-    { property: "og:url", content: `${SITE.url}/music/${param}` },
+    { property: "og:url", content: `${SITE.url}/${param}` },
     { property: "og:type", content: "website" },
-    { property: "og:title", content: `${data.artists} - ${data.title}` },
+    { property: "og:title", content: `${data.title} by ${data.artists} | Fanlinks` },
     { property: "og:site_name", content: SITE.name },
     { property: "og:image", content: `${SITE.src_url}/images/${data.cover || param}.jpg` },
     { property: "og:image:width", content: "500" },
     { property: "og:image:height", content: "500" },
-    { property: "og:image:alt", content: `${data.artists} - ${data.title}` },
+    { property: "og:image:alt", content: `${data.title} by ${data.artists} | Fanlinks` },
     { property: "og:description", content: data.description },
     // Twitter Card
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:image", content: `${SITE.src_url}/images/${data.cover || param}.jpg` },
-    { name: "twitter:title", content: `${data.artists} - ${data.title}` },
+    { name: "twitter:title", content: `${data.title} by ${data.artists} | Fanlinks` },
     { name: "twitter:description", content: data.description },
-    { name: "twitter:site", content: "@dimatismusic" }
+    { name: "twitter:site", content: SITE.twitter }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}/${param}` }
@@ -93,7 +90,7 @@ useHead({
             <!-- free download -->
             <div class="col-lg-12 mt-3 p-0">
               <div class="d-grid">
-                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`https://dimatis.yizack.com/api/download?file=${param}`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
+                <a class="btn btn-primary btn-lg btn-block text-white rounded-0 rounded-bottom" :href="`${SITE.src_url}/api/download?file=${param}`" title="Free Download" data-bs-toggle="tooltip" data-bs-placement="right" role="button">Free Download</a>
               </div>
             </div>
           </div>
@@ -134,7 +131,7 @@ useHead({
         </ul>
       </div>
       <div class="mx-auto col-lg-12 text-center h5 website" :class="{ 'text-dark': data.fanlink.dark }">
-        <a class="text-decoration-none" href="https://dimatis.yizack.com" target="_blank" title="Website">dimatis.yizack.com</a>
+        <a class="text-decoration-none" :href="SITE.src_url" target="_blank" title="Website">{{ SITE.src_domain }}</a>
       </div>
     </div>
   </div>
