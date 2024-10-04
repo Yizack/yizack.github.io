@@ -19,7 +19,7 @@ export const LINKS = {
         { title: "Instagram", url: SITE.socials.instagram, code: "instagram" },
         { title: "Facebook", url: SITE.socials.facebook, code: "facebook" },
         { title: "Twitter / X", url: SITE.socials.twitter, code: "x-twitter" },
-        { title: "Bandcamp", url: SITE.buy.bandcamp, code: "bandcamp" },
+        { title: "Bandcamp", url: SITE.socials.bandcamp, code: "bandcamp" },
         { title: "Website", url: "/" }
       ]
     }
