@@ -69,7 +69,7 @@ onMounted(() => {
     <!-- Release Content -->
     <div ref="releasepop_content" class="d-none">
       <div id="release_popped" class="bg-dark text-white rounded-3">
-        <img class="d-block img-fluid p-2" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
+        <img class="d-block img-fluid p-2" :src="`${SITE.src_url}/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
         <div class="p-4">
           <div class="text-center">
             <h5><b>{{ page.title }}</b></h5>
