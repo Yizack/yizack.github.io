@@ -5,7 +5,7 @@ export const LINKS = {
       id: "useful-links",
       title: "Useful Links",
       content: [
-        { title: "Legado: A decade of Dimatis Sample Pack", url: "/shop/legado" },
+        { title: "Legado: A decade of Dimatis Sample Pack", url: "https://dimatis.yizack.com/shop/legado" },
         { title: "Melodic Dubstep playlist", url: "https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD", code: "spotify" }
       ]
     },
