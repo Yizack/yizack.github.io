@@ -1,10 +1,11 @@
 import { writeFileSync, existsSync, mkdirSync } from "fs";
+import { SITE } from "../utils/site";
 
 const dir = "./assets/data";
 
 Promise.all([
-  fetch("https://dimatis.yizack.com/data/tracks.json").then(response => response.json() as Promise<DimatisTrack[]>),
-  fetch("https://dimatis.yizack.com/data/albums.json").then(response => response.json() as Promise<DimatisAlbum[]>)
+  fetch(`${SITE.src_url}/data/tracks.json`).then(response => response.json() as Promise<DimatisTrack[]>),
+  fetch(`${SITE.src_url}/data/albums.json`).then(response => response.json() as Promise<DimatisAlbum[]>)
 ]).then(([tracks, albums]) => {
   if (!existsSync(dir)) {
     mkdirSync(dir);

@@ -15,25 +15,11 @@ nuxtApp.$router.options.scrollBehavior = (to) => {
 </script>
 
 <template>
-  <NuxtLoadingIndicator :throttle="0" />
-  <NuxtPage />
+  <div>
+    <NuxtLoadingIndicator :throttle="0" />
+    <NuxtPage />
+  </div>
 </template>
-
-<script>
-export default {
-  name: "App",
-  data () {
-    return {
-      loading: true
-    };
-  },
-  beforeMount () {
-    this.$nuxt.hook("page:finish", () => {
-      this.loading = false;
-    });
-  }
-};
-</script>
 
 <style scoped>
 .nuxt-loading-indicator {

@@ -1,7 +1,4 @@
-import { SITE } from "./utils/dimatis-info";
-import allData from "./assets/data/all.json";
-
-const fanlinks = allData.map(data => "/" + ("cover" in data.fanlink ? data.fanlink.cover : data.id));
+import { SITE } from "./utils/site";
 
 export default defineNuxtConfig({
   app: {
@@ -51,8 +48,13 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false,
       crawlLinks: false,
       failOnError: false,
-      routes: ["/", "/@dimatis", "/fanlinks", ...fanlinks]
+      routes: ["/"]
     }
+  },
+  routeRules: {
+    "/:fanlink": { appMiddleware: "dimatis" },
+    "/fanlinks": { redirect: SITE.fanlinks_url },
+    "/@dimatis": { redirect: `${SITE.src_url}/links` }
   },
   modules: [
     "@nuxt/eslint",
