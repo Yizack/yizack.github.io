@@ -1,6 +1,14 @@
 import { SITE } from "./utils/site";
+import dimatisData from "./assets/data/all.json";
+
+const fanlinks = dimatisData.map(data => "/" + ("cover" in data.fanlink ? data.fanlink.cover : data.id));
 
 export default defineNuxtConfig({
+  modules: [
+    "@nuxt/eslint",
+    "@nuxtjs/color-mode",
+    "nuxt-icon"
+  ],
   app: {
     rootId: "app",
     head: {
@@ -43,30 +51,6 @@ export default defineNuxtConfig({
     "~/assets/css/theme-dark.css",
     "~/assets/css/theme-light.css"
   ],
-  nitro: {
-    prerender: {
-      autoSubfolderIndex: false,
-      crawlLinks: false,
-      failOnError: false,
-      routes: ["/"]
-    }
-  },
-  routeRules: {
-    "/:fanlink": { appMiddleware: "dimatis" },
-    "/fanlinks": { redirect: SITE.fanlinks_url },
-    "/@dimatis": { redirect: `${SITE.src_url}/links` }
-  },
-  modules: [
-    "@nuxt/eslint",
-    "@nuxtjs/color-mode",
-    "nuxt-icon"
-  ],
-  eslint: {
-    config: {
-      autoInit: false,
-      stylistic: true
-    }
-  },
   colorMode: {
     preference: "dark",
     fallback: "dark",
@@ -74,10 +58,29 @@ export default defineNuxtConfig({
     storageKey: "nuxt-color-mode"
   },
   spaLoadingTemplate: false,
+  routeRules: {
+    "/:fanlink": { appMiddleware: "dimatis", prerender: true },
+    "/fanlinks": { redirect: SITE.fanlinks_url, prerender: true },
+    "/@dimatis": { redirect: `${SITE.src_url}/links`, prerender: true }
+  },
   features: {
     inlineStyles: false
   },
   experimental: {
     payloadExtraction: false
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+      crawlLinks: false,
+      failOnError: false,
+      routes: ["/", ...fanlinks]
+    }
+  },
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
   }
 });
