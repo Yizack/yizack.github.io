@@ -1,7 +1,7 @@
 import { writeFileSync, existsSync, mkdirSync } from "fs";
-import { SITE } from "../utils/site";
+import { SITE } from "../app/utils/site";
 
-const dir = "./assets/data";
+const dir = "./app/assets/data";
 
 Promise.all([
   fetch(`${SITE.src_url}/data/tracks.json`).then(response => response.json() as Promise<DimatisTrack[]>),
@@ -30,5 +30,5 @@ Promise.all([
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
-  writeFileSync("./assets/data/all.json", JSON.stringify(sorted));
+  writeFileSync("./app/assets/data/all.json", JSON.stringify(sorted));
 });

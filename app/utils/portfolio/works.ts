@@ -10,6 +10,7 @@ export default [
       "Worked with teams to develop and maintain internal web applications and services.",
       "Created and maintanied API integrations using Laravel",
       "Developed and optimized ETL processes to extract, transform, and load data efficiently between different databases.",
+      "Created and improved Oracle SQL queries for new and existing internal services.",
       "Participated in Solution Design with the team for new or improvement of existing systems.",
       "Managed the regional IT page as a Community Member of the company's Microsoft SharePoint Enterprise Portal."
     ]

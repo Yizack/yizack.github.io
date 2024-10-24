@@ -1,5 +1,5 @@
-import { SITE } from "./utils/site";
-import dimatisData from "./assets/data/all.json";
+import { SITE } from "./app/utils/site";
+import dimatisData from "./app/assets/data/all.json";
 
 const fanlinks = dimatisData.map(data => "/" + ("cover" in data.fanlink ? data.fanlink.cover : data.id));
 
@@ -7,13 +7,13 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/eslint",
     "@nuxtjs/color-mode",
-    "nuxt-icon"
+    "@nuxt/icon"
   ],
   app: {
     rootId: "app",
     head: {
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "en"
       },
@@ -63,12 +63,14 @@ export default defineNuxtConfig({
     "/fanlinks": { redirect: SITE.fanlinks_url, prerender: true },
     "/@dimatis": { redirect: `${SITE.src_url}/links`, prerender: true }
   },
+  future: { compatibilityVersion: 4 },
   features: {
     inlineStyles: false
   },
   experimental: {
     payloadExtraction: false
   },
+  compatibilityDate: "2024-10-24",
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
@@ -82,5 +84,9 @@ export default defineNuxtConfig({
       autoInit: false,
       stylistic: true
     }
+  },
+  icon: {
+    mode: "svg",
+    serverBundle: "remote"
   }
 });

@@ -11,5 +11,5 @@ node_modules
 .output
 .env
 dist
-assets/data/all.json
+app/assets/data/all.json
 .vscode
