@@ -31,7 +31,7 @@ watch(() => useRoute().hash, (hash) => {
     <div class="flex justify-between items-center w-full max-w-6xl mx-auto gap-4">
       <h1 class="text-xl font-semibold">{{ SITE.name }}</h1>
       <nav class="hidden lg:flex gap-4 items-center ms-auto">
-        <NuxtLink v-for="(page, i) of pages" :key="i" :to="page.path" class="rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white" :class="{ 'bg-gray-800': routeHash === page.path }">{{ page.name }}</NuxtLink>
+        <NuxtLink v-for="(page, i) of pages" :key="i" :to="page.path" class="rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white" :class="{ 'bg-gray-800 text-white': routeHash === page.path }">{{ page.name }}</NuxtLink>
         <a href="/Eliezer_Rangel_Resume_EN.pdf" class="rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white">Resume</a>
       </nav>
       <div class="flex lg:border-s gap-4">
@@ -56,7 +56,7 @@ watch(() => useRoute().hash, (hash) => {
         </button>
       </div>
       <nav class="flex flex-col space-y-2 p-4">
-        <NuxtLink v-for="(page, i) of pages" :key="i" :href="page.path" class="rounded-md px-3 py-3 text-sm font-medium hover:bg-gray-700 hover:text-white" :class="{ 'bg-gray-800': routeHash === page.path }" @click="toggleMenu">{{ page.name }}</NuxtLink>
+        <NuxtLink v-for="(page, i) of pages" :key="i" :href="page.path" class="rounded-md px-3 py-3 text-sm font-medium hover:bg-gray-700 hover:text-white" :class="{ 'bg-gray-800 text-white': routeHash === page.path }" @click="toggleMenu">{{ page.name }}</NuxtLink>
         <a href="/Eliezer_Rangel_Resume_EN.pdf" class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Resume</a>
       </nav>
     </div>
