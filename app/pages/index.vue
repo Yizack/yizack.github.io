@@ -26,7 +26,7 @@ useHead({
                 <Icon :name="social.icon" size="2rem" />
               </a>
             </div>
-            <hr class="my-6 lg:hidden">
+            <hr class="my-6 lg:hidden dark:border-gray-700">
           </div>
           <div class="grow">
             <div class="mb-4">
@@ -62,7 +62,7 @@ useHead({
             </div>
           </div>
         </div>
-        <hr class="my-4 d-lg-none d-block">
+        <hr class="my-4 dark:border-gray-700">
         <div class="mb-6">
           <div class="mb-3">
             <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
@@ -75,7 +75,7 @@ useHead({
               <p>{{ edu.period }}</p>
             </div>
           </div>
-          <hr class="my-6">
+          <hr class="my-6 dark:border-gray-700">
           <div id="work">
             <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
               <Icon name="solar:suitcase-linear" size="2rem" />
@@ -99,6 +99,7 @@ useHead({
             </div>
           </div>
         </div>
+        <hr class="my-6 dark:border-gray-700">
         <div>
           <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
             <Icon name="solar:bolt-linear" size="2rem" />
@@ -122,7 +123,7 @@ useHead({
             </div>
           </div>
         </div>
-        <hr class="my-6">
+        <hr class="my-6 dark:border-gray-700">
         <div>
           <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
             <Icon name="solar:rocket-2-linear" size="2rem" />
@@ -136,7 +137,7 @@ useHead({
           </ul>
         </div>
       </div>
-      <hr class="my-6">
+      <hr class="my-6 dark:border-gray-700">
       <div id="projects">
         <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
           <Icon name="solar:programming-linear" size="2rem" />
