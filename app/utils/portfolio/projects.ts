@@ -12,7 +12,7 @@ export default [
     ],
     url: "https://mappedlove.com/",
     github: "https://github.com/Yizack/mappedlove",
-    image: "/images/mappedlove.jpg",
+    image: "/images/projects/mappedlove.jpg",
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Cloudflare R2", "Bootstrap 5", "Drizzle-ORM"]
   },
   {
@@ -28,7 +28,7 @@ export default [
     ],
     url: "https://plebrewards.yizack.com/",
     github: "https://github.com/Yizack/plebrewards",
-    image: "/images/plebrewards.jpg",
+    image: "/images/projects/plebrewards.jpg",
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "Twitch API", "Spotify API"]
   },
   {
@@ -42,7 +42,7 @@ export default [
     ],
     url: "https://mynpmlist.yizack.com/",
     github: "https://github.com/Yizack/my-npm-list",
-    image: "/images/my-npm-list.jpg",
+    image: "/images/projects/my-npm-list.jpg",
     technologies: ["Nuxt", "Node.js", "Vue.js", "Javascript", "Cloudflare Pages", "Cloudflare D1", "Github API", "Bootstrap 5", "Drizzle-ORM", "SQLite"]
   },
   {
@@ -56,7 +56,7 @@ export default [
     ],
     url: "https://github.com/Yizack/nuxt-twemoji",
     github: "https://github.com/Yizack/nuxt-twemoji",
-    image: "/images/nuxt-twemoji.png",
+    image: "/images/projects/nuxt-twemoji.png",
     technologies: ["Nuxt", "Node.js", "Typescript", "GitHub Actions", "Vue.js", "Twemoji", "NPM"]
   },
   {
@@ -71,7 +71,7 @@ export default [
       "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play Store."
     ],
     url: "https://howmanytimeslarger.com/",
-    image: "/images/howmanytimeslarger.jpg",
+    image: "/images/projects/howmanytimeslarger.jpg",
     github: "https://github.com/Yizack/HowManyTimesLarger",
     technologies: ["Vue.js", "Nuxt", "Node.js", "Capacitor.js", "GitHub Pages", "GitHub Actions", "Bootstrap 5"]
   },
@@ -88,7 +88,7 @@ export default [
       "Incorporate search filters and Excel files generator of all the data for further analysis"
     ],
     url: "",
-    image: "/images/grupokh.jpg",
+    image: "/images/projects/grupokh.jpg",
     github: "",
     technologies: ["Node.js", "PostgreSQL", "Vue.js", "Heroku", "AWS S3", "Bootstrap 5"]
   },
@@ -102,7 +102,7 @@ export default [
       "Documented the source code of the project using JSDoc."
     ],
     url: "https://gists-readme.yizack.com/",
-    image: "/images/gist-readme.jpg",
+    image: "/images/projects/gist-readme.jpg",
     github: "https://github.com/Yizack/gists-readme",
     technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
   },
@@ -130,7 +130,7 @@ export default [
       "Implemented an images and posts html content storage system using Cloudflare R2."
     ],
     url: "https://pesp.gg/",
-    image: "/images/pespgg.jpg",
+    image: "/images/projects/pespgg.jpg",
     github: "https://github.com/pespgg/pesp.gg",
     technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js"]
   },
@@ -146,7 +146,7 @@ export default [
       "Created and maintained a user login system to store users' cards in their accounts using Heroku PostgreSQL and a PHP server on AWS."
     ],
     url: "https://saldometrobus.yizack.com/",
-    image: "/images/saldometrobus.jpg",
+    image: "/images/projects/saldometrobus.jpg",
     github: "",
     technologies: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
   },
@@ -160,7 +160,7 @@ export default [
       "Deployed serverless code on Cloudflare Workers while using the Meta API to show the Instagram feed and the Spotify API to show the followers on the website."
     ],
     url: "https://dimatis.yizack.com/",
-    image: "/images/dimatis.jpg",
+    image: "/images/projects/dimatis.jpg",
     github: "https://github.com/Yizack/dimatis",
     technologies: ["Nuxt", "Node.js", "Cloudflare Workers", "Bootstrap 5", "GitHub Pages", "Github Actions", "Spotify API", "Meta API"]
   },
@@ -173,7 +173,7 @@ export default [
       "Authorization implemented to grant users access permissions to Spotify data and features."
     ],
     url: "https://dev.yizack.com/spotify/playlist",
-    image: "/images/playlist-adder.jpg",
+    image: "/images/projects/playlist-adder.jpg",
     github: "",
     technologies: ["PHP", "Spotify API", "Bootstrap 5"]
   }

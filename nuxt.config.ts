@@ -46,16 +46,12 @@ export default defineNuxtConfig({
     }
   },
   css: [
-    "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/css/global.css",
-    "~/assets/css/theme-dark.css",
-    "~/assets/css/theme-light.css"
+    "~/assets/css/transitions.css"
   ],
   colorMode: {
     preference: "dark",
-    fallback: "dark",
-    dataValue: "bs-theme",
-    storageKey: "nuxt-color-mode"
+    fallback: "dark"
   },
   spaLoadingTemplate: false,
   routeRules: {
@@ -68,7 +64,8 @@ export default defineNuxtConfig({
     inlineStyles: false
   },
   experimental: {
-    payloadExtraction: false
+    payloadExtraction: false,
+    typedPages: true
   },
   compatibilityDate: "2024-10-24",
   nitro: {
@@ -77,6 +74,12 @@ export default defineNuxtConfig({
       crawlLinks: false,
       failOnError: false,
       routes: ["/", ...fanlinks]
+    }
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {}
     }
   },
   eslint: {

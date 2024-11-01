@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Dimatis",
+  name: "Yizack Rangel",
   url: "https://yizack.com",
   src_url: "https://dimatis.music",
   fanlinks_url: "https://go.dimatis.music",
