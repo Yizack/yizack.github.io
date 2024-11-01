@@ -15,7 +15,7 @@ useHead({
               <Icon class="text-primary-emphasis" name="solar:user-id-outline" size="2rem" />
               <span>About Me</span>
             </h2>
-            <div class="text-gray-300">
+            <div class="dark:text-gray-300 text-gray-700">
               <p class="mb-4">Currently, I consider myself an enthusiast in the development of Progressive Web Applications (PWAs), mainly using Nuxt, the Vue framework, and the power of Serverless services to take advantage of their high performance at a low cost.</p>
               <p class="mb-4">I have been passionate about computers and new technologies since I was 14 years old. It all began when I created my first blogs and bravely tried to understand and use HTML editors. Later, I started watching videos to learn Java and JavaScript, which allowed me to develop automated posting bots for social media.</p>
               <p class="mb-4">I studied Computer Systems Engineering at the Technological University of Panama. I am deeply passionate about computers and emerging technologies. I have experience in web and mobile app development, system automation, and database management. With my determination, I am confident in my ability to overcome any programming challenge that comes my way.</p>
@@ -34,7 +34,7 @@ useHead({
                 <Icon name="solar:map-point-hospital-linear" class="text-primary-emphasis" size="1.5rem" />
                 <span>Location</span>
               </h5>
-              <p class="flex gap-2 text-gray-300">
+              <p class="flex gap-2 dark:text-gray-300 text-gray-700">
                 <img :src="portfolio.flag">
                 <span>{{ portfolio.location }}</span>
               </p>
@@ -44,14 +44,14 @@ useHead({
                 <Icon name="solar:mailbox-linear" class="text-primary-emphasis" size="1.5rem" />
                 <span>Email</span>
               </h5>
-              <a class="underline text-gray-300 hover:text-gray-100" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
+              <a class="underline dark:text-gray-300 text-gray-700 hover:text-gray-100" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
             </div>
             <div>
               <h5 class="text-2xl font-bold flex items-center gap-2 mb-2">
                 <Icon name="bi:translate" class="text-primary-emphasis" size="1.5rem" />
                 <span>Languages</span>
               </h5>
-              <ul class="text-gray-300">
+              <ul class="dark:text-gray-300 text-gray-700">
                 <li v-for="(language, index) in portfolio.languages" :key="index">
                   {{ language.name }}: {{ language.level }}
                   <div class="h-6 bg-gray-800 rounded-md overflow-hidden" role="progressbar" aria-label="Language level" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
@@ -70,7 +70,7 @@ useHead({
               <span>Education</span>
             </h2>
             <div v-for="(edu, index) in portfolio.education" :key="index" class="mb-4">
-              <h5 class="text-xl text-gray-300"><b class="text-white">{{ edu.diploma }}</b> at <b class="text-white">{{ edu.institution }}</b></h5>
+              <h5 class="text-xl dark:text-gray-300 text-gray-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
               <p>{{ edu.city }}</p>
               <p>{{ edu.period }}</p>
             </div>
@@ -83,8 +83,8 @@ useHead({
             </h2>
             <div v-for="(work, work_index) in portfolio.works" :key="work_index">
               <div class="flex items-center gap-3">
-                <h5 class="text-xl text-gray-300">
-                  <strong class="text-white">{{ work.position }}</strong> at <strong class="text-white">{{ work.company }}</strong>
+                <h5 class="text-xl dark:text-gray-300 text-gray-700">
+                  <strong class="dark:text-white">{{ work.position }}</strong> at <strong class="dark:text-white">{{ work.company }}</strong>
                 </h5>
                 <div class="flex gap-2 bottom-0 start-100">
                   <a :href="work.website" class="text-body"><Icon name="bi:globe" size="1.3rem" /></a>
@@ -93,7 +93,7 @@ useHead({
               </div>
               <p class="m-0">{{ work.city }}</p>
               <p class="text-dark-emphasis">{{ work.period }}</p>
-              <ul v-if="work.bullets" class="text-gray-300 list-disc ms-5 mb-4">
+              <ul v-if="work.bullets" class="dark:text-gray-300 text-gray-700 list-disc ms-5 mb-4">
                 <li v-for="(task, task_index) in work.bullets" :key="task_index">{{ task }}</li>
               </ul>
             </div>
@@ -105,15 +105,15 @@ useHead({
             <span>Main Skills</span>
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-            <div v-for="(skill, key) in portfolio.skills" :key="key" class="bg-gray-800 rounded-md overflow-hidden">
-              <div class="bg-slate-700 text-center py-2 text-lg">
+            <div v-for="(skill, key) in portfolio.skills" :key="key" class="dark:bg-gray-800 bg-slate-100 rounded-md overflow-hidden shadow-lg">
+              <div class="dark:bg-slate-700 bg-slate-400 text-center py-2 text-lg">
                 <h5 class="m-0">
                   <strong>{{ skill.title }}</strong>
                 </h5>
               </div>
               <div class="p-4">
                 <div class="flex flex-wrap gap-2">
-                  <div v-for="(stack, i) in skill.stack" :key="i" class="flex items-center gap-2 border border-gray-600 py-1 px-2 skill small rounded-lg bg-gray-700">
+                  <div v-for="(stack, i) in skill.stack" :key="i" class="flex items-center gap-2 border dark:border-gray-600 border-slate-300 py-1 px-2 skill small rounded-lg dark:bg-gray-700 bg-slate-200">
                     <Icon :name="stack.icon" size="1.3rem" />
                     <span>{{ stack.name }}</span>
                   </div>
@@ -128,7 +128,7 @@ useHead({
             <Icon name="solar:rocket-2-linear" size="2rem" />
             <span>Quality Practices</span>
           </h2>
-          <ul class="list-none mb-3 text-gray-300">
+          <ul class="list-none mb-3 dark:text-gray-300 text-gray-700">
             <li v-for="(quality, index) in portfolio.qualities" :key="index" class="flex items-center gap-2 mb-3">
               <Icon name="solar:alt-arrow-right-line-duotone" size="1.5rem" class="text-white" />
               <span>{{ quality }}</span>
@@ -144,7 +144,7 @@ useHead({
         </h2>
         <MasonryWall :items="portfolio.projects" :ssr-columns="2" :gap="16" :max-columns="2" :column-width="400">
           <template #default="{ item: project }">
-            <div class="bg-gray-800 rounded-md overflow-hidden">
+            <div class="dark:bg-gray-800 bg-slate-100 rounded-md overflow-hidden shadow-lg">
               <img :src="project.image" class="card-img-top">
               <div class="p-4">
                 <h5 class="text-xl">
@@ -154,20 +154,20 @@ useHead({
                   <strong v-else>{{ project.name }}</strong>
                 </h5>
                 <p class="text-dark-emphasis mb-4">{{ project.period }}</p>
-                <p class="text-gray-300 mb-4">{{ project.description }}</p>
-                <ul v-if="project.bullets" class="text-gray-300 list-disc ms-5 mb-4">
+                <p class="dark:text-gray-300 text-gray-700 mb-4">{{ project.description }}</p>
+                <ul v-if="project.bullets" class="dark:text-gray-300 text-gray-700 list-disc ms-5 mb-4">
                   <li v-for="(task, task_index) in project.bullets" :key="task_index">{{ task }}</li>
                 </ul>
                 <div class="flex flex-wrap gap-2">
-                  <span v-for="(technology, tech_index) in project.technologies" :key="tech_index" class="flex items-center gap-2 border border-gray-600 py-1 px-2 skill small rounded-lg bg-gray-700">{{ technology }}</span>
+                  <span v-for="(technology, tech_index) in project.technologies" :key="tech_index" class="flex items-center gap-2 border dark:border-gray-600 border-slate-300 bg-slate-200 py-1 px-2 skill small rounded-lg dark:bg-gray-700">{{ technology }}</span>
                 </div>
               </div>
               <div class="flex w-full gap-0.5">
-                <a v-if="project.github" :href="project.github" target="_blank" class="bg-slate-700 text-white py-2 px-4 flex items-center justify-center hover:bg-slate-600" :class="project.url ? 'w-1/2' : 'w-full'">
+                <a v-if="project.github" :href="project.github" target="_blank" class="bg-slate-700 text-white py-3 px-4 flex items-center justify-center hover:bg-slate-600" :class="project.url ? 'w-1/2' : 'w-full'">
                   <Icon name="bi:github" size="1rem" />
                   <span class="ms-1">Repository</span>
                 </a>
-                <a v-if="project.url" :href="project.url" target="_blank" class="bg-slate-700 text-white py-2 px-4 flex items-center justify-center hover:bg-slate-600" :class="project.github ? 'w-1/2' : 'w-full'">
+                <a v-if="project.url" :href="project.url" target="_blank" class="bg-slate-700 text-white py-3 px-4 flex items-center justify-center hover:bg-slate-600" :class="project.github ? 'w-1/2' : 'w-full'">
                   <Icon name="solar:square-bottom-up-linear" size="1rem" />
                   <span class="ms-1">View</span>
                 </a>
