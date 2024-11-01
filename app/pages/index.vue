@@ -53,7 +53,7 @@ useHead({
               </h5>
               <ul class="dark:text-gray-300 text-gray-700">
                 <li v-for="(language, index) in portfolio.languages" :key="index">
-                  {{ language.name }}: {{ language.level }}
+                  <div class="mt-2">{{ language.name }}: {{ language.level }}</div>
                   <div class="h-6 bg-gray-800 rounded-md overflow-hidden" role="progressbar" aria-label="Language level" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                     <div class="h-full bg-slate-300" :style="`width: ${language.p}%`" />
                   </div>
