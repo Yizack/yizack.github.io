@@ -25,8 +25,8 @@ export default defineNuxtConfig({
         { name: "msapplication-TileImage", content: `${SITE.src_url}/icons/mstile-144x144.png` }
       ],
       link: [
-        { rel: "preload", as: "style", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
-        { rel: "stylesheet", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
+        { rel: "preload", href: "/fonts/Ebrima.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
+        { rel: "preload", href: "/fonts/EbrimaBd.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: `${SITE.src_url}/favicon-16x16.png` },
         { rel: "icon", type: "image/png", sizes: "32x32", href: `${SITE.src_url}/favicon-32x32.png` },
         { rel: "icon", type: "image/png", sizes: "192x192", href: `${SITE.src_url}/android-chrome-192x192.png` },
