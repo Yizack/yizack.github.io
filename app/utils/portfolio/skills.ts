@@ -5,7 +5,8 @@ export default [
       { name: "HTML", icon: "logos:html-5" },
       { name: "CSS", icon: "logos:css-3" },
       { name: "SCSS/SASS", icon: "logos:sass" },
-      { name: "Bootstrap", icon: "logos:bootstrap" }
+      { name: "Bootstrap", icon: "logos:bootstrap" },
+      { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" }
     ]
   },
   {
@@ -94,7 +95,7 @@ export default [
       { name: "CDN", icon: "bi:cloud-fog2-fill" },
       { name: "Jobs", icon: "bi:clock-fill" },
       { name: "Caching", icon: "ic:round-cached" },
-      { name: "Webhooks", icon: "logos:webhooks" },
+      { name: "Webhooks", icon: "ic:round-webhook" },
       { name: "Redirects", icon: "bi:arrow-right-square-fill" },
       { name: "SSH/SFTP", icon: "bi:folder-fill" },
       { name: "Websockets", icon: "bi:laptop" },
