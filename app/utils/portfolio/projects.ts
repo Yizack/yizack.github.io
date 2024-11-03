@@ -159,7 +159,7 @@ export default [
       "Created a beautiful HTML/CSS music player to play audio.",
       "Deployed serverless code on Cloudflare Workers while using the Meta API to show the Instagram feed and the Spotify API to show the followers on the website."
     ],
-    url: "https://dimatis.yizack.com/",
+    url: "https://dimatis.music",
     image: "/images/projects/dimatis.jpg",
     github: "https://github.com/Yizack/dimatis",
     technologies: ["Nuxt", "Node.js", "Cloudflare Workers", "Bootstrap 5", "GitHub Pages", "Github Actions", "Spotify API", "Meta API"]
