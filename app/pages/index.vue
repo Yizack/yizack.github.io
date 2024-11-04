@@ -44,7 +44,7 @@ useHead({
                 <Icon name="solar:mailbox-linear" class="text-primary-emphasis" size="1.5rem" />
                 <span>Email</span>
               </h5>
-              <a class="underline dark:text-gray-300 text-gray-700 hover:text-gray-100" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
+              <a class="underline dark:text-gray-300 dark:hover:text-gray-100 text-gray-700 hover:text-gray-900" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
             </div>
             <div>
               <h5 class="text-2xl font-bold flex items-center gap-2 mb-2">
