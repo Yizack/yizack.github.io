@@ -17,6 +17,7 @@ onMounted(async () => {
             <a :href="pr.url" target="_blank" class="text-sm sm:text-base flex items-center gap-0.5 sm:gap-1 hover:underline text-gray-900 dark:text-white">
               <Icon
                 :name="mapPrIcons(pr.state)"
+                class="shrink-0"
                 :class="{
                   'text-green-500 dark:text-green-400': pr.state === 'open',
                   'text-gray-500 dark:text-gray-400': pr.state === 'draft',
