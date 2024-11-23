@@ -177,6 +177,14 @@ useHead({
           </template>
         </MasonryWall>
       </div>
+      <hr class="my-6 dark:border-gray-700">
+      <div id="contributions">
+        <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+          <Icon name="bi:github" size="2rem" />
+          <span>Open Source Contributions</span>
+        </h2>
+        <GHContributions />
+      </div>
     </div>
   </main>
 </template>
