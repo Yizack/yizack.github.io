@@ -6,7 +6,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div v-if="data">
+  <div v-if="data && data.prs.length > 0">
     <div class="rounded-md flex flex-col gap-2">
       <div v-for="(pr, i) of data.prs" :key="i" class="dark:bg-gray-800 bg-slate-100 flex items-center gap-2 sm:gap-4 p-4 rounded-md">
         <NuxtLink :to="`https://github.com/${pr.repo}`" target="_blank" relative :class="['size-10 sm:size-12 shrink-0 border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm', pr.type === 'Organization' ? 'rounded-lg' : 'rounded-full']">
@@ -52,6 +52,22 @@ onMounted(async () => {
       <NuxtLink to="https://prs.yizack.com" target="_blank">
         <span class="text-muted">prs.yizack.com</span>
       </NuxtLink>
+    </div>
+  </div>
+  <div v-else>
+    <div class="rounded-md flex flex-col gap-2">
+      <div v-for="n of 4" :key="n" class="dark:bg-gray-800 bg-slate-100 flex items-center gap-2 sm:gap-4 p-4 rounded-md animate-pulse">
+        <div class="size-10 sm:size-12 shrink-0 border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm bg-gray-300 dark:bg-gray-700" :class="n % 2 ? 'rounded-lg' : 'rounded-full'" />
+        <div class="flex-1 flex justify-between gap-2 lg:gap-4">
+          <div class="flex flex-col min-w-0 gap-0.5 sm:gap-1 flex-grow">
+            <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/2" />
+            <div class="flex gap-2 items-bottom">
+              <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/6" />
+              <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/6" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
