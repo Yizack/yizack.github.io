@@ -14,6 +14,17 @@ onMounted(async () => {
       <div class="flex-1 flex justify-between gap-2 lg:gap-4 min-w-0">
         <div class="flex flex-col min-w-0 gap-0.5 sm:gap-1">
           <a :href="pr.url" target="_blank" class="text-sm sm:text-base flex items-center gap-0.5 sm:gap-1 hover:underline text-gray-900 dark:text-white">
+            <Icon
+              :name="mapPrIcons(pr.state)"
+              :class="{
+                'text-green-500 dark:text-green-400': pr.state === 'open',
+                'text-gray-500 dark:text-gray-400': pr.state === 'draft',
+                'text-purple-500 dark:text-purple-400': pr.state === 'merged',
+                'text-red-500 dark:text-red-400': pr.state === 'closed',
+              }"
+              class=""
+              size="1.2em"
+            />
             <span class="truncate">{{ pr.title }}</span>
           </a>
           <div class="flex gap-2 items-bottom">
