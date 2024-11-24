@@ -72,8 +72,8 @@ useHead({
             <div class="flex flex-col gap-3">
               <div v-for="(edu, index) in portfolio.education" :key="index" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden py-3 px-4 w-full">
                 <h5 class="text-xl dark:text-slate-100 text-slate-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
-                <p>{{ edu.city }}</p>
-                <p>{{ edu.period }}</p>
+                <p class="dark:text-slate-300 text-gray-700">{{ edu.city }}</p>
+                <p class="dark:text-slate-400 text-gray-500">{{ edu.period }}</p>
               </div>
             </div>
           </div>
@@ -90,12 +90,12 @@ useHead({
                     <strong class="dark:text-white">{{ work.position }}</strong> at <strong class="dark:text-white">{{ work.company }}</strong>
                   </h5>
                   <div class="flex gap-2 bottom-0 start-100">
-                    <a :href="work.website" class="text-body"><Icon name="bi:globe" size="1.3rem" /></a>
-                    <a :href="work.linkedin" class="text-body"><Icon name="bi:linkedin" size="1.3rem" /></a>
+                    <NuxtLink :to="work.website" class="text-body"><Icon name="bi:globe" size="1.3rem" /></NuxtLink>
+                    <NuxtLink :to="work.linkedin" class="text-body"><Icon name="bi:linkedin" size="1.3rem" /></NuxtLink>
                   </div>
                 </div>
-                <p class="m-0">{{ work.city }}</p>
-                <p class="text-dark-emphasis">{{ work.period }}</p>
+                <p class="dark:text-slate-300 text-gray-700">{{ work.city }}</p>
+                <p class="dark:text-slate-400 text-gray-500">{{ work.period }}</p>
                 <ul v-if="work.bullets" class="dark:text-slate-100 text-slate-700 list-disc ms-5 mb-4">
                   <li v-for="(task, task_index) in work.bullets" :key="task_index">{{ task }}</li>
                 </ul>
@@ -160,7 +160,7 @@ useHead({
                   </a>
                   <strong v-else>{{ project.name }}</strong>
                 </h5>
-                <p class="text-dark-emphasis mb-4">{{ project.period }}</p>
+                <p class="dark:text-slate-400 text-gray-500 mb-4">{{ project.period }}</p>
                 <p class="dark:text-slate-100 text-slate-700 mb-4">{{ project.description }}</p>
                 <ul v-if="project.bullets" class="dark:text-slate-100 text-slate-700 list-disc ms-5 mb-4">
                   <li v-for="(task, task_index) in project.bullets" :key="task_index">{{ task }}</li>
