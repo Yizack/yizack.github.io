@@ -1,5 +1,21 @@
 export default [
   {
+    name: "nuxt-mailchannels",
+    description: "Simple MailChannels Email API integration for Nuxt.",
+    period: "Nov 2024 — Present",
+    github: "https://github.com/Yizack/nuxt-mailchannels",
+    image: "/images/projects/nuxt-mailchannels.png",
+    technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM", "MailChannels"]
+  },
+  {
+    name: "nuxt-webhook-validators",
+    description: "A simple nuxt module that works on the edge to easily validate incoming webhooks from different services.",
+    period: "Jun 2024 — Present",
+    github: "https://github.com/Yizack/nuxt-webhook-validators",
+    image: "/images/projects/nuxt-webhook-validators.png",
+    technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM"]
+  },
+  {
     name: "MappedLove",
     description: "Web app made for couples. Mark the places you have visited together upload images and preserve your special moments forever.",
     period: "Jun 2023 — Present",
@@ -30,6 +46,16 @@ export default [
     github: "https://github.com/Yizack/plebrewards",
     image: "/images/projects/plebrewards.jpg",
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "Twitch API", "Spotify API"]
+  },
+  {
+    name: "unbot.me",
+    description: "Unbotme is a bot for Twitch designed to automatically ban identified bots that persistently lurk in channels.",
+    period: "Jan 2024 — Apr 2024",
+    bullets: [],
+    url: "https://unbot.me/",
+    github: "https://github.com/Yizack/unbotme",
+    image: "/images/projects/unbotme.jpg",
+    technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "Twitch API", "WebSocket"]
   },
   {
     name: "my-npm-list",
