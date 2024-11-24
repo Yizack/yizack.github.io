@@ -11,7 +11,7 @@ useHead({
       <div id="about">
         <div class="flex flex-wrap lg:gap-6">
           <div class="flex-none lg:w-8/12 w-full">
-            <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+            <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
               <Icon name="solar:user-id-outline" size="2rem" />
               <span>About Me</span>
             </h2>
@@ -44,7 +44,7 @@ useHead({
                 <Icon name="solar:mailbox-linear" size="1.5rem" />
                 <span>Email</span>
               </h5>
-              <a class="underline dark:text-green-100 dark:hover:text-green-200 text-slate-700 hover:text-slate-900" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
+              <a class="underline dark:text-slate-200 dark:hover:text-slate-300 text-slate-700 hover:text-slate-900" :href="`mailto:${portfolio.email}`">{{ portfolio.email }}</a>
             </div>
             <div>
               <h5 class="text-2xl font-bold flex items-center gap-2 mb-2">
@@ -65,13 +65,13 @@ useHead({
         <hr class="my-4 dark:border-slate-700">
         <div class="mb-6">
           <div class="mb-3">
-            <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+            <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
               <Icon name="solar:square-academic-cap-2-linear" size="2rem" />
               <span>Education</span>
             </h2>
             <div class="flex flex-col gap-3">
               <div v-for="(edu, index) in portfolio.education" :key="index" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden py-3 px-4 w-full">
-                <h5 class="text-xl dark:text-slate-100 text-slate-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
+                <h5 class="text-lg sm:text-xl dark:text-slate-100 text-slate-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
                 <p class="dark:text-slate-300 text-gray-700">{{ edu.city }}</p>
                 <p class="dark:text-slate-400 text-gray-500">{{ edu.period }}</p>
               </div>
@@ -79,14 +79,14 @@ useHead({
           </div>
           <hr class="my-6 dark:border-slate-700">
           <div id="work">
-            <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+            <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
               <Icon name="solar:suitcase-linear" size="2rem" />
               <span>Work Experience</span>
             </h2>
             <div class="flex flex-col gap-3">
               <div v-for="(work, work_index) in portfolio.works" :key="work_index" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden py-3 px-4 w-full">
                 <div class="flex items-center gap-3">
-                  <h5 class="text-xl dark:text-slate-100 text-slate-700">
+                  <h5 class="text-lg sm:text-xl dark:text-slate-100 text-slate-700">
                     <strong class="dark:text-white">{{ work.position }}</strong> at <strong class="dark:text-white">{{ work.company }}</strong>
                   </h5>
                   <div class="flex gap-2 bottom-0 start-100">
@@ -96,7 +96,7 @@ useHead({
                 </div>
                 <p class="dark:text-slate-300 text-gray-700">{{ work.city }}</p>
                 <p class="dark:text-slate-400 text-gray-500">{{ work.period }}</p>
-                <ul v-if="work.bullets" class="dark:text-slate-100 text-slate-700 list-disc ms-5 mb-4">
+                <ul v-if="work.bullets" class="dark:text-slate-100 text-slate-700 list-disc ms-5">
                   <li v-for="(task, task_index) in work.bullets" :key="task_index">{{ task }}</li>
                 </ul>
               </div>
@@ -105,14 +105,14 @@ useHead({
         </div>
         <hr class="my-6 dark:border-slate-700">
         <div>
-          <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+          <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
             <Icon name="solar:bolt-linear" size="2rem" />
             <span>Main Skills</span>
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
             <div v-for="(skill, key) in portfolio.skills" :key="key" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden shadow-lg">
-              <div class="dark:bg-green-200 bg-green-500 dark:text-slate-900 text-white text-center py-2 text-lg">
-                <h5 class="m-0">
+              <div class="dark:bg-green-200 bg-green-500 dark:text-slate-900 text-white text-center py-2">
+                <h5 class="text-1/4 sm:text-lg">
                   <strong>{{ skill.title }}</strong>
                 </h5>
               </div>
@@ -129,7 +129,7 @@ useHead({
         </div>
         <hr class="my-6 dark:border-slate-700">
         <div id="quality-practices">
-          <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+          <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
             <Icon name="solar:rocket-2-linear" size="2rem" />
             <span>Quality Practices</span>
           </h2>
@@ -145,7 +145,7 @@ useHead({
       </div>
       <hr class="my-6 dark:border-slate-700">
       <div id="projects">
-        <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+        <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
           <Icon name="solar:programming-linear" size="2rem" />
           <span>Projects</span>
         </h2>
@@ -185,7 +185,7 @@ useHead({
       </div>
       <hr class="my-6 dark:border-slate-700">
       <div id="contributions">
-        <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+        <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
           <Icon name="bi:github" size="2rem" />
           <span>Open Source Contributions</span>
         </h2>
