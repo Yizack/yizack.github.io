@@ -31,7 +31,7 @@ watch(() => useRoute().hash, (hash) => {
     <div class="flex justify-between items-center w-full max-w-6xl mx-auto gap-4">
       <h1 class="text-xl font-semibold">{{ SITE.name }}</h1>
       <nav class="hidden lg:flex gap-4 items-center ms-auto">
-        <NuxtLink v-for="(page, i) of pages" :key="i" :to="page.path" class="rounded-md px-3 py-2 font-medium hover:bg-slate-700 hover:text-white" :class="{ 'bg-slate-800 text-white': routeHash === page.path }">{{ page.name }}</NuxtLink>
+        <NuxtLink v-for="(page, i) of pages" :key="i" :to="page.path" class="rounded-md px-3 py-2 font-medium hover:bg-slate-700 hover:text-white" :class="{ 'dark:bg-green-200 dark:text-slate-900 bg-green-500 text-white': routeHash === page.path }">{{ page.name }}</NuxtLink>
         <a href="/Eliezer_Rangel_Resume_EN.pdf" class="rounded-md px-3 py-2 font-medium hover:bg-slate-700 hover:text-white">Resume</a>
       </nav>
       <div class="flex lg:border-s gap-4">
