@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "Yizack Rangel's Portfolio",
-  bodyAttrs: { "data-bs-spy": "scroll" }
+  title: "Yizack Rangel's Portfolio"
 });
 </script>
 
