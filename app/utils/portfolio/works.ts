@@ -7,10 +7,10 @@ export default [
     position: "Programming Specialist",
     period: "Aug 2023 — Mar 2024",
     bullets: [
-      "Worked with teams to develop and maintain internal web applications and services.",
-      "Created and maintanied API integrations using Laravel",
-      "Developed and optimized ETL processes to extract, transform, and load data efficiently between different databases.",
-      "Created and improved Oracle SQL queries for new and existing internal services.",
+      "Collaborated with teams to develop and maintain internal web applications and services.",
+      "Created and maintained API integrations and web applications using Laravel and Vue. ",
+      "Developed and optimized ETL processes in SAP BODS to extract, transform, and load data efficiently between different databases.",
+      "Created and improved Oracle SQL queries.",
       "Participated in Solution Design with the team for new or improvement of existing systems.",
       "Managed the regional IT page as a Community Member of the company's Microsoft SharePoint Enterprise Portal."
     ]
@@ -23,12 +23,14 @@ export default [
     position: "Web App Developer",
     period: "May 2022 — Present",
     bullets: [
-      "Develop from scratch a web application to manage the inventory of products, suppliers, sellers, invoices, and customers of the company using Node.js on Heroku.",
+      "Develop a web app with Nuxt and PostgreSQL on Heroku to manage inventory, suppliers, sellers, invoices, and customers.",
       "Work alongside the Administrator to plan, develop, document, test, deploy, and maintain the web application and database.",
       "Create and maintain a role-based user login system.",
-      "Develop a REST API to control user functions using Express.js with PostgreSQL while utilizing Vue.js on the front end.",
-      "Implement Word and PDF invoices generator for physical printing.",
-      "Incorporate search filters and Excel files generator of all the data for further analysis"
+      "Develop a REST API to control user functions using Express.js with PostgreSQL while utilizing Vue on the front end.",
+      "Implement Word and PDF invoice generators for physical printing.",
+      "Incorporate search filters and Excel file generator of all the data for further analysis.",
+      "Develop a full-featured, customized online store using Nuxt, hosted on Cloudflare Pages, leveraging D1, KV, and R2 services.",
+      "Integrated Amazon SES for the store's email capabilities."
     ]
   },
   {
@@ -41,9 +43,9 @@ export default [
     bullets: [
       "Helping projects in favor of Esports and Gaming in Panama.",
       "Administration of the server, official website, and company's web domains.",
-      "Work alongside the CEOs and Graphic Designers to plan and create landing web pages built with PHP or Vue.js for promoting and exhibiting gaming tournaments.",
+      "Work alongside the CEOs and graphic designers to plan and create landing web pages built with PHP or Vue to promote and exhibit gaming tournaments",
       "Implement web forms for collecting tournament participants' data using MySQL.",
-      "Carry out any other programming or web design work for clients who contact the company looking for a personalized service."
+      "Provide customized programming and web design solutions for clients seeking personalized services through the company."
     ]
   }
 ];

@@ -167,7 +167,7 @@ export default [
     bullets: [
       "Developed a 50,000+ total downloads Android app project, currently helps 18,000+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
       "Designed a friendly, easy-to-use interface.",
-      "Implemented time graphical displays of people's card spends and balance changes.",
+      "Implemented time charts of people's card spends and balance changes.",
       "Translated manually from Spanish to English everything in the app. Making it available in two languages.",
       "Created and maintained a user login system to store users' cards in their accounts using Heroku PostgreSQL and a PHP server on AWS."
     ],
