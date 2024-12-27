@@ -26,7 +26,6 @@ export default [
       "Develop a web app with Nuxt and PostgreSQL on Heroku to manage inventory, suppliers, sellers, invoices, and customers.",
       "Work alongside the Administrator to plan, develop, document, test, deploy, and maintain the web application and database.",
       "Create and maintain a role-based user login system.",
-      "Develop a REST API to control user functions using Express.js with PostgreSQL while utilizing Vue on the front end.",
       "Implement Word and PDF invoice generators for physical printing.",
       "Incorporate search filters and Excel file generator of all the data for further analysis.",
       "Develop a full-featured, customized online store using Nuxt, hosted on Cloudflare Pages, leveraging D1, KV, and R2 services.",
