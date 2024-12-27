@@ -63,21 +63,7 @@ useHead({
         </div>
         <hr class="my-4 dark:border-slate-700">
         <div class="mb-6">
-          <div class="mb-3">
-            <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
-              <Icon name="solar:square-academic-cap-2-linear" size="2rem" />
-              <span>Education</span>
-            </h2>
-            <div class="flex flex-col gap-3">
-              <div v-for="(edu, index) in portfolio.education" :key="index" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden py-3 px-4 w-full">
-                <h5 class="text-lg sm:text-xl dark:text-slate-100 text-slate-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
-                <p class="dark:text-slate-300 text-gray-700">{{ edu.city }}</p>
-                <p class="dark:text-slate-400 text-gray-500">{{ edu.period }}</p>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6 dark:border-slate-700">
-          <div id="work">
+          <div id="work" class="mb-3">
             <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
               <Icon name="solar:suitcase-linear" size="2rem" />
               <span>Work Experience</span>
@@ -98,6 +84,20 @@ useHead({
                 <ul v-if="work.bullets" class="dark:text-slate-100 text-slate-700 list-disc ms-5">
                   <li v-for="(task, task_index) in work.bullets" :key="task_index">{{ task }}</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 dark:border-slate-700">
+          <div id="education">
+            <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-2 mb-4">
+              <Icon name="solar:square-academic-cap-2-linear" size="2rem" />
+              <span>Education</span>
+            </h2>
+            <div class="flex flex-col gap-3">
+              <div v-for="(edu, index) in portfolio.education" :key="index" class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden py-3 px-4 w-full">
+                <h5 class="text-lg sm:text-xl dark:text-slate-100 text-slate-700"><b class="dark:text-white">{{ edu.diploma }}</b> at <b class="dark:text-white">{{ edu.institution }}</b></h5>
+                <p class="dark:text-slate-300 text-gray-700">{{ edu.city }}</p>
+                <p class="dark:text-slate-400 text-gray-500">{{ edu.period }}</p>
               </div>
             </div>
           </div>
