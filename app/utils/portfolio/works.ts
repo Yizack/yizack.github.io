@@ -37,7 +37,7 @@ export default [
     website: "https://pesp.gg/",
     city: "Panama City, Panama",
     position: "Full-Stack Developer and Administrator ",
-    period: "April 2019 — Present",
+    period: "Apr 2019 — Present",
     bullets: [
       "Helping projects in favor of Esports and Gaming in Panama.",
       "Administration of the server, official website, and company's web domains.",
