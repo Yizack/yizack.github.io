@@ -42,7 +42,7 @@ export default [
     bullets: [
       "Helping projects in favor of Esports and Gaming in Panama.",
       "Administration of the server, official website, and company's web domains.",
-      "Work alongside the CEOs and graphic designers to plan and create landing web pages built with PHP or Vue to promote and exhibit gaming tournaments",
+      "Work alongside the CEOs and graphic designers to plan and create landing web pages built with PHP or Vue to promote and exhibit gaming tournaments.",
       "Implement web forms for collecting tournament participants' data using MySQL.",
       "Provide customized programming and web design solutions for clients seeking personalized services through the company."
     ]
