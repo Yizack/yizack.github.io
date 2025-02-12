@@ -30,8 +30,8 @@ export const portfolio = {
   works,
   languages: [
     { name: "Spanish", level: "Native", p: 100 },
-    { name: "English", level: "Advanced", p: 90 },
-    { name: "French", level: "Elementary", p: 20 }
+    { name: "English", level: "Medium / Advanced", p: 90 },
+    { name: "French", level: "Basic / Medium", p: 35 }
   ],
   qualities: [
     "Clean and readable code",
