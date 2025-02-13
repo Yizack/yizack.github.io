@@ -151,7 +151,7 @@ useHead({
         <MasonryWall :items="portfolio.projects" :ssr-columns="2" :gap="16" :max-columns="2" :column-width="400">
           <template #default="{ item: project }">
             <div class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden shadow-lg">
-              <img :src="project.image" class="card-img-top">
+              <ImageCarousel :images="project.images" class="card-img-top" />
               <div class="p-4">
                 <h5 class="text-xl">
                   <a v-if="project.url || project.github" class="text-decoration-none" :href="project.url || project.github" target="_blank">

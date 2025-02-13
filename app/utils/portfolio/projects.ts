@@ -4,7 +4,7 @@ export default [
     description: "Simple MailChannels Email API integration for Nuxt.",
     period: "Nov 2024 — Present",
     github: "https://github.com/Yizack/nuxt-mailchannels",
-    image: "/images/projects/nuxt-mailchannels.png",
+    images: [{ src: "/images/projects/nuxt-mailchannels.png" }],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM", "MailChannels"]
   },
   {
@@ -12,7 +12,7 @@ export default [
     description: "A simple nuxt module that works on the edge to easily validate incoming webhooks from different services.",
     period: "Jun 2024 — Present",
     github: "https://github.com/Yizack/nuxt-webhook-validators",
-    image: "/images/projects/nuxt-webhook-validators.png",
+    images: [{ src: "/images/projects/nuxt-webhook-validators.png" }],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM"]
   },
   {
@@ -28,7 +28,17 @@ export default [
     ],
     url: "https://mappedlove.com/",
     github: "https://github.com/Yizack/mappedlove",
-    image: "/images/projects/mappedlove.jpg",
+    images: [
+      { src: "/images/projects/mappedlove/home.jpg", alt: "Home page" },
+      { src: "/images/projects/mappedlove/map-dashboard.jpg", alt: "Map dashboard" },
+      { src: "/images/projects/mappedlove/public-map.jpg", alt: "Public map" },
+      { src: "/images/projects/mappedlove/bond.jpg", alt: "Bond page" },
+      { src: "/images/projects/mappedlove/settings.jpg", alt: "Settings page (dark mode setting)" },
+      { src: "/images/projects/mappedlove/login.jpg", alt: "Login page" },
+      { src: "/images/projects/mappedlove/signup.jpg", alt: "Signup page" },
+      { src: "/images/projects/mappedlove/billing.jpg", alt: "Billing page" },
+      { src: "/images/projects/mappedlove/support.jpg", alt: "Support page" }
+    ],
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Cloudflare R2", "Bootstrap 5", "Drizzle-ORM"]
   },
   {
@@ -44,7 +54,7 @@ export default [
     ],
     url: "https://plebrewards.yizack.com/",
     github: "https://github.com/Yizack/plebrewards",
-    image: "/images/projects/plebrewards.jpg",
+    images: [{ src: "/images/projects/plebrewards.jpg" }],
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "Twitch API", "Spotify API"]
   },
   {
@@ -54,7 +64,7 @@ export default [
     bullets: [],
     url: "https://unbot.me/",
     github: "https://github.com/Yizack/unbotme",
-    image: "/images/projects/unbotme.jpg",
+    images: [{ src: "/images/projects/unbotme.jpg" }],
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare D1", "Bootstrap 5", "Drizzle-ORM", "Twitch API", "WebSocket"]
   },
   {
@@ -68,7 +78,7 @@ export default [
     ],
     url: "https://mynpmlist.yizack.com/",
     github: "https://github.com/Yizack/my-npm-list",
-    image: "/images/projects/my-npm-list.jpg",
+    images: [{ src: "/images/projects/my-npm-list.jpg" }],
     technologies: ["Nuxt", "Node.js", "Vue.js", "Javascript", "Cloudflare Pages", "Cloudflare D1", "Github API", "Bootstrap 5", "Drizzle-ORM", "SQLite"]
   },
   {
@@ -82,7 +92,7 @@ export default [
     ],
     url: "https://github.com/Yizack/nuxt-twemoji",
     github: "https://github.com/Yizack/nuxt-twemoji",
-    image: "/images/projects/nuxt-twemoji.png",
+    images: [{ src: "/images/projects/nuxt-twemoji.png" }],
     technologies: ["Nuxt", "Node.js", "Typescript", "GitHub Actions", "Vue.js", "Twemoji", "NPM"]
   },
   {
@@ -97,7 +107,7 @@ export default [
       "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play Store."
     ],
     url: "https://howmanytimeslarger.com/",
-    image: "/images/projects/howmanytimeslarger.jpg",
+    images: [{ src: "/images/projects/howmanytimeslarger.jpg" }],
     github: "https://github.com/Yizack/HowManyTimesLarger",
     technologies: ["Vue.js", "Nuxt", "Node.js", "Capacitor.js", "GitHub Pages", "GitHub Actions", "Bootstrap 5"]
   },
@@ -114,7 +124,7 @@ export default [
       "Incorporate search filters and Excel files generator of all the data for further analysis"
     ],
     url: "",
-    image: "/images/projects/grupokh.jpg",
+    images: [{ src: "/images/projects/grupokh.jpg" }],
     github: "",
     technologies: ["Node.js", "PostgreSQL", "Vue.js", "Heroku", "AWS S3", "Bootstrap 5"]
   },
@@ -128,7 +138,7 @@ export default [
       "Documented the source code of the project using JSDoc."
     ],
     url: "https://gists-readme.yizack.com/",
-    image: "/images/projects/gist-readme.jpg",
+    images: [{ src: "/images/projects/gist-readme.jpg" }],
     github: "https://github.com/Yizack/gists-readme",
     technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
   },
@@ -140,7 +150,7 @@ export default [
       "Created a Spotify-like music player for websites using HTML, CSS, and Javascript."
     ],
     url: "https://embeddable-music-player.yizack.com/",
-    image: "/images/embeddable-music-player/full-screen.jpg",
+    images: [{ src: "/images/embeddable-music-player/full-screen.jpg" }],
     github: "https://github.com/Yizack/embeddable-music-player",
     technologies: ["HTML", "CSS", "Javascript"]
   },
@@ -156,7 +166,20 @@ export default [
       "Implemented an images and posts html content storage system using Cloudflare R2."
     ],
     url: "https://pesp.gg/",
-    image: "/images/projects/pespgg.jpg",
+    images: [
+      { src: "/images/projects/pesp/home.jpg", alt: "Home page" },
+      { src: "/images/projects/pesp/games.jpg", alt: "Home: Games" },
+      { src: "/images/projects/pesp/about.jpg", alt: "About page" },
+      { src: "/images/projects/pesp/posts.jpg", alt: "Blog posts" },
+      { src: "/images/projects/pesp/post.jpg", alt: "Post page" },
+      { src: "/images/projects/pesp/statistics.jpg", alt: "Statistics" },
+      { src: "/images/projects/pesp/brands.jpg", alt: "Brands" },
+      { src: "/images/projects/pesp/contact.jpg", alt: "Contact forms" },
+      { src: "/images/projects/pesp/faq.jpg", alt: "FAQs page" },
+      { src: "/images/projects/pesp/admin.jpg", alt: "Admin: Dashboard" },
+      { src: "/images/projects/pesp/admin-posts.jpg", alt: "Admin: Manage blog posts" },
+      { src: "/images/projects/pesp/editor.jpg", alt: "Admin: Manage blog posts" }
+    ],
     github: "https://github.com/pespgg/pesp.gg",
     technologies: ["PHP", "Bootstrap 5", "MySQL", "AWS EC2", "Bootstap 4", "Slack", "JQuery", "Cloudflare D1", "Cloudflare R2", "Nuxt", "Vue.js"]
   },
@@ -172,7 +195,7 @@ export default [
       "Created and maintained a user login system to store users' cards in their accounts using Heroku PostgreSQL and a PHP server on AWS."
     ],
     url: "https://saldometrobus.yizack.com/",
-    image: "/images/projects/saldometrobus.jpg",
+    images: [{ src: "/images/projects/saldometrobus.jpg" }],
     github: "",
     technologies: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
   },
@@ -186,7 +209,14 @@ export default [
       "Deployed serverless code on Cloudflare Workers while using the Meta API to show the Instagram feed and the Spotify API to show the followers on the website."
     ],
     url: "https://dimatis.music",
-    image: "/images/projects/dimatis.jpg",
+    images: [
+      { src: "/images/projects/dimatis/home.jpg", alt: "Home page" },
+      { src: "/images/projects/dimatis/statistics.jpg", alt: "Home: Statistics" },
+      { src: "/images/projects/dimatis/instagram.jpg", alt: "Home: Instagram feed" },
+      { src: "/images/projects/dimatis/tracks.jpg", alt: "Tracks page" },
+      { src: "/images/projects/dimatis/track.jpg", alt: "Song page" },
+      { src: "/images/projects/dimatis/fanlink.jpg", alt: "Fanlink page" }
+    ],
     github: "https://github.com/Yizack/dimatis",
     technologies: ["Nuxt", "Node.js", "Cloudflare Workers", "Bootstrap 5", "GitHub Pages", "Github Actions", "Spotify API", "Meta API"]
   },
@@ -199,7 +229,7 @@ export default [
       "Authorization implemented to grant users access permissions to Spotify data and features."
     ],
     url: "https://dev.yizack.com/spotify/playlist",
-    image: "/images/projects/playlist-adder.jpg",
+    images: [{ src: "/images/projects/playlist-adder.jpg" }],
     github: "",
     technologies: ["PHP", "Spotify API", "Bootstrap 5"]
   }
