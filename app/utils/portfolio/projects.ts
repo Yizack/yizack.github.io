@@ -42,6 +42,23 @@ export default [
     technologies: ["Nuxt", "Node.js", "Vue.js", "Typescript", "Cloudflare Pages", "Cloudflare D1", "Cloudflare R2", "Bootstrap 5", "Drizzle-ORM"]
   },
   {
+    name: "Expedition (Landing Page) | Event by TRIEX",
+    description: "Landing Page for the Expedition event by TRIEX. Organized by PESP",
+    period: "Jul 2024 — Aug 2024",
+    bullets: [
+      "Designed a landing page and implemented two registrations, one for registration to participate in the event and another to participate in a giveaway.",
+      "Developed a Serverless web app project on Cloudflare Pages."
+    ],
+    url: "https://expedition.pesp.gg/",
+    images: [
+      { src: "/images/projects/triex-expedition/home.jpg", alt: "Home page" },
+      { src: "/images/projects/triex-expedition/landing.jpg", alt: "Landing page" },
+      { src: "/images/projects/triex-expedition/register.jpg", alt: "Register section" },
+      { src: "/images/projects/triex-expedition/form.jpg", alt: "Register form" }
+    ],
+    technologies: ["Nuxt", "Typescript", "Vue.js", "Cloudflare"]
+  },
+  {
     name: "Pleb Rewards",
     description: "Integrations with channel points rewards for Twitch streamers.",
     period: "May 2024 — Present",
