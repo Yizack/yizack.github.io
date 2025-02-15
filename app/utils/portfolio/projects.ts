@@ -124,7 +124,13 @@ export default [
       "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play Store."
     ],
     url: "https://howmanytimeslarger.com/",
-    images: [{ src: "/images/projects/howmanytimeslarger.jpg" }],
+    images: [
+      { src: "/images/projects/howmanytimeslarger/home.jpg", alt: "Home page" },
+      { src: "/images/projects/howmanytimeslarger/compare.jpg", alt: "Compare page" },
+      { src: "/images/projects/howmanytimeslarger/countries.jpg", alt: "Countries page" },
+      { src: "/images/projects/howmanytimeslarger/game.jpg", alt: "Game page" },
+      { src: "/images/projects/howmanytimeslarger/game-correct.jpg", alt: "Game: Correct answer" }
+    ],
     github: "https://github.com/Yizack/HowManyTimesLarger",
     technologies: ["Vue.js", "Nuxt", "Node.js", "Capacitor.js", "GitHub Pages", "GitHub Actions", "Bootstrap 5"]
   },
