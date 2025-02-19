@@ -27,9 +27,9 @@ export default [
       { name: "PostgreSQL", icon: "logos:postgresql" },
       { name: "MySQL", icon: "logos:mysql" },
       { name: "SQLite", icon: "skill-icons:sqlite" },
+      { name: "Oracle", icon: "simple-icons:oracle" },
       { name: "Cloudflare D1", icon: "logos:cloudflare-icon" },
-      { name: "Drizzle-ORM", icon: "simple-icons:drizzle" },
-      { name: "Oracle", icon: "simple-icons:oracle" }
+      { name: "Drizzle-ORM", icon: "simple-icons:drizzle" }
     ]
   },
   {
@@ -90,6 +90,7 @@ export default [
   {
     title: "Server Administration",
     stack: [
+      { name: "Nginx", icon: "logos:nginx" },
       { name: "Domain DNS", icon: "ic:baseline-dns" },
       { name: "Domain SSL", icon: "bi:lock-fill" },
       { name: "CDN", icon: "bi:cloud-fog2-fill" },
@@ -111,7 +112,9 @@ export default [
       { name: "Gitlab", icon: "logos:gitlab" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Docker", icon: "logos:docker-icon" },
-      { name: "SAP BODS", icon: "logos:sap" }
+      { name: "SAP BODS", icon: "logos:sap" },
+      { name: "Linux", icon: "logos:linux-tux" },
+      { name: "Windows", icon: "logos:microsoft-windows-icon" }
     ]
   },
   {
