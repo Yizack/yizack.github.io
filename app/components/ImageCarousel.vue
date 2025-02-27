@@ -23,7 +23,7 @@ const goTo = (index: number) => {
     <div class="relative w-full mx-auto">
       <div class="relative">
         <div class="flex transition-transform duration-500" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-          <div v-for="(image, index) in images" :key="index" class="w-full flex-shrink-0">
+          <div v-for="(image, index) in images" :key="index" class="w-full shrink-0">
             <img :src="image.src" class="w-full h-full object-cover" :alt="image.alt" :title="image.alt">
             <div v-if="image.alt" class="absolute bottom-0 w-full text-center py-1 bg-slate-200 dark:bg-slate-700 transition-opacity duration-500 opacity-0 group-hover:opacity-75">
               <span>{{ image.alt }}</span>

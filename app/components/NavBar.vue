@@ -51,7 +51,7 @@ watch(() => useRoute().hash, (hash) => {
     <div v-if="isOpen" class="w-80 bg-slate-50 dark:bg-slate-900 shadow-xl fixed inset-y-0 left-0 z-50 transform transition-transform lg:hidden" :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
       <div class="flex items-center justify-between border-b dark:border-slate-700 p-4">
         <h2 class="text-lg font-semibold">{{ SITE.name }}</h2>
-        <button class="focus:outline-none hover:bg-red-400 hover:text-slate-900 rounded-md p-1" @click="toggleMenu">
+        <button class="focus:outline-hidden hover:bg-red-400 hover:text-slate-900 rounded-md p-1" @click="toggleMenu">
           <Icon name="tabler:x" class="w-6 h-6" />
         </button>
       </div>

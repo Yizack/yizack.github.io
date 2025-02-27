@@ -47,6 +47,7 @@ export default defineNuxtConfig({
     }
   },
   css: [
+    "~/assets/css/tailwind.css",
     "~/assets/css/global.css",
     "~/assets/css/transitions.css"
   ],
@@ -80,8 +81,7 @@ export default defineNuxtConfig({
   },
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
+      "@tailwindcss/postcss": {}
     }
   },
   eslint: {
