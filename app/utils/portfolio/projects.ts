@@ -1,5 +1,19 @@
 export default [
   {
+    name: "Jobs Board",
+    description: "A simple jobs board web application demo built with Vue 3, Vite, Tailwind CSS, and Pinia",
+    period: "Feb 2025",
+    url: "https://jobs-board.yizack.com/",
+    github: "https://github.com/Yizack/job-listings-assessment",
+    images: [
+      { src: "/images/projects/jobs-board/home.jpg", alt: "Home page" },
+      { src: "/images/projects/jobs-board/list.jpg", alt: "Jobs page" },
+      { src: "/images/projects/jobs-board/job.jpg", alt: "Job page" },
+      { src: "/images/projects/jobs-board/home-light.jpg", alt: "Home page (light mode)" }
+    ],
+    technologies: ["Vue.js", "Vite", "Tailwind CSS", "Pinia", "Typescript", "GitHub Actions", "Vitest"]
+  },
+  {
     name: "nuxt-mailchannels",
     description: "Simple MailChannels Email API integration for Nuxt.",
     period: "Nov 2024 — Present",
