@@ -18,7 +18,10 @@ export default [
     description: "Simple MailChannels Email API integration for Nuxt.",
     period: "Nov 2024 — Present",
     github: "https://github.com/Yizack/nuxt-mailchannels",
-    images: [{ src: "/images/projects/nuxt-mailchannels.png" }],
+    images: [
+      { src: "/images/projects/nuxt-mailchannels/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-mailchannels/code.jpg", alt: "Usage example" }
+    ],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM", "MailChannels"]
   },
   {
@@ -26,7 +29,10 @@ export default [
     description: "A simple nuxt module that works on the edge to easily validate incoming webhooks from different services.",
     period: "Jun 2024 — Present",
     github: "https://github.com/Yizack/nuxt-webhook-validators",
-    images: [{ src: "/images/projects/nuxt-webhook-validators.png" }],
+    images: [
+      { src: "/images/projects/nuxt-webhook-validators/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-webhook-validators/code.jpg", alt: "Usage example" }
+    ],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM"]
   },
   {
@@ -123,7 +129,10 @@ export default [
     ],
     url: "https://github.com/Yizack/nuxt-twemoji",
     github: "https://github.com/Yizack/nuxt-twemoji",
-    images: [{ src: "/images/projects/nuxt-twemoji.png" }],
+    images: [
+      { src: "/images/projects/nuxt-twemoji/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-twemoji/code.jpg", alt: "Usage example" }
+    ],
     technologies: ["Nuxt", "Node.js", "Typescript", "GitHub Actions", "Vue.js", "Twemoji", "NPM"]
   },
   {
@@ -149,7 +158,7 @@ export default [
     technologies: ["Vue.js", "Nuxt", "Node.js", "Capacitor.js", "GitHub Pages", "GitHub Actions", "Bootstrap 5"]
   },
   {
-    name: "Devago",
+    name: "Devago (Grupo K&H S.A.)",
     description: "A web application to manage the inventory of products, suppliers, sellers, invoices, and customers of the company.",
     period: "May 2022 — Present",
     bullets: [
@@ -161,7 +170,11 @@ export default [
       "Incorporate search filters and Excel files generator of all the data for further analysis"
     ],
     url: "",
-    images: [{ src: "/images/projects/grupokh.jpg" }],
+    images: [
+      { src: "/images/projects/grupokh/devago-products.jpg", alt: "Products" },
+      { src: "/images/projects/grupokh/devago-stats.jpg", alt: "Statistics" },
+      { src: "/images/projects/grupokh/devago-movements.jpg", alt: "Movements" }
+    ],
     github: "",
     technologies: ["Node.js", "PostgreSQL", "Vue.js", "Heroku", "AWS S3", "Bootstrap 5"]
   },
@@ -177,7 +190,7 @@ export default [
     url: "https://gists-readme.yizack.com/",
     images: [{ src: "/images/projects/gist-readme.jpg" }],
     github: "https://github.com/Yizack/gists-readme",
-    technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
+    technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Vitest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
   },
   {
     name: "embeddable-music-player",
@@ -223,18 +236,25 @@ export default [
   {
     name: "Panama Metrobus Balance",
     period: "Oct 2019 — Present",
-    description: "Panama Metrobus Balance is an app for balance and movements inquires for all Metro and Metrobus cards in Panama City.",
+    description: "Panama Metrobus Balance is an app that allows users in Panama City to check the balance and transactions of all their metro and metrobús cards.",
     bullets: [
-      "Developed a 50,000+ total downloads Android app project, currently helps 18,000+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
+      "Developed a 92,000+ total downloads Android app project, currently helps 24,500+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
       "Designed a friendly, easy-to-use interface.",
       "Implemented time charts of people's card spends and balance changes.",
       "Translated manually from Spanish to English everything in the app. Making it available in two languages.",
-      "Created and maintained a user login system to store users' cards in their accounts using Heroku PostgreSQL and a PHP server on AWS."
+      "Created and maintained a user login system to store users' cards."
     ],
     url: "https://saldometrobus.yizack.com/",
-    images: [{ src: "/images/projects/saldometrobus.jpg" }],
-    github: "",
-    technologies: ["Android Studio", "Java", "PHP", "PostgreSQL", "AWS Elastic Beanstalk", "Bootstrap 5"]
+    images: [
+      { src: "/images/projects/saldometrobus/home.jpg", alt: "Home page" },
+      { src: "/images/projects/saldometrobus/cards.jpg", alt: "Cards page" },
+      { src: "/images/projects/saldometrobus/card.jpg", alt: "Card page" },
+      { src: "/images/projects/saldometrobus/transactions.jpg", alt: "Transactions page" },
+      { src: "/images/projects/saldometrobus/mobile-1.jpg", alt: "Mobile: App screenshots" },
+      { src: "/images/projects/saldometrobus/mobile-2.jpg", alt: "Mobile:App screenshots" }
+    ],
+    github: "https://github.com/Yizack/saldometrobus-app",
+    technologies: ["Android Studio", "Java", "PHP", "Heroku", "PostgreSQL", "AWS", "Bootstrap 5", "Capacitor.js", "Vue.js", "Nuxt"]
   },
   {
     name: "Dimatis Website",
@@ -256,18 +276,5 @@ export default [
     ],
     github: "https://github.com/Yizack/dimatis",
     technologies: ["Nuxt", "Node.js", "Cloudflare Workers", "Bootstrap 5", "GitHub Pages", "Github Actions", "Spotify API", "Meta API"]
-  },
-  {
-    name: "Spotify Playlist Adder",
-    period: "Aug 2021",
-    description: "A web app to add songs to a Spotify playlist.",
-    bullets: [
-      "Web service developed using the Spotify API and PHP to add a song to a playlist at a given position.",
-      "Authorization implemented to grant users access permissions to Spotify data and features."
-    ],
-    url: "https://dev.yizack.com/spotify/playlist",
-    images: [{ src: "/images/projects/playlist-adder.jpg" }],
-    github: "",
-    technologies: ["PHP", "Spotify API", "Bootstrap 5"]
   }
 ];

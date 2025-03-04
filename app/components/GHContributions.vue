@@ -1,17 +1,28 @@
 <script setup lang="ts">
 const data = ref<Contributions | null>();
+const spliceSize = ref(20);
+
+const prs = computed(() => {
+  if (!data.value) return [];
+  return data.value.prs.slice(0, spliceSize.value);
+});
+
+const increaseSplice = () => {
+  spliceSize.value += 20;
+};
+
 onMounted(async () => {
   data.value = await $fetch<Contributions>("https://prs.yizack.com/api/contributions").catch(() => null);
 });
 </script>
 
 <template>
-  <div v-if="data && data.prs.length > 0">
+  <div v-if="data && prs.length > 0">
     <div class="dark:text-slate-200 mb-2 text-sm">
       <span>source:</span> <NuxtLink to="https://prs.yizack.com" target="_blank" class="underline">prs.yizack.com</NuxtLink>
     </div>
     <div class="rounded-md flex flex-col gap-2">
-      <div v-for="(pr, i) of data.prs" :key="i" class="dark:bg-slate-800 bg-slate-100 flex items-center gap-2 sm:gap-4 p-4 rounded-md">
+      <div v-for="(pr, i) of prs" :key="i" class="dark:bg-slate-800 bg-slate-100 flex items-center gap-2 sm:gap-4 p-4 rounded-md">
         <NuxtLink :to="`https://github.com/${pr.repo}`" target="_blank" relative :class="['size-10 sm:size-12 shrink-0 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xs', pr.type === 'Organization' ? 'rounded-lg' : 'rounded-full']">
           <img :src="`https://github.com/${pr.repo.split('/')[0]}.png`" :alt="pr.repo" class="size-full">
         </NuxtLink>
@@ -51,6 +62,7 @@ onMounted(async () => {
           </div>
         </div>
       </div>
+      <a v-if="spliceSize < data.prs.length" class="dark:text-slate-200 text-sm text-center underline cursor-pointer" @click="increaseSplice">Show more</a>
     </div>
   </div>
   <div v-else>
