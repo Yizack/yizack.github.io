@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+@custom-variant hover (&:hover);
 
 @theme {
   --color-slate-100: #f1eff9;
