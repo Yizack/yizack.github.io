@@ -3,13 +3,13 @@ export default [
     name: "Jobs Board",
     description: "A simple jobs board web application demo built with Vue 3, Vite, Tailwind CSS, and Pinia",
     period: "Feb 2025",
-    url: "https://jobs-board.yizack.com/",
-    github: "https://github.com/Yizack/job-listings-assessment",
+    url: "https://jobs-board-demo.yizack.com/",
+    github: "https://github.com/Yizack/jobs-board-demo",
     images: [
-      { src: "/images/projects/jobs-board/home.jpg", alt: "Home page" },
-      { src: "/images/projects/jobs-board/list.jpg", alt: "Jobs page" },
-      { src: "/images/projects/jobs-board/job.jpg", alt: "Job page" },
-      { src: "/images/projects/jobs-board/home-light.jpg", alt: "Home page (light mode)" }
+      { src: "/images/projects/jobs-board-demo/home.jpg", alt: "Home page" },
+      { src: "/images/projects/jobs-board-demo/list.jpg", alt: "Jobs page" },
+      { src: "/images/projects/jobs-board-demo/job.jpg", alt: "Job page" },
+      { src: "/images/projects/jobs-board-demo/home-light.jpg", alt: "Home page (light mode)" }
     ],
     technologies: ["Vue.js", "Vite", "Tailwind CSS", "Pinia", "Typescript", "GitHub Actions", "Vitest"]
   },
