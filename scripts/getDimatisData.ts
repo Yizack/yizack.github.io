@@ -1,16 +1,14 @@
-import { writeFileSync, existsSync, mkdirSync } from "fs";
+import { writeFile, mkdir } from "node:fs/promises";
+import { $fetch } from "ofetch";
 import { SITE } from "../app/utils/site";
 
 const dir = "./app/assets/data";
 
 Promise.all([
-  fetch(`${SITE.src_url}/data/tracks.json`).then(response => response.json() as Promise<DimatisTrack[]>),
-  fetch(`${SITE.src_url}/data/albums.json`).then(response => response.json() as Promise<DimatisAlbum[]>)
-]).then(([tracks, albums]) => {
-  if (!existsSync(dir)) {
-    mkdirSync(dir);
-  }
-
+  $fetch<DimatisTrack[]>(`${SITE.src_url}/data/tracks.json`),
+  $fetch<DimatisAlbum[]>(`${SITE.src_url}/data/albums.json`)
+]).then(async ([tracks, albums]) => {
+  await mkdir(dir, { recursive: true });
   const data: (DimatisTrack | DimatisAlbum)[] = tracks;
 
   const albumsData: DimatisAlbum[] = albums.reduce((acc = [], value) => {
@@ -30,5 +28,5 @@ Promise.all([
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
-  writeFileSync("./app/assets/data/all.json", JSON.stringify(sorted));
+  await writeFile("./app/assets/data/all.json", JSON.stringify(sorted));
 });
