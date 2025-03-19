@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/icon"
   ],
+
+  devtools: {
+    enabled: true
+  },
+
   app: {
     rootId: "app",
     head: {
@@ -46,31 +51,40 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css: [
     "~/assets/css/tailwind.css",
     "~/assets/css/global.css",
     "~/assets/css/transitions.css"
   ],
+
   colorMode: {
     preference: "dark",
     fallback: "dark",
     classSuffix: ""
   },
+
   spaLoadingTemplate: false,
+
   routeRules: {
     "/:fanlink": { appMiddleware: "dimatis", prerender: true },
     "/fanlinks": { redirect: SITE.fanlinks_url, prerender: true },
     "/@dimatis": { redirect: `${SITE.src_url}/links`, prerender: true }
   },
+
   future: { compatibilityVersion: 4 },
+
   features: {
     inlineStyles: false
   },
+
   experimental: {
     payloadExtraction: false,
     typedPages: true
   },
+
   compatibilityDate: "2024-10-24",
+
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
@@ -79,17 +93,20 @@ export default defineNuxtConfig({
       routes: ["/", ...fanlinks]
     }
   },
+
   postcss: {
     plugins: {
       "@tailwindcss/postcss": {}
     }
   },
+
   eslint: {
     config: {
       autoInit: false,
       stylistic: true
     }
   },
+
   icon: {
     mode: "svg",
     clientBundle: {

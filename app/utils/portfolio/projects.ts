@@ -1,5 +1,19 @@
 export default [
   {
+    name: "@yizack/mailchannels",
+    description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
+    period: "Mar 2025 — Present",
+    url: "https://mailchannels.yizack.com/",
+    github: "https://github.com/Yizack/mailchannels",
+    images: [
+      { src: "/images/projects/mailchannels/presentation.png", alt: "Presentation image" },
+      { src: "/images/projects/mailchannels/code-modular.jpg", alt: "Modular usage example" },
+      { src: "/images/projects/mailchannels/code-full.jpg", alt: "Full featured usage example" },
+      { src: "/images/projects/mailchannels/docs.jpg", alt: "Documentation" }
+    ],
+    technologies: ["Node.js", "Typescript", "GitHub Actions", "NPM", "MailChannels"]
+  },
+  {
     name: "Jobs Board",
     description: "A simple jobs board web application demo built with Vue 3, Vite, Tailwind CSS, and Pinia",
     period: "Feb 2025",
@@ -19,7 +33,7 @@ export default [
     period: "Nov 2024 — Present",
     github: "https://github.com/Yizack/nuxt-mailchannels",
     images: [
-      { src: "/images/projects/nuxt-mailchannels/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-mailchannels/presentation.png", alt: "Presentation image" },
       { src: "/images/projects/nuxt-mailchannels/code.jpg", alt: "Usage example" }
     ],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM", "MailChannels"]
@@ -30,7 +44,7 @@ export default [
     period: "Jun 2024 — Present",
     github: "https://github.com/Yizack/nuxt-webhook-validators",
     images: [
-      { src: "/images/projects/nuxt-webhook-validators/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-webhook-validators/presentation.png", alt: "Presentation image" },
       { src: "/images/projects/nuxt-webhook-validators/code.jpg", alt: "Usage example" }
     ],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM"]
@@ -130,7 +144,7 @@ export default [
     url: "https://github.com/Yizack/nuxt-twemoji",
     github: "https://github.com/Yizack/nuxt-twemoji",
     images: [
-      { src: "/images/projects/nuxt-twemoji/cover.png", alt: "Cover image" },
+      { src: "/images/projects/nuxt-twemoji/presentation.png", alt: "Presentation image" },
       { src: "/images/projects/nuxt-twemoji/code.jpg", alt: "Usage example" }
     ],
     technologies: ["Nuxt", "Node.js", "Typescript", "GitHub Actions", "Vue.js", "Twemoji", "NPM"]
