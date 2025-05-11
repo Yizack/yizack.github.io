@@ -2,7 +2,7 @@ export default [
   {
     name: "@yizack/mailchannels",
     description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
-    period: "Mar 2025 — Present",
+    period: "Mar 2025",
     url: "https://mailchannels.yizack.com/",
     github: "https://github.com/Yizack/mailchannels",
     images: [
