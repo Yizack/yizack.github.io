@@ -10,7 +10,7 @@
     "dimatis": "jiti scripts/getDimatisData",
     "lint": "npm run lint:eslint && npm run lint:stylelint",
     "lint:eslint": "eslint --fix",
-    "lint:stylelint": "stylelint \"**/*.css\" --fix"
+    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --fix"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.3",
@@ -30,6 +30,7 @@
     "@yeger/vue-masonry-wall": "^5.0.18",
     "eslint": "^9.26.0",
     "nuxt": "^3.17.2",
+    "sass": "^1.88.0",
     "stylelint": "^16.19.1",
     "stylelint-config-standard-scss": "^15.0.0",
     "tailwindcss": "^4.1.6",

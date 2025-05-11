@@ -30,8 +30,6 @@ export default defineNuxtConfig({
         { name: "msapplication-TileImage", content: `${SITE.src_url}/icons/mstile-144x144.png` }
       ],
       link: [
-        { rel: "preload", href: "/fonts/Ebrima.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
-        { rel: "preload", href: "/fonts/EbrimaBd.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
         { rel: "preconnect", href: "https://avatars.githubusercontent.com" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: `${SITE.src_url}/favicon-16x16.png` },
         { rel: "icon", type: "image/png", sizes: "32x32", href: `${SITE.src_url}/favicon-32x32.png` },
@@ -53,9 +51,9 @@ export default defineNuxtConfig({
   },
 
   css: [
-    "~/assets/css/tailwind.css",
-    "~/assets/css/global.css",
-    "~/assets/css/transitions.css"
+    "~/assets/scss/tailwind.scss",
+    "~/assets/scss/global.scss",
+    "~/assets/scss/transitions.scss"
   ],
 
   colorMode: {
@@ -91,6 +89,17 @@ export default defineNuxtConfig({
       crawlLinks: false,
       failOnError: false,
       routes: ["/", ...fanlinks]
+    }
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: "modern-compiler",
+          silenceDeprecations: ["mixed-decls", "color-functions", "import", "global-builtin"]
+        }
+      }
     }
   },
 
