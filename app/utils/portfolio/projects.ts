@@ -1,5 +1,15 @@
 export default [
   {
+    name: "emotes-resizer",
+    description: "A desktop application for streamers and content creators to quickly resize emotes, badges, and other stream assets.",
+    period: "May 2025",
+    github: "https://github.com/Yizack/emotes-resizer",
+    images: [
+      { src: "/images/projects/emotes-resizer/presentation.png", alt: "Presentation image" }
+    ],
+    technologies: ["Electron", "Nuxt", "Vue.js", "Node.js", "Typescript", "GitHub Actions"]
+  },
+  {
     name: "@yizack/mailchannels",
     description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
     period: "Mar 2025",
