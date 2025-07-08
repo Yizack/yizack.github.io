@@ -170,7 +170,7 @@ export default [
       "Created an internal API class.",
       "Bundled an Android app through Github Actions using Capacitor.js and published it on Google Play Store."
     ],
-    url: "https://howmanytimeslarger.com/",
+    url: "https://howmanytimeslarger.yizack.com/",
     images: [
       { src: "/images/projects/howmanytimeslarger/home.jpg", alt: "Home page" },
       { src: "/images/projects/howmanytimeslarger/compare.jpg", alt: "Compare page" },
