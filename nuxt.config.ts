@@ -70,7 +70,7 @@ export default defineNuxtConfig({
     "/@dimatis": { redirect: `${SITE.src_url}/links`, prerender: true }
   },
 
-  future: { compatibilityVersion: 4 },
+  // future: { compatibilityVersion: 4 },
 
   features: {
     inlineStyles: false
@@ -96,10 +96,18 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          api: "modern-compiler",
           silenceDeprecations: ["mixed-decls", "color-functions", "import", "global-builtin"]
         }
       }
+    }
+  },
+
+  typescript: {
+    nodeTsConfig: {
+      include: [
+        "../scripts/**/*",
+        "../shared/**/*.d.ts"
+      ]
     }
   },
 

@@ -8,16 +8,18 @@
     "preview": "nuxt preview",
     "postinstall": "npm run dimatis && nuxt prepare",
     "dimatis": "jiti scripts/getDimatisData",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
-    "lint:eslint": "eslint --fix",
-    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --fix"
+    "lint": "pnpm lint:eslint && pnpm lint:stylelint",
+    "lint:fix": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
+    "lint:eslint": "eslint",
+    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\"",
+    "test:types": "vue-tsc -b --noEmit"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.4",
     "@iconify-json/ic": "^1.2.2",
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/octicon": "^1.2.7",
-    "@iconify-json/simple-icons": "^1.2.42",
+    "@iconify-json/simple-icons": "^1.2.43",
     "@iconify-json/skill-icons": "^1.2.0",
     "@iconify-json/solar": "^1.2.2",
     "@iconify-json/tabler": "^1.2.19",
@@ -25,16 +27,17 @@
     "@nuxt/icon": "^1.15.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.0.13",
+    "@types/node": "^24.0.14",
     "@vueuse/core": "^13.5.0",
     "@yeger/vue-masonry-wall": "^5.0.21",
     "eslint": "^9.31.0",
-    "nuxt": "^3.17.6",
+    "nuxt": "^4.0.0",
     "sass": "^1.89.2",
     "stylelint": "^16.21.1",
     "stylelint-config-standard-scss": "^15.0.1",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vue-tsc": "^3.0.1"
   },
   "packageManager": "pnpm@10.13.1"
 }
