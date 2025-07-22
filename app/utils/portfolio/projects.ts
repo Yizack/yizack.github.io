@@ -5,7 +5,8 @@ export default [
     period: "May 2025",
     github: "https://github.com/Yizack/emotes-resizer",
     images: [
-      { src: "/images/projects/emotes-resizer/presentation.png", alt: "Presentation image" }
+      { src: "/images/projects/emotes-resizer/presentation.png", alt: "Presentation image" },
+      { src: "/images/projects/emotes-resizer/desktop.jpg", alt: "Desktop app screenshots" }
     ],
     technologies: ["Electron", "Nuxt", "Vue.js", "Node.js", "Typescript", "GitHub Actions"]
   },
