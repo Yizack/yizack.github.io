@@ -1,8 +1,8 @@
 export default [
   {
-    company: "Millicom (Tigo)",
+    company: "Millicom (Tigo Panamá)",
     website: "https://www.tigo.com.pa/",
-    linkedin: "https://www.linkedin.com/company/8579/",
+    linkedin: "https://www.linkedin.com/company/tigopanama/",
     city: "Panama City, Panama",
     position: "Programming Specialist",
     period: "Aug 2023 — Mar 2024",
