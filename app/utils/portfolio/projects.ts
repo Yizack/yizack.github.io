@@ -11,7 +11,7 @@ export default [
     technologies: ["Electron", "Nuxt", "Vue.js", "Node.js", "Typescript", "GitHub Actions"]
   },
   {
-    name: "@yizack/mailchannels",
+    name: "mailchannels-sdk",
     description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
     period: "Mar 2025",
     url: "https://mailchannels.yizack.com/",
@@ -185,7 +185,7 @@ export default [
   {
     name: "Devago (Grupo K&H S.A.)",
     description: "A web application to manage the inventory of products, suppliers, sellers, invoices, and customers of the company.",
-    period: "May 2022 — Present",
+    period: "May 2022 — Sep 2025",
     bullets: [
       "Develop from scratch a web application to manage the inventory of products, suppliers, sellers, invoices, and customers of the company using Node.js on Heroku.",
       "Work alongside the Administrator to plan, develop, document, test, deploy, and maintain the web application and database.",
@@ -213,7 +213,7 @@ export default [
       "Documented the source code of the project using JSDoc."
     ],
     url: "https://gists-readme.yizack.com/",
-    images: [{ src: "/images/projects/gist-readme.jpg" }],
+    images: [{ src: "/images/projects/gist-readme/home.jpg", alt: "Home page" }],
     github: "https://github.com/Yizack/gists-readme",
     technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Vitest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
   },
