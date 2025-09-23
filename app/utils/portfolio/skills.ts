@@ -68,7 +68,7 @@ export default [
       { name: "Vitest", icon: "logos:vitest" },
       { name: "Codecov", icon: "logos:codecov-icon" },
       { name: "Eslint", icon: "logos:eslint" },
-      { name: "Gitlab pipelines", icon: "logos:gitlab" }
+      { name: "Gitlab pipelines", icon: "logos:gitlab-icon" }
     ]
   },
   {
@@ -109,7 +109,7 @@ export default [
       { name: "VSCode", icon: "logos:visual-studio-code" },
       { name: "Git", icon: "logos:git-icon" },
       { name: "GitHub", icon: "skill-icons:github-dark" },
-      { name: "Gitlab", icon: "logos:gitlab" },
+      { name: "Gitlab", icon: "logos:gitlab-icon" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Docker", icon: "logos:docker-icon" },
       { name: "SAP BODS", icon: "logos:sap" },
