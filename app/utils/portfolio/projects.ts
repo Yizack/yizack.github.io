@@ -213,7 +213,7 @@ export default [
       "Documented the source code of the project using JSDoc."
     ],
     url: "https://gists-readme.yizack.com/",
-    images: [{ src: "/images/projects/gist-readme/home.jpg", alt: "Home page" }],
+    images: [{ src: "/images/projects/gists-readme/home.jpg", alt: "Home page" }],
     github: "https://github.com/Yizack/gists-readme",
     technologies: ["Node.js", "GitHub API", "Vercel", "Jest", "Vitest", "Codecov", "Github Actions", "Handlebars", "Bootstrap 5"]
   },
