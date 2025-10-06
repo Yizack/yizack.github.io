@@ -3,6 +3,11 @@ export default [
     name: "emotes-resizer",
     description: "A desktop application for streamers and content creators to quickly resize emotes, badges, and other stream assets.",
     period: "May 2025",
+    bullets: [
+      "Developed a cross-platform desktop application using Electron and Nuxt.",
+      "Implemented image processing features using Sharp.",
+      "Automated build of binaries for Windows, macOS, and Linux using GitHub Actions."
+    ],
     github: "https://github.com/Yizack/emotes-resizer",
     images: [
       { src: "/images/projects/emotes-resizer/presentation.png", alt: "Presentation image" },
@@ -14,6 +19,11 @@ export default [
     name: "mailchannels-sdk",
     description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
     period: "Mar 2025",
+    bullets: [
+      "Developed a Node.js SDK to integrate MailChannels Email and Inbound API into server-side applications.",
+      "Built a documentation website using VitePress.",
+      "Automated testing, building, and publishing of the SDK using GitHub Actions."
+    ],
     url: "https://mailchannels.yizack.com/",
     github: "https://github.com/Yizack/mailchannels",
     images: [
@@ -22,7 +32,7 @@ export default [
       { src: "/images/projects/mailchannels/code-full.jpg", alt: "Full featured usage example" },
       { src: "/images/projects/mailchannels/docs.jpg", alt: "Documentation" }
     ],
-    technologies: ["Node.js", "Typescript", "GitHub Actions", "NPM", "MailChannels"]
+    technologies: ["Node.js", "Typescript", "GitHub Actions", "NPM", "MailChannels", "VitePress"]
   },
   {
     name: "Jobs Board",
@@ -106,7 +116,7 @@ export default [
   {
     name: "Pleb Rewards",
     description: "Integrations with channel points rewards for Twitch streamers.",
-    period: "May 2024 — Present",
+    period: "May 2024",
     bullets: [
       "Developed a Serverless web app project on Cloudflare Pages.",
       "Implemented a login system using Twitch OAuth App.",
@@ -122,7 +132,7 @@ export default [
   {
     name: "unbot.me",
     description: "Unbotme is a bot for Twitch designed to automatically ban identified bots that persistently lurk in channels.",
-    period: "Jan 2024 — Apr 2024",
+    period: "Jan 2024",
     bullets: [],
     url: "https://unbot.me/",
     github: "https://github.com/Yizack/unbotme",
@@ -132,7 +142,7 @@ export default [
   {
     name: "my-npm-list",
     description: "Web app that fetches and displays all npm packages used among all your GitHub projects. Login with your GitHub account, update your package list, and explore the lists of other registered users.",
-    period: "Jun 2023 — Present",
+    period: "Jun 2023",
     bullets: [
       "Developed a Serverless web app project on Cloudflare Pages.",
       "Implemented a login system using GitHub OAuth App.",
@@ -163,7 +173,7 @@ export default [
   {
     name: "How Many Times Larger",
     description: "Website and Game for easy country size comparisons.",
-    period: "Feb 2023 — Present",
+    period: "Feb 2023",
     bullets: [
       "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
       "Automatically downloaded most of the images of the countries' flags and shapes using Node.js.",
@@ -219,8 +229,8 @@ export default [
   },
   {
     name: "embeddable-music-player",
-    period: "Dec 2021 — Present",
-    description: "Embed a simple and beautiful HTML Spotify-like music player from local audio on your website using MediaElement.js and Color Thief.",
+    period: "Dec 2021",
+    description: "Embed a simple and beautiful HTML Spotify-like music player from local audio on your website using MediaElement.js and fast-average-color.",
     bullets: [
       "Created a Spotify-like music player for websites using HTML, CSS, and Javascript."
     ],
