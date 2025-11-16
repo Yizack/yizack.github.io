@@ -15,8 +15,8 @@ export default defineNuxtConfig({
   },
 
   app: {
-    rootId: "app",
     head: {
+      bodyAttrs: { class: "dark:bg-slate-900 dark:text-white bg-white text-slate-900 " },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -56,8 +56,7 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: "dark",
-    fallback: "dark",
-    classSuffix: ""
+    fallback: "dark"
   },
 
   spaLoadingTemplate: false,
@@ -94,7 +93,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          silenceDeprecations: ["mixed-decls", "color-functions", "import", "global-builtin"]
+          silenceDeprecations: ["color-functions", "import", "global-builtin"]
         }
       }
     }
