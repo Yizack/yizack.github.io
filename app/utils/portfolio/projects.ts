@@ -28,8 +28,8 @@ export default [
     github: "https://github.com/Yizack/mailchannels",
     images: [
       { src: "/images/projects/mailchannels/presentation.png", alt: "Presentation image" },
-      { src: "/images/projects/mailchannels/code-modular.jpg", alt: "Modular usage example" },
-      { src: "/images/projects/mailchannels/code-full.jpg", alt: "Full featured usage example" },
+      { src: "/images/projects/mailchannels/code-modular.webp", alt: "Modular usage example" },
+      { src: "/images/projects/mailchannels/code-full.webp", alt: "Full featured usage example" },
       { src: "/images/projects/mailchannels/docs.jpg", alt: "Documentation" }
     ],
     technologies: ["Node.js", "Typescript", "GitHub Actions", "NPM", "MailChannels", "VitePress"]
