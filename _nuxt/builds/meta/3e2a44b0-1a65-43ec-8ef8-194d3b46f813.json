@@ -1,0 +1,1 @@
+{"id":"3e2a44b0-1a65-43ec-8ef8-194d3b46f813","timestamp":1763627967003,"matcher":{"static":{"/fanlinks":{"redirect":"https://go.dimatis.music","prerender":true},"/@dimatis":{"redirect":"https://dimatis.music/links","prerender":true}},"wildcard":{},"dynamic":{"":{"static":{"/":{"appMiddleware":{"dimatis":true},"prerender":true}},"wildcard":{},"dynamic":{}}}},"prerendered":[]}
