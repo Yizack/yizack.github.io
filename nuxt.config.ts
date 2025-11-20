@@ -1,5 +1,6 @@
 import { SITE } from "./app/utils/site";
 import dimatisData from "./app/assets/data/all.json";
+import icons from "./icons";
 
 const fanlinks = dimatisData.map(data => "/" + ("cover" in data.fanlink ? data.fanlink.cover : data.id));
 
@@ -123,8 +124,9 @@ export default defineNuxtConfig({
 
   icon: {
     mode: "svg",
+    provider: "none",
     clientBundle: {
-      scan: true,
+      icons,
       sizeLimitKb: 2048
     }
   }

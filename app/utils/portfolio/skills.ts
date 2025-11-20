@@ -68,7 +68,7 @@ export default [
       { name: "Vitest", icon: "logos:vitest" },
       { name: "Codecov", icon: "logos:codecov-icon" },
       { name: "Eslint", icon: "logos:eslint" },
-      { name: "Gitlab pipelines", icon: "logos:gitlab-icon" }
+      { name: "GitLab pipelines", icon: "logos:gitlab-icon" }
     ]
   },
   {
