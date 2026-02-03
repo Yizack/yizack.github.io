@@ -1,5 +1,18 @@
 export default [
   {
+    name: "Comunidad JimTracker",
+    description: "A full-stack serverless League of Legends multi-regional leaderboard tracker for JimRsng's Twitch community.",
+    period: "January 2026 — Present",
+    url: "https://comunidad.jimtracker.com/",
+    github: "https://github.com/ahmedrangel/comunidad-jimtracker",
+    images: [
+      { src: "/images/projects/comunidad-jimtracker/table.jpg", alt: "Table page" },
+      { src: "/images/projects/comunidad-jimtracker/distribution.jpg", alt: "Distribution section" },
+      { src: "/images/projects/comunidad-jimtracker/profile.jpg", alt: "Profile page" }
+    ],
+    technologies: ["Nuxt", "Vue.js", "Typescript", "Cloudflare Workers", "Cloudflare D1", "Cloudflare R2", "Drizzle-ORM", "Cloudflare Crons", "Twitch API", "Riot Games API"]
+  },
+  {
     name: "emotes-resizer",
     description: "A desktop application for streamers and content creators to quickly resize emotes, badges, and other stream assets.",
     period: "May 2025",
