@@ -148,7 +148,7 @@ useHead({
           <Icon name="solar:programming-linear" size="2rem" />
           <span>Projects</span>
         </h2>
-        <MasonryWall :items="portfolio.projects" :ssr-columns="2" :gap="16" :max-columns="2" :column-width="400">
+        <MasonryWall :items="portfolio.projects" :ssr-columns="2" :gap="16">
           <template #default="{ item: project }">
             <div class="dark:bg-slate-800 bg-slate-100 rounded-md overflow-hidden shadow-lg">
               <ImageCarousel v-if="project.images && project.images.length" :images="project.images" class="card-img-top" />

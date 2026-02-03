@@ -3,6 +3,12 @@ export default [
     name: "Comunidad JimTracker",
     description: "A full-stack serverless League of Legends multi-regional leaderboard tracker for JimRsng's Twitch community.",
     period: "January 2026 — Present",
+    bullets: [
+      "Implemented a login system using Twitch OAuth App.",
+      "Integrated Riot Games API to fetch and display player statistics across multiple regions.",
+      "Utilized Riot Games OAuth to link player accounts.",
+      "Configured scheduled tasks using Cloudflare Workers Cron Triggers to update player and users data periodically."
+    ],
     url: "https://comunidad.jimtracker.com/",
     github: "https://github.com/ahmedrangel/comunidad-jimtracker",
     images: [
@@ -11,6 +17,18 @@ export default [
       { src: "/images/projects/comunidad-jimtracker/profile.jpg", alt: "Profile page" }
     ],
     technologies: ["Nuxt", "Vue.js", "Typescript", "Cloudflare Workers", "Cloudflare D1", "Cloudflare R2", "Drizzle-ORM", "Cloudflare Crons", "Twitch API", "Riot Games API"]
+  },
+  {
+    name: "Addify",
+    description: "Spotify playlist adder web application that allow users to quickly add songs to their Spotify playlists in a specific position using song URL.",
+    period: "January 2026",
+    url: "https://addify.yizack.com/",
+    github: "https://github.com/Yizack/addify",
+    images: [
+      { src: "/images/projects/addify/start.jpg", alt: "Start page" },
+      { src: "/images/projects/addify/details.jpg", alt: "Details modal" }
+    ],
+    technologies: ["Nuxt", "Vue.js", "Typescript", "Cloudflare Workers", "Spotify API"]
   },
   {
     name: "emotes-resizer",
@@ -51,6 +69,11 @@ export default [
     name: "Jobs Board",
     description: "A simple jobs board web application demo built with Vue 3, Vite, Tailwind CSS, and Pinia",
     period: "Feb 2025",
+    bullets: [
+      "Implemented features such as job listings, job details, search, and filtering.",
+      "Wrote unit tests using Vitest to ensure code quality and reliability.",
+      "Deployed on Cloudflare Pages and Vercel."
+    ],
     url: "https://jobs-board-demo.yizack.com/",
     github: "https://github.com/Yizack/jobs-board-demo",
     images: [
@@ -65,6 +88,10 @@ export default [
     name: "nuxt-mailchannels",
     description: "Simple MailChannels Email API integration for Nuxt.",
     period: "Nov 2024 — Present",
+    bullets: [
+      "Published the module on the NPM registry.",
+      "Submitted the module to the Nuxt community modules list."
+    ],
     github: "https://github.com/Yizack/nuxt-mailchannels",
     images: [
       { src: "/images/projects/nuxt-mailchannels/presentation.png", alt: "Presentation image" },
@@ -76,6 +103,10 @@ export default [
     name: "nuxt-webhook-validators",
     description: "A simple nuxt module that works on the edge to easily validate incoming webhooks from different services.",
     period: "Jun 2024 — Present",
+    bullets: [
+      "Published the module on the NPM registry.",
+      "Submitted the module to the Nuxt community modules list."
+    ],
     github: "https://github.com/Yizack/nuxt-webhook-validators",
     images: [
       { src: "/images/projects/nuxt-webhook-validators/presentation.png", alt: "Presentation image" },
@@ -188,7 +219,6 @@ export default [
     description: "Website and Game for easy country size comparisons.",
     period: "Feb 2023",
     bullets: [
-      "Developed a Web App project on Github Pages used to compare the size of countries using their total area.",
       "Automatically downloaded most of the images of the countries' flags and shapes using Node.js.",
       "Designed and implemented a game to test the visitor's knowledge of the countries, using Vue.js and Nuxt.",
       "Created an internal API class.",
@@ -286,7 +316,7 @@ export default [
     period: "Oct 2019 — Present",
     description: "Panama Metrobus Balance is an app that allows users in Panama City to check the balance and transactions of all their metro and metrobús cards.",
     bullets: [
-      "Developed a 92,000+ total downloads Android app project, currently helps 24,500+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
+      "Developed a 134,000+ total downloads Android app project, currently helps 23,000+ users in Panama City to know the balance and movements for all Metro and Metrobus cards.",
       "Designed a friendly, easy-to-use interface.",
       "Implemented time charts of people's card spends and balance changes.",
       "Translated manually from Spanish to English everything in the app. Making it available in two languages.",
