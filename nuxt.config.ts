@@ -6,7 +6,6 @@ const fanlinks = dimatisData.map(data => "/" + ("cover" in data.fanlink ? data.f
 
 export default defineNuxtConfig({
   modules: [
-    "@nuxt/eslint",
     "@nuxtjs/color-mode",
     "@nuxt/icon"
   ],
@@ -112,13 +111,6 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       "@tailwindcss/postcss": {}
-    }
-  },
-
-  eslint: {
-    config: {
-      autoInit: false,
-      stylistic: true
     }
   },
 
