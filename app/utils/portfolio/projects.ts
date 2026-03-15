@@ -1,5 +1,25 @@
 export default [
   {
+    name: "ruletas",
+    description: "Web app for creating picker wheels linked to Twitch channel point rewards.",
+    period: "March 2026 — Present",
+    bullets: [
+      "Implemented a login system using Twitch OAuth App.",
+      "Implemented a complete Twitch channel point rewards integration.",
+      "Integrated Twitch live chat with channel emotes support.",
+      "Built a winner celebration display with winner chat integration and timer."
+    ],
+    url: "http://ruletas.jimtracker.com",
+    github: "https://github.com/JimRsng/ruletas",
+    images: [
+      { src: "/images/projects/ruletas/base.jpg", alt: "Base wheel" },
+      { src: "/images/projects/ruletas/entries.jpg", alt: "With entries list" },
+      { src: "/images/projects/ruletas/winner.jpg", alt: "Winner celebration display" },
+      { src: "/images/projects/ruletas/streamer.gif", alt: "Streamer using the app" }
+    ],
+    technologies: ["Nuxt", "Vue.js", "Typescript", "Cloudflare Workers", "Twitch API", "Pinia"]
+  },
+  {
     name: "Comunidad JimTracker",
     description: "A full-stack serverless League of Legends multi-regional leaderboard tracker for JimRsng's Twitch community.",
     period: "January 2026 — Present",
@@ -10,7 +30,7 @@ export default [
       "Configured scheduled tasks using Cloudflare Workers Cron Triggers to update player and users data periodically."
     ],
     url: "https://comunidad.jimtracker.com/",
-    github: "https://github.com/ahmedrangel/comunidad-jimtracker",
+    github: "https://github.com/JimRsng/comunidad",
     images: [
       { src: "/images/projects/comunidad-jimtracker/table.jpg", alt: "Table page" },
       { src: "/images/projects/comunidad-jimtracker/distribution.jpg", alt: "Distribution section" },
