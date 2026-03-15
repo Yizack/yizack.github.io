@@ -14,7 +14,8 @@ export default [
     images: [
       { src: "/images/projects/comunidad-jimtracker/table.jpg", alt: "Table page" },
       { src: "/images/projects/comunidad-jimtracker/distribution.jpg", alt: "Distribution section" },
-      { src: "/images/projects/comunidad-jimtracker/profile.jpg", alt: "Profile page" }
+      { src: "/images/projects/comunidad-jimtracker/profile.jpg", alt: "Profile page" },
+      { src: "/images/projects/comunidad-jimtracker/activity.jpg", alt: "Activity page" }
     ],
     technologies: ["Nuxt", "Vue.js", "Typescript", "Cloudflare Workers", "Cloudflare D1", "Cloudflare R2", "Drizzle-ORM", "Cloudflare Crons", "Twitch API", "Riot Games API"]
   },
