@@ -1,11 +1,3 @@
-<script setup lang="ts">
-const { options } = useRouter();
-options.scrollBehavior = (to) => {
-  if (!to.hash) return { left: 0, top: 0 };
-  return { el: to.hash, top: 80, left: 0, behavior: "smooth" };
-};
-</script>
-
 <template>
   <div>
     <NuxtLayout>

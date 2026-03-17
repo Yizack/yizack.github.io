@@ -6,6 +6,8 @@ const fanlinks = dimatisData.map(data => "/" + ("cover" in data.fanlink ? data.f
 
 export default defineNuxtConfig({
   modules: [
+    "@nuxt/ui",
+    "nuxt-ui-colors-no-inline",
     "@nuxtjs/color-mode",
     "@nuxt/icon"
   ],
@@ -16,7 +18,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      bodyAttrs: { class: "dark:bg-slate-900 dark:text-white bg-white text-slate-900 " },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -49,14 +50,19 @@ export default defineNuxtConfig({
   },
 
   css: [
-    "~/assets/scss/tailwind.scss",
-    "~/assets/scss/global.scss",
-    "~/assets/scss/transitions.scss"
+    "~/assets/css/ui.tailwind.css",
+    "~/assets/scss/app.scss"
   ],
 
   colorMode: {
     preference: "dark",
     fallback: "dark"
+  },
+
+  ui: {
+    theme: {
+      colors: ["primary"]
+    }
   },
 
   spaLoadingTemplate: false,
@@ -78,7 +84,7 @@ export default defineNuxtConfig({
     typedPages: true
   },
 
-  compatibilityDate: "2024-10-24",
+  compatibilityDate: "2026-03-16",
 
   nitro: {
     prerender: {
@@ -89,28 +95,12 @@ export default defineNuxtConfig({
     }
   },
 
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          silenceDeprecations: ["color-functions", "import", "global-builtin"]
-        }
-      }
-    }
-  },
-
   typescript: {
     nodeTsConfig: {
       include: [
         "../scripts/**/*",
         "../shared/**/*.d.ts"
       ]
-    }
-  },
-
-  postcss: {
-    plugins: {
-      "@tailwindcss/postcss": {}
     }
   },
 

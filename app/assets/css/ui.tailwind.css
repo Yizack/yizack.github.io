@@ -1,0 +1,36 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+@import "tailwindcss";
+@import "@nuxt/ui";
+@custom-variant hover (&:hover);
+
+  @theme static {
+  /* slate */
+  --color-slate-100: #f5f5fc;
+  --color-slate-200: #f6f5fa;
+  --color-slate-300: #eeebf7;
+  --color-slate-400: #c3bed6;
+  --color-slate-500: #63588a;
+  --color-slate-600: #4d4670;
+  --color-slate-700: #3a3557;
+  --color-slate-800: #29243f;
+  --color-slate-900: #181528;
+
+  /* green */
+  --color-green-100: #cceae8;
+  --color-green-200: #a8d8d4;
+  --color-green-300: #84c6bf;
+  --color-green-400: #22c55e;
+  --color-green-500: #4a988f;
+  --color-green-600: #3a7670;
+  --color-green-700: #2c5754;
+  --color-green-800: #1f3e3c;
+  --color-green-900: #142826;
+}
+
+:root {
+  --ui-primary: var(--ui-color-primary-600);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-200);
+}

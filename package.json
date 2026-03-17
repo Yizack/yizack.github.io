@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port=5173",
+    "dev": "nuxt dev --port=5173 --public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "npm run dimatis && nuxt prepare",
@@ -14,7 +14,7 @@
     "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\"",
     "test:types": "vue-tsc -b --noEmit"
   },
-  "devDependencies": {
+  "dependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/logos": "^1.2.10",
@@ -24,18 +24,20 @@
     "@iconify-json/solar": "^1.2.5",
     "@iconify-json/tabler": "^1.2.31",
     "@nuxt/icon": "^2.2.1",
+    "@nuxt/ui": "^4.5.1",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@tailwindcss/postcss": "^4.2.1",
-    "@types/node": "^25.5.0",
     "@vueuse/core": "^14.2.1",
     "@yeger/vue-masonry-wall": "^6.1.0",
+    "nuxt": "^4.4.2",
+    "sass-embedded": "^1.98.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
     "@yizack/eslint-config": "^0.0.4",
     "eslint": "^10.0.3",
-    "nuxt": "^4.4.2",
-    "sass-embedded": "^1.98.0",
+    "nuxt-ui-colors-no-inline": "^0.0.3",
     "stylelint": "^17.4.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.5"
   },

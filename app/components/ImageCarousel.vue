@@ -25,27 +25,27 @@ const goTo = (index: number) => {
         <div class="flex transition-transform duration-500" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
           <div v-for="(image, index) in images" :key="index" class="w-full shrink-0">
             <img :src="image.src" class="w-full h-full object-cover" :alt="image.alt" :title="image.alt">
-            <div v-if="image.alt" class="absolute bottom-0 w-full text-center py-1 bg-slate-200 dark:bg-slate-700 transition-opacity duration-500 opacity-0 group-hover:opacity-75">
+            <div v-if="image.alt" class="absolute bottom-0 w-full text-center py-1 bg-accented/75 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
               <span>{{ image.alt }}</span>
             </div>
           </div>
         </div>
       </div>
       <div v-if="images.length > 1" class="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-        <button class="bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 bg-opacity-50" @click="prev">
-          <Icon name="tabler:chevron-left" />
-        </button>
-        <button class="bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 bg-opacity-50" @click="next">
-          <Icon name="tabler:chevron-right" />
-        </button>
+        <UButton color="neutral" variant="subtle" class="p-2 rounded-md" @click="prev">
+          <Icon name="tabler:chevron-left" size="1.2rem" />
+        </UButton>
+        <UButton color="neutral" variant="subtle" class="p-2 rounded-md" @click="next">
+          <Icon name="tabler:chevron-right" size="1.2rem" />
+        </UButton>
       </div>
     </div>
-    <div v-if="images.length > 1" class="flex justify-center py-2 bg-slate-200 dark:bg-slate-700 relative z-10">
+    <div v-if="images.length > 1" class="flex justify-center py-2 bg-accented relative z-10">
       <span
         v-for="(image, index) in images"
         :key="index"
         class="h-2 w-2 rounded-full mx-1 cursor-pointer"
-        :class="currentIndex === index ? 'dark:bg-slate-100 bg-slate-800' : 'dark:bg-gray-500 bg-gray-400'"
+        :class="currentIndex === index ? 'bg-inverted' : 'bg-inverted/25'"
         :title="image.alt"
         @click="goTo(index)"
       />
