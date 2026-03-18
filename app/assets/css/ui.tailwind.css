@@ -3,7 +3,7 @@
 @import "@nuxt/ui";
 @custom-variant hover (&:hover);
 
-  @theme static {
+@theme static {
   /* slate */
   --color-slate-100: #f5f5fc;
   --color-slate-200: #f6f5fa;
