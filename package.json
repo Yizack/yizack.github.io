@@ -18,7 +18,7 @@
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/octicon": "^1.2.21",
+    "@iconify-json/octicon": "^1.2.22",
     "@iconify-json/simple-icons": "^1.2.74",
     "@iconify-json/skill-icons": "^1.2.4",
     "@iconify-json/solar": "^1.2.5",
@@ -33,10 +33,10 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
-    "@yizack/eslint-config": "^0.0.4",
-    "eslint": "^10.0.3",
+    "@yizack/eslint-config": "^0.0.5",
+    "eslint": "^10.1.0",
     "nuxt-ui-colors-no-inline": "^0.0.3",
-    "stylelint": "^17.4.0",
+    "stylelint": "^17.5.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.6"
