@@ -1,5 +1,14 @@
 export default [
   {
+    company: "MailChannels",
+    website: "https://mailchannels.com/",
+    linkedin: "https://www.linkedin.com/company/mailchannels/",
+    city: "Panama (Remote)",
+    position: "Lead Maintainer, Node.js SDK",
+    period: "Apr 2026 — Present",
+    bullets: []
+  },
+  {
     company: "Millicom (Tigo Panamá)",
     website: "https://www.tigo.com.pa/",
     linkedin: "https://www.linkedin.com/company/tigopanama/",
