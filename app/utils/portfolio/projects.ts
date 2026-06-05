@@ -77,7 +77,7 @@ export default [
       "Automated testing, building, and publishing of the SDK using GitHub Actions."
     ],
     url: "https://mailchannels.yizack.com/",
-    github: "https://github.com/Yizack/mailchannels",
+    github: "https://bitbucket.org/mailchannels/mailchannels-email-api-sdk-js",
     images: [
       { src: "/images/projects/mailchannels/presentation.png", alt: "Presentation image" },
       { src: "/images/projects/mailchannels/code-modular.webp", alt: "Modular usage example" },
