@@ -76,7 +76,7 @@ const tabs = [
                     <Icon name="octicon:star" class="text-yellow-400" />
                     <span class="text-xs text-muted">{{ formatStars(pr.stars) }}</span>
                   </NuxtLink>
-                  <NuxtLink :to="`https://github.com/${pr.repo}`" target="_blank" class="items-center hidden sm:inline-flex gap-0.5 hover:text-black dark:hover:text-white truncate">
+                  <NuxtLink :to="pr.url" target="_blank" class="items-center hidden sm:inline-flex gap-0.5 hover:text-black dark:hover:text-white truncate">
                     <Icon name="octicon:comment-16" size="14px" />
                     <span class="text-xs text-muted">{{ formatStars(pr.comments) }}</span>
                   </NuxtLink>
@@ -124,7 +124,7 @@ const tabs = [
                     <Icon name="octicon:star" class="text-yellow-400" />
                     <span class="text-xs text-muted">{{ formatStars(issue.stars) }}</span>
                   </NuxtLink>
-                  <NuxtLink :to="`https://github.com/${issue.repo}`" target="_blank" class="items-center hidden sm:inline-flex gap-0.5 hover:text-black dark:hover:text-white truncate">
+                  <NuxtLink :to="issue.url" target="_blank" class="items-center hidden sm:inline-flex gap-0.5 hover:text-black dark:hover:text-white truncate">
                     <Icon name="octicon:comment-16" size="14px" />
                     <span class="text-xs text-muted">{{ formatStars(issue.comments) }}</span>
                   </NuxtLink>
