@@ -1,0 +1,1 @@
+import{c as o}from"./CTTVjNFi.js";import{C as e,c as i}from"./CZVlOnXG.js";const[n]=o("ConfigProvider");function s(t){const r=n({dir:e("ltr")});return i(()=>t?.value||r.dir?.value||"ltr")}export{n as i,s as u};
