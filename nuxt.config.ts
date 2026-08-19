@@ -60,6 +60,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
+    prose: true,
     theme: {
       colors: ["primary"]
     }

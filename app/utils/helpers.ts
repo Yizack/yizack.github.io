@@ -16,3 +16,12 @@ export const mapPrIcons = (state: ContributionsPullRequest["state"]) => {
     default: return "octicon:git-pull-request-24";
   }
 };
+
+export const mapIssueIcons = (state: ContributionsIssue["state"]) => {
+  switch (state) {
+    case "open": return "octicon:issue-opened-24";
+    case "completed": return "octicon:issue-closed-24";
+    case "not-planned": return "octicon:skip-24";
+    default: return "octicon:issue-opened-24";
+  }
+};

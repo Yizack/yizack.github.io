@@ -35,6 +35,10 @@ export default [
   "octicon:git-merge-24",
   "octicon:git-pull-request-draft-24",
   "octicon:git-pull-request-closed-24",
+  "octicon:issue-opened-24",
+  "octicon:issue-closed-24",
+  "octicon:skip-24",
+  "octicon:comment-16",
 
   // Web Design stack
   "logos:html-5",

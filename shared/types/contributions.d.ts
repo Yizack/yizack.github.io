@@ -22,13 +22,13 @@ declare global {
     state: "merged" | "draft" | "open" | "closed";
   }
 
-  interface ContributionsIssues extends ContributionsData {
+  interface ContributionsIssue extends ContributionsData {
     state: "open" | "completed" | "not-planned";
   }
 
   interface Contributions {
     user: ContributionsUser;
     prs: ContributionsPullRequest[];
-    issues: ContributionsIssues[];
+    issues: ContributionsIssue[];
   }
 }
