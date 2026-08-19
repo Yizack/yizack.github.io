@@ -5,7 +5,7 @@ export default [
     linkedin: "https://www.linkedin.com/company/mailchannels/",
     city: "Panama (Remote)",
     position: "Lead Maintainer, Node.js SDK",
-    period: "Apr 2026 — Present",
+    period: "May 2026 — Present",
     bullets: []
   },
   {
