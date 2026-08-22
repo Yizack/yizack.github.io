@@ -68,7 +68,8 @@ export default [
       { name: "Vitest", icon: "logos:vitest" },
       { name: "Codecov", icon: "logos:codecov-icon" },
       { name: "Eslint", icon: "logos:eslint" },
-      { name: "GitLab pipelines", icon: "logos:gitlab-icon" }
+      { name: "GitLab pipelines", icon: "logos:gitlab-icon" },
+      { name: "Bitbucket pipelines", icon: "logos:bitbucket" }
     ]
   },
   {
@@ -114,7 +115,8 @@ export default [
       { name: "Docker", icon: "logos:docker-icon" },
       { name: "SAP BODS", icon: "logos:sap" },
       { name: "Linux", icon: "logos:linux-tux" },
-      { name: "Windows", icon: "logos:microsoft-windows-icon" }
+      { name: "Windows", icon: "logos:microsoft-windows-icon" },
+      { name: "Bitbucket", icon: "logos:bitbucket" }
     ]
   },
   {

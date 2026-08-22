@@ -89,6 +89,7 @@ export default [
   "logos:codecov-icon",
   "logos:eslint",
   "logos:gitlab-icon",
+  "logos:bitbucket",
 
   // Mobile Development stack
   "logos:android-icon",
