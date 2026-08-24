@@ -116,7 +116,7 @@ export default [
     github: "https://github.com/Yizack/nuxt-mailchannels",
     images: [
       { src: "/images/projects/nuxt-mailchannels/presentation.png", alt: "Presentation image" },
-      { src: "/images/projects/nuxt-mailchannels/code.jpg", alt: "Usage example" }
+      { src: "/images/projects/nuxt-mailchannels/code.webp", alt: "Usage example" }
     ],
     technologies: ["Nuxt", "Typescript", "GitHub Actions", "Vue.js", "NPM", "MailChannels"]
   },
