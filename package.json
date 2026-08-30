@@ -19,27 +19,27 @@
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/logos": "^1.2.13",
     "@iconify-json/octicon": "^1.2.32",
-    "@iconify-json/simple-icons": "^1.2.93",
+    "@iconify-json/simple-icons": "^1.2.94",
     "@iconify-json/skill-icons": "^1.2.4",
-    "@iconify-json/solar": "^1.2.8",
+    "@iconify-json/solar": "^1.2.10",
     "@iconify-json/tabler": "^1.2.38",
     "@nuxt/icon": "^2.5.0",
-    "@nuxt/ui": "^4.10.0",
+    "@nuxt/ui": "^4.11.0",
     "@nuxtjs/color-mode": "^4.0.1",
     "@vueuse/core": "^14.4.0",
     "@yeger/vue-masonry-wall": "^6.1.4",
     "nuxt": "^4.5.2",
-    "sass-embedded": "^1.102.0"
+    "sass-embedded": "^1.103.1"
   },
   "devDependencies": {
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.4.0",
     "@yizack/eslint-config": "^0.0.6",
-    "eslint": "^10.8.1",
+    "eslint": "^10.9.1",
     "nuxt-ui-colors-no-inline": "^0.0.6",
     "stylelint": "^17.14.1",
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.10"
+    "vue-tsc": "^3.3.11"
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@12.1.0"
 }
