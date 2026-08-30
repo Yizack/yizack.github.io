@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { $fetch } from "ofetch";
-import { SITE } from "../app/utils/site";
+import { SITE } from "../app/utils/site.ts";
 
 const dir = "./app/assets/data";
 
