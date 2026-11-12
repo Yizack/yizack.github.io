@@ -1,5 +1,38 @@
 export default [
   {
+    name: "Dasher",
+    description: "A Twitch Extension that lets viewers browse and redeem recorded clips with Bits, which play live on the broadcaster's stream.",
+    period: "September 2026 — Present",
+    bullets: [
+      "Built a Twitch Extension to browse, search, preview, and redeem recorded clips with Bits.",
+      "Implemented a real-time Browser Source that queues and plays redeemed clips in order.",
+      "Added DonoClip imports and server-side Bits transaction validation."
+    ],
+    github: "https://github.com/Yizack/dasher",
+    images: [
+      { src: "/images/projects/dasher/extension-panel.jpg", alt: "Twitch Extension Panel" },
+      { src: "/images/projects/dasher/stream-source.gif", alt: "Stream Browser Source" },
+      { src: "/images/projects/dasher/extension-config.jpg", alt: "Extension Configuration" },
+      { src: "/images/projects/dasher/extension-config-success.jpg", alt: "Extension Configuration Success" }
+    ],
+    technologies: ["Nuxt", "Vue.js", "Typescript", "Twitch Extensions", "Twitch API", "Cloudflare Workers"]
+  },
+  {
+    name: "nuxt-twitch-ext",
+    description: "A Nuxt module for building Twitch Extensions and their Extension Backend Service (EBS) in a single Nuxt project.",
+    period: "September 2026 — Present",
+    bullets: [
+      "Built a dedicated extension build that pre-renders extension pages and packages assets into a Twitch-ready ZIP.",
+      "Implemented EBS utilities with configurable CORS and Twitch JWT and Bits transaction verification.",
+      "Added auto-imported client utilities for EBS requests and extension assets, plus Twitch Extension Helper type definitions."
+    ],
+    github: "https://github.com/Yizack/nuxt-twitch-ext",
+    images: [
+      { src: "/images/projects/nuxt-twitch-ext/presentation.png", alt: "Presentation image" }
+    ],
+    technologies: ["Nuxt", "Vue.js", "Typescript", "Twitch Extensions", "GitHub Actions", "NPM"]
+  },
+  {
     name: "ruletas",
     description: "Web app for creating picker wheels linked to Twitch channel point rewards.",
     period: "March 2026 — Present",
@@ -68,11 +101,11 @@ export default [
     technologies: ["Electron", "Nuxt", "Vue.js", "Node.js", "Typescript", "GitHub Actions"]
   },
   {
-    name: "mailchannels-sdk",
+    name: "@mailchannels/sdk",
     description: "Node.js SDK to integrate MailChannels API into your JavaScript or TypeScript server-side applications.",
     period: "Mar 2025",
     bullets: [
-      "Developed a Node.js SDK to integrate MailChannels Email and Inbound API into server-side applications.",
+      "Developed a Node.js SDK to integrate MailChannels Email API into server-side applications.",
       "Built a documentation website using VitePress.",
       "Automated testing, building, and publishing of the SDK using GitHub Actions."
     ],
@@ -113,7 +146,7 @@ export default [
       "Published the module on the NPM registry.",
       "Submitted the module to the Nuxt community modules list."
     ],
-    github: "https://github.com/Yizack/nuxt-mailchannels",
+    github: "https://github.com/mailchannels/nuxt-mailchannels",
     images: [
       { src: "/images/projects/nuxt-mailchannels/presentation.png", alt: "Presentation image" },
       { src: "/images/projects/nuxt-mailchannels/code.webp", alt: "Usage example" }
