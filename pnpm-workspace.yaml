@@ -5,6 +5,9 @@ strictPeerDependencies: false
 packages:
   - .
 
+overrides:
+  'vue-tsc': '3.3.11'
+
 allowBuilds:
   '@parcel/watcher': false
   esbuild: false
